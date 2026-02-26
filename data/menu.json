@@ -1,0 +1,48 @@
+{
+  "business": {
+    "name": "House of Jaby",
+    "phone": "+254712345678",
+    "tagline": "Order easily via WhatsApp",
+    "banner": "/images/hero-banner.jpg"
+  },
+  "categories": [
+    {
+      "name": "Cakes",
+      "items": [
+        {
+          "id": 1,
+          "name": "1kg Chocolate Cake",
+          "price": 2500,
+          "image": "/images/chocolate-cake.jpg",
+          "description": "Rich chocolate cake for every occasion"
+        },
+        {
+          "id": 2,
+          "name": "Red Velvet Cupcakes",
+          "price": 1200,
+          "image": "/images/red-velvet.jpg",
+          "description": "Box of 6 red velvet cupcakes"
+        }
+      ]
+    },
+    {
+      "name": "Drinks",
+      "items": [
+        {
+          "id": 3,
+          "name": "Fresh Orange Juice",
+          "price": 400,
+          "image": "/images/orange-juice.jpg",
+          "description": "Freshly squeezed orange juice"
+        },
+        {
+          "id": 4,
+          "name": "Mango Smoothie",
+          "price": 500,
+          "image": "/images/mango-smoothie.jpg",
+          "description": "Creamy mango smoothie with ice"
+        }
+      ]
+    }
+  ]
+}
