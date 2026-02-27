@@ -1,11 +1,25 @@
+"use client";
+
+import React from "react";
+import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 
-export default function Home() {
+const HomePage: React.FC = () => {
   return (
-    <main className="pt-20">
-      <Hero />
+    <div className="flex flex-col min-h-screen">
+      {/* Header */}
+      <Header />
+
+      {/* Hero Section */}
+      <main className="flex-1 pt-20">
+        <Hero />
+      </main>
+
+      {/* Footer */}
       <Footer />
-    </main>
+    </div>
   );
-}
+};
+
+export default HomePage;
