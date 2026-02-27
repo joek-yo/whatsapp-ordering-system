@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import businessData from "../../../data/menu.json";
 import ProductCard from "../components/ProductCard";
-import { getBusinessData } from "@/lib/getBusinessData";
+import { motion } from "framer-motion";
 
 interface CartItem {
   id: number;
@@ -11,15 +11,8 @@ interface CartItem {
 }
 
 const MenuPage: React.FC = () => {
-  // Get business data safely
-  const data = getBusinessData();
-  const categories = data?.categories || [];
-
-  // Set default selected category safely
-  const [selectedCategory, setSelectedCategory] = useState(
-    categories.length > 0 ? categories[0].name : ""
-  );
-
+  const { categories } = businessData;
+  const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
   const [cart, setCart] = useState<CartItem[]>([]);
 
   const handleAddToCart = (id: number, quantity: number) => {
@@ -47,8 +40,8 @@ const MenuPage: React.FC = () => {
             onClick={() => setSelectedCategory(cat.name)}
             className={`px-4 py-2 rounded-full font-semibold transition ${
               selectedCategory === cat.name
-                ? "bg-yellow-500 text-gray-900"
-                : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                ? "bg-green-500 text-white"
+                : "bg-green-200 text-gray-800 hover:bg-green-300"
             }`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -60,7 +53,7 @@ const MenuPage: React.FC = () => {
 
       {/* Products Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {activeCategory?.items?.map((product) => (
+        {activeCategory?.items.map((product) => (
           <ProductCard
             key={product.id}
             id={product.id}
