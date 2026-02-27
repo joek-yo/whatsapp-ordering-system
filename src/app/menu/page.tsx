@@ -4,29 +4,12 @@ import React, { useState } from "react";
 import businessData from "../../../data/menu.json";
 import ProductCard from "../components/ProductCard";
 import { motion } from "framer-motion";
-
-interface CartItem {
-  id: number;
-  quantity: number;
-}
+import { useCart } from "../context/CartContext"; // ✅ use global cart
 
 const MenuPage: React.FC = () => {
   const { categories } = businessData;
   const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
-  const [cart, setCart] = useState<CartItem[]>([]);
-
-  const handleAddToCart = (id: number, quantity: number) => {
-    setCart((prev) => {
-      const existing = prev.find((item) => item.id === id);
-      if (existing) {
-        return prev.map((item) =>
-          item.id === id ? { ...item, quantity: item.quantity + quantity } : item
-        );
-      } else {
-        return [...prev, { id, quantity }];
-      }
-    });
-  };
+  const { addToCart } = useCart(); // ✅ get addToCart from global context
 
   const activeCategory = categories.find((cat) => cat.name === selectedCategory);
 
@@ -61,7 +44,11 @@ const MenuPage: React.FC = () => {
             price={product.price}
             image={product.image}
             description={product.description}
-            onAddToCart={handleAddToCart}
+            available={product.available}
+            featured={product.featured}
+            onAddToCart={() =>
+              addToCart({ id: product.id, name: product.name, price: product.price, quantity: 1 })
+            } // ✅ connect to global cart
           />
         ))}
       </div>

@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
 
         <Link
           href="/menu"
-          className="mt-6 inline-block px-8 py-4 bg-yellow-500 text-gray-900 font-semibold rounded-full shadow-lg hover:bg-yellow-600 transition-colors"
+          className="mt-6 inline-block px-8 py-4 bg-green-500 text-gray-900 font-semibold rounded-full shadow-lg hover:bg-green-600 transition-colors"
         >
           View Menu
         </Link>
