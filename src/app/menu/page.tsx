@@ -47,8 +47,14 @@ const MenuPage: React.FC = () => {
             available={product.available}
             featured={product.featured}
             onAddToCart={() =>
-              addToCart({ id: product.id, name: product.name, price: product.price, quantity: 1 })
-            } // ✅ connect to global cart
+              addToCart({
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                quantity: 1,
+                image: product.image // ✅ pass the image to the cart
+              })
+            }
           />
         ))}
       </div>

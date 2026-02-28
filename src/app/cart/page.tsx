@@ -3,6 +3,7 @@
 import React from "react";
 import { useCart } from "../context/CartContext";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const CartPage: React.FC = () => {
   const { cart, removeFromCart, updateQuantity } = useCart();
@@ -26,13 +27,31 @@ const CartPage: React.FC = () => {
               className="flex justify-between items-center bg-white p-6 rounded-lg shadow"
               whileHover={{ scale: 1.01 }}
             >
-              <div>
+              {/* Product Image */}
+              <div className="w-24 h-24 relative flex-shrink-0 rounded-md overflow-hidden">
+                {item.image ? (
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    fill
+                    className="object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gray-100 flex items-center justify-center text-gray-400 text-sm">
+                    IMG
+                  </div>
+                )}
+              </div>
+
+              {/* Product Info */}
+              <div className="flex-1 ml-4">
                 <h3 className="font-semibold">{item.name}</h3>
                 <p className="text-gray-500">
-                  KES {item.price} x {item.quantity}
+                  KES {item.price.toLocaleString()} x {item.quantity}
                 </p>
               </div>
 
+              {/* Quantity & Remove */}
               <div className="flex items-center space-x-4">
                 <button
                   onClick={() =>
@@ -61,12 +80,17 @@ const CartPage: React.FC = () => {
                   Remove
                 </button>
               </div>
+
+              {/* Total Price */}
+              <div className="ml-4 text-right font-bold">
+                KES {(item.price * item.quantity).toLocaleString()}
+              </div>
             </motion.div>
           ))}
 
           <div className="text-right mt-8">
             <h2 className="text-2xl font-bold">
-              Subtotal: KES {subtotal}
+              Subtotal: KES {subtotal.toLocaleString()}
             </h2>
           </div>
         </div>

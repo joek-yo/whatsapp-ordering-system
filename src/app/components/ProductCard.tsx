@@ -31,7 +31,8 @@ const ProductCard: React.FC<ProductProps> = ({
   const handleAddToCart = () => {
     if (!available) return;
 
-    addToCart({ id, name, price, quantity });
+    // ✅ Pass the image to the cart so it shows in MiniCartDrawer
+    addToCart({ id, name, price, quantity, image });
 
     setAdded(true); // Trigger animation
     setQuantity(1); // Reset quantity after adding

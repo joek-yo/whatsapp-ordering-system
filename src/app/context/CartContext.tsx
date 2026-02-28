@@ -2,11 +2,13 @@
 
 import React, { createContext, useContext, useState, useEffect } from "react";
 
+// 🔹 Updated CartItem: added optional image field
 interface CartItem {
   id: number;
   name: string;
   price: number;
   quantity: number;
+  image?: string; // optional product image URL
 }
 
 interface CartContextType {
@@ -16,8 +18,8 @@ interface CartContextType {
   updateQuantity: (id: number, quantity: number) => void;
   isDrawerOpen: boolean;
   toggleDrawer: (state?: boolean) => void;
-  showToast: boolean;        // NEW: Mobile toast
-  toastMessage: string;      // NEW: Message for toast
+  showToast: boolean;        // Mobile toast
+  toastMessage: string;      // Message for toast
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -41,26 +43,28 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     setCart(prev => {
       const existing = prev.find(p => p.id === item.id);
       if (existing) {
-        return prev.map(p => 
-          p.id === item.id ? { ...p, quantity: p.quantity + item.quantity } : p
+        return prev.map(p =>
+          p.id === item.id
+            ? { ...p, quantity: p.quantity + item.quantity, image: item.image ?? p.image }
+            : p
         );
       }
       return [...prev, item];
     });
 
     if (isMobile) {
-      // Show toast notification
+      // Show toast notification on mobile
       setToastMessage(`✅ ${item.name} added to cart`);
       setShowToast(true);
       setTimeout(() => setShowToast(false), 3000);
     } else {
-      // Desktop drawer opens temporarily
+      // Desktop drawer just opens; auto-close handled in MiniCartDrawer
       setIsDrawerOpen(true);
-      setTimeout(() => setIsDrawerOpen(false), 3000);
     }
   };
 
-  const removeFromCart = (id: number) => setCart(prev => prev.filter(i => i.id !== id));
+  const removeFromCart = (id: number) =>
+    setCart(prev => prev.filter(i => i.id !== id));
 
   const updateQuantity = (id: number, quantity: number) => {
     if (quantity < 1) return;

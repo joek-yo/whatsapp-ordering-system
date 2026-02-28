@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { useCart } from "../context/CartContext";
 
 const MiniCartDrawer: React.FC = () => {
@@ -62,11 +63,7 @@ const MiniCartDrawer: React.FC = () => {
 
             {/* Drawer */}
             <motion.div
-              className={`
-                fixed top-0 right-0 h-full 
-                w-full sm:w-[320px] md:w-[360px] lg:w-[420px] xl:w-[460px] 
-                bg-white shadow-2xl z-50 flex flex-col
-              `}
+              className="fixed top-0 right-0 h-full w-full sm:w-[320px] md:w-[360px] lg:w-[420px] xl:w-[460px] bg-white shadow-2xl z-50 flex flex-col"
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
@@ -91,19 +88,55 @@ const MiniCartDrawer: React.FC = () => {
                 ) : (
                   cart.map(item => (
                     <div key={item.id} className="flex items-center space-x-4 border-b pb-4">
-                      <div className="w-16 h-16 bg-gray-100 rounded-md flex items-center justify-center text-gray-400 text-sm">IMG</div>
+                      {/* Product Image */}
+                      <div className="w-16 h-16 rounded-md overflow-hidden flex-shrink-0">
+                        {item.image ? (
+                          <Image
+                            src={item.image}
+                            alt={item.name}
+                            width={64}
+                            height={64}
+                            className="object-cover w-full h-full"
+                          />
+                        ) : (
+                          <div className="w-full h-full bg-gray-100 flex items-center justify-center text-gray-400 text-sm">
+                            IMG
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Product Info */}
                       <div className="flex-1">
                         <h4 className="font-semibold text-gray-800">{item.name}</h4>
                         <p className="text-sm text-gray-500">KES {item.price.toLocaleString()}</p>
                         <div className="flex items-center mt-2 space-x-2">
-                          <button onClick={() => updateQuantity(item.id, item.quantity - 1)} className="px-2 bg-gray-200 rounded">-</button>
+                          <button
+                            onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                            className="px-2 bg-gray-200 rounded"
+                          >
+                            -
+                          </button>
                           <span>{item.quantity}</span>
-                          <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="px-2 bg-gray-200 rounded">+</button>
+                          <button
+                            onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                            className="px-2 bg-gray-200 rounded"
+                          >
+                            +
+                          </button>
                         </div>
                       </div>
+
+                      {/* Price & Remove */}
                       <div className="text-right">
-                        <p className="font-bold text-gray-800">KES {(item.price * item.quantity).toLocaleString()}</p>
-                        <button onClick={() => removeFromCart(item.id)} className="text-xs text-red-500 hover:underline mt-1">Remove</button>
+                        <p className="font-bold text-gray-800">
+                          KES {(item.price * item.quantity).toLocaleString()}
+                        </p>
+                        <button
+                          onClick={() => removeFromCart(item.id)}
+                          className="text-xs text-red-500 hover:underline mt-1"
+                        >
+                          Remove
+                        </button>
                       </div>
                     </div>
                   ))
