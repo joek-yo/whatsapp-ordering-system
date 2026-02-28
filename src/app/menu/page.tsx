@@ -23,7 +23,7 @@ const MenuPage: React.FC = () => {
             onClick={() => setSelectedCategory(cat.name)}
             className={`px-4 py-2 rounded-full font-semibold transition ${
               selectedCategory === cat.name
-                ? "bg-green-500 text-white"
+                ? "bg-green-900 text-white"
                 : "bg-green-200 text-gray-800 hover:bg-green-300"
             }`}
             whileHover={{ scale: 1.05 }}

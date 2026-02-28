@@ -9,9 +9,8 @@ import { getBusinessData } from "@/lib/getBusinessData";
 
 const Header: React.FC = () => {
   const business = getBusinessData();
-  const { cart } = useCart();
+  const { cart, toggleDrawer } = useCart();
 
-  // Calculate total items in cart
   const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
@@ -39,7 +38,7 @@ const Header: React.FC = () => {
           </span>
         </motion.div>
 
-        {/* Navigation */}
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           <Link href="/" className="text-green-700 hover:text-gray-900 font-medium">
             Home
@@ -51,19 +50,18 @@ const Header: React.FC = () => {
             Contact
           </Link>
 
-          {/* Cart Link with Badge */}
-          <Link
-            href="/cart"
-            className="relative text-green-700 hover:text-gray-900 font-medium"
+          {/* Desktop Cart Button */}
+          <button
+            onClick={() => toggleDrawer(true)}
+            className="relative flex items-center space-x-2 bg-green-900 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-700 transition"
           >
-            Cart
-
+            <span>Cart</span>
             {totalItems > 0 && (
-              <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full">
+              <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
                 {totalItems}
               </span>
             )}
-          </Link>
+          </button>
         </nav>
 
         {/* Phone CTA */}
@@ -76,8 +74,20 @@ const Header: React.FC = () => {
           Call Us
         </motion.a>
 
-        {/* Mobile Placeholder */}
-        <div className="md:hidden" />
+        {/* Mobile Cart Button */}
+        <div className="md:hidden">
+          <button
+            onClick={() => toggleDrawer(true)}
+            className="relative flex items-center bg-green-900 text-white px-3 py-2 rounded-lg shadow-md hover:bg-green-700 transition"
+          >
+            <span>Cart</span>
+            {totalItems > 0 && (
+              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
+                {totalItems}
+              </span>
+            )}
+          </button>
+        </div>
       </div>
     </header>
   );

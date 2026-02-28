@@ -1,5 +1,10 @@
+"use client";
+
 import "./globals.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import MiniCartDrawer from "./components/MiniCartDrawer";
+import CartToast from "./components/CartToast";
 import { CartProvider } from "./context/CartContext";
 
 export default function RootLayout({
@@ -9,17 +14,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white text-gray-900 min-h-screen">
-        {/* Wrap everything in CartProvider */}
+      <body className="bg-white text-gray-900 min-h-screen flex flex-col">
+        
+        {/* Global Providers */}
         <CartProvider>
+          
           {/* Fixed Navbar */}
           <Header />
 
-          {/* Main Content (pushed below fixed header) */}
-          <main className="pt-16">
-            {children}
-          </main>
+          {/* Premium Slide-In Drawer */}
+          <MiniCartDrawer />
+
+          {/* Mobile Toast */}
+          <CartToast />
+
+          {/* Page Content */}
+          <main className="pt-16 flex-grow">{children}</main>
+
+          {/* Footer */}
+          <Footer />
+
         </CartProvider>
+
       </body>
     </html>
   );
