@@ -3,34 +3,61 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { getBusinessData } from "@/lib/getBusinessData";
 
 const Hero: React.FC = () => {
   const business = getBusinessData();
 
   return (
-    <section
-      className="w-full h-screen flex items-center justify-center bg-cover bg-center relative"
-      style={{ backgroundImage: `url(${business.banner})` }}
-    >
+    <section className="w-full h-[75vh] relative flex items-center justify-center">
+      
+      {/* Hero Image */}
+      {business.banner && (
+        <Image
+          src={business.banner}
+          alt="Hero Banner"
+          fill
+          className="object-cover"
+          priority
+        />
+      )}
+
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
 
+      {/* Content */}
       <motion.div
-        className="text-center text-white px-6 relative z-10"
+        className="relative z-10 text-center px-6 text-white pt-16 md:pt-20"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
-          {business.tagline}
-        </h2>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
+          {business.tagline || "Crafted Moments The Jaby Way"}
+        </h1>
 
-        <Link
-          href="/menu"
-          className="mt-6 inline-block px-8 py-4 bg-green-900 text-white font-semibold rounded-lg shadow-lg hover:bg-green-800 transition-colors"
-        >
-          View Menu
-        </Link>
+        <p className="text-lg md:text-2xl mb-6 drop-shadow">
+          Fast Delivery • Fresh Ingredients • Hit Us Up
+        </p>
+
+        <div className="flex flex-col md:flex-row justify-center gap-4">
+          <Link
+            href="/menu"
+            className="px-8 py-4 bg-green-900 text-white font-semibold rounded-lg shadow-lg hover:bg-green-800 transition-colors"
+          >
+            View Menu
+          </Link>
+
+          <Link
+            href={`https://wa.me/${business.phone}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-green-500 text-white font-semibold rounded-lg shadow-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
+          >
+            🔥 Order via WhatsApp
+          </Link>
+        </div>
       </motion.div>
     </section>
   );

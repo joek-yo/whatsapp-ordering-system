@@ -23,10 +23,10 @@ const Pages: React.FC = () => {
   const bestSellers = allItems.filter(item => item.bestSelling).slice(0, 3);
 
   // ⭐ Jaby's Favorites
-  const jabyFavorites = allItems.filter(item => item.featured);
+  const jabyFavorites = allItems.filter(item => item.jabysFavorite);
 
-  // Featured products for active category
-  const featuredProducts = activeCategory?.items.filter(item => item.featured) || [];
+  // Featured products for active category (also Jaby's Favorites)
+  const featuredProducts = activeCategory?.items.filter(item => item.jabysFavorite) || [];
 
   return (
     <main className="pt-16 space-y-24">
@@ -54,6 +54,7 @@ const Pages: React.FC = () => {
                   description={item.description}
                   available={item.available}
                   bestSelling={item.bestSelling}
+                  jabysFavorite={item.jabysFavorite} // ✅ pass Jaby's Favorite to card
                 />
               </div>
             ))}
@@ -77,7 +78,9 @@ const Pages: React.FC = () => {
 
       {/* Menu Section with CategoryBar & Featured Products per category */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center">Menu Selection</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center">
+          Menu Selection
+        </h2>
 
         {/* Category Bar */}
         <CategoryBar
@@ -87,7 +90,9 @@ const Pages: React.FC = () => {
         />
 
         {/* Featured Products of active category */}
-        <FeaturedProducts products={featuredProducts} />
+        {featuredProducts.length > 0 && (
+          <FeaturedProducts products={featuredProducts} />
+        )}
       </section>
     </main>
   );

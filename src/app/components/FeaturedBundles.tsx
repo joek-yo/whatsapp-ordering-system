@@ -23,7 +23,8 @@ const FeaturedBundles: React.FC<FeaturedBundlesProps> = ({ bundles }) => {
             image={bundle.image || "/images/placeholder.jpg"}
             description={bundle.description}
             available={bundle.available}
-            featured={bundle.featured}
+            jabysFavorite={bundle.jabysFavorite || false} // updated to match ProductCard
+            bestSelling={bundle.bestSelling || false}     // updated to match ProductCard
             isBundle
           />
         ))}

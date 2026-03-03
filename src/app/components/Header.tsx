@@ -39,8 +39,7 @@ const Header: React.FC = () => {
 
           {/* ========== MOBILE LAYOUT ========== */}
           <div className="md:hidden">
-
-            {/* Row 1 */}
+            {/* Row 1: Brand + Cart */}
             <div className="flex justify-between items-center py-3">
               <div className="flex items-center space-x-2">
                 {business.logo && (
@@ -59,7 +58,7 @@ const Header: React.FC = () => {
 
               <button
                 onClick={() => toggleDrawer(true)}
-                className="relative flex items-center bg-green-900 text-white px-4 py-2 rounded-lg shadow-md"
+                className="relative flex items-center bg-green-900 text-white px-3 py-2 rounded-lg shadow-md"
               >
                 <FaShoppingCart />
                 {totalItems > 0 && (
@@ -70,7 +69,7 @@ const Header: React.FC = () => {
               </button>
             </div>
 
-            {/* Row 2 */}
+            {/* Row 2: Hamburger + Chat + Call */}
             <div className="flex justify-between items-center pb-3">
               <button
                 onClick={() => setMobileMenuOpen(true)}
@@ -101,7 +100,7 @@ const Header: React.FC = () => {
 
           {/* ========== DESKTOP LAYOUT ========== */}
           <div className="hidden md:flex items-center justify-between py-4">
-
+            {/* Left: Brand */}
             <div className="flex items-center space-x-2">
               {business.logo && (
                 <Image
@@ -117,6 +116,7 @@ const Header: React.FC = () => {
               </span>
             </div>
 
+            {/* Center: Nav */}
             <nav className="flex items-center space-x-8 font-medium">
               <Link href="/" className="hover:text-green-700 transition">
                 Home
@@ -129,6 +129,7 @@ const Header: React.FC = () => {
               </Link>
             </nav>
 
+            {/* Right: Chat + Call + Cart */}
             <div className="flex items-center space-x-3">
               <a
                 href={`https://wa.me/${business.phone}`}
@@ -148,7 +149,7 @@ const Header: React.FC = () => {
 
               <button
                 onClick={() => toggleDrawer(true)}
-                className="relative flex items-center bg-green-900 text-white px-4 py-2 rounded-lg shadow-md"
+                className="relative flex items-center bg-green-900 text-white px-3 py-2 rounded-lg shadow-md"
               >
                 <FaShoppingCart />
                 {totalItems > 0 && (
@@ -161,7 +162,7 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        {/* ========== PREMIUM DRAWER ========== */}
+        {/* ========== MOBILE SLIDE-OUT DRAWER ========== */}
         <AnimatePresence>
           {mobileMenuOpen && (
             <>
@@ -183,12 +184,14 @@ const Header: React.FC = () => {
                 transition={{ type: "tween", duration: 0.25 }}
                 className="fixed top-0 left-0 h-full w-72 bg-white shadow-2xl z-50 flex flex-col p-6"
               >
+                {/* Close Button */}
                 <div className="flex justify-end mb-4">
                   <button onClick={() => setMobileMenuOpen(false)}>
                     <FaTimes size={22} />
                   </button>
                 </div>
 
+                {/* Brand */}
                 <div className="flex items-center space-x-2 mb-8">
                   {business.logo && (
                     <Image
@@ -198,11 +201,10 @@ const Header: React.FC = () => {
                       height={40}
                     />
                   )}
-                  <span className="text-xl font-bold">
-                    {business.name}
-                  </span>
+                  <span className="text-xl font-bold">{business.name}</span>
                 </div>
 
+                {/* Drawer Nav */}
                 <nav className="flex flex-col space-y-6 text-lg font-medium">
                   <Link
                     href="/"
@@ -228,6 +230,24 @@ const Header: React.FC = () => {
                     <FaEnvelope /> <span>Contact</span>
                   </Link>
                 </nav>
+
+                {/* Chat + Call at Bottom */}
+                <div className="mt-auto flex flex-col space-y-3">
+                  <a
+                    href={`https://wa.me/${business.phone}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center px-3 py-2 bg-green-500 text-white rounded-lg shadow hover:bg-green-600 transition"
+                  >
+                    <FaWhatsapp className="mr-2" /> Chat
+                  </a>
+                  <a
+                    href={`tel:${business.phone}`}
+                    className="flex items-center justify-center px-3 py-2 bg-green-700 text-white rounded-lg shadow hover:bg-green-800 transition"
+                  >
+                    <FaPhoneAlt className="mr-2" /> Call
+                  </a>
+                </div>
               </motion.div>
             </>
           )}
