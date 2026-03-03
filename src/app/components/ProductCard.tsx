@@ -8,38 +8,47 @@ import { useCart } from "../context/CartContext";
 interface ProductProps {
   id: number;
   name: string;
-  price: number;
-  image: string;
+  price?: number;
+  image?: string; // optional
   description: string;
   available?: boolean;
-  featured?: boolean;
+  featured?: boolean;       // Jaby's Favorite
+  bestSelling?: boolean;    // Top 3 per category
 }
 
-const ProductCard: React.FC<ProductProps> = ({
+interface ProductCardProps extends ProductProps {
+  isBundle?: boolean;
+}
+
+const ProductCard: React.FC<ProductCardProps> = ({
   id,
   name,
-  price,
+  price = 0,
   image,
   description,
   available = true,
   featured = false,
+  bestSelling = false,
+  isBundle = false,
 }) => {
   const [quantity, setQuantity] = useState(1);
-  const [added, setAdded] = useState(false); // NEW: animation state
+  const [added, setAdded] = useState(false);
   const { addToCart } = useCart();
 
   const handleAddToCart = () => {
     if (!available) return;
 
-    // ✅ Pass the image to the cart so it shows in MiniCartDrawer
-    addToCart({ id, name, price, quantity, image });
+    addToCart({
+      id,
+      name,
+      price,
+      quantity,
+      image: image || "/images/placeholder.jpg",
+    });
+    setAdded(true);
+    setQuantity(1);
 
-    setAdded(true); // Trigger animation
-    setQuantity(1); // Reset quantity after adding
-
-    setTimeout(() => {
-      setAdded(false); // Reset button after 1.5s
-    }, 1500);
+    setTimeout(() => setAdded(false), 1500);
   };
 
   return (
@@ -48,18 +57,44 @@ const ProductCard: React.FC<ProductProps> = ({
       whileHover={{ scale: 1.03 }}
       transition={{ duration: 0.3 }}
     >
-      {/* Featured badge */}
-      {featured && (
-        <span className="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded">
-          Best Seller
+      {/* Badges */}
+      <div className="absolute top-2 left-2 flex space-x-2">
+        {bestSelling && (
+          <span className="bg-red-500 text-white text-xs px-2 py-1 rounded">
+            🔥 Best Seller
+          </span>
+        )}
+
+        {featured && (
+          <span className="bg-blue-500 text-white text-xs px-2 py-1 rounded">
+            ⭐ Jaby's Favorite
+          </span>
+        )}
+      </div>
+
+      {isBundle && (
+        <span className="absolute top-2 right-2 bg-yellow-500 text-white text-xs px-2 py-1 rounded">
+          🎁 Bundle
         </span>
       )}
 
       {/* Product Image */}
-      <div className="relative h-48 w-full">
-        <Image src={image} alt={name} fill className="object-cover" />
-      </div>
+      {image ? (
+        <div className="relative h-48 w-full">
+          <Image
+            src={image}
+            alt={name}
+            fill
+            className="object-cover"
+          />
+        </div>
+      ) : (
+        <div className="relative h-48 w-full bg-gray-200 flex items-center justify-center">
+          <span className="text-gray-500">No Image</span>
+        </div>
+      )}
 
+      {/* Product Details */}
       <div className="p-4 flex-1 flex flex-col justify-between">
         <div>
           <h3 className="text-lg font-semibold text-gray-800">{name}</h3>
@@ -67,12 +102,10 @@ const ProductCard: React.FC<ProductProps> = ({
         </div>
 
         <div className="mt-4 flex flex-col space-y-2">
-          {/* Price */}
           <span className="text-gray-900 font-bold">
             {`KES ${price.toLocaleString()}`}
           </span>
 
-          {/* Quantity Selector */}
           <div className="flex items-center space-x-2">
             <button
               onClick={() => setQuantity(Math.max(1, quantity - 1))}
@@ -81,9 +114,7 @@ const ProductCard: React.FC<ProductProps> = ({
             >
               -
             </button>
-
             <span>{quantity}</span>
-
             <button
               onClick={() => setQuantity(quantity + 1)}
               className="px-2 py-1 bg-gray-200 rounded hover:bg-gray-300 transition"
@@ -93,7 +124,6 @@ const ProductCard: React.FC<ProductProps> = ({
             </button>
           </div>
 
-          {/* Add to Cart */}
           <button
             onClick={handleAddToCart}
             disabled={!available}
@@ -105,11 +135,7 @@ const ProductCard: React.FC<ProductProps> = ({
                 : "bg-green-900 text-white hover:bg-green-600 cursor-pointer"
             }`}
           >
-            {!available
-              ? "Out of Stock"
-              : added
-              ? "Added ✓"
-              : "Add to Cart"}
+            {!available ? "Out of Stock" : added ? "Added ✓" : "Add to Cart"}
           </button>
         </div>
       </div>
