@@ -12,7 +12,8 @@ interface FeaturedProductsProps {
     image?: string;
     description: string;
     available?: boolean;
-    featured?: boolean;
+    jabysFavorite?: boolean; // updated
+    bestSelling?: boolean;   // optional, if you want badges
   }[];
 }
 
@@ -20,14 +21,18 @@ const FeaturedProducts: React.FC<FeaturedProductsProps> = ({ products }) => {
   const carouselRef = useRef<HTMLDivElement>(null);
   const [isHovering, setIsHovering] = useState(false);
 
-  const displayProducts = [...products, ...products]; // duplicate for seamless scroll
+  // Only show products marked as Jaby's Favorite
+  const featuredProducts = products.filter((p) => p.jabysFavorite);
+
+  // Duplicate for seamless scroll
+  const displayProducts = [...featuredProducts, ...featuredProducts];
 
   useEffect(() => {
     const carousel = carouselRef.current;
     if (!carousel) return;
 
     let scrollPos = 0;
-    const speed = 0.5; // pixels per frame, adjust for slower/faster
+    const speed = 0.5; // pixels per frame
     let animationFrame: number;
 
     const animate = () => {
@@ -46,7 +51,9 @@ const FeaturedProducts: React.FC<FeaturedProductsProps> = ({ products }) => {
 
   return (
     <div className="mt-6">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center">⭐ Jaby’s Favorite</h2>
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center">
+        ⭐ Jaby’s Favorite
+      </h2>
 
       <div
         ref={carouselRef}
@@ -68,7 +75,8 @@ const FeaturedProducts: React.FC<FeaturedProductsProps> = ({ products }) => {
               image={product.image || "/images/placeholder.jpg"}
               description={product.description}
               available={product.available}
-              featured={product.featured}
+              jabysFavorite={product.jabysFavorite}
+              bestSelling={product.bestSelling} // optional
             />
           </motion.div>
         ))}
