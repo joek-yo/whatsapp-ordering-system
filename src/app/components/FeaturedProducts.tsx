@@ -4,7 +4,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import ProductCard from "./ProductCard";
 
-interface FeaturedProductsProps {
+interface JabysFavoritesProps {
   products: {
     id: number;
     name: string;
@@ -12,20 +12,20 @@ interface FeaturedProductsProps {
     image?: string;
     description: string;
     available?: boolean;
-    jabysFavorite?: boolean; // updated
-    bestSelling?: boolean;   // optional, if you want badges
+    jabysFavorite?: boolean;
+    bestSelling?: boolean;
   }[];
 }
 
-const FeaturedProducts: React.FC<FeaturedProductsProps> = ({ products }) => {
+const JabysFavorites: React.FC<JabysFavoritesProps> = ({ products }) => {
   const carouselRef = useRef<HTMLDivElement>(null);
   const [isHovering, setIsHovering] = useState(false);
 
   // Only show products marked as Jaby's Favorite
-  const featuredProducts = products.filter((p) => p.jabysFavorite);
+  const favorites = products.filter(p => p.jabysFavorite);
 
   // Duplicate for seamless scroll
-  const displayProducts = [...featuredProducts, ...featuredProducts];
+  const displayProducts = [...favorites, ...favorites];
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -49,15 +49,17 @@ const FeaturedProducts: React.FC<FeaturedProductsProps> = ({ products }) => {
     return () => cancelAnimationFrame(animationFrame);
   }, [isHovering]);
 
+  if (favorites.length === 0) return null;
+
   return (
-    <div className="mt-6">
+    <section className="mt-12 px-4 sm:px-6 lg:px-8">
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center">
-        ⭐ Jaby’s Favorite
+        ⭐ Jaby’s Favorites
       </h2>
 
       <div
         ref={carouselRef}
-        className="flex space-x-6 overflow-x-hidden cursor-grab"
+        className="flex space-x-6 overflow-x-auto cursor-grab"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
       >
@@ -76,13 +78,13 @@ const FeaturedProducts: React.FC<FeaturedProductsProps> = ({ products }) => {
               description={product.description}
               available={product.available}
               jabysFavorite={product.jabysFavorite}
-              bestSelling={product.bestSelling} // optional
+              bestSelling={product.bestSelling}
             />
           </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
-export default FeaturedProducts;
+export default JabysFavorites;

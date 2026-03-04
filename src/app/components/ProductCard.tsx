@@ -45,7 +45,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     >
       {/* BADGES */}
       {(bestSelling || jabysFavorite || isBundle) && (
-        <div className="absolute top-2 left-2 flex flex-col space-y-1 z-50">
+        <div className="absolute top-2 left-2 flex flex-col space-y-1 z-10">
           {bestSelling && <span className="bg-red-500 text-white text-xs px-2 py-1 rounded">🔥 Best Seller</span>}
           {jabysFavorite && <span className="bg-blue-500 text-white text-xs px-2 py-1 rounded">⭐ Jaby's Favorite</span>}
           {isBundle && <span className="bg-gray-700 text-white text-xs px-2 py-1 rounded">🎁 Bundle</span>}

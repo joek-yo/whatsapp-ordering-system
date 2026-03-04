@@ -254,7 +254,7 @@ const Header: React.FC = () => {
         </AnimatePresence>
       </header>
 
-      <div className="h-20"></div>
+      <div className="h-4"></div>
     </>
   );
 };
