@@ -29,7 +29,7 @@ const MenuPage: React.FC = () => {
       {/* Page Title */}
       <div className="mb-10">
         <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-6">
-          Menu Selection
+         Freshly Crafted for You
         </h1>
 
         {/* Category Bar */}

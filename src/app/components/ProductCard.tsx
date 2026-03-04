@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { useCart } from "../context/CartContext";
 
@@ -30,19 +30,32 @@ const ProductCard: React.FC<ProductCardProps> = ({
   bestSelling = false,
   isBundle = false,
 }) => {
-  const [quantity, setQuantity] = useState(1);
-  const { addToCart } = useCart();
+  const { cart, addToCart, updateQuantity, removeFromCart } = useCart();
+
+  // Check if the product is already in the cart
+  const cartItem = cart.find((item) => item.id === id);
+  const quantity = cartItem ? cartItem.quantity : 0;
 
   const handleAddToCart = () => {
     if (!available) return;
-    addToCart({ id, name, price, quantity, image: image || "/images/placeholder.jpg" });
-    setQuantity(1);
+    if (!cartItem) {
+      addToCart({ id, name, price, quantity: 1, image: image || "/images/placeholder.jpg" });
+    } else {
+      updateQuantity(id, quantity + 1);
+    }
+  };
+
+  const handleDecrease = () => {
+    if (!cartItem) return;
+    if (quantity <= 1) {
+      removeFromCart(id);
+    } else {
+      updateQuantity(id, quantity - 1);
+    }
   };
 
   return (
-    <div
-      className="bg-white rounded-xl shadow-md flex flex-col relative hover:scale-105 transition-transform duration-200"
-    >
+    <div className="bg-white rounded-xl shadow-md flex flex-col relative hover:scale-105 transition-transform duration-200">
       {/* BADGES */}
       {(bestSelling || jabysFavorite || isBundle) && (
         <div className="absolute top-2 left-2 flex flex-col space-y-1 z-10">
@@ -73,34 +86,38 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <div className="mt-4 flex flex-col space-y-2">
           <span className="text-gray-900 font-bold">{`KES ${price.toLocaleString()}`}</span>
 
-          {/* QUANTITY */}
+          {/* QUANTITY CONTROLS */}
           <div className="flex items-center space-x-2">
             <button
-              onClick={() => setQuantity(Math.max(1, quantity - 1))}
+              onClick={handleDecrease}
               className="px-2 py-1 bg-gray-200 rounded hover:bg-gray-300"
-              disabled={!available}
+              disabled={!available || quantity === 0}
             >
               -
             </button>
             <span>{quantity}</span>
             <button
-              onClick={() => setQuantity(quantity + 1)}
-              className="px-2 py-1 bg-gray-200 rounded hover:bg-gray-300"
+              onClick={handleAddToCart}
+              className={`px-2 py-1 rounded transition ${
+                !available ? "bg-gray-300 text-gray-600 cursor-not-allowed" : "bg-green-900 text-white hover:bg-green-700"
+              }`}
               disabled={!available}
             >
               +
             </button>
           </div>
 
-          {/* ADD TO CART */}
-          <button
-            onClick={handleAddToCart}
-            disabled={!available}
-            className={`mt-2 px-4 py-2 font-semibold rounded-lg shadow-md transition-all duration-200
-              ${!available ? "bg-gray-300 text-gray-600 cursor-not-allowed" : "bg-green-900 text-white hover:bg-green-700"}`}
-          >
-            {!available ? "Out of Stock" : "Add to Cart"}
-          </button>
+          {/* ADD TO CART BUTTON */}
+          {!cartItem && (
+            <button
+              onClick={handleAddToCart}
+              disabled={!available}
+              className={`mt-2 px-4 py-2 font-semibold rounded-lg shadow-md transition-all duration-200
+                ${!available ? "bg-gray-300 text-gray-600 cursor-not-allowed" : "bg-green-900 text-white hover:bg-green-700"}`}
+            >
+              {!available ? "Out of Stock" : "Add to Cart"}
+            </button>
+          )}
         </div>
       </div>
     </div>

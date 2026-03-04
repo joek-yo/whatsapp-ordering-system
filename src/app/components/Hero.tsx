@@ -1,3 +1,4 @@
+// src/app/components/Hero.tsx
 "use client";
 
 import React from "react";
@@ -5,6 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { getBusinessData } from "@/lib/getBusinessData";
+import { FaWhatsapp } from "react-icons/fa"; // WhatsApp icon
 
 const Hero: React.FC = () => {
   const business = getBusinessData();
@@ -33,6 +35,12 @@ const Hero: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
+        {/* Brand Name */}
+        <h2 className="text-3xl md:text-4xl font-bold mb-2 drop-shadow-lg text-yellow-300">
+          {business.name || "House Of Jaby"}
+        </h2>
+
+        {/* Tagline / Slogan */}
         <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
           {business.tagline || "Crafted Moments The Jaby Way"}
         </h1>
@@ -55,7 +63,8 @@ const Hero: React.FC = () => {
             rel="noopener noreferrer"
             className="px-8 py-4 bg-green-500 text-white font-semibold rounded-lg shadow-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
           >
-            🔥 Order via WhatsApp
+            <FaWhatsapp className="text-white w-5 h-5" />
+            Order via WhatsApp
           </Link>
         </div>
       </motion.div>
