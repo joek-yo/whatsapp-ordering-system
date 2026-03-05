@@ -58,25 +58,13 @@
     }
   ],
   "bundles": [
-    {
-      "id": 501,
-      "name": "Birthday Combo",
-      "price": 4500,
-      "image": "/images/birthday-bundle.jpg",
-      "description": "1kg cake + 6 cupcakes + 1 juice",
-      "available": true,
-      "jabysFavorite": true,
-      "bestSelling": false
-    },
-    {
-      "id": 502,
-      "name": "Family Treat Pack",
-      "price": 3500,
-      "image": "/images/family-bundle.jpg",
-      "description": "Chocolate cake + 4 drinks + fries",
-      "available": true,
-      "jabysFavorite": false,
-      "bestSelling": true
-    }
+    { "id": 501, "name": "Birthday Combo", "price": 4500, "image": "/images/birthday-bundle.jpg", "description": "1kg cake + 6 cupcakes + 1 juice", "available": true, "jabysFavorite": true, "bestSelling": false },
+    { "id": 502, "name": "Family Treat Pack", "price": 3500, "image": "/images/family-bundle.jpg", "description": "Chocolate cake + 4 drinks + fries", "available": true, "jabysFavorite": false, "bestSelling": true },
+    { "id": 503, "name": "Weekend Chill Bundle", "price": 4200, "image": "/images/weekend-chill.jpg", "description": "Cake + 2 drinks + pastries", "available": true, "jabysFavorite": false, "bestSelling": false },
+    { "id": 504, "name": "Morning Boost Pack", "price": 2800, "image": "/images/morning-boost.jpg", "description": "Fresh juice + pastry combo", "available": true, "jabysFavorite": false, "bestSelling": false },
+    { "id": 505, "name": "Couple's Delight Bundle", "price": 5000, "image": "/images/couples-delight.jpg", "description": "Chocolate cake + cupcakes + drinks for two", "available": true, "jabysFavorite": false, "bestSelling": false },
+    { "id": 506, "name": "Family Movie Night", "price": 4600, "image": "/images/family-movie.jpg", "description": "Cake + popcorn + 4 drinks", "available": true, "jabysFavorite": false, "bestSelling": false },
+    { "id": 507, "name": "Tea Time Special", "price": 3000, "image": "/images/tea-time.jpg", "description": "Pastry + tea or coffee combo", "available": true, "jabysFavorite": false, "bestSelling": false },
+    { "id": 508, "name": "Kids Birthday Pack", "price": 3800, "image": "/images/kids-birthday.jpg", "description": "Mini cake + cupcakes + juice", "available": true, "jabysFavorite": false, "bestSelling": false }
   ]
 }

@@ -1,4 +1,3 @@
-// src/app/page.tsx
 "use client";
 
 import React from "react";
@@ -26,6 +25,11 @@ const Pages: React.FC = () => {
     .filter((i) => i.bestSelling)
     .slice(0, 3);
 
+  // -----------------------------
+  // Featured Bundles (Favorites or Best Sellers)
+  // -----------------------------
+  const featuredBundles = bundles.filter(b => b.jabysFavorite || b.bestSelling);
+
   return (
     <main className="pt-16 space-y-24">
       {/* Hero Section */}
@@ -49,9 +53,9 @@ const Pages: React.FC = () => {
       )}
 
       {/* Special / Featured Bundles Section */}
-      {bundles.length > 0 && (
+      {featuredBundles.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FeaturedBundles bundles={bundles} />
+          <FeaturedBundles bundles={featuredBundles} />
         </section>
       )}
     </main>

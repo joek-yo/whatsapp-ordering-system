@@ -6,11 +6,20 @@ import ProductCard from "../components/ProductCard";
 import { useCart } from "../context/CartContext";
 
 const MenuPage: React.FC = () => {
-  const { categories } = businessData;
+  const { categories, bundles } = businessData; // get bundles
   const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
   const { addToCart } = useCart();
 
-  const activeCategory = categories.find(cat => cat.name === selectedCategory);
+  // Combine categories with Bundles as a new category
+  const menuCategories = [
+    ...categories,
+    { id: "bundles-category", name: "Bundles", items: bundles },
+  ];
+
+  const activeCategory = menuCategories.find(
+    (cat) => cat.name === selectedCategory
+  );
+
   const placeholderImage = "/images/placeholder.jpg";
 
   // Sort products by priority: bestSelling first, then jabysFavorite
@@ -29,17 +38,17 @@ const MenuPage: React.FC = () => {
       {/* Page Title */}
       <div className="mb-10">
         <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-6">
-         Freshly Crafted for You
+          Freshly Crafted for You
         </h1>
 
         {/* Category Bar */}
         <div className="flex justify-center overflow-x-auto no-scrollbar py-4">
           <div className="flex bg-gray-200 rounded-full shadow-sm divide-x divide-gray-300
                           w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
-            {categories.map((cat, index) => {
+            {menuCategories.map((cat, index) => {
               const isActive = selectedCategory === cat.name;
               const isFirst = index === 0;
-              const isLast = index === categories.length - 1;
+              const isLast = index === menuCategories.length - 1;
 
               return (
                 <button
@@ -61,7 +70,7 @@ const MenuPage: React.FC = () => {
 
       {/* Products Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
-        {sortedProducts?.map(product => (
+        {sortedProducts?.map((product) => (
           <ProductCard
             key={product.id}
             id={product.id}
@@ -72,6 +81,7 @@ const MenuPage: React.FC = () => {
             available={product.available}
             jabysFavorite={product.jabysFavorite}
             bestSelling={product.bestSelling}
+            isBundle={selectedCategory === "Bundles"} // optional badge
             onAddToCart={() =>
               addToCart({
                 id: product.id,
