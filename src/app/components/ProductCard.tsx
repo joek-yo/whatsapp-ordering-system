@@ -17,6 +17,7 @@ interface ProductProps {
 
 interface ProductCardProps extends ProductProps {
   isBundle?: boolean;
+  onAddToCart?: () => void; // <-- added this
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -29,6 +30,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   jabysFavorite = false,
   bestSelling = false,
   isBundle = false,
+  onAddToCart, // <-- added here
 }) => {
   const { cart, addToCart, updateQuantity, removeFromCart } = useCart();
 
@@ -36,8 +38,15 @@ const ProductCard: React.FC<ProductCardProps> = ({
   const cartItem = cart.find((item) => item.id === id);
   const quantity = cartItem ? cartItem.quantity : 0;
 
+  // Use onAddToCart from props if passed, otherwise fallback to default
   const handleAddToCart = () => {
     if (!available) return;
+
+    if (onAddToCart) {
+      onAddToCart();
+      return;
+    }
+
     if (!cartItem) {
       addToCart({ id, name, price, quantity: 1, image: image || "/images/placeholder.jpg" });
     } else {
