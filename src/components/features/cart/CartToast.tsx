@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useCart } from "../context/CartContext";
+import { useCart } from "@/context/CartContext";
 
 const CartToast: React.FC = () => {
   const { showToast, toastMessage } = useCart();

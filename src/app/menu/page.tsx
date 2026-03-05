@@ -1,16 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
-import businessData from "../../../data/menu.json";
-import ProductCard from "../components/ProductCard";
-import { useCart } from "../context/CartContext";
+import businessData from "@/data/menu.json";
+import ProductCard from "@/components/home/ProductCard";
+import { useCart } from "@/context/CartContext";
 
 const MenuPage: React.FC = () => {
-  const { categories, bundles } = businessData; // get bundles
+  const { categories, bundles } = businessData;
   const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
   const { addToCart } = useCart();
 
-  // Combine categories with Bundles as a new category
   const menuCategories = [
     ...categories,
     { id: "bundles-category", name: "Bundles", items: bundles },
@@ -22,7 +21,6 @@ const MenuPage: React.FC = () => {
 
   const placeholderImage = "/images/placeholder.jpg";
 
-  // Sort products by priority: bestSelling first, then jabysFavorite
   const sortedProducts = activeCategory?.items
     .slice()
     .sort((a, b) => {
@@ -35,13 +33,11 @@ const MenuPage: React.FC = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-      {/* Page Title */}
       <div className="mb-10">
         <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-6">
           Freshly Crafted for You
         </h1>
 
-        {/* Category Bar */}
         <div className="flex justify-center overflow-x-auto no-scrollbar py-4">
           <div className="flex bg-gray-200 rounded-full shadow-sm divide-x divide-gray-300
                           w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
@@ -68,7 +64,6 @@ const MenuPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Products Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
         {sortedProducts?.map((product) => (
           <ProductCard
@@ -81,7 +76,7 @@ const MenuPage: React.FC = () => {
             available={product.available}
             jabysFavorite={product.jabysFavorite}
             bestSelling={product.bestSelling}
-            isBundle={selectedCategory === "Bundles"} // optional badge
+            isBundle={selectedCategory === "Bundles"}
             onAddToCart={() =>
               addToCart({
                 id: product.id,

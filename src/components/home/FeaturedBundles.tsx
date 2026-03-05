@@ -1,6 +1,6 @@
 "use client";
 
-import ProductCard from "./ProductCard";
+import ProductCard from "@/components/home/ProductCard";
 
 interface FeaturedBundlesProps {
   bundles: any[];
@@ -23,8 +23,8 @@ const FeaturedBundles: React.FC<FeaturedBundlesProps> = ({ bundles }) => {
             image={bundle.image || "/images/placeholder.jpg"}
             description={bundle.description}
             available={bundle.available}
-            jabysFavorite={bundle.jabysFavorite || false} // updated to match ProductCard
-            bestSelling={bundle.bestSelling || false}     // updated to match ProductCard
+            jabysFavorite={bundle.jabysFavorite || false}
+            bestSelling={bundle.bestSelling || false}
             isBundle
           />
         ))}

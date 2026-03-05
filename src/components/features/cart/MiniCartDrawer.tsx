@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { useCart } from "../context/CartContext";
+import { useCart } from "@/context/CartContext";
 
 const MiniCartDrawer: React.FC = () => {
   const { cart, removeFromCart, updateQuantity, isDrawerOpen, toggleDrawer } = useCart();
@@ -39,7 +39,6 @@ const MiniCartDrawer: React.FC = () => {
 
   return (
     <>
-      {/* Mobile Floating Cart Button */}
       {isMobile && cart.length > 0 && (
         <button
           onClick={() => toggleDrawer(true)}
@@ -52,7 +51,6 @@ const MiniCartDrawer: React.FC = () => {
       <AnimatePresence>
         {isDrawerOpen && (
           <>
-            {/* Overlay */}
             <motion.div
               className="fixed inset-0 bg-black/40 z-40"
               initial={{ opacity: 0 }}
@@ -61,7 +59,6 @@ const MiniCartDrawer: React.FC = () => {
               onClick={() => toggleDrawer(false)}
             />
 
-            {/* Drawer */}
             <motion.div
               className="fixed top-0 right-0 h-full w-full sm:w-[320px] md:w-[360px] lg:w-[420px] xl:w-[460px] bg-white shadow-2xl z-50 flex flex-col"
               initial={{ x: "100%" }}
@@ -71,7 +68,6 @@ const MiniCartDrawer: React.FC = () => {
               onMouseEnter={() => setHovering(true)}
               onMouseLeave={() => setHovering(false)}
             >
-              {/* Header */}
               <div className="flex justify-between items-center p-6 border-b">
                 <h2 className="text-xl font-bold text-gray-800">
                   Your Cart ({cart.length})
@@ -81,14 +77,12 @@ const MiniCartDrawer: React.FC = () => {
                 </button>
               </div>
 
-              {/* Items */}
               <div className="flex-1 overflow-y-auto p-6 space-y-6">
                 {cart.length === 0 ? (
                   <p className="text-gray-500 text-center">Your cart is empty.</p>
                 ) : (
                   cart.map(item => (
                     <div key={item.id} className="flex items-center space-x-4 border-b pb-4">
-                      {/* Product Image */}
                       <div className="w-16 h-16 rounded-md overflow-hidden flex-shrink-0">
                         {item.image ? (
                           <Image
@@ -105,7 +99,6 @@ const MiniCartDrawer: React.FC = () => {
                         )}
                       </div>
 
-                      {/* Product Info */}
                       <div className="flex-1">
                         <h4 className="font-semibold text-gray-800">{item.name}</h4>
                         <p className="text-sm text-gray-500">KES {item.price.toLocaleString()}</p>
@@ -126,7 +119,6 @@ const MiniCartDrawer: React.FC = () => {
                         </div>
                       </div>
 
-                      {/* Price & Remove */}
                       <div className="text-right">
                         <p className="font-bold text-gray-800">
                           KES {(item.price * item.quantity).toLocaleString()}
@@ -143,7 +135,6 @@ const MiniCartDrawer: React.FC = () => {
                 )}
               </div>
 
-              {/* Footer */}
               <div className="p-6 border-t space-y-4">
                 <div className="flex justify-between font-semibold text-lg">
                   <span>Subtotal</span>

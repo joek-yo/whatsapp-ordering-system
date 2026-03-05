@@ -1,3 +1,4 @@
+// src/components/layout/Footer.tsx
 "use client";
 
 import React from "react";
@@ -14,7 +15,7 @@ const Footer: React.FC = () => {
         {/* Client Business Info + Slogan */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <h3 className="text-2xl font-bold text-yellow-500 mb-1">{business.name}</h3>
-          <p className="text-gray-400 italic mb-3">Crafted Moments The Jaby Way</p>
+          <p className="text-gray-400 italic mb-3">{business.tagline || "Crafted Moments The Jaby Way"}</p>
 
           <p className="text-gray-400 mb-1">
             Phone: 
@@ -77,7 +78,7 @@ const Footer: React.FC = () => {
           &copy; {new Date().getFullYear()} {business.name}. All rights reserved.
         </span>
 
-        {/* Builnex Credit */}
+        {/* Powered by Builnex */}
         <span className="mt-2 md:mt-0 text-xs text-gray-400">
           Powered by <span className="font-semibold text-gray-300">Builnex</span> — 
           Digital Systems for Local Businesses • 

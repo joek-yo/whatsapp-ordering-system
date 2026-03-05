@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import menuData from "../../../data/menu.json"; // correct relative path
-import ProductCard from "./ProductCard";        // same folder
+import menuData from "@/data/menu.json";
+import ProductCard from "@/components/home/ProductCard";
 
 const BestSellers: React.FC = () => {
   const categories = menuData.categories;
@@ -17,7 +17,6 @@ const BestSellers: React.FC = () => {
 
   return (
     <section className="mb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      {/* Section Title */}
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold">🔥 Best Sellers</h2>
         <p className="text-gray-500 mt-2 uppercase tracking-widest text-sm">
@@ -25,7 +24,6 @@ const BestSellers: React.FC = () => {
         </p>
       </div>
 
-      {/* Grid: 1 per row mobile, 2 per row sm, 3 per row lg */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {bestSellers.map((product) => (
           <ProductCard

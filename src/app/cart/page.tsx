@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { useCart } from "../context/CartContext";
+import { useCart } from "@/context/CartContext";
 
 const CartPage: React.FC = () => {
   const { cart, removeFromCart, updateQuantity } = useCart();

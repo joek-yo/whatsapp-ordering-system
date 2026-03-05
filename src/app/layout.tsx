@@ -1,11 +1,13 @@
 "use client";
 
 import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import MiniCartDrawer from "./components/MiniCartDrawer";
-import CartToast from "./components/CartToast";
-import { CartProvider } from "./context/CartContext";
+
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import MiniCartDrawer from "@/components/features/cart/MiniCartDrawer";
+import CartToast from "@/components/features/cart/CartToast";
+
+import { CartProvider } from "@/context/CartContext";
 
 export default function RootLayout({
   children,

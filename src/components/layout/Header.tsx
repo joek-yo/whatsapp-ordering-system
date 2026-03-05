@@ -14,7 +14,7 @@ import {
   FaUtensils,
   FaEnvelope,
 } from "react-icons/fa";
-import { useCart } from "../context/CartContext";
+import { useCart } from "@/context/CartContext";
 import { getBusinessData } from "@/lib/getBusinessData";
 
 const Header: React.FC = () => {
@@ -23,36 +23,29 @@ const Header: React.FC = () => {
   const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // 🔒 Prevent body scroll when drawer is open
   useEffect(() => {
-    if (mobileMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+    document.body.style.overflow = mobileMenuOpen ? "hidden" : "auto";
   }, [mobileMenuOpen]);
 
   return (
     <>
       <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          {/* ========== MOBILE LAYOUT ========== */}
+          {/* MOBILE */}
           <div className="md:hidden">
-            {/* Row 1: Brand + Cart */}
             <div className="flex justify-between items-center py-3">
               <div className="flex items-center space-x-2">
                 {business.logo && (
                   <Image
                     src={business.logo}
-                    alt={business.name}
+                    alt={business.name || "Brand"}
                     width={50}
                     height={50}
                     className="object-contain"
                   />
                 )}
                 <span className="text-2xl font-bold text-gray-800 whitespace-nowrap">
-                  {business.name}
+                  {business.name || "Brand"}
                 </span>
               </div>
 
@@ -69,7 +62,6 @@ const Header: React.FC = () => {
               </button>
             </div>
 
-            {/* Row 2: Hamburger + Chat + Call */}
             <div className="flex justify-between items-center pb-3">
               <button
                 onClick={() => setMobileMenuOpen(true)}
@@ -80,7 +72,7 @@ const Header: React.FC = () => {
 
               <div className="flex space-x-2">
                 <a
-                  href={`https://wa.me/${business.phone}`}
+                  href={`https://wa.me/${business.phone || ""}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center px-3 py-2 bg-green-500 text-white rounded-lg shadow"
@@ -89,7 +81,7 @@ const Header: React.FC = () => {
                 </a>
 
                 <a
-                  href={`tel:${business.phone}`}
+                  href={`tel:${business.phone || ""}`}
                   className="flex items-center px-3 py-2 bg-green-700 text-white rounded-lg shadow"
                 >
                   <FaPhoneAlt className="mr-2" /> Call
@@ -98,25 +90,23 @@ const Header: React.FC = () => {
             </div>
           </div>
 
-          {/* ========== DESKTOP LAYOUT ========== */}
+          {/* DESKTOP */}
           <div className="hidden md:flex items-center justify-between py-4">
-            {/* Left: Brand */}
             <div className="flex items-center space-x-2">
               {business.logo && (
                 <Image
                   src={business.logo}
-                  alt={business.name}
+                  alt={business.name || "Brand"}
                   width={50}
                   height={50}
                   className="object-contain"
                 />
               )}
               <span className="text-2xl font-bold text-gray-800 whitespace-nowrap">
-                {business.name}
+                {business.name || "Brand"}
               </span>
             </div>
 
-            {/* Center: Nav */}
             <nav className="flex items-center space-x-8 font-medium">
               <Link href="/" className="hover:text-green-700 transition">
                 Home
@@ -129,10 +119,9 @@ const Header: React.FC = () => {
               </Link>
             </nav>
 
-            {/* Right: Chat + Call + Cart */}
             <div className="flex items-center space-x-3">
               <a
-                href={`https://wa.me/${business.phone}`}
+                href={`https://wa.me/${business.phone || ""}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center px-3 py-2 bg-green-500 text-white rounded-lg shadow"
@@ -141,7 +130,7 @@ const Header: React.FC = () => {
               </a>
 
               <a
-                href={`tel:${business.phone}`}
+                href={`tel:${business.phone || ""}`}
                 className="flex items-center px-3 py-2 bg-green-700 text-white rounded-lg shadow"
               >
                 <FaPhoneAlt className="mr-2" /> Call
@@ -162,11 +151,10 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        {/* ========== MOBILE SLIDE-OUT DRAWER ========== */}
+        {/* MOBILE DRAWER */}
         <AnimatePresence>
           {mobileMenuOpen && (
             <>
-              {/* Overlay */}
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 0.5 }}
@@ -176,7 +164,6 @@ const Header: React.FC = () => {
                 onClick={() => setMobileMenuOpen(false)}
               />
 
-              {/* Drawer */}
               <motion.div
                 initial={{ x: "-100%" }}
                 animate={{ x: 0 }}
@@ -184,27 +171,24 @@ const Header: React.FC = () => {
                 transition={{ type: "tween", duration: 0.25 }}
                 className="fixed top-0 left-0 h-full w-72 bg-white shadow-2xl z-50 flex flex-col p-6"
               >
-                {/* Close Button */}
                 <div className="flex justify-end mb-4">
                   <button onClick={() => setMobileMenuOpen(false)}>
                     <FaTimes size={22} />
                   </button>
                 </div>
 
-                {/* Brand */}
                 <div className="flex items-center space-x-2 mb-8">
                   {business.logo && (
                     <Image
                       src={business.logo}
-                      alt={business.name}
+                      alt={business.name || "Brand"}
                       width={40}
                       height={40}
                     />
                   )}
-                  <span className="text-xl font-bold">{business.name}</span>
+                  <span className="text-xl font-bold">{business.name || "Brand"}</span>
                 </div>
 
-                {/* Drawer Nav */}
                 <nav className="flex flex-col space-y-6 text-lg font-medium">
                   <Link
                     href="/"
@@ -213,7 +197,6 @@ const Header: React.FC = () => {
                   >
                     <FaHome /> <span>Home</span>
                   </Link>
-
                   <Link
                     href="/menu"
                     onClick={() => setMobileMenuOpen(false)}
@@ -221,7 +204,6 @@ const Header: React.FC = () => {
                   >
                     <FaUtensils /> <span>Menu</span>
                   </Link>
-
                   <Link
                     href="/contact"
                     onClick={() => setMobileMenuOpen(false)}
@@ -231,10 +213,9 @@ const Header: React.FC = () => {
                   </Link>
                 </nav>
 
-                {/* Chat + Call at Bottom */}
                 <div className="mt-auto flex flex-col space-y-3">
                   <a
-                    href={`https://wa.me/${business.phone}`}
+                    href={`https://wa.me/${business.phone || ""}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center px-3 py-2 bg-green-500 text-white rounded-lg shadow hover:bg-green-600 transition"
@@ -242,7 +223,7 @@ const Header: React.FC = () => {
                     <FaWhatsapp className="mr-2" /> Chat
                   </a>
                   <a
-                    href={`tel:${business.phone}`}
+                    href={`tel:${business.phone || ""}`}
                     className="flex items-center justify-center px-3 py-2 bg-green-700 text-white rounded-lg shadow hover:bg-green-800 transition"
                   >
                     <FaPhoneAlt className="mr-2" /> Call
@@ -254,7 +235,8 @@ const Header: React.FC = () => {
         </AnimatePresence>
       </header>
 
-      <div className="h-4"></div>
+      {/* Spacer for fixed header */}
+      <div className="h-20"></div>
     </>
   );
 };

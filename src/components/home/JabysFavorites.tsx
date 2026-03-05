@@ -1,9 +1,8 @@
-// src/app/components/JabysFavorites.tsx
 "use client";
 
 import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import ProductCard from "./ProductCard";
+import ProductCard from "@/components/home/ProductCard";
 
 interface JabysFavoritesProps {
   products: {
@@ -15,6 +14,7 @@ interface JabysFavoritesProps {
     available?: boolean;
     jabysFavorite?: boolean;
     bestSelling?: boolean;
+    isBundle?: boolean;
   }[];
 }
 
