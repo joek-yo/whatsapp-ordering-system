@@ -11,19 +11,22 @@ const Hero: React.FC = () => {
   const business = getBusinessData();
 
   return (
-    <section className="w-full h-[75vh] relative flex items-center justify-center">
+    <section className="w-screen max-w-none h-[75vh] relative flex items-center justify-center overflow-hidden">
+      {/* Hero Background Image */}
       {business.banner && (
         <Image
           src={business.banner}
           alt="Hero Banner"
           fill
-          className="object-cover"
+          className="absolute top-0 left-0 w-full h-full object-cover"
           priority
         />
       )}
 
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
 
+      {/* Content */}
       <motion.div
         className="relative z-10 text-center px-6 text-white pt-16 md:pt-20"
         initial={{ opacity: 0, y: 50 }}
