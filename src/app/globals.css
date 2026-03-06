@@ -20,26 +20,12 @@ html, body {
    Root variables
 ------------------------------*/
 :root {
-  --color-background: #F8F5F0;
-  --color-foreground: #1C1A18;
-  --color-primary: #3B2A23;
-  --color-accent: #C6A75E;
-  --color-muted: #EAE4DA;
-  --color-border: #D8D0C5;
-}
-
-/* -----------------------------
-   Dark mode
-------------------------------*/
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: #12100F;
-    --color-foreground: #F3EDE6;
-    --color-primary: #2B1F1A;
-    --color-accent: #D4B46A;
-    --color-muted: #1C1816;
-    --color-border: #2A2320;
-  }
+  --color-background: #F8F5F0; /* Soft champagne cream */
+  --color-foreground: #1C1A18; /* Deep espresso */
+  --color-primary: #3B2A23;    /* Rich chocolate brown */
+  --color-accent: #C6A75E;     /* Elegant muted gold */
+  --color-muted: #EAE4DA;      /* Warm ivory */
+  --color-border: #D8D0C5;     /* Subtle beige */
 }
 
 /* -----------------------------
