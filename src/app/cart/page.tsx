@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { useCart } from "@/context/CartContext";
+import { generateWhatsAppCheckout } from "@/lib/whatsapp";
 
 const CartPage: React.FC = () => {
   const { cart, removeFromCart, updateQuantity } = useCart();
@@ -11,6 +12,14 @@ const CartPage: React.FC = () => {
     (total, item) => total + item.price * item.quantity,
     0
   );
+
+  const handleCheckout = () => {
+    const url = generateWhatsAppCheckout(cart);
+
+    if (!url) return;
+
+    window.open(url, "_blank");
+  };
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
@@ -22,14 +31,12 @@ const CartPage: React.FC = () => {
         <p className="text-gray-500 text-center">Your cart is empty.</p>
       ) : (
         <div className="space-y-8">
+
           {/* Items */}
           <div className="space-y-6">
             {cart.map((item) => (
-              <div
-                key={item.id}
-                className="flex items-start gap-4 border-b pb-6"
-              >
-                {/* Image */}
+              <div key={item.id} className="flex items-start gap-4 border-b pb-6">
+
                 <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-md overflow-hidden flex-shrink-0">
                   {item.image ? (
                     <Image
@@ -46,17 +53,13 @@ const CartPage: React.FC = () => {
                   )}
                 </div>
 
-                {/* Info */}
                 <div className="flex-1">
-                  <h3 className="font-semibold text-lg">
-                    {item.name}
-                  </h3>
+                  <h3 className="font-semibold text-lg">{item.name}</h3>
 
                   <p className="text-sm text-gray-500 mt-1">
                     KES {item.price.toLocaleString()}
                   </p>
 
-                  {/* Quantity Controls */}
                   <div className="flex items-center gap-3 mt-3">
                     <button
                       onClick={() =>
@@ -82,7 +85,6 @@ const CartPage: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Right Side */}
                 <div className="text-right">
                   <p className="font-bold text-lg">
                     KES {(item.price * item.quantity).toLocaleString()}
@@ -99,14 +101,18 @@ const CartPage: React.FC = () => {
             ))}
           </div>
 
-          {/* Summary Card */}
+          {/* Summary */}
           <div className="bg-gray-50 rounded-xl p-6 border">
             <div className="flex justify-between text-lg font-semibold mb-6">
               <span>Subtotal</span>
               <span>KES {subtotal.toLocaleString()}</span>
             </div>
 
-            <button className="w-full py-3 bg-green-900 text-white rounded-lg font-semibold hover:bg-green-700 transition">
+            <button
+              onClick={handleCheckout}
+              disabled={cart.length === 0}
+              className="w-full py-3 bg-green-900 text-white rounded-lg font-semibold hover:bg-green-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
+            >
               Checkout via WhatsApp
             </button>
           </div>

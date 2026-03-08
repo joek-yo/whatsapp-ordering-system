@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { useCart } from "@/context/CartContext";
+import { generateWhatsAppCheckout } from "@/lib/whatsapp";
 
 const MiniCartDrawer: React.FC = () => {
   const { cart, removeFromCart, updateQuantity, isDrawerOpen, toggleDrawer } = useCart();
@@ -35,6 +36,18 @@ const MiniCartDrawer: React.FC = () => {
   const handleViewCart = () => {
     setViewClicked(true);
     setTimeout(() => toggleDrawer(false), 250);
+  };
+
+  // ⭐ Premium WhatsApp Checkout
+  const handleCheckout = () => {
+    const url = generateWhatsAppCheckout(cart);
+
+    if (!url) return;
+
+    window.open(url, "_blank");
+
+    // optional UX improvement
+    toggleDrawer(false);
   };
 
   return (
@@ -72,7 +85,10 @@ const MiniCartDrawer: React.FC = () => {
                 <h2 className="text-xl font-bold text-gray-800">
                   Your Cart ({cart.length})
                 </h2>
-                <button onClick={() => toggleDrawer(false)} className="text-gray-500 hover:text-black text-xl">
+                <button
+                  onClick={() => toggleDrawer(false)}
+                  className="text-gray-500 hover:text-black text-xl"
+                >
                   ✕
                 </button>
               </div>
@@ -81,7 +97,7 @@ const MiniCartDrawer: React.FC = () => {
                 {cart.length === 0 ? (
                   <p className="text-gray-500 text-center">Your cart is empty.</p>
                 ) : (
-                  cart.map(item => (
+                  cart.map((item) => (
                     <div key={item.id} className="flex items-center space-x-4 border-b pb-4">
                       <div className="w-16 h-16 rounded-md overflow-hidden flex-shrink-0">
                         {item.image ? (
@@ -101,7 +117,10 @@ const MiniCartDrawer: React.FC = () => {
 
                       <div className="flex-1">
                         <h4 className="font-semibold text-gray-800">{item.name}</h4>
-                        <p className="text-sm text-gray-500">KES {item.price.toLocaleString()}</p>
+                        <p className="text-sm text-gray-500">
+                          KES {item.price.toLocaleString()}
+                        </p>
+
                         <div className="flex items-center mt-2 space-x-2">
                           <button
                             onClick={() => updateQuantity(item.id, item.quantity - 1)}
@@ -109,7 +128,9 @@ const MiniCartDrawer: React.FC = () => {
                           >
                             -
                           </button>
+
                           <span>{item.quantity}</span>
+
                           <button
                             onClick={() => updateQuantity(item.id, item.quantity + 1)}
                             className="px-2 bg-gray-200 rounded"
@@ -123,6 +144,7 @@ const MiniCartDrawer: React.FC = () => {
                         <p className="font-bold text-gray-800">
                           KES {(item.price * item.quantity).toLocaleString()}
                         </p>
+
                         <button
                           onClick={() => removeFromCart(item.id)}
                           className="text-xs text-red-500 hover:underline mt-1"
@@ -145,14 +167,20 @@ const MiniCartDrawer: React.FC = () => {
                   href="/cart"
                   onClick={handleViewCart}
                   className={`block text-center py-3 rounded-lg font-semibold transition ${
-                    viewClicked ? "bg-green-900 text-white" : "border border-green-900 text-green-900 hover:bg-green-50"
+                    viewClicked
+                      ? "bg-green-900 text-white"
+                      : "border border-green-900 text-green-900 hover:bg-green-50"
                   }`}
                 >
                   View Full Cart
                 </Link>
 
-                <button className="w-full py-3 bg-green-900 text-white rounded-lg font-semibold hover:bg-green-700 transition">
-                  Checkout
+                <button
+                  onClick={handleCheckout}
+                  disabled={cart.length === 0}
+                  className="w-full py-3 bg-green-900 text-white rounded-lg font-semibold hover:bg-green-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  Checkout via WhatsApp
                 </button>
               </div>
             </motion.div>
