@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useCart } from "@/context/CartContext";
@@ -20,7 +19,10 @@ const MiniCartDrawer: React.FC = () => {
   const [viewClicked, setViewClicked] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  const subtotal = cart.reduce((total, item) => total + item.price * item.quantity, 0);
+  const subtotal = cart.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
+  );
 
   // Detect mobile viewport
   useEffect(() => {
@@ -40,11 +42,11 @@ const MiniCartDrawer: React.FC = () => {
     }
   }, [isDrawerOpen, hovering, isMobile, toggleDrawer]);
 
-  // ✅ Go to review page first
+  // ✅ Go to full cart page instead of Review page
   const handleViewCart = () => {
     setViewClicked(true);
     toggleDrawer(false);
-    router.push("/review");
+    router.push("/cart"); // changed from "/review" to "/cart"
   };
 
   return (
@@ -160,7 +162,7 @@ const MiniCartDrawer: React.FC = () => {
                   <span>KES {subtotal.toLocaleString()}</span>
                 </div>
 
-                {/* ✅ Go to review page instead of WhatsApp checkout */}
+                {/* ✅ Go to full cart page instead of WhatsApp checkout */}
                 <button
                   onClick={handleViewCart}
                   className={`w-full py-3 rounded-lg font-semibold transition ${
@@ -169,7 +171,7 @@ const MiniCartDrawer: React.FC = () => {
                       : "border border-green-900 text-green-900 hover:bg-green-50"
                   }`}
                 >
-                  Review Cart Order
+                  View Full Cart
                 </button>
               </div>
             </motion.div>
