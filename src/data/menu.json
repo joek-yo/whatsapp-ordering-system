@@ -4,9 +4,18 @@
     "logo": "/images/logo.png",
     "phone": "+254759090305",
     "tagline": "Order easily via WhatsApp",
+    "slogan": "Crafted Moments The Jaby Way",
     "banner": "/images/hero-banner.jpg",
+    "drawerBanner": "/images/drawer-hero.jpg",
     "currency": "KES",
     "email": "esthermbaire231@gmail.com"
+  },
+  "hero": {
+    "subtitle": "Crafted Moments The Jaby Way",
+    "image": "/images/hero-banner.jpg",
+    "ctaText": "Order instantly via WhatsApp",
+    "status": "Open Now",
+    "location": "Nairobi"
   },
   "categories": [
     {
