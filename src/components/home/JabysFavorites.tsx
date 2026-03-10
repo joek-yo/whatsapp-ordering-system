@@ -59,6 +59,8 @@ const JabysFavorites: React.FC<JabysFavoritesProps> = ({ products }) => {
         className="flex space-x-6 overflow-x-auto scrollbar-hide py-4"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
+        onTouchStart={() => setIsHovering(true)}   // ✅ Mobile touch pause
+        onTouchEnd={() => setIsHovering(false)}    // ✅ Resume after swipe
       >
         {favorites.map((product) => (
           <motion.div
