@@ -20,7 +20,7 @@ interface JabysFavoritesProps {
 
 const JabysFavorites: React.FC<JabysFavoritesProps> = ({ products }) => {
   const carouselRef = useRef<HTMLDivElement>(null);
-  const [isHovering, setIsHovering] = useState(false);
+  const [isInteracting, setIsInteracting] = useState(false);
 
   const favorites = products.filter(p => p.jabysFavorite);
 
@@ -33,7 +33,7 @@ const JabysFavorites: React.FC<JabysFavoritesProps> = ({ products }) => {
     let animationFrame: number;
 
     const animate = () => {
-      if (!isHovering) {
+      if (!isInteracting) {
         scrollPos += speed;
         if (scrollPos >= carousel.scrollWidth - carousel.clientWidth) scrollPos = 0;
         carousel.scrollLeft = scrollPos;
@@ -44,9 +44,13 @@ const JabysFavorites: React.FC<JabysFavoritesProps> = ({ products }) => {
     animationFrame = requestAnimationFrame(animate);
 
     return () => cancelAnimationFrame(animationFrame);
-  }, [isHovering]);
+  }, [isInteracting]);
 
   if (favorites.length === 0) return null;
+
+  // Handle both mouse hover and touch events
+  const handleStartInteraction = () => setIsInteracting(true);
+  const handleEndInteraction = () => setIsInteracting(false);
 
   return (
     <section className="mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,11 +60,11 @@ const JabysFavorites: React.FC<JabysFavoritesProps> = ({ products }) => {
 
       <div
         ref={carouselRef}
-        className="flex space-x-6 overflow-x-auto scrollbar-hide py-4"
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => setIsHovering(false)}
-        onTouchStart={() => setIsHovering(true)}   // ✅ Mobile touch pause
-        onTouchEnd={() => setIsHovering(false)}    // ✅ Resume after swipe
+        className="flex space-x-6 overflow-x-auto scrollbar-hide py-4 touch-pan-x"
+        onMouseEnter={handleStartInteraction}
+        onMouseLeave={handleEndInteraction}
+        onTouchStart={handleStartInteraction}
+        onTouchEnd={handleEndInteraction}
       >
         {favorites.map((product) => (
           <motion.div
