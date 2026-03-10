@@ -26,7 +26,6 @@ const ReviewPage: React.FC = () => {
     0
   );
 
-  // Load previously saved session data
   useEffect(() => {
     const stored = sessionStorage.getItem("customOrderData");
     if (stored) {
@@ -50,7 +49,6 @@ const ReviewPage: React.FC = () => {
       return;
     }
 
-    // Send full order details via WhatsApp
     openWhatsApp({
       cart,
       customOrder,
@@ -68,7 +66,6 @@ const ReviewPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 pb-32 pt-[100px] sm:pt-[80px]">
-      {/* Header */}
       <div className="px-4 pt-2 pb-6 text-center">
         <h1 className="text-2xl font-bold">Review Your Order</h1>
         <p className="text-sm text-gray-500 mt-1">
@@ -93,10 +90,25 @@ const ReviewPage: React.FC = () => {
           <div className="bg-white rounded-xl border p-5 space-y-3">
             <h2 className="font-semibold">Cart Items</h2>
             {cart.map((item) => (
-              <div key={item.id} className="flex justify-between text-sm">
-                <span>
+              <div
+                key={item.id}
+                className="flex items-center justify-between text-sm space-x-3"
+              >
+                {/* Product Image */}
+                {item.image && (
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-16 h-16 object-cover rounded"
+                  />
+                )}
+
+                {/* Name and quantity */}
+                <span className="flex-1">
                   {item.quantity} × {item.name}
                 </span>
+
+                {/* Price */}
                 <span className="font-medium">
                   KES {(item.price * item.quantity).toLocaleString()}
                 </span>
@@ -139,14 +151,11 @@ const ReviewPage: React.FC = () => {
             <button
               onClick={() => setOrderType("pickup")}
               className={`flex-1 py-3 rounded-lg border font-medium ${
-                orderType === "pickup"
-                  ? "bg-green-900 text-white"
-                  : "bg-white"
+                orderType === "pickup" ? "bg-green-900 text-white" : "bg-white"
               }`}
             >
               Pickup
             </button>
-
             <button
               onClick={() => setOrderType("delivery")}
               className={`flex-1 py-3 rounded-lg border font-medium ${
