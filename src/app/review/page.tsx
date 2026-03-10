@@ -2,8 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import { useCart } from "@/context/CartContext";
-import { generateOrderNumber } from "@/lib/generateOrderNumber";
-import { generateWhatsAppMessage } from "@/lib/generateWhatsAppMessage";
 import { openWhatsApp } from "@/lib/whatsapp";
 
 const ReviewPage: React.FC = () => {
@@ -52,19 +50,18 @@ const ReviewPage: React.FC = () => {
       return;
     }
 
-    const orderNumber = generateOrderNumber();
-
-    const message = generateWhatsAppMessage({
-      orderNumber,
+    // Send full order details via WhatsApp
+    openWhatsApp({
       cart,
       customOrder,
       orderNotes,
       orderType,
       deliveryLocation,
       scheduleTime,
+      customerName: name,
+      customerPhone: phone,
     });
 
-    openWhatsApp(message);
     clearCart();
     sessionStorage.removeItem("customOrderData");
   };
@@ -189,14 +186,12 @@ const ReviewPage: React.FC = () => {
       </div>
 
       {/* Floating WhatsApp Button */}
-      <div className="fixed bottom-20 right-5 z-50">
-        <button
-          onClick={handleSendOrder}
-          className="py-4 px-6 text-lg font-semibold rounded-full bg-green-900 text-white shadow-lg hover:bg-green-700 transition"
-        >
-          Send Order via WhatsApp
-        </button>
-      </div>
+      <button
+        onClick={handleSendOrder}
+        className="fixed bottom-5 right-5 z-50 rounded-full p-4 bg-green-900 text-white shadow-lg text-lg hover:bg-green-700 transition"
+      >
+        📩 WhatsApp
+      </button>
     </div>
   );
 };
