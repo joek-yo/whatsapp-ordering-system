@@ -50,19 +50,20 @@ interface CartContextType {
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export const CartProvider = ({ children }: { children: React.ReactNode }) => {
+  // ------------------------- STATE -------------------------
   const [cart, setCart] = useState<CartItem[]>([]);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState("");
   const [isMobile, setIsMobile] = useState(false);
 
-  // NEW ORDER STATES
   const [customOrder, setCustomOrder] = useState("");
   const [orderNotes, setOrderNotes] = useState("");
   const [orderType, setOrderType] = useState<OrderType>("pickup");
   const [deliveryLocation, setDeliveryLocation] = useState("");
   const [scheduleTime, setScheduleTime] = useState("");
 
+  // ------------------------- INIT -------------------------
   // Detect mobile viewport
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -71,7 +72,41 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Add item to cart
+  // Load cart and order data from localStorage on first render
+  useEffect(() => {
+    const savedCart = localStorage.getItem("cart");
+    const savedOrder = localStorage.getItem("orderData");
+
+    if (savedCart) setCart(JSON.parse(savedCart));
+    if (savedOrder) {
+      const data = JSON.parse(savedOrder);
+      setCustomOrder(data.customOrder || "");
+      setOrderNotes(data.orderNotes || "");
+      setOrderType(data.orderType || "pickup");
+      setDeliveryLocation(data.deliveryLocation || "");
+      setScheduleTime(data.scheduleTime || "");
+    }
+  }, []);
+
+  // ------------------------- PERSIST -------------------------
+  // Save cart whenever it changes
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
+  // Save order details whenever they change
+  useEffect(() => {
+    const data = {
+      customOrder,
+      orderNotes,
+      orderType,
+      deliveryLocation,
+      scheduleTime,
+    };
+    localStorage.setItem("orderData", JSON.stringify(data));
+  }, [customOrder, orderNotes, orderType, deliveryLocation, scheduleTime]);
+
+  // ------------------------- CART ACTIONS -------------------------
   const addToCart = (item: CartItem, options?: { silent?: boolean }) => {
     setCart(prev => {
       const existing = prev.find(p => p.id === item.id);
@@ -85,7 +120,6 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
       return [...prev, item];
     });
 
-    // Show toast only if not silent
     if (!options?.silent) {
       if (isMobile) {
         setToastMessage(`✅ ${item.name} added to cart`);
@@ -97,30 +131,25 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     }
   };
 
-  // Remove item from cart
-  const removeFromCart = (id: number) => {
-    setCart(prev => prev.filter(item => item.id !== id));
-  };
-
-  // Update item quantity
+  const removeFromCart = (id: number) => setCart(prev => prev.filter(item => item.id !== id));
   const updateQuantity = (id: number, quantity: number) => {
     if (quantity < 1) return;
     setCart(prev => prev.map(item => (item.id === id ? { ...item, quantity } : item)));
   };
 
-  // Toggle drawer
   const toggleDrawer = (state?: boolean) => {
     if (typeof state === "boolean") setIsDrawerOpen(state);
     else setIsDrawerOpen(prev => !prev);
   };
 
-  // Clear cart after order
   const clearCart = () => {
     setCart([]);
     setCustomOrder("");
     setOrderNotes("");
     setDeliveryLocation("");
     setScheduleTime("");
+    localStorage.removeItem("cart");
+    localStorage.removeItem("orderData");
   };
 
   return (
@@ -134,22 +163,16 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
         toggleDrawer,
         showToast,
         toastMessage,
-
         customOrder,
         setCustomOrder,
-
         orderNotes,
         setOrderNotes,
-
         orderType,
         setOrderType,
-
         deliveryLocation,
         setDeliveryLocation,
-
         scheduleTime,
         setScheduleTime,
-
         clearCart,
       }}
     >
