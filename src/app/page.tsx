@@ -1,13 +1,12 @@
+// src/app/page.tsx
 "use client";
 
 import React from "react";
-
-import Hero from "@/components/home/Hero";
-import FeaturedBundles from "@/components/home/FeaturedBundles";
-import JabysFavorites from "@/components/home/JabysFavorites";
-import ProductCard from "@/components/home/ProductCard";
-
-import menuData from "@/data/menu.json";
+import Hero from "./components/Hero";
+import FeaturedBundles from "./components/FeaturedBundles";
+import ProductCard from "./components/ProductCard";
+import JabysFavorites from "./components/JabysFavorites";
+import menuData from "../../data/menu.json";
 
 const Pages: React.FC = () => {
   const { categories, bundles } = menuData;
@@ -27,49 +26,34 @@ const Pages: React.FC = () => {
     .filter((i) => i.bestSelling)
     .slice(0, 3);
 
-  // -----------------------------
-  // Featured Bundles
-  // -----------------------------
-  const featuredBundles = bundles.filter(
-    (b) => b.jabysFavorite || b.bestSelling
-  );
-
   return (
-    <main>
-      {/* ---------------- Hero Section ---------------- */}
+    <main className="pt-16 space-y-24">
+      {/* Hero Section */}
       <Hero />
 
-      {/* ---------------- Page Content ---------------- */}
-      <div className="pt-16 space-y-24">
+      {/* Best Sellers Section */}
+      {bestSellers.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-6 text-center">🔥 Best Sellers</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {bestSellers.map((product) => (
+              <ProductCard key={product.id} {...product} />
+            ))}
+          </div>
+        </section>
+      )}
 
-        {/* ---------------- Best Sellers ---------------- */}
-        {bestSellers.length > 0 && (
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold mb-6 text-center">
-              🔥 Best Sellers
-            </h2>
+      {/* Jaby's Favorites Carousel */}
+      {jabyFavorites.length > 0 && (
+        <JabysFavorites products={jabyFavorites} />
+      )}
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {bestSellers.map((product) => (
-                <ProductCard key={product.id} {...product} />
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* ---------------- Jaby's Favorites ---------------- */}
-        {jabyFavorites.length > 0 && (
-          <JabysFavorites products={jabyFavorites} />
-        )}
-
-        {/* ---------------- Featured Bundles ---------------- */}
-        {featuredBundles.length > 0 && (
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <FeaturedBundles bundles={featuredBundles} />
-          </section>
-        )}
-
-      </div>
+      {/* Special / Featured Bundles Section */}
+      {bundles.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <FeaturedBundles bundles={bundles} />
+        </section>
+      )}
     </main>
   );
 };

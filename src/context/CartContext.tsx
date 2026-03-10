@@ -8,19 +8,43 @@ interface CartItem {
   name: string;
   price: number;
   quantity: number;
-  image?: string; // optional
+  image?: string;
 }
+
+// Order type
+type OrderType = "pickup" | "delivery";
 
 // Context interface
 interface CartContextType {
   cart: CartItem[];
+
   addToCart: (item: CartItem) => void;
   removeFromCart: (id: number) => void;
   updateQuantity: (id: number, quantity: number) => void;
+
   isDrawerOpen: boolean;
   toggleDrawer: (state?: boolean) => void;
+
   showToast: boolean;
   toastMessage: string;
+
+  // NEW ORDER STATES
+  customOrder: string;
+  setCustomOrder: (value: string) => void;
+
+  orderNotes: string;
+  setOrderNotes: (value: string) => void;
+
+  orderType: OrderType;
+  setOrderType: (type: OrderType) => void;
+
+  deliveryLocation: string;
+  setDeliveryLocation: (location: string) => void;
+
+  scheduleTime: string;
+  setScheduleTime: (time: string) => void;
+
+  clearCart: () => void;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -31,6 +55,13 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState("");
   const [isMobile, setIsMobile] = useState(false);
+
+  // NEW ORDER STATES
+  const [customOrder, setCustomOrder] = useState("");
+  const [orderNotes, setOrderNotes] = useState("");
+  const [orderType, setOrderType] = useState<OrderType>("pickup");
+  const [deliveryLocation, setDeliveryLocation] = useState("");
+  const [scheduleTime, setScheduleTime] = useState("");
 
   // Detect mobile viewport
   useEffect(() => {
@@ -74,10 +105,19 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     setCart(prev => prev.map(item => (item.id === id ? { ...item, quantity } : item)));
   };
 
-  // Toggle drawer open/close
+  // Toggle drawer
   const toggleDrawer = (state?: boolean) => {
     if (typeof state === "boolean") setIsDrawerOpen(state);
     else setIsDrawerOpen(prev => !prev);
+  };
+
+  // Clear cart after order
+  const clearCart = () => {
+    setCart([]);
+    setCustomOrder("");
+    setOrderNotes("");
+    setDeliveryLocation("");
+    setScheduleTime("");
   };
 
   return (
@@ -91,6 +131,23 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
         toggleDrawer,
         showToast,
         toastMessage,
+
+        customOrder,
+        setCustomOrder,
+
+        orderNotes,
+        setOrderNotes,
+
+        orderType,
+        setOrderType,
+
+        deliveryLocation,
+        setDeliveryLocation,
+
+        scheduleTime,
+        setScheduleTime,
+
+        clearCart,
       }}
     >
       {children}

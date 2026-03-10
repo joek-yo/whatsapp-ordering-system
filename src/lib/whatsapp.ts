@@ -25,3 +25,11 @@ export function generateWhatsAppCheckout(cart: any[]) {
 
   return `https://wa.me/${business.phone}?text=${encoded}`;
 }
+
+// Open WhatsApp in a new tab using the checkout URL
+export function openWhatsApp(cart: any[]) {
+  const url = generateWhatsAppCheckout(cart);
+  if (url) {
+    window.open(url, "_blank");
+  }
+}

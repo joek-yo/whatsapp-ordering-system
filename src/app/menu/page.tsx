@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import businessData from "@/data/menu.json";
 import ProductCard from "@/components/home/ProductCard";
 import { useCart } from "@/context/CartContext";
@@ -10,6 +11,7 @@ const MenuPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
   const { addToCart } = useCart();
 
+  // Combine regular categories and bundles
   const menuCategories = [
     ...categories,
     { id: "bundles-category", name: "Bundles", items: bundles },
@@ -21,6 +23,7 @@ const MenuPage: React.FC = () => {
 
   const placeholderImage = "/images/placeholder.jpg";
 
+  // Sort products: bestSelling first, then JabysFavorites
   const sortedProducts = activeCategory?.items
     .slice()
     .sort((a, b) => {
@@ -33,14 +36,18 @@ const MenuPage: React.FC = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+      {/* PAGE TITLE */}
       <div className="mb-10">
         <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-6">
           Freshly Crafted for You
         </h1>
 
+        {/* CATEGORY TABS */}
         <div className="flex justify-center overflow-x-auto no-scrollbar py-4">
-          <div className="flex bg-gray-200 rounded-full shadow-sm divide-x divide-gray-300
-                          w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
+          <div
+            className="flex bg-gray-200 rounded-full shadow-sm divide-x divide-gray-300
+                      w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl"
+          >
             {menuCategories.map((cat, index) => {
               const isActive = selectedCategory === cat.name;
               const isFirst = index === 0;
@@ -64,6 +71,22 @@ const MenuPage: React.FC = () => {
         </div>
       </div>
 
+      {/* CUSTOM ORDER CTA */}
+      <div className="max-w-4xl mx-auto mb-12">
+        <div className="border rounded-2xl p-8 text-center bg-green-50 border-green-200">
+          <h2 className="text-2xl font-bold mb-3">Can't Find What You Want?</h2>
+          <p className="text-gray-600 mb-6">
+            Request cakes, catering, bulk meals, or any special order and we’ll prepare it for you.
+          </p>
+          <Link href="/custom-order">
+            <button className="px-6 py-3 bg-green-900 text-white rounded-xl font-semibold hover:bg-green-700 transition">
+              🎂 Request Custom Order
+            </button>
+          </Link>
+        </div>
+      </div>
+
+      {/* PRODUCTS GRID */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
         {sortedProducts?.map((product) => (
           <ProductCard
