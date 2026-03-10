@@ -4,11 +4,18 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useCart } from "@/context/CartContext";
-import { generateWhatsAppCheckout } from "@/lib/whatsapp";
 
 const MiniCartDrawer: React.FC = () => {
-  const { cart, removeFromCart, updateQuantity, isDrawerOpen, toggleDrawer } = useCart();
+  const {
+    cart,
+    removeFromCart,
+    updateQuantity,
+    isDrawerOpen,
+    toggleDrawer,
+  } = useCart();
+  const router = useRouter();
   const [hovering, setHovering] = useState(false);
   const [viewClicked, setViewClicked] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -33,21 +40,11 @@ const MiniCartDrawer: React.FC = () => {
     }
   }, [isDrawerOpen, hovering, isMobile, toggleDrawer]);
 
+  // ✅ Go to review page first
   const handleViewCart = () => {
     setViewClicked(true);
-    setTimeout(() => toggleDrawer(false), 250);
-  };
-
-  // ⭐ Premium WhatsApp Checkout
-  const handleCheckout = () => {
-    const url = generateWhatsAppCheckout(cart);
-
-    if (!url) return;
-
-    window.open(url, "_blank");
-
-    // optional UX improvement
     toggleDrawer(false);
+    router.push("/review");
   };
 
   return (
@@ -163,24 +160,16 @@ const MiniCartDrawer: React.FC = () => {
                   <span>KES {subtotal.toLocaleString()}</span>
                 </div>
 
-                <Link
-                  href="/cart"
+                {/* ✅ Go to review page instead of WhatsApp checkout */}
+                <button
                   onClick={handleViewCart}
-                  className={`block text-center py-3 rounded-lg font-semibold transition ${
+                  className={`w-full py-3 rounded-lg font-semibold transition ${
                     viewClicked
                       ? "bg-green-900 text-white"
                       : "border border-green-900 text-green-900 hover:bg-green-50"
                   }`}
                 >
-                  View Full Cart
-                </Link>
-
-                <button
-                  onClick={handleCheckout}
-                  disabled={cart.length === 0}
-                  className="w-full py-3 bg-green-900 text-white rounded-lg font-semibold hover:bg-green-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  Checkout via WhatsApp
+                  Review Cart Order
                 </button>
               </div>
             </motion.div>

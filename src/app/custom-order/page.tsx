@@ -17,7 +17,6 @@ const CustomOrderPage: React.FC = () => {
   const [notes, setNotes] = useState("");
 
   const handleProceed = () => {
-    // Basic validation
     if (!name || !phone || !customOrder) {
       alert("Please fill in your name, phone, and custom order.");
       return;
@@ -28,122 +27,144 @@ const CustomOrderPage: React.FC = () => {
       return;
     }
 
-    // Store custom order & notes in CartContext so Review page can access
     setCartCustomOrder(customOrder);
     setCartOrderNotes(notes);
 
-    // Save extra customer info in localStorage/sessionStorage to pass to Review
-    sessionStorage.setItem("customOrderData", JSON.stringify({
-      name,
-      phone,
-      orderType,
-      location,
-      scheduleTime,
-    }));
+    sessionStorage.setItem(
+      "customOrderData",
+      JSON.stringify({
+        name,
+        phone,
+        orderType,
+        location,
+        scheduleTime,
+      })
+    );
 
-    // Redirect to Review page
     router.push("/review");
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 space-y-10">
-      <h1 className="text-3xl font-bold text-center">Request a Custom Order</h1>
+    <div className="min-h-screen bg-gray-50 py-14 px-4 sm:px-6">
 
-      {/* Customer Info */}
-      <div className="border rounded-xl p-6 space-y-4">
-        <h2 className="font-semibold text-lg">Customer Details</h2>
+      <div className="max-w-3xl mx-auto space-y-10">
 
-        <input
-          type="text"
-          placeholder="Your Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          className="w-full border rounded-lg p-3"
-        />
-
-        <input
-          type="tel"
-          placeholder="Phone Number"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-          className="w-full border rounded-lg p-3"
-        />
-      </div>
-
-      {/* Order Type */}
-      <div className="border rounded-xl p-6 space-y-4">
-        <h2 className="font-semibold text-lg">Order Type</h2>
-        <div className="flex gap-4">
-          <button
-            onClick={() => setOrderType("pickup")}
-            className={`px-4 py-2 rounded-lg border ${
-              orderType === "pickup" ? "bg-green-900 text-white" : "bg-white"
-            }`}
-          >
-            Pickup
-          </button>
-          <button
-            onClick={() => setOrderType("delivery")}
-            className={`px-4 py-2 rounded-lg border ${
-              orderType === "delivery" ? "bg-green-900 text-white" : "bg-white"
-            }`}
-          >
-            Delivery
-          </button>
+        {/* HEADER */}
+        <div className="text-center space-y-3">
+          <h1 className="text-4xl font-bold tracking-tight">
+            Request a Custom Order
+          </h1>
+          <p className="text-gray-500">
+            Cakes, catering, special meals, or bulk orders — describe what you need.
+          </p>
         </div>
 
-        {orderType === "delivery" && (
+        {/* CUSTOMER INFO */}
+        <div className="bg-white rounded-2xl shadow-sm border p-8 space-y-5">
+          <h2 className="text-lg font-semibold">Customer Details</h2>
+
           <input
             type="text"
-            placeholder="Delivery location or Google Maps link"
-            value={location}
-            onChange={(e) => setLocation(e.target.value)}
-            className="w-full border rounded-lg p-3"
+            placeholder="Your Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full rounded-lg border px-4 py-3 focus:ring-2 focus:ring-green-700 focus:border-green-700 outline-none"
           />
-        )}
-      </div>
 
-      {/* Schedule */}
-      <div className="border rounded-xl p-6 space-y-4">
-        <h2 className="font-semibold text-lg">Schedule (Optional)</h2>
-        <input
-          type="text"
-          placeholder="Example: Saturday 4PM"
-          value={scheduleTime}
-          onChange={(e) => setScheduleTime(e.target.value)}
-          className="w-full border rounded-lg p-3"
-        />
-      </div>
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            className="w-full rounded-lg border px-4 py-3 focus:ring-2 focus:ring-green-700 focus:border-green-700 outline-none"
+          />
+        </div>
 
-      {/* Custom Order */}
-      <div className="border rounded-xl p-6 space-y-4 bg-gray-50">
-        <h2 className="font-semibold text-lg">Custom Order Details</h2>
-        <textarea
-          value={customOrder}
-          onChange={(e) => setCustomOrder(e.target.value)}
-          placeholder="Example: 5kg vanilla birthday cake with strawberry filling and gold decorations."
-          className="w-full border rounded-lg p-3 min-h-[120px]"
-        />
-      </div>
+        {/* ORDER TYPE */}
+        <div className="bg-white rounded-2xl shadow-sm border p-8 space-y-5">
+          <h2 className="text-lg font-semibold">Order Type</h2>
 
-      {/* Notes */}
-      <div className="border rounded-xl p-6 space-y-4">
-        <h2 className="font-semibold text-lg">Extra Notes (Optional)</h2>
-        <textarea
-          value={notes}
-          onChange={(e) => setNotes(e.target.value)}
-          placeholder="Example: Less sugar, add candles."
-          className="w-full border rounded-lg p-3 min-h-[100px]"
-        />
-      </div>
+          <div className="flex gap-4">
+            <button
+              onClick={() => setOrderType("pickup")}
+              className={`flex-1 py-3 rounded-lg border font-medium transition ${
+                orderType === "pickup"
+                  ? "bg-green-900 text-white border-green-900"
+                  : "bg-white hover:bg-gray-50"
+              }`}
+            >
+              Pickup
+            </button>
 
-      {/* Proceed to Review */}
-      <button
-        onClick={handleProceed}
-        className="w-full py-4 bg-green-900 text-white rounded-xl font-semibold hover:bg-green-700 transition"
-      >
-        Review Order
-      </button>
+            <button
+              onClick={() => setOrderType("delivery")}
+              className={`flex-1 py-3 rounded-lg border font-medium transition ${
+                orderType === "delivery"
+                  ? "bg-green-900 text-white border-green-900"
+                  : "bg-white hover:bg-gray-50"
+              }`}
+            >
+              Delivery
+            </button>
+          </div>
+
+          {orderType === "delivery" && (
+            <input
+              type="text"
+              placeholder="Delivery location or Google Maps link"
+              value={location}
+              onChange={(e) => setLocation(e.target.value)}
+              className="w-full rounded-lg border px-4 py-3 focus:ring-2 focus:ring-green-700 focus:border-green-700 outline-none"
+            />
+          )}
+        </div>
+
+        {/* SCHEDULE */}
+        <div className="bg-white rounded-2xl shadow-sm border p-8 space-y-5">
+          <h2 className="text-lg font-semibold">Schedule (Optional)</h2>
+
+          <input
+            type="text"
+            placeholder="Example: Saturday 4PM"
+            value={scheduleTime}
+            onChange={(e) => setScheduleTime(e.target.value)}
+            className="w-full rounded-lg border px-4 py-3 focus:ring-2 focus:ring-green-700 focus:border-green-700 outline-none"
+          />
+        </div>
+
+        {/* CUSTOM ORDER */}
+        <div className="bg-green-50 border border-green-200 rounded-2xl p-8 space-y-5">
+          <h2 className="text-lg font-semibold">Custom Order Details</h2>
+
+          <textarea
+            value={customOrder}
+            onChange={(e) => setCustomOrder(e.target.value)}
+            placeholder="Example: 5kg vanilla birthday cake with strawberry filling and gold decorations."
+            className="w-full rounded-lg border px-4 py-3 min-h-[130px] focus:ring-2 focus:ring-green-700 focus:border-green-700 outline-none"
+          />
+        </div>
+
+        {/* NOTES */}
+        <div className="bg-white rounded-2xl shadow-sm border p-8 space-y-5">
+          <h2 className="text-lg font-semibold">Extra Notes (Optional)</h2>
+
+          <textarea
+            value={notes}
+            onChange={(e) => setNotes(e.target.value)}
+            placeholder="Example: Less sugar, add candles."
+            className="w-full rounded-lg border px-4 py-3 min-h-[110px] focus:ring-2 focus:ring-green-700 focus:border-green-700 outline-none"
+          />
+        </div>
+
+        {/* SUBMIT BUTTON */}
+        <button
+          onClick={handleProceed}
+          className="w-full py-4 text-lg font-semibold rounded-xl bg-green-900 text-white hover:bg-green-700 transition shadow-sm"
+        >
+          Review Order
+        </button>
+
+      </div>
     </div>
   );
 };

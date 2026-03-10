@@ -28,7 +28,7 @@ const ReviewPage: React.FC = () => {
     0
   );
 
-  // Prefill from sessionStorage if coming from CustomOrderPage
+  // Load previously saved session data
   useEffect(() => {
     const stored = sessionStorage.getItem("customOrderData");
     if (stored) {
@@ -46,6 +46,7 @@ const ReviewPage: React.FC = () => {
       alert("Please enter your name and phone number.");
       return;
     }
+
     if (orderType === "delivery" && !deliveryLocation) {
       alert("Please provide a delivery location.");
       return;
@@ -69,70 +70,78 @@ const ReviewPage: React.FC = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 space-y-10">
-      <h1 className="text-3xl font-bold text-center">Review Your Order</h1>
+    <div className="min-h-screen bg-gray-50 pb-32 pt-[100px] sm:pt-[80px]">
+      {/* Header */}
+      <div className="px-4 pt-2 pb-6 text-center">
+        <h1 className="text-2xl font-bold">Review Your Order</h1>
+        <p className="text-sm text-gray-500 mt-1">
+          Confirm everything before sending to the restaurant
+        </p>
+      </div>
 
-      {/* Custom Order */}
-      {customOrder && (
-        <div className="border rounded-xl p-6 bg-gray-50 space-y-2">
-          <h2 className="font-semibold text-lg">Custom Order</h2>
-          <p className="text-sm text-gray-600">{customOrder}</p>
-          <p className="text-sm text-gray-500">
-            Price will be confirmed by the restaurant.
-          </p>
+      <div className="max-w-xl mx-auto px-4 space-y-6 pb-32">
+        {/* Custom Order */}
+        {customOrder && (
+          <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+            <h2 className="font-semibold mb-2">Custom Order</h2>
+            <p className="text-sm text-gray-700">{customOrder}</p>
+            <p className="text-xs text-gray-500 mt-1">
+              Price will be confirmed by the restaurant.
+            </p>
+          </div>
+        )}
+
+        {/* Cart Items */}
+        {cart.length > 0 && (
+          <div className="bg-white rounded-xl border p-5 space-y-3">
+            <h2 className="font-semibold">Cart Items</h2>
+            {cart.map((item) => (
+              <div key={item.id} className="flex justify-between text-sm">
+                <span>
+                  {item.quantity} × {item.name}
+                </span>
+                <span className="font-medium">
+                  KES {(item.price * item.quantity).toLocaleString()}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Order Notes */}
+        {orderNotes && (
+          <div className="bg-white border rounded-xl p-5">
+            <h2 className="font-semibold mb-2">Order Notes</h2>
+            <p className="text-sm text-gray-600">{orderNotes}</p>
+          </div>
+        )}
+
+        {/* Customer Details */}
+        <div className="bg-white border rounded-xl p-5 space-y-4">
+          <h2 className="font-semibold">Customer Details</h2>
+          <input
+            type="text"
+            placeholder="Your Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full border rounded-lg p-3 focus:ring-2 focus:ring-green-700 outline-none"
+          />
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            className="w-full border rounded-lg p-3 focus:ring-2 focus:ring-green-700 outline-none"
+          />
         </div>
-      )}
-
-      {/* Cart Items */}
-      {cart.length > 0 && (
-        <div className="border rounded-xl p-6 space-y-2">
-          <h2 className="font-semibold text-lg">Cart Items</h2>
-          {cart.map((item) => (
-            <div key={item.id} className="flex justify-between">
-              <span>
-                {item.quantity}x {item.name}
-              </span>
-              <span>KES {(item.price * item.quantity).toLocaleString()}</span>
-            </div>
-          ))}
-        </div>
-      )}
-
-      {/* Order Notes */}
-      {orderNotes && (
-        <div className="border rounded-xl p-6 space-y-2">
-          <h2 className="font-semibold text-lg">Order Notes</h2>
-          <p className="text-sm text-gray-600">{orderNotes}</p>
-        </div>
-      )}
-
-      {/* Customer Details */}
-      <div className="border rounded-xl p-6 space-y-4">
-        <h2 className="font-semibold text-lg">Customer Details</h2>
-
-        <input
-          type="text"
-          placeholder="Your Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          className="w-full border rounded-lg p-3"
-        />
-
-        <input
-          type="tel"
-          placeholder="Phone Number"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-          className="w-full border rounded-lg p-3"
-        />
 
         {/* Order Type */}
-        <div className="mt-4 space-y-2">
-          <h2 className="font-semibold text-lg">Order Type</h2>
-          <div className="flex gap-4">
+        <div className="bg-white border rounded-xl p-5 space-y-4">
+          <h2 className="font-semibold">Order Type</h2>
+          <div className="flex gap-3">
             <button
               onClick={() => setOrderType("pickup")}
-              className={`px-4 py-2 rounded-lg border ${
+              className={`flex-1 py-3 rounded-lg border font-medium ${
                 orderType === "pickup"
                   ? "bg-green-900 text-white"
                   : "bg-white"
@@ -140,9 +149,10 @@ const ReviewPage: React.FC = () => {
             >
               Pickup
             </button>
+
             <button
               onClick={() => setOrderType("delivery")}
-              className={`px-4 py-2 rounded-lg border ${
+              className={`flex-1 py-3 rounded-lg border font-medium ${
                 orderType === "delivery"
                   ? "bg-green-900 text-white"
                   : "bg-white"
@@ -158,33 +168,35 @@ const ReviewPage: React.FC = () => {
               placeholder="Delivery location or Google Maps link"
               value={deliveryLocation}
               onChange={(e) => setDeliveryLocation(e.target.value)}
-              className="w-full border rounded-lg p-3 mt-2"
+              className="w-full border rounded-lg p-3"
             />
           )}
 
-          {/* Schedule */}
           <input
             type="text"
             placeholder="Schedule (Optional)"
             value={scheduleTime}
             onChange={(e) => setScheduleTime(e.target.value)}
-            className="w-full border rounded-lg p-3 mt-2"
+            className="w-full border rounded-lg p-3"
           />
+        </div>
+
+        {/* Subtotal */}
+        <div className="flex justify-between font-semibold text-lg px-2">
+          <span>Subtotal</span>
+          <span>KES {subtotal.toLocaleString()}</span>
         </div>
       </div>
 
-      {/* Subtotal & Send */}
-      <div className="flex justify-between items-center font-semibold text-lg">
-        <span>Subtotal:</span>
-        <span>KES {subtotal.toLocaleString()}</span>
+      {/* Floating WhatsApp Button */}
+      <div className="fixed bottom-20 right-5 z-50">
+        <button
+          onClick={handleSendOrder}
+          className="py-4 px-6 text-lg font-semibold rounded-full bg-green-900 text-white shadow-lg hover:bg-green-700 transition"
+        >
+          Send Order via WhatsApp
+        </button>
       </div>
-
-      <button
-        onClick={handleSendOrder}
-        className="w-full py-4 bg-green-900 text-white rounded-xl font-semibold hover:bg-green-700 transition"
-      >
-        Send Order via WhatsApp
-      </button>
     </div>
   );
 };

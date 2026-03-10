@@ -67,5 +67,6 @@
     { "id": 506, "name": "Family Movie Night", "price": 4600, "image": "/images/family-movie.jpg", "description": "Cake + popcorn + 4 drinks", "available": true, "jabysFavorite": false, "bestSelling": false },
     { "id": 507, "name": "Tea Time Special", "price": 3000, "image": "/images/tea-time.jpg", "description": "Pastry + tea or coffee combo", "available": true, "jabysFavorite": false, "bestSelling": false },
     { "id": 508, "name": "Kids Birthday Pack", "price": 3800, "image": "/images/kids-birthday.jpg", "description": "Mini cake + cupcakes + juice", "available": true, "jabysFavorite": false, "bestSelling": false }
-  ]
+  ],
+  "upsell": []
 }

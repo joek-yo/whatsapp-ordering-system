@@ -11,7 +11,6 @@ const MenuPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
   const { addToCart } = useCart();
 
-  // Combine regular categories and bundles
   const menuCategories = [
     ...categories,
     { id: "bundles-category", name: "Bundles", items: bundles },
@@ -23,7 +22,6 @@ const MenuPage: React.FC = () => {
 
   const placeholderImage = "/images/placeholder.jpg";
 
-  // Sort products: bestSelling first, then JabysFavorites
   const sortedProducts = activeCategory?.items
     .slice()
     .sort((a, b) => {
@@ -44,10 +42,7 @@ const MenuPage: React.FC = () => {
 
         {/* CATEGORY TABS */}
         <div className="flex justify-center overflow-x-auto no-scrollbar py-4">
-          <div
-            className="flex bg-gray-200 rounded-full shadow-sm divide-x divide-gray-300
-                      w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl"
-          >
+          <div className="flex bg-gray-200 rounded-full shadow-sm divide-x divide-gray-300 w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
             {menuCategories.map((cat, index) => {
               const isActive = selectedCategory === cat.name;
               const isFirst = index === 0;
