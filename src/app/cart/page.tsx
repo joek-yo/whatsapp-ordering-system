@@ -53,6 +53,7 @@ const CartPage: React.FC = () => {
 
   // ⭐ Add suggestion silently without triggering MiniCartDrawer
   const handleAddSuggestion = (item: any) => {
+    // Updated: pass options object as second argument
     addToCart({ ...item, quantity: 1 }, { silent: true });
     setToastMessage(`${item.name} added to cart!`);
     setTimeout(() => setToastMessage(null), 2000);

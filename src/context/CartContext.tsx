@@ -18,7 +18,7 @@ type OrderType = "pickup" | "delivery";
 interface CartContextType {
   cart: CartItem[];
 
-  addToCart: (item: CartItem) => void;
+  addToCart: (item: CartItem, options?: { silent?: boolean }) => void;
   removeFromCart: (id: number) => void;
   updateQuantity: (id: number, quantity: number) => void;
 
@@ -72,7 +72,7 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   }, []);
 
   // Add item to cart
-  const addToCart = (item: CartItem) => {
+  const addToCart = (item: CartItem, options?: { silent?: boolean }) => {
     setCart(prev => {
       const existing = prev.find(p => p.id === item.id);
       if (existing) {
@@ -85,12 +85,15 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
       return [...prev, item];
     });
 
-    if (isMobile) {
-      setToastMessage(`✅ ${item.name} added to cart`);
-      setShowToast(true);
-      setTimeout(() => setShowToast(false), 3000);
-    } else {
-      setIsDrawerOpen(true);
+    // Show toast only if not silent
+    if (!options?.silent) {
+      if (isMobile) {
+        setToastMessage(`✅ ${item.name} added to cart`);
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 3000);
+      } else {
+        setIsDrawerOpen(true);
+      }
     }
   };
 
