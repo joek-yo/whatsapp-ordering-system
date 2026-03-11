@@ -1,4 +1,4 @@
-import menuData from "@/data/menu.json";
+import { getBusinessData } from "./getBusinessData";
 
 export interface OrderDetails {
   cart: any[];
@@ -11,48 +11,38 @@ export interface OrderDetails {
   customerPhone?: string;
 }
 
-// Generate WhatsApp checkout URL with full order details
 export function generateWhatsAppCheckout(order: OrderDetails) {
   const { cart, customOrder, orderNotes, orderType, deliveryLocation, scheduleTime, customerName, customerPhone } = order;
+  const business = getBusinessData();
 
   if ((!cart || cart.length === 0) && !customOrder) return null;
 
-  const business = menuData.business;
-
   let total = 0;
-  let message = `Hello ${business.name} 👋\n\n`;
+  let message = `*NEW ORDER - ${business.name}* 🎂\n\n`;
 
-  if (customerName) message += `Name: ${customerName}\n`;
-  if (customerPhone) message += `Phone: ${customerPhone}\n`;
-  message += "\nI'd like to place an order:\n\n";
+  if (customerName) message += `*Customer:* ${customerName}\n`;
+  if (customerPhone) message += `*Phone:* ${customerPhone}\n\n`;
 
+  message += `*Order Items:*\n`;
   cart.forEach((item) => {
     const itemTotal = item.price * item.quantity;
     total += itemTotal;
-    message += `${item.quantity}x ${item.name} — KES ${itemTotal}\n`;
+    message += `• ${item.quantity}x ${item.name} (KES ${itemTotal.toLocaleString()})\n`;
   });
 
-  if (customOrder) {
-    message += `\nCustom Order: ${customOrder}\n`;
-  }
+  if (customOrder) message += `\n*Custom Request:* ${customOrder}\n`;
+  if (orderNotes) message += `\n*Notes:* ${orderNotes}\n`;
 
-  if (orderNotes) {
-    message += `Notes: ${orderNotes}\n`;
-  }
-
-  message += `\nSubtotal: KES ${total}\n`;
-
-  if (orderType) message += `Order Type: ${orderType}\n`;
-  if (deliveryLocation) message += `Delivery Location: ${deliveryLocation}\n`;
-  if (scheduleTime) message += `Schedule: ${scheduleTime}\n`;
-
-  message += `\nThank you!`;
+  message += `\n*Total Amount: KES ${total.toLocaleString()}*\n`;
+  message += `--------------------------\n`;
+  if (orderType) message += `*Type:* ${orderType}\n`;
+  if (deliveryLocation) message += `*Location:* ${deliveryLocation}\n`;
+  if (scheduleTime) message += `*Schedule:* ${scheduleTime}\n`;
 
   const encoded = encodeURIComponent(message);
-  return `https://wa.me/${business.phone}?text=${encoded}`;
+  return `https://wa.me/${business.phone.replace(/[^0-9]/g, '')}?text=${encoded}`;
 }
 
-// Open WhatsApp in a new tab
 export function openWhatsApp(order: OrderDetails) {
   const url = generateWhatsAppCheckout(order);
   if (url) window.open(url, "_blank");
