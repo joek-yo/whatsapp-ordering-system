@@ -22,60 +22,1286 @@
       "id": "cakes",
       "name": "Cakes",
       "items": [
-        { "id": 101, "name": "1kg Chocolate Cake", "price": 2500, "image": "/images/chocolate-cake.jpg", "description": "Rich chocolate cake for every occasion", "available": true, "jabysFavorite": true, "bestSelling": false },
-        { "id": 102, "name": "Red Velvet Cupcakes (6pcs)", "price": 1200, "image": "/images/red-velvet.jpg", "description": "Box of 6 soft and creamy red velvet cupcakes", "available": true, "jabysFavorite": true, "bestSelling": false },
-        { "id": 103, "name": "Vanilla Celebration Cake", "price": 2300, "image": "/images/vanilla-cake.jpg", "description": "Classic vanilla sponge with buttercream frosting", "available": true, "jabysFavorite": true, "bestSelling": false },
-        { "id": 104, "name": "Black Forest Cake", "price": 2800, "image": "/images/black-forest.jpg", "description": "Chocolate sponge layered with cream and cherries", "available": true, "jabysFavorite": true, "bestSelling": false },
-        { "id": 108, "name": "Chocolate Fudge Cake", "price": 3000, "image": "/images/chocolate-fudge.jpg", "description": "Extra rich chocolate cake layered with fudge", "available": true, "jabysFavorite": true, "bestSelling": false },
-        { "id": 105, "name": "Strawberry Delight Cake", "price": 2600, "image": "/images/strawberry-cake.jpg", "description": "Fresh strawberry flavored cake with cream topping", "available": true, "jabysFavorite": false, "bestSelling": true },
-        { "id": 106, "name": "Carrot Cake", "price": 2400, "image": "/images/carrot-cake.jpg", "description": "Moist carrot cake topped with cream cheese frosting", "available": false, "jabysFavorite": false, "bestSelling": true },
-        { "id": 107, "name": "Lemon Drizzle Cake", "price": 2200, "image": "/images/lemon-cake.jpg", "description": "Zesty lemon cake with sweet glaze drizzle", "available": true, "jabysFavorite": false, "bestSelling": false },
-        { "id": 109, "name": "Custom Birthday Cake", "price": 3500, "image": "/images/birthday-cake.jpg", "description": "Personalized birthday cake with custom design", "available": true, "jabysFavorite": false, "bestSelling": false },
-        { "id": 110, "name": "Mini Cupcake Assortment (12pcs)", "price": 1800, "image": "/images/mini-cupcakes.jpg", "description": "Assorted mini cupcakes in different flavors", "available": true, "jabysFavorite": false, "bestSelling": false }
-      ]
+        {
+          "id": 101,
+          "name": "1kg Chocolate Cake",
+          "price": 2100,
+          "image": "/images/chocolate-cake.jpg",
+          "description": "Rich chocolate cake for every occasion",
+          "available": true,
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "discountPercent": 15,
+          "onFlashSale": true,
+          "oldPrice": 2500,
+          "ingredients": [
+            "Wheat flour",
+            "Cocoa powder",
+            "Fresh butter",
+            "Eggs",
+            "Sugar"
+          ],
+          "allergens": [
+            "Gluten",
+            "Eggs",
+            "Dairy"
+          ],
+          "servingInfo": "Serves 8\u201310",
+          "prepInfo": "Baked fresh same-day, ready in 2\u20133 hours",
+          "occasionTags": [
+            "Birthday",
+            "Celebration"
+          ],
+          "rating": 4.8,
+          "reviewCount": 94,
+          "category": "Cakes",
+          "allowCustomMessage": true
+        },
+        {
+          "id": 102,
+          "name": "Red Velvet Cupcakes (6pcs)",
+          "price": 1200,
+          "image": "/images/red-velvet.jpg",
+          "description": "Box of 6 soft and creamy red velvet cupcakes",
+          "available": true,
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "ingredients": [
+            "Wheat flour",
+            "Cocoa",
+            "Buttermilk",
+            "Cream cheese frosting"
+          ],
+          "allergens": [
+            "Gluten",
+            "Eggs",
+            "Dairy"
+          ],
+          "servingInfo": "6 pieces",
+          "prepInfo": "Baked fresh daily",
+          "occasionTags": [
+            "Snack",
+            "Party"
+          ],
+          "rating": 4.6,
+          "reviewCount": 52,
+          "category": "Cakes",
+          "allowCustomMessage": true
+        },
+        {
+          "id": 103,
+          "name": "Vanilla Celebration Cake",
+          "price": 2300,
+          "image": "/images/vanilla-cake.jpg",
+          "description": "Classic vanilla sponge with buttercream frosting",
+          "available": true,
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "ingredients": [
+            "Wheat flour",
+            "Vanilla extract",
+            "Fresh cream",
+            "Eggs",
+            "Sugar"
+          ],
+          "allergens": [
+            "Gluten",
+            "Eggs",
+            "Dairy"
+          ],
+          "servingInfo": "Serves 8\u201310",
+          "prepInfo": "Baked fresh same-day, ready in 2\u20133 hours",
+          "occasionTags": [
+            "Birthday",
+            "Wedding",
+            "Anniversary"
+          ],
+          "rating": 4.7,
+          "reviewCount": 63,
+          "category": "Cakes",
+          "allowCustomMessage": true
+        },
+        {
+          "id": 104,
+          "name": "Black Forest Cake",
+          "price": 2200,
+          "image": "/images/black-forest.jpg",
+          "description": "Chocolate sponge layered with cream and cherries",
+          "available": true,
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "discountPercent": 20,
+          "onFlashSale": true,
+          "oldPrice": 2800,
+          "ingredients": [
+            "Wheat flour",
+            "Dark chocolate",
+            "Fresh cream",
+            "Cherries",
+            "Eggs"
+          ],
+          "allergens": [
+            "Gluten",
+            "Eggs",
+            "Dairy"
+          ],
+          "servingInfo": "Serves 8\u201310",
+          "prepInfo": "Baked fresh same-day, ready in 2\u20133 hours",
+          "occasionTags": [
+            "Birthday",
+            "Celebration",
+            "Anniversary"
+          ],
+          "rating": 4.9,
+          "reviewCount": 110,
+          "category": "Cakes",
+          "allowCustomMessage": true
+        },
+        {
+          "id": 108,
+          "name": "Chocolate Fudge Cake",
+          "price": 3000,
+          "image": "/images/chocolate-fudge.jpg",
+          "description": "Extra rich chocolate cake layered with fudge",
+          "available": true,
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "ingredients": [
+            "Wheat flour",
+            "Dark chocolate fudge",
+            "Butter",
+            "Eggs",
+            "Sugar"
+          ],
+          "allergens": [
+            "Gluten",
+            "Eggs",
+            "Dairy"
+          ],
+          "servingInfo": "Serves 10\u201312",
+          "prepInfo": "Baked fresh same-day, ready in 2\u20133 hours",
+          "occasionTags": [
+            "Birthday",
+            "Celebration"
+          ],
+          "rating": 4.8,
+          "reviewCount": 71,
+          "category": "Cakes",
+          "allowCustomMessage": true
+        },
+        {
+          "id": 105,
+          "name": "Strawberry Delight Cake",
+          "price": 2600,
+          "image": "/images/strawberry-cake.jpg",
+          "description": "Fresh strawberry flavored cake with cream topping",
+          "available": true,
+          "jabysFavorite": false,
+          "bestSelling": true,
+          "ingredients": [
+            "Wheat flour",
+            "Fresh strawberries",
+            "Cream",
+            "Eggs",
+            "Sugar"
+          ],
+          "allergens": [
+            "Gluten",
+            "Eggs",
+            "Dairy"
+          ],
+          "servingInfo": "Serves 8\u201310",
+          "prepInfo": "Baked fresh same-day, ready in 2\u20133 hours",
+          "occasionTags": [
+            "Birthday",
+            "Anniversary"
+          ],
+          "rating": 4.7,
+          "reviewCount": 48,
+          "category": "Cakes",
+          "allowCustomMessage": true
+        },
+        {
+          "id": 106,
+          "name": "Carrot Cake",
+          "price": 2400,
+          "image": "/images/carrot-cake.jpg",
+          "description": "Moist carrot cake topped with cream cheese frosting",
+          "available": false,
+          "jabysFavorite": false,
+          "bestSelling": true,
+          "ingredients": [
+            "Wheat flour",
+            "Grated carrots",
+            "Walnuts",
+            "Cream cheese frosting",
+            "Eggs"
+          ],
+          "allergens": [
+            "Gluten",
+            "Eggs",
+            "Dairy",
+            "Nuts"
+          ],
+          "servingInfo": "Serves 8\u201310",
+          "prepInfo": "Baked fresh same-day, ready in 2\u20133 hours",
+          "occasionTags": [
+            "Everyday Treat"
+          ],
+          "rating": 4.5,
+          "reviewCount": 29,
+          "category": "Cakes",
+          "allowCustomMessage": true
+        },
+        {
+          "id": 107,
+          "name": "Lemon Drizzle Cake",
+          "price": 2200,
+          "image": "/images/lemon-cake.jpg",
+          "description": "Zesty lemon cake with sweet glaze drizzle",
+          "available": true,
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "ingredients": [
+            "Wheat flour",
+            "Fresh lemon zest",
+            "Butter",
+            "Eggs",
+            "Sugar glaze"
+          ],
+          "allergens": [
+            "Gluten",
+            "Eggs",
+            "Dairy"
+          ],
+          "servingInfo": "Serves 8\u201310",
+          "prepInfo": "Baked fresh same-day, ready in 2\u20133 hours",
+          "occasionTags": [
+            "Afternoon Tea",
+            "Everyday Treat"
+          ],
+          "rating": 4.6,
+          "reviewCount": 37,
+          "category": "Cakes",
+          "allowCustomMessage": true
+        },
+        {
+          "id": 109,
+          "name": "Custom Birthday Cake",
+          "price": 3500,
+          "image": "/images/birthday-cake.jpg",
+          "description": "Personalized birthday cake with custom design",
+          "available": true,
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "ingredients": [
+            "Wheat flour",
+            "Fresh butter",
+            "Eggs",
+            "Sugar",
+            "Custom toppings on request"
+          ],
+          "allergens": [
+            "Gluten",
+            "Eggs",
+            "Dairy"
+          ],
+          "servingInfo": "Custom size, serves as requested",
+          "prepInfo": "Made to order \u2014 24hr notice required, design consultation via WhatsApp",
+          "occasionTags": [
+            "Birthday",
+            "Wedding",
+            "Custom Order"
+          ],
+          "rating": 4.9,
+          "reviewCount": 41,
+          "category": "Cakes",
+          "allowCustomMessage": true
+        },
+        {
+          "id": 110,
+          "name": "Mini Cupcake Assortment (12pcs)",
+          "price": 1800,
+          "image": "/images/mini-cupcakes.jpg",
+          "description": "Assorted mini cupcakes in different flavors",
+          "available": true,
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "ingredients": [
+            "Wheat flour",
+            "Butter",
+            "Eggs",
+            "Assorted flavored frostings"
+          ],
+          "allergens": [
+            "Gluten",
+            "Eggs",
+            "Dairy"
+          ],
+          "servingInfo": "12 pieces, assorted flavors",
+          "prepInfo": "Baked fresh daily",
+          "occasionTags": [
+            "Party",
+            "Snack"
+          ],
+          "rating": 4.6,
+          "reviewCount": 44,
+          "category": "Cakes",
+          "allowCustomMessage": true
+        }
+      ],
+      "icon": "cake",
+      "hot": true
     },
     {
       "id": "drinks",
       "name": "Drinks",
       "items": [
-        { "id": 201, "name": "Fresh Orange Juice", "price": 400, "image": "/images/orange-juice.jpg", "description": "Freshly squeezed orange juice", "available": true, "jabysFavorite": true, "bestSelling": false },
-        { "id": 202, "name": "Mango Smoothie", "price": 500, "image": "/images/mango-smoothie.jpg", "description": "Creamy mango smoothie with ice", "available": true, "jabysFavorite": true, "bestSelling": false },
-        { "id": 203, "name": "Passion Fruit Juice", "price": 450, "image": "/images/passion-juice.jpg", "description": "Sweet and tangy passion fruit juice", "available": true, "jabysFavorite": true, "bestSelling": false },
-        { "id": 204, "name": "Pineapple Mint Juice", "price": 450, "image": "/images/pineapple-juice.jpg", "description": "Refreshing pineapple juice with mint flavor", "available": true, "jabysFavorite": true, "bestSelling": false },
-        { "id": 207, "name": "Vanilla Milkshake", "price": 600, "image": "/images/vanilla-milkshake.jpg", "description": "Classic vanilla milkshake with smooth texture", "available": false, "jabysFavorite": true, "bestSelling": false },
-        { "id": 205, "name": "Strawberry Smoothie", "price": 550, "image": "/images/strawberry-smoothie.jpg", "description": "Creamy strawberry smoothie with fresh fruits", "available": true, "jabysFavorite": false, "bestSelling": true },
-        { "id": 206, "name": "Chocolate Milkshake", "price": 600, "image": "/images/chocolate-milkshake.jpg", "description": "Thick chocolate milkshake topped with cream", "available": true, "jabysFavorite": false, "bestSelling": true },
-        { "id": 208, "name": "Iced Coffee", "price": 500, "image": "/images/iced-coffee.jpg", "description": "Cold brewed coffee served over ice", "available": true, "jabysFavorite": false, "bestSelling": false },
-        { "id": 209, "name": "Hot Cappuccino", "price": 450, "image": "/images/cappuccino.jpg", "description": "Freshly brewed cappuccino with milk foam", "available": true, "jabysFavorite": false, "bestSelling": false },
-        { "id": 210, "name": "Bottled Water (500ml)", "price": 100, "image": "/images/water.jpg", "description": "500ml bottled drinking water", "available": true, "jabysFavorite": false, "bestSelling": false }
-      ]
+        {
+          "id": 201,
+          "name": "Fresh Orange Juice",
+          "price": 400,
+          "image": "/images/orange-juice.jpg",
+          "description": "Freshly squeezed orange juice",
+          "available": true,
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "ingredients": [
+            "Fresh oranges"
+          ],
+          "allergens": [],
+          "servingInfo": "500ml",
+          "prepInfo": "Freshly squeezed to order",
+          "occasionTags": [
+            "Refreshment",
+            "Everyday"
+          ],
+          "rating": 4.5,
+          "reviewCount": 33,
+          "category": "Drinks",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 202,
+          "name": "Mango Smoothie",
+          "price": 450,
+          "image": "/images/mango-smoothie.jpg",
+          "description": "Creamy mango smoothie with ice",
+          "available": true,
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "discountPercent": 10,
+          "onFlashSale": true,
+          "oldPrice": 500,
+          "ingredients": [
+            "Fresh mango",
+            "Milk",
+            "Yogurt"
+          ],
+          "allergens": [
+            "Dairy"
+          ],
+          "servingInfo": "450ml",
+          "prepInfo": "Blended fresh to order",
+          "occasionTags": [
+            "Refreshment",
+            "Treat"
+          ],
+          "rating": 4.7,
+          "reviewCount": 58,
+          "category": "Drinks",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 203,
+          "name": "Passion Fruit Juice",
+          "price": 450,
+          "image": "/images/passion-juice.jpg",
+          "description": "Sweet and tangy passion fruit juice",
+          "available": true,
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "ingredients": [
+            "Fresh passion fruit",
+            "Water",
+            "Sugar"
+          ],
+          "allergens": [],
+          "servingInfo": "500ml",
+          "prepInfo": "Freshly prepared to order",
+          "occasionTags": [
+            "Refreshment"
+          ],
+          "rating": 4.5,
+          "reviewCount": 27,
+          "category": "Drinks",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 204,
+          "name": "Pineapple Mint Juice",
+          "price": 450,
+          "image": "/images/pineapple-juice.jpg",
+          "description": "Refreshing pineapple juice with mint flavor",
+          "available": true,
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "ingredients": [
+            "Fresh pineapple",
+            "Mint leaves",
+            "Water"
+          ],
+          "allergens": [],
+          "servingInfo": "500ml",
+          "prepInfo": "Freshly prepared to order",
+          "occasionTags": [
+            "Refreshment"
+          ],
+          "rating": 4.6,
+          "reviewCount": 31,
+          "category": "Drinks",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 207,
+          "name": "Vanilla Milkshake",
+          "price": 600,
+          "image": "/images/vanilla-milkshake.jpg",
+          "description": "Classic vanilla milkshake with smooth texture",
+          "available": false,
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "ingredients": [
+            "Milk",
+            "Vanilla ice cream",
+            "Vanilla syrup"
+          ],
+          "allergens": [
+            "Dairy"
+          ],
+          "servingInfo": "400ml",
+          "prepInfo": "Blended fresh to order",
+          "occasionTags": [
+            "Treat"
+          ],
+          "rating": 4.4,
+          "reviewCount": 18,
+          "category": "Drinks",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 205,
+          "name": "Strawberry Smoothie",
+          "price": 550,
+          "image": "/images/strawberry-smoothie.jpg",
+          "description": "Creamy strawberry smoothie with fresh fruits",
+          "available": true,
+          "jabysFavorite": false,
+          "bestSelling": true,
+          "ingredients": [
+            "Fresh strawberries",
+            "Milk",
+            "Yogurt"
+          ],
+          "allergens": [
+            "Dairy"
+          ],
+          "servingInfo": "450ml",
+          "prepInfo": "Blended fresh to order",
+          "occasionTags": [
+            "Refreshment",
+            "Treat"
+          ],
+          "rating": 4.6,
+          "reviewCount": 39,
+          "category": "Drinks",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 206,
+          "name": "Chocolate Milkshake",
+          "price": 600,
+          "image": "/images/chocolate-milkshake.jpg",
+          "description": "Thick chocolate milkshake topped with cream",
+          "available": true,
+          "jabysFavorite": false,
+          "bestSelling": true,
+          "ingredients": [
+            "Milk",
+            "Chocolate syrup",
+            "Chocolate ice cream"
+          ],
+          "allergens": [
+            "Dairy"
+          ],
+          "servingInfo": "400ml",
+          "prepInfo": "Blended fresh to order",
+          "occasionTags": [
+            "Treat"
+          ],
+          "rating": 4.7,
+          "reviewCount": 42,
+          "category": "Drinks",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 208,
+          "name": "Iced Coffee",
+          "price": 400,
+          "image": "/images/iced-coffee.jpg",
+          "description": "Cold brewed coffee served over ice",
+          "available": true,
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "discountPercent": 15,
+          "onFlashSale": true,
+          "oldPrice": 500,
+          "ingredients": [
+            "Espresso",
+            "Milk",
+            "Ice"
+          ],
+          "allergens": [
+            "Dairy"
+          ],
+          "servingInfo": "400ml",
+          "prepInfo": "Brewed and prepared fresh to order",
+          "occasionTags": [
+            "Morning Pick-Me-Up"
+          ],
+          "rating": 4.6,
+          "reviewCount": 51,
+          "category": "Drinks",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 209,
+          "name": "Hot Cappuccino",
+          "price": 450,
+          "image": "/images/cappuccino.jpg",
+          "description": "Freshly brewed cappuccino with milk foam",
+          "available": true,
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "ingredients": [
+            "Espresso",
+            "Steamed milk",
+            "Milk foam"
+          ],
+          "allergens": [
+            "Dairy"
+          ],
+          "servingInfo": "250ml",
+          "prepInfo": "Brewed fresh to order",
+          "occasionTags": [
+            "Morning Pick-Me-Up"
+          ],
+          "rating": 4.7,
+          "reviewCount": 46,
+          "category": "Drinks",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 210,
+          "name": "Bottled Water (500ml)",
+          "price": 100,
+          "image": "/images/water.jpg",
+          "description": "500ml bottled drinking water",
+          "available": true,
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "ingredients": [
+            "Purified water"
+          ],
+          "allergens": [],
+          "servingInfo": "500ml",
+          "prepInfo": "Sealed bottle",
+          "occasionTags": [
+            "Everyday"
+          ],
+          "rating": 4.5,
+          "reviewCount": 15,
+          "category": "Drinks",
+          "allowCustomMessage": false
+        }
+      ],
+      "icon": "cup",
+      "hot": false
     },
     {
       "id": "pastries",
       "name": "Pastries",
       "items": [
-        { "id": 301, "name": "Cheese Danish", "price": 300, "image": "/images/cheese-danish.jpg", "description": "Flaky pastry with cream cheese filling", "available": true, "jabysFavorite": true, "bestSelling": false },
-        { "id": 302, "name": "Chocolate Croissant", "price": 350, "image": "/images/chocolate-croissant.jpg", "description": "Buttery croissant filled with chocolate", "available": true, "jabysFavorite": true, "bestSelling": false },
-        { "id": 303, "name": "Apple Turnover", "price": 300, "image": "/images/apple-turnover.jpg", "description": "Sweet apple-filled puff pastry", "available": true, "jabysFavorite": true, "bestSelling": false },
-        { "id": 305, "name": "Almond Croissant", "price": 400, "image": "/images/almond-croissant.jpg", "description": "Flaky croissant topped with almond slices", "available": true, "jabysFavorite": true, "bestSelling": false },
-        { "id": 307, "name": "Chocolate Eclair", "price": 350, "image": "/images/chocolate-eclair.jpg", "description": "Cream-filled pastry topped with chocolate", "available": true, "jabysFavorite": true, "bestSelling": false },
-        { "id": 304, "name": "Cinnamon Roll", "price": 250, "image": "/images/cinnamon-roll.jpg", "description": "Soft roll with cinnamon sugar swirl", "available": true, "jabysFavorite": false, "bestSelling": true },
-        { "id": 306, "name": "Fruit Tart", "price": 500, "image": "/images/fruit-tart.jpg", "description": "Pastry filled with custard and fresh fruits", "available": true, "jabysFavorite": false, "bestSelling": true },
-        { "id": 308, "name": "Pecan Pie Slice", "price": 400, "image": "/images/pecan-pie.jpg", "description": "Mini slice of pecan pie with caramel", "available": true, "jabysFavorite": false, "bestSelling": false },
-        { "id": 309, "name": "Blueberry Muffin", "price": 250, "image": "/images/blueberry-muffin.jpg", "description": "Moist muffin with fresh blueberries", "available": true, "jabysFavorite": false, "bestSelling": false },
-        { "id": 310, "name": "Lemon Tart", "price": 450, "image": "/images/lemon-tart.jpg", "description": "Tangy lemon tart with crisp pastry shell", "available": true, "jabysFavorite": false, "bestSelling": false }
-      ]
+        {
+          "id": 301,
+          "name": "Cheese Danish",
+          "price": 300,
+          "image": "/images/cheese-danish.jpg",
+          "description": "Flaky pastry with cream cheese filling",
+          "available": true,
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "ingredients": [
+            "Wheat flour",
+            "Butter",
+            "Cream cheese"
+          ],
+          "allergens": [
+            "Gluten",
+            "Dairy",
+            "Eggs"
+          ],
+          "servingInfo": "1 piece",
+          "prepInfo": "Baked fresh daily",
+          "occasionTags": [
+            "Afternoon Tea",
+            "Breakfast"
+          ],
+          "rating": 4.5,
+          "reviewCount": 26,
+          "category": "Pastries",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 302,
+          "name": "Chocolate Croissant",
+          "price": 300,
+          "image": "/images/chocolate-croissant.jpg",
+          "description": "Buttery croissant filled with chocolate",
+          "available": true,
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "discountPercent": 10,
+          "onFlashSale": true,
+          "oldPrice": 350,
+          "ingredients": [
+            "Wheat flour",
+            "Butter",
+            "Dark chocolate"
+          ],
+          "allergens": [
+            "Gluten",
+            "Dairy",
+            "Eggs"
+          ],
+          "servingInfo": "1 piece",
+          "prepInfo": "Baked fresh daily",
+          "occasionTags": [
+            "Breakfast",
+            "Snack"
+          ],
+          "rating": 4.7,
+          "reviewCount": 48,
+          "category": "Pastries",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 303,
+          "name": "Apple Turnover",
+          "price": 300,
+          "image": "/images/apple-turnover.jpg",
+          "description": "Sweet apple-filled puff pastry",
+          "available": true,
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "ingredients": [
+            "Wheat flour",
+            "Butter",
+            "Fresh apples",
+            "Cinnamon"
+          ],
+          "allergens": [
+            "Gluten",
+            "Dairy"
+          ],
+          "servingInfo": "1 piece",
+          "prepInfo": "Baked fresh daily",
+          "occasionTags": [
+            "Afternoon Tea",
+            "Snack"
+          ],
+          "rating": 4.6,
+          "reviewCount": 31,
+          "category": "Pastries",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 305,
+          "name": "Almond Croissant",
+          "price": 400,
+          "image": "/images/almond-croissant.jpg",
+          "description": "Flaky croissant topped with almond slices",
+          "available": true,
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "ingredients": [
+            "Wheat flour",
+            "Butter",
+            "Almond paste",
+            "Sliced almonds"
+          ],
+          "allergens": [
+            "Gluten",
+            "Dairy",
+            "Nuts",
+            "Eggs"
+          ],
+          "servingInfo": "1 piece",
+          "prepInfo": "Baked fresh daily",
+          "occasionTags": [
+            "Breakfast",
+            "Afternoon Tea"
+          ],
+          "rating": 4.7,
+          "reviewCount": 34,
+          "category": "Pastries",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 307,
+          "name": "Chocolate Eclair",
+          "price": 350,
+          "image": "/images/chocolate-eclair.jpg",
+          "description": "Cream-filled pastry topped with chocolate",
+          "available": true,
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "ingredients": [
+            "Wheat flour",
+            "Choux pastry",
+            "Chocolate glaze",
+            "Cream filling"
+          ],
+          "allergens": [
+            "Gluten",
+            "Dairy",
+            "Eggs"
+          ],
+          "servingInfo": "1 piece",
+          "prepInfo": "Baked and filled fresh daily",
+          "occasionTags": [
+            "Afternoon Tea",
+            "Treat"
+          ],
+          "rating": 4.7,
+          "reviewCount": 29,
+          "category": "Pastries",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 304,
+          "name": "Cinnamon Roll",
+          "price": 250,
+          "image": "/images/cinnamon-roll.jpg",
+          "description": "Soft roll with cinnamon sugar swirl",
+          "available": true,
+          "jabysFavorite": false,
+          "bestSelling": true,
+          "ingredients": [
+            "Wheat flour",
+            "Butter",
+            "Cinnamon sugar",
+            "Icing"
+          ],
+          "allergens": [
+            "Gluten",
+            "Dairy",
+            "Eggs"
+          ],
+          "servingInfo": "1 piece",
+          "prepInfo": "Baked fresh daily",
+          "occasionTags": [
+            "Breakfast",
+            "Snack"
+          ],
+          "rating": 4.8,
+          "reviewCount": 57,
+          "category": "Pastries",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 306,
+          "name": "Fruit Tart",
+          "price": 400,
+          "image": "/images/fruit-tart.jpg",
+          "description": "Pastry filled with custard and fresh fruits",
+          "available": true,
+          "jabysFavorite": false,
+          "bestSelling": true,
+          "discountPercent": 20,
+          "onFlashSale": true,
+          "oldPrice": 500,
+          "ingredients": [
+            "Wheat flour",
+            "Pastry cream",
+            "Fresh seasonal fruit"
+          ],
+          "allergens": [
+            "Gluten",
+            "Dairy",
+            "Eggs"
+          ],
+          "servingInfo": "1 piece",
+          "prepInfo": "Baked fresh daily, assembled with seasonal fruit",
+          "occasionTags": [
+            "Afternoon Tea",
+            "Celebration"
+          ],
+          "rating": 4.8,
+          "reviewCount": 39,
+          "category": "Pastries",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 308,
+          "name": "Pecan Pie Slice",
+          "price": 400,
+          "image": "/images/pecan-pie.jpg",
+          "description": "Mini slice of pecan pie with caramel",
+          "available": true,
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "ingredients": [
+            "Wheat flour",
+            "Pecans",
+            "Butter",
+            "Brown sugar syrup"
+          ],
+          "allergens": [
+            "Gluten",
+            "Dairy",
+            "Nuts",
+            "Eggs"
+          ],
+          "servingInfo": "1 slice",
+          "prepInfo": "Baked fresh daily",
+          "occasionTags": [
+            "Afternoon Tea",
+            "Treat"
+          ],
+          "rating": 4.6,
+          "reviewCount": 22,
+          "category": "Pastries",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 309,
+          "name": "Blueberry Muffin",
+          "price": 250,
+          "image": "/images/blueberry-muffin.jpg",
+          "description": "Moist muffin with fresh blueberries",
+          "available": true,
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "ingredients": [
+            "Wheat flour",
+            "Fresh blueberries",
+            "Butter",
+            "Sugar"
+          ],
+          "allergens": [
+            "Gluten",
+            "Dairy",
+            "Eggs"
+          ],
+          "servingInfo": "1 piece",
+          "prepInfo": "Baked fresh daily",
+          "occasionTags": [
+            "Breakfast",
+            "Snack"
+          ],
+          "rating": 4.6,
+          "reviewCount": 35,
+          "category": "Pastries",
+          "allowCustomMessage": false
+        },
+        {
+          "id": 310,
+          "name": "Lemon Tart",
+          "price": 450,
+          "image": "/images/lemon-tart.jpg",
+          "description": "Tangy lemon tart with crisp pastry shell",
+          "available": true,
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "ingredients": [
+            "Wheat flour",
+            "Fresh lemon curd",
+            "Butter",
+            "Eggs"
+          ],
+          "allergens": [
+            "Gluten",
+            "Dairy",
+            "Eggs"
+          ],
+          "servingInfo": "1 piece",
+          "prepInfo": "Baked fresh daily",
+          "occasionTags": [
+            "Afternoon Tea"
+          ],
+          "rating": 4.6,
+          "reviewCount": 24,
+          "category": "Pastries",
+          "allowCustomMessage": false
+        }
+      ],
+      "icon": "bread",
+      "hot": false
     }
   ],
   "bundles": [
-    { "id": 501, "name": "Birthday Combo", "price": 4500, "image": "/images/birthday-bundle.jpg", "description": "1kg cake + 6 cupcakes + 1 juice", "available": true, "jabysFavorite": true, "bestSelling": false },
-    { "id": 502, "name": "Family Treat Pack", "price": 3500, "image": "/images/family-bundle.jpg", "description": "Chocolate cake + 4 drinks + fries", "available": true, "jabysFavorite": false, "bestSelling": true },
-    { "id": 503, "name": "Weekend Chill Bundle", "price": 4200, "image": "/images/weekend-chill.jpg", "description": "Cake + 2 drinks + pastries", "available": true, "jabysFavorite": false, "bestSelling": false },
-    { "id": 504, "name": "Morning Boost Pack", "price": 2800, "image": "/images/morning-boost.jpg", "description": "Fresh juice + pastry combo", "available": true, "jabysFavorite": false, "bestSelling": false },
-    { "id": 505, "name": "Couple's Delight Bundle", "price": 5000, "image": "/images/couples-delight.jpg", "description": "Chocolate cake + cupcakes + drinks for two", "available": true, "jabysFavorite": false, "bestSelling": false },
-    { "id": 506, "name": "Family Movie Night", "price": 4600, "image": "/images/family-movie.jpg", "description": "Cake + popcorn + 4 drinks", "available": true, "jabysFavorite": false, "bestSelling": false },
-    { "id": 507, "name": "Tea Time Special", "price": 3000, "image": "/images/tea-time.jpg", "description": "Pastry + tea or coffee combo", "available": true, "jabysFavorite": false, "bestSelling": false },
-    { "id": 508, "name": "Kids Birthday Pack", "price": 3800, "image": "/images/kids-birthday.jpg", "description": "Mini cake + cupcakes + juice", "available": true, "jabysFavorite": false, "bestSelling": false }
+    {
+      "id": 501,
+      "name": "Birthday Combo",
+      "price": 4500,
+      "image": "/images/birthday-bundle.jpg",
+      "description": "1kg cake + 6 cupcakes + 1 juice",
+      "available": true,
+      "jabysFavorite": true,
+      "bestSelling": false,
+      "ingredients": [
+        "1kg cake of choice",
+        "6 cupcakes",
+        "1 fresh juice"
+      ],
+      "allergens": [
+        "Gluten",
+        "Eggs",
+        "Dairy"
+      ],
+      "servingInfo": "Serves 8\u201310 + extras",
+      "prepInfo": "Baked and prepared fresh same-day",
+      "occasionTags": [
+        "Birthday",
+        "Celebration"
+      ],
+      "rating": 4.8,
+      "reviewCount": 37,
+      "category": "Bundle",
+      "allowCustomMessage": true
+    },
+    {
+      "id": 502,
+      "name": "Family Treat Pack",
+      "price": 3500,
+      "image": "/images/family-bundle.jpg",
+      "description": "Chocolate cake + 4 drinks + fries",
+      "available": true,
+      "jabysFavorite": false,
+      "bestSelling": true,
+      "ingredients": [
+        "Chocolate cake",
+        "4 assorted drinks",
+        "Fries"
+      ],
+      "allergens": [
+        "Gluten",
+        "Eggs",
+        "Dairy"
+      ],
+      "servingInfo": "Serves a family of 4",
+      "prepInfo": "Prepared fresh same-day",
+      "occasionTags": [
+        "Family Gathering"
+      ],
+      "rating": 4.7,
+      "reviewCount": 45,
+      "category": "Bundle",
+      "allowCustomMessage": true
+    },
+    {
+      "id": 503,
+      "name": "Weekend Chill Bundle",
+      "price": 4200,
+      "image": "/images/weekend-chill.jpg",
+      "description": "Cake + 2 drinks + pastries",
+      "available": true,
+      "jabysFavorite": false,
+      "bestSelling": false,
+      "ingredients": [
+        "Cake of choice",
+        "2 drinks",
+        "Assorted pastries"
+      ],
+      "allergens": [
+        "Gluten",
+        "Eggs",
+        "Dairy"
+      ],
+      "servingInfo": "Serves 4\u20136",
+      "prepInfo": "Prepared fresh same-day",
+      "occasionTags": [
+        "Weekend Treat"
+      ],
+      "rating": 4.6,
+      "reviewCount": 21,
+      "category": "Bundle",
+      "allowCustomMessage": true
+    },
+    {
+      "id": 504,
+      "name": "Morning Boost Pack",
+      "price": 2800,
+      "image": "/images/morning-boost.jpg",
+      "description": "Fresh juice + pastry combo",
+      "available": true,
+      "jabysFavorite": false,
+      "bestSelling": false,
+      "ingredients": [
+        "Fresh juice",
+        "Pastry of choice"
+      ],
+      "allergens": [
+        "Gluten",
+        "Dairy"
+      ],
+      "servingInfo": "Serves 1\u20132",
+      "prepInfo": "Prepared fresh to order",
+      "occasionTags": [
+        "Breakfast",
+        "Morning Pick-Me-Up"
+      ],
+      "rating": 4.5,
+      "reviewCount": 19,
+      "category": "Bundle",
+      "allowCustomMessage": false
+    },
+    {
+      "id": 505,
+      "name": "Couple's Delight Bundle",
+      "price": 5000,
+      "image": "/images/couples-delight.jpg",
+      "description": "Chocolate cake + cupcakes + drinks for two",
+      "available": true,
+      "jabysFavorite": false,
+      "bestSelling": false,
+      "ingredients": [
+        "Chocolate cake",
+        "Cupcakes",
+        "2 drinks"
+      ],
+      "allergens": [
+        "Gluten",
+        "Eggs",
+        "Dairy"
+      ],
+      "servingInfo": "Serves 2",
+      "prepInfo": "Prepared fresh same-day",
+      "occasionTags": [
+        "Date Night",
+        "Anniversary"
+      ],
+      "rating": 4.8,
+      "reviewCount": 33,
+      "category": "Bundle",
+      "allowCustomMessage": true
+    },
+    {
+      "id": 506,
+      "name": "Family Movie Night",
+      "price": 4600,
+      "image": "/images/family-movie.jpg",
+      "description": "Cake + popcorn + 4 drinks",
+      "available": true,
+      "jabysFavorite": false,
+      "bestSelling": false,
+      "ingredients": [
+        "Cake of choice",
+        "Popcorn",
+        "4 drinks"
+      ],
+      "allergens": [
+        "Gluten",
+        "Eggs",
+        "Dairy"
+      ],
+      "servingInfo": "Serves a family of 4",
+      "prepInfo": "Prepared fresh same-day",
+      "occasionTags": [
+        "Family Night",
+        "Movie Night"
+      ],
+      "rating": 4.7,
+      "reviewCount": 28,
+      "category": "Bundle",
+      "allowCustomMessage": true
+    },
+    {
+      "id": 507,
+      "name": "Tea Time Special",
+      "price": 3000,
+      "image": "/images/tea-time.jpg",
+      "description": "Pastry + tea or coffee combo",
+      "available": true,
+      "jabysFavorite": false,
+      "bestSelling": false,
+      "ingredients": [
+        "Pastry of choice",
+        "Tea or coffee"
+      ],
+      "allergens": [
+        "Gluten",
+        "Dairy"
+      ],
+      "servingInfo": "Serves 1",
+      "prepInfo": "Prepared fresh to order",
+      "occasionTags": [
+        "Afternoon Tea"
+      ],
+      "rating": 4.5,
+      "reviewCount": 16,
+      "category": "Bundle",
+      "allowCustomMessage": false
+    },
+    {
+      "id": 508,
+      "name": "Kids Birthday Pack",
+      "price": 3800,
+      "image": "/images/kids-birthday.jpg",
+      "description": "Mini cake + cupcakes + juice",
+      "available": true,
+      "jabysFavorite": false,
+      "bestSelling": false,
+      "ingredients": [
+        "Mini cake",
+        "Cupcakes",
+        "Juice"
+      ],
+      "allergens": [
+        "Gluten",
+        "Eggs",
+        "Dairy"
+      ],
+      "servingInfo": "Serves 4\u20136 kids",
+      "prepInfo": "Baked and prepared fresh same-day",
+      "occasionTags": [
+        "Kids Birthday",
+        "Party"
+      ],
+      "rating": 4.7,
+      "reviewCount": 24,
+      "category": "Bundle",
+      "allowCustomMessage": true
+    }
   ],
-  "upsell": []
+  "upsell": [],
+  "trustBar": [
+    {
+      "icon": "truck",
+      "title": "Fast Delivery",
+      "desc": "Nairobi Wide"
+    },
+    {
+      "icon": "shield",
+      "title": "Trusted Orders",
+      "desc": "Verified Daily"
+    },
+    {
+      "icon": "clock",
+      "title": "Made Fresh",
+      "desc": "Same Day"
+    },
+    {
+      "icon": "headset",
+      "title": "Always On",
+      "desc": "WhatsApp Ready"
+    }
+  ],
+  "announcement": {
+    "active": true,
+    "text": "Free delivery on orders above KES 3000 this week"
+  },
+  "ui": {
+    "viewAllText": "View All",
+    "bestSellersTitle": "Best Sellers",
+    "bestSellersBadge": "Top Rated",
+    "favoritesTitle": "Jaby's Favorites",
+    "favoritesBadge": "Staff Picks",
+    "bundlesTitle": "Special Bundles",
+    "bundlesBadge": "Best Savings",
+    "flashSale": {
+      "active": true,
+      "title": "Flash Sale",
+      "badge": "Limited Time",
+      "endTime": "2026-08-01T23:59:59"
+    }
+  },
+  "faqs": [
+    {
+      "q": "How much notice do you need for custom cakes?",
+      "a": "Custom cakes need at least 24 hours notice. Standard cakes and bundles are baked fresh same-day."
+    },
+    {
+      "q": "Can I customize the flavor or size?",
+      "a": "Yes \u2014 message us on WhatsApp with your preferred flavor, size, and design and we'll confirm availability and pricing."
+    },
+    {
+      "q": "Do you deliver, or is it pickup only?",
+      "a": "We offer both. Delivery details and timing are confirmed directly over WhatsApp once your order is placed."
+    },
+    {
+      "q": "How should I store my order?",
+      "a": "Cakes and pastries are best enjoyed within 1\u20132 days. Keep cakes refrigerated if not eating the same day, and bring to room temperature before serving."
+    },
+    {
+      "q": "Do you cater for allergies or dietary needs?",
+      "a": "Check the allergen list on each product. For specific dietary needs (eggless, nut-free, etc.), message us on WhatsApp before ordering."
+    }
+  ],
+  "testimonials": {
+    "Cakes": [
+      {
+        "name": "Wanjiru M.",
+        "text": "Ordered a birthday cake with one day's notice and it looked even better than the photo. Will definitely order again.",
+        "rating": 5
+      },
+      {
+        "name": "Brian K.",
+        "text": "Rich chocolate flavor, not overly sweet. Perfect size for our family gathering.",
+        "rating": 5
+      },
+      {
+        "name": "Amina S.",
+        "text": "The custom message on the cake came out exactly as I asked. Great communication on WhatsApp throughout.",
+        "rating": 4
+      }
+    ],
+    "Drinks": [
+      {
+        "name": "Peter O.",
+        "text": "Freshest juice I've had delivered \u2014 you can tell it's squeezed to order, not sitting around.",
+        "rating": 5
+      },
+      {
+        "name": "Faith N.",
+        "text": "The mango smoothie is now a weekly order for me. Consistent quality every time.",
+        "rating": 5
+      }
+    ],
+    "Pastries": [
+      {
+        "name": "James M.",
+        "text": "Croissants were flaky and clearly baked that morning. Great with my coffee order.",
+        "rating": 5
+      },
+      {
+        "name": "Grace W.",
+        "text": "Ordered a mixed box for a work meeting, everyone asked where it was from.",
+        "rating": 4
+      }
+    ],
+    "Bundle": [
+      {
+        "name": "Samuel K.",
+        "text": "The family combo was great value and saved me from ordering separately. Everything arrived together, still fresh.",
+        "rating": 5
+      },
+      {
+        "name": "Lucy A.",
+        "text": "Got the movie night bundle for the kids' weekend \u2014 portions were generous.",
+        "rating": 5
+      }
+    ]
+  }
 }

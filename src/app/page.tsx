@@ -1,88 +1,143 @@
 "use client";
-
 import React from "react";
 import Link from "next/link";
-
-// ✅ Using alias "@/..." for all imports
 import Hero from "@/components/home/Hero";
+import TrustBar from "@/components/home/TrustBar";
+import CategoryDiscovery from "@/components/home/CategoryDiscovery";
 import FeaturedBundles from "@/components/home/FeaturedBundles";
 import JabysFavorites from "@/components/home/JabysFavorites";
-import ProductCard from "@/components/home/ProductCard";
+import BestSellers from "@/components/home/BestSellers";
+import FlashSales from "@/components/home/FlashSales";
+import SocialProof from "@/components/home/SocialProof";
+import { getUIConfig } from "@/lib/getBusinessData";
+import { FaGem, FaArrowRight, FaWhatsapp } from "react-icons/fa";
+import { motion } from "framer-motion";
 import menuData from "@/data/menu.json";
 
 const Pages: React.FC = () => {
+  const ui = getUIConfig() as any;
   const { categories, bundles } = menuData;
-
-  // -----------------------------
-  // Combine all items once to avoid multiple flatMaps
-  // -----------------------------
   const allItems = categories.flatMap((c) => c.items);
-
-  // -----------------------------
-  // Jaby's Favorites
-  // -----------------------------
   const jabyFavorites = allItems.filter((i) => i.jabysFavorite);
-
-  // -----------------------------
-  // Best Sellers (Top 3 globally)
-  // -----------------------------
-  const bestSellers = allItems.filter((i) => i.bestSelling).slice(0, 3);
-
-  // -----------------------------
-  // Featured Bundles
-  // -----------------------------
-  const featuredBundles = bundles.filter(
-    (b) => b.jabysFavorite || b.bestSelling
-  );
+  const bestSellers = allItems.filter((i) => i.bestSelling).slice(0, 8);
+  const featuredBundles = bundles;
 
   return (
     <main>
       {/* ---------------- Hero Section ---------------- */}
       <Hero />
-
-      {/* ---------------- Custom Order Button ---------------- */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-        <div className="border rounded-xl p-6 text-center bg-green-50 border-green-200">
-          <h2 className="font-semibold text-lg mb-2">
-            Need Something Not on the Menu?
-          </h2>
-          <p className="text-sm text-gray-600 mb-4">
-            You can request cakes, catering, bulk meals, or any special order.
-          </p>
-          <Link href="/custom-order">
-            <button className="px-6 py-3 bg-green-900 text-white rounded-lg font-semibold hover:bg-green-700 transition">
-              🎂 Request Full Custom Order
-            </button>
-          </Link>
-        </div>
+      <div className="mt-[-40px] sm:mt-[-64px] relative z-10">
+        <TrustBar />
       </div>
 
       {/* ---------------- Page Content ---------------- */}
-      <div className="pt-16 space-y-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+        <div className="lg:hidden mb-2">
+          <CategoryDiscovery />
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-13 gap-6 lg:gap-10">
+          <aside className="hidden lg:block lg:col-span-3">
+            <CategoryDiscovery />
+          </aside>
+          <div className="lg:col-span-10 space-y-16 sm:space-y-24">
+        {/* ---------------- Flash Sales ---------------- */}
+        <FlashSales />
+
         {/* ---------------- Best Sellers ---------------- */}
-        {bestSellers.length > 0 && (
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold mb-6 text-center">🔥 Best Sellers</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {bestSellers.map((product) => (
-                <ProductCard key={product.id} {...product} />
-              ))}
-            </div>
-          </section>
-        )}
+        <BestSellers products={bestSellers} />
 
         {/* ---------------- Jaby's Favorites ---------------- */}
         {jabyFavorites.length > 0 && <JabysFavorites products={jabyFavorites} />}
 
         {/* ---------------- Featured Bundles ---------------- */}
         {featuredBundles.length > 0 && (
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <section>
             <FeaturedBundles bundles={featuredBundles} />
           </section>
         )}
+
+        {/* ---------------- Social Proof ---------------- */}
+        <SocialProof />
+          </div>
+        </div>
+      </div>
+
+      <div className="space-y-16 sm:space-y-24">
+        {/* ---------------- Custom Order — Closing Section ---------------- */}
+        <section className="relative overflow-hidden mt-16 sm:mt-24 mb-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative rounded-3xl border border-border bg-surface2 overflow-hidden">
+              <div className="absolute -top-24 -right-24 w-72 h-72 bg-green/10 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-green/5 rounded-full blur-3xl pointer-events-none" />
+
+              <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-6 py-14 sm:px-12 sm:py-16 lg:px-14">
+                {/* ---- Left: Copy + CTA ---- */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="text-center lg:text-left"
+                >
+                  <div className="inline-flex items-center gap-2 bg-green-soft text-green px-4 py-1.5 rounded-full mb-6">
+                    <FaGem size={12} />
+                    <span className="text-[10px] font-black uppercase tracking-[0.2em]">Didn't Find What You Were Looking For?</span>
+                  </div>
+
+                  <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tighter text-foreground mb-4">
+                    Let Us Craft It <span className="text-green">Just For You</span>
+                  </h2>
+
+                  <p className="text-subtext mb-8 leading-relaxed max-w-md mx-auto lg:mx-0">
+                    Cakes, catering, bulk orders, or something entirely your own — tell us what you have in mind and we'll bring it to life, bespoke, straight over WhatsApp.
+                  </p>
+
+                  <Link href="/custom-order">
+                    <button className="group inline-flex items-center gap-3 bg-green text-background px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest shadow-glow hover:bg-green-strong transition-all cursor-pointer">
+                      Start a Custom Order
+                      <FaArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
+                    </button>
+                  </Link>
+                </motion.div>
+
+                {/* ---- Right: WhatsApp chat mockup ---- */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  className="relative"
+                >
+                  <div className="lg:rotate-[-2deg] bg-background border border-border-strong rounded-2xl shadow-2xl overflow-hidden max-w-sm mx-auto">
+                    <div className="bg-whatsapp/90 px-4 py-3 flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-background/20 flex items-center justify-center">
+                        <FaWhatsapp className="text-background" size={16} />
+                      </div>
+                      <div>
+                        <p className="text-background text-xs font-black uppercase tracking-wide leading-none">House of Jaby</p>
+                        <p className="text-background/70 text-[10px] mt-0.5">Online</p>
+                      </div>
+                    </div>
+                    <div className="p-4 space-y-3 bg-[#0b141a]">
+                      <div className="flex justify-end">
+                        <div className="bg-green-soft text-foreground text-xs rounded-2xl rounded-tr-sm px-4 py-2.5 max-w-[75%] leading-relaxed">
+                          Hi! I need a 3-tier cake for 50 people, chocolate + strawberry, for a wedding in 2 weeks 🎂
+                        </div>
+                      </div>
+                      <div className="flex justify-start">
+                        <div className="bg-surface2 border border-border text-foreground text-xs rounded-2xl rounded-tl-sm px-4 py-2.5 max-w-[75%] leading-relaxed">
+                          We'd love to! Sending you a custom quote shortly ✅
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );
 };
-
 export default Pages;

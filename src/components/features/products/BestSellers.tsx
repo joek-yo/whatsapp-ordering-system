@@ -1,13 +1,13 @@
 "use client";
 
 import React from "react";
+import { FaFire } from "react-icons/fa";
 import menuData from "@/data/menu.json";
 import ProductCard from "@/components/home/ProductCard";
 
 const BestSellers: React.FC = () => {
   const categories = menuData.categories;
 
-  // Get top 3 best-selling products globally
   const bestSellers = categories
     .flatMap((cat) => cat.items)
     .filter((item) => item.bestSelling)
@@ -18,8 +18,10 @@ const BestSellers: React.FC = () => {
   return (
     <section className="mb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold">🔥 Best Sellers</h2>
-        <p className="text-gray-500 mt-2 uppercase tracking-widest text-sm">
+        <h2 className="text-3xl font-black uppercase tracking-tight text-foreground flex items-center justify-center gap-2">
+          <FaFire className="text-green" size={22} /> Best Sellers
+        </h2>
+        <p className="text-subtext mt-2 uppercase tracking-widest text-xs font-bold">
           Top 3 Most Loved Products
         </p>
       </div>

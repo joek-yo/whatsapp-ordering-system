@@ -9,6 +9,7 @@ interface CartItem {
   price: number;
   quantity: number;
   image?: string;
+  note?: string;
 }
 
 // Order type
@@ -21,6 +22,7 @@ interface CartContextType {
   addToCart: (item: CartItem, options?: { silent?: boolean }) => void;
   removeFromCart: (id: number) => void;
   updateQuantity: (id: number, quantity: number) => void;
+  updateItemNote: (id: number, note: string) => void;
 
   isDrawerOpen: boolean;
   toggleDrawer: (state?: boolean) => void;
@@ -137,6 +139,10 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     setCart(prev => prev.map(item => (item.id === id ? { ...item, quantity } : item)));
   };
 
+  const updateItemNote = (id: number, note: string) => {
+    setCart(prev => prev.map(item => (item.id === id ? { ...item, note } : item)));
+  };
+
   const toggleDrawer = (state?: boolean) => {
     if (typeof state === "boolean") setIsDrawerOpen(state);
     else setIsDrawerOpen(prev => !prev);
@@ -159,6 +165,7 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
         addToCart,
         removeFromCart,
         updateQuantity,
+        updateItemNote,
         isDrawerOpen,
         toggleDrawer,
         showToast,

@@ -1,28 +1,28 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { FaChevronLeft, FaChevronRight, FaGem } from "react-icons/fa";
-import { getUIConfig } from "@/lib/getBusinessData";
+import { FaFire, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import ProductCard from "@/components/home/ProductCard";
 import SectionHeader from "@/components/home/SectionHeader";
+import { getUIConfig } from "@/lib/getBusinessData";
 
-interface BundleProps {
-  bundles: any[];
+interface BestSellersProps {
+  products: any[];
 }
 
-const FeaturedBundles: React.FC<BundleProps> = ({ bundles }) => {
+const BestSellers: React.FC<BestSellersProps> = ({ products }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const ui = getUIConfig() as any;
-  const safeBundles = Array.isArray(bundles) ? bundles : [];
+
+  if (!products || products.length === 0) return null;
 
   const handleScroll = () => {
     const el = scrollRef.current;
     if (!el) return;
-    const cardWidth = el.scrollWidth / safeBundles.length;
+    const cardWidth = el.scrollWidth / products.length;
     const index = Math.round(el.scrollLeft / cardWidth);
-    setActiveIndex(Math.max(0, Math.min(index, safeBundles.length - 1)));
+    setActiveIndex(Math.max(0, Math.min(index, products.length - 1)));
   };
 
   useEffect(() => {
@@ -30,9 +30,7 @@ const FeaturedBundles: React.FC<BundleProps> = ({ bundles }) => {
     if (!el) return;
     el.addEventListener("scroll", handleScroll, { passive: true });
     return () => el.removeEventListener("scroll", handleScroll);
-  }, [safeBundles.length]);
-
-  if (safeBundles.length === 0) return null;
+  }, [products.length]);
 
   const scroll = (direction: "left" | "right") => {
     if (!scrollRef.current) return;
@@ -43,21 +41,21 @@ const FeaturedBundles: React.FC<BundleProps> = ({ bundles }) => {
   const scrollToIndex = (i: number) => {
     const el = scrollRef.current;
     if (!el) return;
-    const cardWidth = el.scrollWidth / safeBundles.length;
+    const cardWidth = el.scrollWidth / products.length;
     el.scrollTo({ left: cardWidth * i, behavior: "smooth" });
   };
 
   return (
     <section>
       <SectionHeader
-        title={ui.bundlesTitle || "Special Bundles"}
-        badge={ui.bundlesBadge || "Best Savings"}
-        icon={FaGem}
-        href="/menu?category=bundle"
+        title={ui.bestSellersTitle || "Best Sellers"}
+        badge={ui.bestSellersBadge || "Top Rated"}
+        icon={FaFire}
+        href="/menu?filter=bestselling"
         viewAllText={ui.viewAllText}
       />
 
-      <div className="relative group px-1">
+      <div className="relative group">
         <button
           onClick={() => scroll("left")}
           className="hidden sm:flex opacity-0 group-hover:opacity-100 absolute left-2 top-[40%] -translate-y-1/2 z-30 w-10 h-10 items-center justify-center rounded-full bg-foreground text-background shadow-2xl transition-all duration-300 hover:bg-green cursor-pointer border border-border-strong"
@@ -77,39 +75,21 @@ const FeaturedBundles: React.FC<BundleProps> = ({ bundles }) => {
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           <style jsx>{`div::-webkit-scrollbar { display: none; }`}</style>
-          {safeBundles.map((bundle) => (
-            <motion.div
-              key={bundle.id}
-              className="flex-none w-[calc(85%-8px)] md:w-[calc(33.33%-16px)] snap-start"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <ProductCard
-                id={bundle.id}
-                name={bundle.name}
-                price={bundle.price}
-                oldPrice={bundle.oldPrice}
-                description={bundle.description}
-                image={bundle.image}
-                hoverImage={bundle.hoverImage}
-                available={bundle.available}
-                jabysFavorite={bundle.jabysFavorite || false}
-                bestSelling={bundle.bestSelling || false}
-                isBundle
-              />
-            </motion.div>
+          {products.map((product) => (
+            <div key={product.id} className="shrink-0 w-[calc(50%-8px)] sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] snap-start">
+              <ProductCard {...product} />
+            </div>
           ))}
         </div>
 
-        {safeBundles.length > 1 && (
+        {products.length > 1 && (
           <div className="flex sm:hidden justify-center gap-1.5 mt-3">
-            {safeBundles.map((_, i) => (
+            {products.map((_, i) => (
               <button
                 key={i}
                 onClick={() => scrollToIndex(i)}
                 className={"h-1.5 rounded-full transition-all duration-300 " + (i === activeIndex ? "w-5 bg-green" : "w-1.5 bg-border")}
-                aria-label={"Go to bundle " + (i + 1)}
+                aria-label={"Go to item " + (i + 1)}
               />
             ))}
           </div>
@@ -119,4 +99,4 @@ const FeaturedBundles: React.FC<BundleProps> = ({ bundles }) => {
   );
 };
 
-export default FeaturedBundles;
+export default BestSellers;

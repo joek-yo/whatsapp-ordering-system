@@ -1,52 +1,59 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useCart } from "@/context/CartContext";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaPlus, FaMinus, FaShoppingBag } from "react-icons/fa";
 
 interface ProductProps {
-  id: number;
+  id: any;
   name: string;
   price?: number;
+  oldPrice?: number;
   image?: string;
+  hoverImage?: string;
   description: string;
   available?: boolean;
   jabysFavorite?: boolean;
   bestSelling?: boolean;
+  discountPercent?: number;
+  stock?: number;
 }
 
 interface ProductCardProps extends ProductProps {
   isBundle?: boolean;
-  onAddToCart?: () => void; // <-- added this
+  onAddToCart?: () => void;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
   id,
   name,
   price = 0,
+  oldPrice,
   image,
+  hoverImage,
   description,
   available = true,
   jabysFavorite = false,
   bestSelling = false,
   isBundle = false,
-  onAddToCart, // <-- added here
+  discountPercent,
+  stock,
+  onAddToCart,
 }) => {
   const { cart, addToCart, updateQuantity, removeFromCart } = useCart();
+  const [isHovered, setIsHovered] = useState(false);
 
-  // Check if the product is already in the cart
   const cartItem = cart.find((item) => item.id === id);
   const quantity = cartItem ? cartItem.quantity : 0;
 
-  // Use onAddToCart from props if passed, otherwise fallback to default
-  const handleAddToCart = () => {
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
     if (!available) return;
-
-    if (onAddToCart) {
-      onAddToCart();
-      return;
-    }
-
+    if (onAddToCart) return onAddToCart();
     if (!cartItem) {
       addToCart({ id, name, price, quantity: 1, image: image || "/images/placeholder.jpg" });
     } else {
@@ -54,79 +61,90 @@ const ProductCard: React.FC<ProductCardProps> = ({
     }
   };
 
-  const handleDecrease = () => {
+  const handleDecrease = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
     if (!cartItem) return;
-    if (quantity <= 1) {
-      removeFromCart(id);
-    } else {
-      updateQuantity(id, quantity - 1);
-    }
+    if (quantity <= 1) removeFromCart(id);
+    else updateQuantity(id, quantity - 1);
   };
 
+  const badgeBase = "absolute top-2 left-2 z-30 px-2 py-1 text-[9px] font-black uppercase tracking-widest rounded-md shadow-sm";
+
   return (
-    <div className="bg-white rounded-xl shadow-md flex flex-col relative hover:scale-105 transition-transform duration-200">
-      {/* BADGES */}
-      {(bestSelling || jabysFavorite || isBundle) && (
-        <div className="absolute top-2 left-2 flex flex-col space-y-1 z-10">
-          {bestSelling && <span className="bg-red-500 text-white text-xs px-2 py-1 rounded">🔥 Best Seller</span>}
-          {jabysFavorite && <span className="bg-blue-500 text-white text-xs px-2 py-1 rounded">⭐ Jaby's Favorite</span>}
-          {isBundle && <span className="bg-gray-700 text-white text-xs px-2 py-1 rounded">🎁 Bundle</span>}
+    <div
+      className={"group bg-surface rounded-lg border border-border flex flex-col overflow-hidden transition-all duration-300 active:scale-[0.98] md:hover:border-green/50 md:hover:shadow-lg " + (isBundle ? "min-h-[300px] sm:min-h-[340px]" : "")}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <Link href={"/product/" + id} className="flex flex-col flex-1 cursor-pointer">
+        <div className={"relative bg-surface2 overflow-hidden " + (isBundle ? "h-36 sm:h-44" : "aspect-square")}>
+          {stock && stock <= 5 ? (
+            <span className={badgeBase + " bg-danger text-background"}>Only {stock}</span>
+          ) : jabysFavorite ? (
+            <span className={badgeBase + " bg-background text-foreground border border-border-strong"}>Favorite</span>
+          ) : bestSelling ? (
+            <span className={badgeBase + " bg-green text-background"}>Hot</span>
+          ) : discountPercent ? (
+            <span className={badgeBase + " bg-danger text-background"}>-{discountPercent}%</span>
+          ) : !available ? (
+            <span className={badgeBase + " bg-muted text-background"}>Sold Out</span>
+          ) : null}
+
+          <Image
+            src={isHovered && hoverImage ? hoverImage : image || "/images/placeholder.jpg"}
+            alt={name}
+            fill
+            className="object-cover md:group-hover:scale-105 transition-transform duration-500"
+          />
         </div>
-      )}
 
-      {/* PRODUCT IMAGE */}
-      <div className="relative h-48 w-full rounded-t-xl overflow-hidden">
-        <Image
-          src={image || "/images/placeholder.jpg"}
-          alt={name}
-          fill
-          className="object-cover"
-          loading="lazy"
-        />
-      </div>
-
-      {/* DETAILS */}
-      <div className="p-4 flex flex-col justify-between flex-1">
-        <div>
-          <h3 className="text-lg font-semibold text-gray-800">{name}</h3>
-          <p className="text-gray-500 mt-1 text-sm">{description}</p>
-        </div>
-
-        <div className="mt-4 flex flex-col space-y-2">
-          <span className="text-gray-900 font-bold">{`KES ${price.toLocaleString()}`}</span>
-
-          {/* QUANTITY CONTROLS */}
-          <div className="flex items-center space-x-2">
-            <button
-              onClick={handleDecrease}
-              className="px-2 py-1 bg-gray-200 rounded hover:bg-gray-300"
-              disabled={!available || quantity === 0}
-            >
-              -
-            </button>
-            <span>{quantity}</span>
-            <button
-              onClick={handleAddToCart}
-              className={`px-2 py-1 rounded transition ${
-                !available ? "bg-gray-300 text-gray-600 cursor-not-allowed" : "bg-green-900 text-white hover:bg-green-700"
-              }`}
-              disabled={!available}
-            >
-              +
-            </button>
+        <div className="p-2.5 sm:p-2 flex flex-col flex-1">
+          <h3 className="text-xs sm:text-xs font-black uppercase text-foreground line-clamp-1 leading-tight">{name}</h3>
+          <p className="text-[10px] text-subtext font-bold mt-0.5 line-clamp-1">{description}</p>
+          <div className="mt-1.5 flex items-center gap-1.5 flex-wrap">
+            <span className="text-sm font-black text-foreground">KES {price.toLocaleString()}</span>
+            {oldPrice && oldPrice > price && (
+              <span className="text-[10px] text-muted line-through font-bold">KES {oldPrice.toLocaleString()}</span>
+            )}
           </div>
+        </div>
+      </Link>
 
-          {/* ADD TO CART BUTTON */}
-          {!cartItem && (
-            <button
-              onClick={handleAddToCart}
-              disabled={!available}
-              className={`mt-2 px-4 py-2 font-semibold rounded-lg shadow-md transition-all duration-200
-                ${!available ? "bg-gray-300 text-gray-600 cursor-not-allowed" : "bg-green-900 text-white hover:bg-green-700"}`}
-            >
-              {!available ? "Out of Stock" : "Add to Cart"}
-            </button>
-          )}
+      <div className="p-2.5 sm:p-2 pt-0">
+        <div className="mt-auto pt-2">
+          <AnimatePresence mode="wait">
+            {cartItem ? (
+              <motion.div
+                key="qty"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="w-full h-9 sm:h-7 bg-background border border-green rounded-md flex items-center justify-between"
+              >
+                <button onClick={handleDecrease} className="text-green h-full px-4 sm:px-3 flex items-center justify-center cursor-pointer active:scale-90 transition-transform">
+                  <FaMinus size={9} />
+                </button>
+                <span className="text-foreground font-black text-xs sm:text-[10px]">{quantity}</span>
+                <button onClick={handleAddToCart} className="text-green h-full px-4 sm:px-3 flex items-center justify-center cursor-pointer active:scale-90 transition-transform">
+                  <FaPlus size={9} />
+                </button>
+              </motion.div>
+            ) : (
+              <motion.button
+                key="add"
+                onClick={handleAddToCart}
+                disabled={!available}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className={"w-full h-9 sm:h-7 rounded-md flex items-center justify-center gap-1.5 text-[10px] sm:text-[9px] font-black uppercase tracking-wider border transition-all duration-200 cursor-pointer " + (available ? "border-border-strong text-foreground active:scale-95 md:hover:bg-green md:hover:border-green md:hover:text-background" : "border-border text-muted")}
+              >
+                <FaShoppingBag size={9} />
+                {available ? "Add to Cart" : "Out"}
+              </motion.button>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </div>

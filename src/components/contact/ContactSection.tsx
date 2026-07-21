@@ -17,59 +17,51 @@ const ContactSection: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // 1. Format the message for WhatsApp
     const text = `*New Website Inquiry*\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Message:* ${formData.message}`;
-    
-    // 2. Clean the phone number and create the URL
     const cleanPhone = business.phone.replace(/[^0-9]/g, '');
     const whatsappUrl = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(text)}`;
 
-    // 3. Show the success message in the UI
     setSubmitted(true);
 
-    // 4. Redirect to WhatsApp after a short delay so the user sees the "Thank you" message
     setTimeout(() => {
       window.location.href = whatsappUrl;
-      
-      // 5. Clear the form fields
       setFormData({ name: "", email: "", message: "" });
-    }, 1000); 
+    }, 1000);
 
-    // Optional: Hide the success banner after 5 seconds
     setTimeout(() => setSubmitted(false), 5000);
   };
 
   const contactOptions = [
     {
-      icon: <FaPhoneAlt size={22} />,
+      icon: <FaPhoneAlt size={20} />,
       title: "Call Us",
       info: business.phone,
       link: `tel:${business.phone}`,
-      bg: "bg-green-700 hover:bg-green-800",
+      bg: "bg-green text-background hover:bg-green-strong",
     },
     {
-      icon: <FaEnvelope size={22} />,
+      icon: <FaEnvelope size={20} />,
       title: "Email Us",
       info: business.email,
       link: `mailto:${business.email}`,
-      bg: "bg-gray-800 hover:bg-gray-900",
+      bg: "bg-surface2 text-foreground border border-border hover:border-green hover:text-green",
     },
     {
-      icon: <FaWhatsapp size={22} />,
+      icon: <FaWhatsapp size={20} />,
       title: "WhatsApp Chat",
       info: business.phone,
       link: `https://wa.me/${business.phone.replace(/[^0-9]/g, '')}`,
-      bg: "bg-green-500 hover:bg-green-600",
+      bg: "bg-whatsapp text-white hover:opacity-90",
     },
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 bg-background">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-4xl font-black text-center mb-12 text-gray-800"
+        className="text-4xl font-black uppercase tracking-tighter text-center mb-12 text-foreground"
       >
         Get in Touch
       </motion.h2>
@@ -90,11 +82,11 @@ const ContactSection: React.FC = () => {
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { delay: idx * 0.1 } },
             }}
-            className={`flex flex-col items-center p-8 rounded-3xl shadow-xl text-white transition-all transform hover:-translate-y-2 ${card.bg}`}
+            className={`flex flex-col items-center p-8 rounded-3xl shadow-xl transition-all transform hover:-translate-y-2 cursor-pointer ${card.bg}`}
           >
-            <div className="mb-4 p-3 bg-white/20 rounded-full">{card.icon}</div>
-            <h3 className="text-xl font-bold mb-2">{card.title}</h3>
-            <p className="text-center font-medium opacity-90">{card.info}</p>
+            <div className="mb-4 p-3 bg-background/10 rounded-full">{card.icon}</div>
+            <h3 className="text-lg font-black uppercase tracking-wide mb-2">{card.title}</h3>
+            <p className="text-center font-medium opacity-90 text-sm">{card.info}</p>
           </motion.a>
         ))}
       </motion.div>
@@ -104,37 +96,37 @@ const ContactSection: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="max-w-3xl mx-auto bg-white shadow-2xl rounded-[2rem] p-8 md:p-12 border border-gray-100 flex flex-col gap-6"
+        className="max-w-3xl mx-auto bg-surface shadow-2xl rounded-[2rem] p-8 md:p-12 border border-border flex flex-col gap-6"
       >
         {submitted && (
-          <motion.div 
-            initial={{ scale: 0.9, opacity: 0 }} 
-            animate={{ scale: 1, opacity: 1 }} 
-            className="bg-green-50 text-green-700 p-4 rounded-xl font-bold text-center border border-green-100"
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            className="bg-green-soft text-green p-4 rounded-xl font-bold text-center border border-green/30"
           >
             Redirecting to WhatsApp... Thank you!
           </motion.div>
         )}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              required
-              value={formData.name}
-              onChange={handleChange}
-              className="p-4 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500 transition"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-              value={formData.email}
-              onChange={handleChange}
-              className="p-4 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500 transition"
-            />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            value={formData.name}
+            onChange={handleChange}
+            className="p-4 rounded-xl bg-surface2 border border-border text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-green transition"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            value={formData.email}
+            onChange={handleChange}
+            className="p-4 rounded-xl bg-surface2 border border-border text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-green transition"
+          />
         </div>
         <textarea
           name="message"
@@ -143,14 +135,14 @@ const ContactSection: React.FC = () => {
           required
           value={formData.message}
           onChange={handleChange}
-          className="p-4 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none transition"
+          className="p-4 rounded-xl bg-surface2 border border-border text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-green resize-none transition"
         ></textarea>
         <button
           type="submit"
           disabled={submitted}
-          className={`bg-green-900 hover:bg-green-800 text-white font-bold py-4 rounded-xl transition-all shadow-lg active:scale-95 flex items-center justify-center gap-2 ${submitted ? 'opacity-50 cursor-not-allowed' : ''}`}
+          className={`bg-green hover:bg-green-strong text-background font-black uppercase tracking-widest text-xs py-4 rounded-xl transition-all shadow-glow active:scale-95 flex items-center justify-center gap-2 cursor-pointer ${submitted ? 'opacity-50 cursor-not-allowed' : ''}`}
         >
-          <FaWhatsapp className="text-xl" />
+          <FaWhatsapp className="text-lg" />
           {submitted ? "Sending..." : "Send via WhatsApp"}
         </button>
       </motion.form>

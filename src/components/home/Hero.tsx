@@ -1,71 +1,118 @@
 "use client";
-
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { getBusinessData } from "@/lib/getBusinessData";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
+import menuData from "@/data/menu.json";
 
 const Hero: React.FC = () => {
   const business = getBusinessData();
 
   return (
-    <section className="w-screen max-w-none h-[75vh] relative flex items-center justify-center overflow-hidden">
-      {/* Hero Background Image */}
+    <section className="w-screen max-w-none min-h-[90vh] relative flex items-center justify-center overflow-hidden">
+      {/* Background */}
       {business.banner && (
         <Image
           src={business.banner}
           alt="Hero Banner"
           fill
-          className="absolute top-0 left-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover scale-105"
           priority
         />
       )}
+      {/* Layered overlay for depth + legibility */}
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/20" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-transparent to-background/60" />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
+      {/* Ambient glow accents */}
+      <div className="absolute top-1/4 -left-24 w-96 h-96 bg-green/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/4 -right-24 w-96 h-96 bg-green/10 rounded-full blur-3xl pointer-events-none" />
 
       {/* Content */}
-      <motion.div
-        className="relative z-10 text-center px-6 text-white pt-16 md:pt-20"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <h2 className="text-3xl md:text-4xl font-bold mb-2 drop-shadow-lg text-yellow-300">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-24 md:pt-16">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="flex justify-center mb-6"
+        >
+          <div className="flex items-center gap-2 bg-surface2/80 backdrop-blur-md border border-border px-4 py-1.5 rounded-full">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-green" />
+            </span>
+            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-foreground">
+              {menuData.hero?.status || "Open Now"}
+            </span>
+          </div>
+        </motion.div>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+          className="text-sm md:text-base font-black uppercase tracking-[0.3em] text-green mb-4"
+        >
           {business.name || "House Of Jaby"}
-        </h2>
+        </motion.h2>
 
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-foreground leading-[0.95] mb-6 drop-shadow-xl"
+        >
           {business.tagline || "Crafted Moments The Jaby Way"}
-        </h1>
+        </motion.h1>
 
-        <p className="text-lg md:text-2xl mb-6 drop-shadow">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="text-base md:text-xl text-subtext mb-10 max-w-2xl mx-auto"
+        >
           Fast Delivery • Fresh Ingredients • Hit Us Up
-        </p>
+        </motion.p>
 
-        <div className="flex flex-col md:flex-row justify-center gap-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+          className="flex flex-col md:flex-row justify-center items-center gap-4 mb-10"
+        >
           <Link
             href="/menu"
-            className="px-8 py-4 bg-green-900 text-white font-semibold rounded-lg shadow-lg hover:bg-green-800 transition-colors"
+            className="group flex items-center gap-3 bg-green text-background px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest shadow-glow hover:bg-green-strong transition-all"
           >
             View Menu
+            <FaArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
           </Link>
-
           <Link
             href={`https://wa.me/${business.phone}?text=Hello%20I%20would%20like%20to%20order`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-green-500 text-white font-semibold rounded-lg shadow-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
+            className="flex items-center gap-3 bg-whatsapp text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest shadow-lg hover:brightness-110 transition-all"
           >
-            <FaWhatsapp className="text-white w-5 h-5" />
+            <FaWhatsapp size={16} />
             Order via WhatsApp
           </Link>
-        </div>
-      </motion.div>
+        </motion.div>
+
+        {menuData.hero?.location && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
+            className="inline-flex items-center gap-2 text-subtext text-xs font-semibold bg-surface2/60 backdrop-blur-md border border-border px-4 py-2 rounded-full"
+          >
+            <FaMapMarkerAlt className="text-green" size={12} />
+            {menuData.hero.location}
+          </motion.div>
+        )}
+      </div>
     </section>
   );
 };
-
 export default Hero;
