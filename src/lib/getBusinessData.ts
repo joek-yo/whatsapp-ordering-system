@@ -71,7 +71,7 @@ export function getRelatedProducts(currentId: string | number, categoryId?: stri
 // 🔹 Returns products currently on flash sale
 export function getFlashSaleProducts() {
   return getAllProducts().filter(
-    (p) => (p.discountPercent > 0 || p.onFlashSale === true) && p.available !== false
+    (p) => ((p.discountPercent ?? 0) > 0 || p.onFlashSale === true) && p.available !== false
   );
 }
 
