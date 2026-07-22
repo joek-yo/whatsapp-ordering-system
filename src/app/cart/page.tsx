@@ -1,11 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCart } from "@/context/CartContext";
 import menuData from "@/data/menu.json";
+import Button from "@/components/ui/Button";
+import ProductCard from "@/components/home/ProductCard";
+import { FaLightbulb, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const CartPage: React.FC = () => {
   const {
@@ -23,6 +26,25 @@ const CartPage: React.FC = () => {
   const router = useRouter();
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [openNoteId, setOpenNoteId] = useState<number | null>(null);
+  const [suggestedDeals, setSuggestedDeals] = useState<any[]>([]);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const allItems = menuData.categories.flatMap((cat) => cat.items);
+    const filteredItems = allItems.filter(
+      (item) => !cart.some((cartItem) => cartItem.id === item.id)
+    );
+    const shuffled = [...filteredItems].sort(() => 0.5 - Math.random()).slice(0, 8);
+    setSuggestedDeals(shuffled);
+  }, [cart.length]);
+
+  const scrollDeals = (direction: "left" | "right") => {
+    if (scrollRef.current) {
+      const { clientWidth } = scrollRef.current;
+      const scrollAmount = direction === "left" ? -clientWidth : clientWidth;
+      scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    }
+  };
 
   const subtotal = cart.reduce(
     (total, item) => total + item.price * item.quantity,
@@ -32,34 +54,6 @@ const CartPage: React.FC = () => {
   const handleProceed = () => router.push("/review");
 
   // --- DYNAMIC BEST SELLERS / SUGGESTIONS (exclude items already in cart) ---
-  const suggestions = [
-    ...menuData.categories.flatMap((category) =>
-      category.items
-        .filter(
-          (item) =>
-            item.bestSelling &&
-            item.available &&
-            !cart.some((c) => c.id === item.id)
-        )
-        .map((item) => ({ ...item }))
-    ),
-    ...menuData.bundles
-      .filter(
-        (bundle) =>
-          bundle.bestSelling &&
-          bundle.available &&
-          !cart.some((c) => c.id === bundle.id)
-      )
-      .map((bundle) => ({ ...bundle }))
-  ];
-
-  // Add suggestion silently without triggering MiniCartDrawer
-  const handleAddSuggestion = (item: any) => {
-    addToCart({ ...item, quantity: 1 }, { silent: true });
-    setToastMessage(`${item.name} added to cart!`);
-    setTimeout(() => setToastMessage(null), 2000);
-  };
-
   const toggleNoteEditor = (id: number) => {
     setOpenNoteId((prev) => (prev === id ? null : id));
   };
@@ -178,48 +172,49 @@ const CartPage: React.FC = () => {
                 <span>KES {subtotal.toLocaleString()}</span>
               </div>
 
-              <button
-                onClick={handleProceed}
-                className="w-full py-3 rounded-xl bg-green text-background font-black uppercase tracking-widest transition hover:bg-green-strong active:scale-95 cursor-pointer"
-              >
+              <Button onClick={handleProceed} variant="primary" fullWidth>
                 Review Cart Order
-              </button>
+              </Button>
             </div>
           </div>
         )}
 
-        {/* SUGGESTIONS */}
-        {suggestions.length > 0 && (
-          <div className="bg-surface border border-border rounded-xl p-5 space-y-4">
-            <h2 className="font-bold text-sm sm:text-base text-foreground">You may also like</h2>
-            <div className="space-y-3">
-              {suggestions.map((item) => (
-                <div key={item.id} className="flex justify-between items-center">
-                  <div className="flex items-center gap-3">
-                    {item.image && (
-                      <Image
-                        src={item.image}
-                        alt={item.name}
-                        width={48}
-                        height={48}
-                        className="object-cover rounded-lg"
-                      />
-                    )}
-                    <div>
-                      <p className="text-sm font-medium text-foreground">{item.name}</p>
-                      <p className="text-xs text-subtext">
-                        KES {item.price.toLocaleString()}
-                      </p>
-                    </div>
-                  </div>
-                  <button
-                    onClick={() => handleAddSuggestion(item)}
-                    className="px-3 py-1.5 text-sm bg-green text-background rounded-lg font-bold transition hover:bg-green-strong active:scale-95 cursor-pointer"
+
+        {/* You Might Also Like */}
+        {suggestedDeals.length > 0 && (
+          <div className="mb-2 relative">
+            <div className="flex justify-between items-center mb-4 px-1">
+              <h2 className="text-[9px] font-black uppercase tracking-[0.2em] text-foreground flex items-center gap-2">
+                <FaLightbulb className="text-green" />
+                You Might Also Like
+              </h2>
+            </div>
+            <div className="relative group/nav">
+              <button
+                onClick={() => scrollDeals("left")}
+                className="absolute left-[-12px] top-1/2 -translate-y-1/2 z-40 w-10 h-10 flex items-center justify-center rounded-full bg-foreground text-background shadow-xl hover:bg-green active:scale-90 cursor-pointer border-2 border-background"
+              >
+                <FaChevronLeft size={12} />
+              </button>
+              <button
+                onClick={() => scrollDeals("right")}
+                className="absolute right-[-12px] top-1/2 -translate-y-1/2 z-40 w-10 h-10 flex items-center justify-center rounded-full bg-foreground text-background shadow-xl hover:bg-green active:scale-90 cursor-pointer border-2 border-background"
+              >
+                <FaChevronRight size={12} />
+              </button>
+              <div
+                ref={scrollRef}
+                className="flex gap-3 overflow-x-auto pb-6 no-scrollbar snap-x snap-mandatory scroll-smooth px-1"
+              >
+                {suggestedDeals.map((item) => (
+                  <div
+                    key={item.id}
+                    className="flex-none w-[calc(50%-6px)] sm:w-[calc((100%-24px)/3)] snap-start"
                   >
-                    + Add
-                  </button>
-                </div>
-              ))}
+                    <ProductCard {...item} />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         )}
@@ -233,9 +228,9 @@ const CartPage: React.FC = () => {
             Request cakes, catering, bulk meals, or any special order.
           </p>
           <Link href="/custom-order">
-            <button className="px-6 py-3 bg-green text-background rounded-lg text-sm font-black uppercase tracking-widest transition hover:bg-green-strong active:scale-95 cursor-pointer">
+            <Button variant="primary">
               🎂 Request Custom Order
-            </button>
+            </Button>
           </Link>
         </div>
 
@@ -264,12 +259,18 @@ const CartPage: React.FC = () => {
         {/* REVIEW CUSTOM ORDER BUTTON */}
         {customOrder.trim() && (
           <div className="bg-surface border border-border rounded-xl p-5">
-            <button
-              onClick={handleProceed}
-              className="w-full py-3 rounded-xl bg-green text-background font-black uppercase tracking-widest transition hover:bg-green-strong active:scale-95 cursor-pointer"
-            >
+            <Button onClick={handleProceed} variant="primary" fullWidth>
               Review Custom Order
-            </button>
+            </Button>
+          </div>
+        )}
+
+        {/* BOTTOM REVIEW CTA - for pages with a lot of scroll content */}
+        {cart.length > 0 && (
+          <div className="bg-surface border border-border rounded-xl p-5">
+            <Button onClick={handleProceed} variant="primary" fullWidth>
+              Review Cart Order
+            </Button>
           </div>
         )}
       </div>

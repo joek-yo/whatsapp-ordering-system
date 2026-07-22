@@ -1,4 +1,6 @@
 "use client";
+
+import Button from "@/components/ui/Button";
 import React from "react";
 import Link from "next/link";
 import Hero from "@/components/home/Hero";
@@ -93,10 +95,14 @@ const Pages: React.FC = () => {
                   </p>
 
                   <Link href="/custom-order">
-                    <button className="group inline-flex items-center gap-3 bg-green text-background px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest shadow-glow hover:bg-green-strong transition-all cursor-pointer">
+                    <Button
+                      variant="primary"
+                      size="lg"
+                      className="group"
+                      rightIcon={<FaArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />}
+                    >
                       Start a Custom Order
-                      <FaArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
-                    </button>
+                    </Button>
                   </Link>
                 </motion.div>
 

@@ -75,10 +75,11 @@ export function getFlashSaleProducts() {
   );
 }
 
-// 🔹 Returns UI config (announcement bar, etc.)
+// 🔹 Returns UI config (announcement bar, per-page copy, etc.)
 export function getUIConfig() {
   return {
     announcement: menuData.announcement || { active: false, text: "" },
+    menuPage: (menuData as any).menuPage || { tagline: "", title: "", subtitle: "" },
     ...(menuData.ui || {}),
   };
 }

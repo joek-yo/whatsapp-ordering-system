@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "@/components/ui/Button";
 import { getBusinessData } from "@/lib/getBusinessData";
 import { FaWhatsapp, FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
 import menuData from "@/data/menu.json";
@@ -82,22 +83,26 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="flex flex-col md:flex-row justify-center items-center gap-4 mb-10"
         >
-          <Link
-            href="/menu"
-            className="group flex items-center gap-3 bg-green text-background px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest shadow-glow hover:bg-green-strong transition-all"
-          >
-            View Menu
-            <FaArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
+          <Link href="/menu">
+            <Button
+              variant="primary"
+              size="lg"
+              className="group"
+              rightIcon={<FaArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />}
+            >
+              View Menu
+            </Button>
           </Link>
-          <Link
+          <Button
             href={`https://wa.me/${business.phone}?text=Hello%20I%20would%20like%20to%20order`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 bg-whatsapp text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest shadow-lg hover:brightness-110 transition-all"
+            variant="whatsapp"
+            size="lg"
+            leftIcon={<FaWhatsapp size={16} />}
           >
-            <FaWhatsapp size={16} />
             Order via WhatsApp
-          </Link>
+          </Button>
         </motion.div>
 
         {menuData.hero?.location && (

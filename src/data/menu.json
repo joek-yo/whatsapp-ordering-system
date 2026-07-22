@@ -17,6 +17,11 @@
     "status": "Open Now",
     "location": "Westlands, Nairobi"
   },
+  "menuPage": {
+    "tagline": "Our Menu",
+    "title": "Freshly Crafted for You",
+    "subtitle": "Every item made fresh to order, the Jaby way."
+  },
   "categories": [
     {
       "id": "cakes",

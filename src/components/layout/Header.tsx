@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -20,6 +21,8 @@ import {
   FaGem,
   FaHeart,
 } from "react-icons/fa";
+import Button from "@/components/ui/Button";
+import ThemeToggle from "@/components/ui/ThemeToggle";
 import { useCart } from "@/context/CartContext";
 import { useTheme } from "@/context/ThemeContext";
 import { getBusinessData } from "@/lib/getBusinessData";
@@ -48,7 +51,7 @@ const Header: React.FC = () => {
   const navLinks = [
     { href: "/", label: "Home", icon: FaHome },
     { href: "/menu", label: "Menu", icon: FaUtensils },
-    { href: "/about", label: "About", icon: FaHeart },
+    { href: "/about", label: "Our Story", icon: FaHeart },
     { href: "/custom-order", label: "Custom Order", icon: FaGem },
     { href: "/contact", label: "Contact", icon: FaEnvelope },
   ];
@@ -56,7 +59,7 @@ const Header: React.FC = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 border-b transition-all duration-300 ${
+        className={`relative w-full border-b transition-all duration-300 ${
           scrolled
             ? "bg-background/90 backdrop-blur-xl border-border shadow-lg"
             : "bg-background/40 backdrop-blur-md border-transparent"
@@ -74,30 +77,28 @@ const Header: React.FC = () => {
               </div>
 
               <div className="flex items-center space-x-2">
-                <button onClick={toggleTheme} className="text-subtext p-2 rounded-lg hover:bg-surface2 transition cursor-pointer" aria-label="Toggle theme">
-                  {isLight ? <FaMoon size={16} /> : <FaSun size={16} />}
-                </button>
+                <ThemeToggle isLight={isLight} onToggle={toggleTheme} className="scale-90" />
                 <button onClick={() => toggleDrawer(true)} className="relative flex items-center bg-green text-background px-3 py-2 rounded-lg shadow-glow cursor-pointer">
                   <FaShoppingCart />
                   {totalItems > 0 && (
-                    <span className="absolute -top-2 -right-2 bg-danger text-white text-xs font-bold px-2 py-0.5 rounded-full">{totalItems}</span>
+                    <span className="absolute -top-2 -right-2 bg-white text-danger text-xs font-bold px-2 py-0.5 rounded-full ring-2 ring-background">{totalItems}</span>
                   )}
                 </button>
               </div>
             </div>
 
             <div className="flex justify-between items-center pb-3">
-              <button onClick={() => setMobileMenuOpen(true)} className="flex items-center gap-2 bg-green text-background px-3 py-2 rounded-lg font-black text-xs uppercase tracking-widest cursor-pointer">
-                <FaBars size={14} /> Menu
-              </button>
+              <Button onClick={() => setMobileMenuOpen(true)} variant="primary" size="sm" leftIcon={<FaBars size={14} />} className="!rounded-lg">
+                Menu
+              </Button>
 
               <div className="flex space-x-2">
-                <a href={`https://wa.me/${business.phone}`} target="_blank" rel="noopener noreferrer" className="flex items-center px-3 py-2 bg-whatsapp text-white rounded-lg shadow text-sm font-bold">
-                  <FaWhatsapp className="mr-2" /> Chat
-                </a>
-                <a href={`tel:${business.phone}`} className="flex items-center px-3 py-2 bg-green-strong text-white rounded-lg shadow text-sm font-bold">
-                  <FaPhoneAlt className="mr-2" /> Call
-                </a>
+                <Button href={`https://wa.me/${business.phone}`} target="_blank" rel="noopener noreferrer" variant="whatsapp" size="sm" leftIcon={<FaWhatsapp />} className="!rounded-lg !normal-case !tracking-normal !font-bold">
+                  Chat
+                </Button>
+                <Button href={`tel:${business.phone}`} variant="primary" size="sm" leftIcon={<FaPhoneAlt />} className="!rounded-lg !normal-case !tracking-normal !font-bold !bg-green-strong">
+                  Call
+                </Button>
               </div>
             </div>
           </div>
@@ -123,9 +124,7 @@ const Header: React.FC = () => {
             </nav>
 
             <div className="flex items-center gap-3 shrink-0">
-              <button onClick={toggleTheme} className="text-subtext p-2.5 rounded-xl border border-border bg-surface2 hover:border-green hover:text-green transition cursor-pointer" aria-label="Toggle theme">
-                {isLight ? <FaMoon size={15} /> : <FaSun size={15} />}
-              </button>
+              <ThemeToggle isLight={isLight} onToggle={toggleTheme} />
               <button onClick={() => toggleDrawer(true)} className="group flex items-center gap-3 bg-surface2 border border-border px-5 py-2.5 rounded-2xl hover:bg-green hover:text-background hover:border-green transition-all cursor-pointer">
                 <div className="relative">
                   <FaShoppingCart className="text-green group-hover:text-background transition-colors" />
@@ -139,8 +138,10 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        {/* MOBILE DRAWER */}
-        <AnimatePresence>
+      </header>
+      {typeof document !== "undefined" &&
+        createPortal(
+          <AnimatePresence>
           {mobileMenuOpen && (
             <>
               <motion.div
@@ -212,12 +213,12 @@ const Header: React.FC = () => {
                 </div>
 
                 <div className="p-5 bg-surface2 border-t border-border space-y-3">
-                  <a href={`tel:${business.phone}`} className="flex items-center justify-center w-full py-3 bg-green-strong text-white rounded-xl font-bold shadow-lg transition-transform active:scale-95">
-                    <FaPhoneAlt className="mr-3" /> Call to Order Now
-                  </a>
-                  <a href={`https://wa.me/${business.phone}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full py-3 bg-whatsapp text-white rounded-xl font-bold shadow-glow transition-transform active:scale-95">
-                    <FaWhatsapp className="mr-3 text-xl" /> Order via WhatsApp
-                  </a>
+                  <Button href={`tel:${business.phone}`} variant="primary" fullWidth leftIcon={<FaPhoneAlt />} className="!bg-green-strong !normal-case !tracking-normal !font-bold active:scale-95">
+                    Call to Order Now
+                  </Button>
+                  <Button href={`https://wa.me/${business.phone}`} target="_blank" rel="noopener noreferrer" variant="whatsapp" fullWidth leftIcon={<FaWhatsapp className="text-xl" />} className="!normal-case !tracking-normal !font-bold active:scale-95">
+                    Order via WhatsApp
+                  </Button>
                   <p className="text-[9px] text-center text-muted mt-2 font-medium tracking-widest uppercase italic">
                     {business.tagline || "Crafted Moments The Jaby Way"}
                   </p>
@@ -225,9 +226,9 @@ const Header: React.FC = () => {
               </motion.div>
             </>
           )}
-        </AnimatePresence>
-      </header>
-      <div className="h-20 md:h-24"></div>
+        </AnimatePresence>,
+          document.body
+        )}
     </>
   );
 };

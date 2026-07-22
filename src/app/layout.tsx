@@ -56,8 +56,10 @@ export default function RootLayout({
       <body className="bg-background text-foreground min-h-screen flex flex-col grain">
         <ThemeProvider>
           <CartProvider>
-            <Header />
-            <AnnouncementBar />
+            <div className="sticky top-0 left-0 w-full z-50">
+              <Header />
+              <AnnouncementBar />
+            </div>
             <SearchBar />
             <MiniCartDrawer />
             <CartToast />

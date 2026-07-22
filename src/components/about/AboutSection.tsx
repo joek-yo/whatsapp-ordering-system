@@ -6,6 +6,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaHeart, FaLeaf, FaWhatsapp, FaArrowRight } from "react-icons/fa";
 import { getBusinessData } from "@/lib/getBusinessData";
+import Button from "@/components/ui/Button";
+import Card from "@/components/ui/Card";
 
 const AboutSection: React.FC = () => {
   const business = getBusinessData() as any;
@@ -109,13 +111,14 @@ const AboutSection: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-surface border border-border rounded-2xl p-6 text-center space-y-3"
             >
-              <div className="w-12 h-12 mx-auto rounded-full bg-green-soft flex items-center justify-center text-green">
-                {v.icon}
-              </div>
-              <h3 className="font-black uppercase tracking-tight text-foreground text-sm">{v.title}</h3>
-              <p className="text-xs text-subtext leading-relaxed">{v.text}</p>
+              <Card padding="none" className="p-6 text-center space-y-3">
+                <div className="w-12 h-12 mx-auto rounded-full bg-green-soft flex items-center justify-center text-green">
+                  {v.icon}
+                </div>
+                <h3 className="font-black uppercase tracking-tight text-foreground text-sm">{v.title}</h3>
+                <p className="text-xs text-subtext leading-relaxed">{v.text}</p>
+              </Card>
             </motion.div>
           ))}
         </div>
@@ -142,22 +145,20 @@ const AboutSection: React.FC = () => {
           Browse the menu or send us a message — we&apos;re one WhatsApp chat away.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Link
-            href="/menu"
-            className="group inline-flex items-center justify-center gap-3 bg-green text-background px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest shadow-glow hover:bg-green-strong transition-all"
-          >
-            View Menu
-            <FaArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
+          <Link href="/menu">
+            <Button variant="primary" rightIcon={<FaArrowRight size={12} />}>
+              View Menu
+            </Button>
           </Link>
-          <a
+          <Button
             href={`https://wa.me/${business.phone}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-3 bg-whatsapp text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest shadow-lg hover:brightness-110 transition-all"
+            variant="whatsapp"
+            leftIcon={<FaWhatsapp size={16} />}
           >
-            <FaWhatsapp size={16} />
             Chat With Us
-          </a>
+          </Button>
         </div>
       </section>
     </>

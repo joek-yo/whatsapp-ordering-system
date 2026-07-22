@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaWhatsapp, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { getBusinessData } from "@/lib/getBusinessData";
+import Button from "@/components/ui/Button";
 
 const ContactSection: React.FC = () => {
   const business = getBusinessData();
@@ -137,14 +138,15 @@ const ContactSection: React.FC = () => {
           onChange={handleChange}
           className="p-4 rounded-xl bg-surface2 border border-border text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-green resize-none transition"
         ></textarea>
-        <button
+        <Button
           type="submit"
           disabled={submitted}
-          className={`bg-green hover:bg-green-strong text-background font-black uppercase tracking-widest text-xs py-4 rounded-xl transition-all shadow-glow active:scale-95 flex items-center justify-center gap-2 cursor-pointer ${submitted ? 'opacity-50 cursor-not-allowed' : ''}`}
+          variant="primary"
+          fullWidth
+          leftIcon={<FaWhatsapp className="text-lg" />}
         >
-          <FaWhatsapp className="text-lg" />
           {submitted ? "Sending..." : "Send via WhatsApp"}
-        </button>
+        </Button>
       </motion.form>
     </section>
   );

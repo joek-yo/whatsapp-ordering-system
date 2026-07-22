@@ -3,13 +3,16 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { FaShoppingCart, FaTimes, FaMinus, FaPlus, FaTrash } from "react-icons/fa";
+import Button from "@/components/ui/Button";
 import { useCart } from "@/context/CartContext";
 
 const MiniCartDrawer: React.FC = () => {
   const { cart, removeFromCart, updateQuantity, isDrawerOpen, toggleDrawer } = useCart();
   const router = useRouter();
+  const pathname = usePathname();
+  const hideFabOnRoute = pathname === "/cart" || pathname === "/review";
   const [hovering, setHovering] = useState(false);
   const [viewClicked, setViewClicked] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -40,14 +43,16 @@ const MiniCartDrawer: React.FC = () => {
 
   return (
     <>
-      {isMobile && cart.length > 0 && (
-        <button
+      {isMobile && cart.length > 0 && !isDrawerOpen && !hideFabOnRoute && (
+        <Button
           onClick={() => toggleDrawer(true)}
-          className="fixed bottom-6 right-6 z-50 bg-green text-background font-black text-xs uppercase tracking-widest px-5 py-3.5 rounded-full shadow-glow hover:bg-green-strong transition-all flex items-center gap-2 cursor-pointer"
+          variant="primary"
+          size="md"
+          className="!fixed !bottom-6 !right-6 !z-50 !rounded-full"
+          leftIcon={<FaShoppingCart size={14} />}
         >
-          <FaShoppingCart size={14} />
-          <span>Cart ({cart.length})</span>
-        </button>
+          Cart ({cart.length})
+        </Button>
       )}
 
       <AnimatePresence>
@@ -74,12 +79,16 @@ const MiniCartDrawer: React.FC = () => {
                 <h2 className="text-lg font-black uppercase tracking-tight text-foreground">
                   Your Cart ({cart.length})
                 </h2>
-                <button
+                <Button
                   onClick={() => toggleDrawer(false)}
-                  className="text-subtext hover:text-foreground p-2 rounded-lg hover:bg-surface2 transition cursor-pointer"
+                  variant="ghost"
+                  size="sm"
+                  iconOnly
+                  aria-label="Close cart"
+                  className="!p-2 !rounded-lg"
                 >
                   <FaTimes size={16} />
-                </button>
+                </Button>
               </div>
 
               <div className="flex-1 overflow-y-auto p-6 space-y-5">
@@ -141,15 +150,15 @@ const MiniCartDrawer: React.FC = () => {
                   <span>KES {subtotal.toLocaleString()}</span>
                 </div>
 
-                <button
+                <Button
                   onClick={handleViewCart}
                   disabled={cart.length === 0}
-                  className={`w-full py-3.5 rounded-2xl font-black text-xs uppercase tracking-widest transition-all cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed ${
-                    viewClicked ? "bg-green-strong text-background" : "bg-green text-background hover:bg-green-strong shadow-glow"
-                  }`}
+                  variant="primary"
+                  fullWidth
+                  className={viewClicked ? "!bg-green-strong" : ""}
                 >
                   View Full Cart
-                </button>
+                </Button>
               </div>
             </motion.div>
           </>

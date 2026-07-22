@@ -74,7 +74,7 @@ const SearchBar: React.FC = () => {
       }}
       animate={isHidden ? "hidden" : "visible"}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="bg-background/95 backdrop-blur-md border-b border-border py-3 px-4 sticky top-20 md:top-24 z-40 shadow-sm w-full"
+      className="bg-background/95 backdrop-blur-md border-b border-border py-3 px-4 sticky top-0 z-40 shadow-sm w-full"
     >
       <div ref={containerRef} className="max-w-2xl mx-auto relative">
         <div className="flex items-center bg-surface2 border border-border rounded-full h-11 pl-5 overflow-hidden focus-within:border-green transition-colors">

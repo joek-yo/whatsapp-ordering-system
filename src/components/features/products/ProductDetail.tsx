@@ -6,6 +6,8 @@ import {
   FaPlus, FaMinus, FaClock, FaUsers, FaExclamationTriangle,
   FaChevronDown, FaQuoteLeft, FaGift,
 } from "react-icons/fa";
+import Button from "@/components/ui/Button";
+import Badge from "@/components/ui/Badge";
 import { useCart } from "@/context/CartContext";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -189,13 +191,9 @@ const ProductDetail = ({ product }: { product: any }) => {
           <div className="flex flex-col justify-center space-y-4">
 
             <div className="flex items-center gap-3 flex-wrap">
-              <span className="bg-green-soft text-green border border-green/30 text-[9px] font-black px-3 py-1 rounded-full uppercase tracking-widest">
-                {categoryLabel}
-              </span>
+              <Badge variant="green">{categoryLabel}</Badge>
               {product.bestSelling && (
-                <span className="text-[9px] font-black px-3 py-1 rounded-full uppercase tracking-widest bg-surface2 text-subtext border border-border">
-                  🔥 Best Seller
-                </span>
+                <Badge variant="muted">🔥 Best Seller</Badge>
               )}
             </div>
 
@@ -293,9 +291,7 @@ const ProductDetail = ({ product }: { product: any }) => {
                 <span className="text-[10px] font-black uppercase tracking-widest text-muted ml-1">Perfect For</span>
                 <div className="flex flex-wrap gap-2">
                   {product.occasionTags.map((tag: string) => (
-                    <span key={tag} className="px-3 py-1.5 rounded-full bg-green-soft text-green text-[10px] font-black uppercase tracking-wide">
-                      {tag}
-                    </span>
+                    <Badge key={tag} variant="green">{tag}</Badge>
                   ))}
                 </div>
               </div>
@@ -347,19 +343,27 @@ const ProductDetail = ({ product }: { product: any }) => {
 
             {/* ACTION BUTTONS - WhatsApp first per brand priority */}
             <div className="grid grid-cols-1 gap-3">
-              <button
+              <Button
                 onClick={handleWhatsAppOrder}
-                className="h-14 bg-whatsapp text-background rounded-xl font-black uppercase tracking-widest flex items-center justify-center gap-3 hover:brightness-110 transition-all active:scale-95 cursor-pointer"
+                variant="whatsapp"
+                size="lg"
+                fullWidth
+                className="!h-14"
+                leftIcon={<FaWhatsapp size={18} />}
               >
-                <FaWhatsapp size={18} /> Order via WhatsApp
-              </button>
+                Order via WhatsApp
+              </Button>
 
-              <button
+              <Button
                 onClick={handleAddToBag}
-                className="h-12 bg-transparent border-2 border-border-strong text-foreground rounded-xl font-black uppercase tracking-widest text-xs flex items-center justify-center gap-3 hover:border-green hover:text-green transition-all active:scale-95 cursor-pointer"
+                variant="outline"
+                size="md"
+                fullWidth
+                className="!h-12"
+                leftIcon={<FaShoppingCart size={14} />}
               >
-                <FaShoppingCart size={14} /> {cartItem ? "In Your Cart ✓" : "Add to Cart"}
-              </button>
+                {cartItem ? "In Your Cart ✓" : "Add to Cart"}
+              </Button>
             </div>
           </div>
         </div>
@@ -467,12 +471,15 @@ const ProductDetail = ({ product }: { product: any }) => {
                 </span>
               </div>
             </div>
-            <button
+            <Button
               onClick={handleWhatsAppOrder}
-              className="bg-whatsapp text-background h-11 px-5 rounded-lg font-black text-[10px] uppercase tracking-widest active:scale-95 cursor-pointer flex items-center gap-2"
+              variant="whatsapp"
+              size="sm"
+              className="!h-11 !rounded-lg"
+              leftIcon={<FaWhatsapp size={14} />}
             >
-              <FaWhatsapp size={14} /> Order Now
-            </button>
+              Order Now
+            </Button>
           </motion.div>
         )}
       </AnimatePresence>
