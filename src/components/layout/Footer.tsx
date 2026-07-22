@@ -29,6 +29,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col space-y-2 text-subtext">
           <span className="text-[10px] font-black uppercase tracking-[0.2em] mb-1 text-foreground">Quick Links</span>
           <a href="/" className="hover:text-green transition">Home</a>
+          <a href="/about" className="hover:text-green transition">Our Story</a>
           <a href="/menu" className="hover:text-green transition">Menu</a>
           <a href="/custom-order" className="hover:text-green transition">Custom Order</a>
           <a href="/contact" className="hover:text-green transition">Contact</a>
