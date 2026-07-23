@@ -10,6 +10,8 @@ interface CartItem {
   quantity: number;
   image?: string;
   note?: string;
+  variantKey?: string;
+  variantLabel?: string;
 }
 
 // Order type
@@ -20,9 +22,9 @@ interface CartContextType {
   cart: CartItem[];
 
   addToCart: (item: CartItem, options?: { silent?: boolean }) => void;
-  removeFromCart: (id: number) => void;
-  updateQuantity: (id: number, quantity: number) => void;
-  updateItemNote: (id: number, note: string) => void;
+  removeFromCart: (id: number, variantKey?: string) => void;
+  updateQuantity: (id: number, quantity: number, variantKey?: string) => void;
+  updateItemNote: (id: number, note: string, variantKey?: string) => void;
 
   isDrawerOpen: boolean;
   toggleDrawer: (state?: boolean) => void;
@@ -111,10 +113,10 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   // ------------------------- CART ACTIONS -------------------------
   const addToCart = (item: CartItem, options?: { silent?: boolean }) => {
     setCart(prev => {
-      const existing = prev.find(p => p.id === item.id);
+      const existing = prev.find(p => p.id === item.id && p.variantKey === item.variantKey);
       if (existing) {
         return prev.map(p =>
-          p.id === item.id
+          p.id === item.id && p.variantKey === item.variantKey
             ? { ...p, quantity: p.quantity + item.quantity, image: item.image ?? p.image }
             : p
         );
@@ -133,14 +135,23 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     }
   };
 
-  const removeFromCart = (id: number) => setCart(prev => prev.filter(item => item.id !== id));
-  const updateQuantity = (id: number, quantity: number) => {
+  const removeFromCart = (id: number, variantKey?: string) =>
+    setCart(prev => prev.filter(item => !(item.id === id && item.variantKey === variantKey)));
+  const updateQuantity = (id: number, quantity: number, variantKey?: string) => {
     if (quantity < 1) return;
-    setCart(prev => prev.map(item => (item.id === id ? { ...item, quantity } : item)));
+    setCart(prev =>
+      prev.map(item =>
+        item.id === id && item.variantKey === variantKey ? { ...item, quantity } : item
+      )
+    );
   };
 
-  const updateItemNote = (id: number, note: string) => {
-    setCart(prev => prev.map(item => (item.id === id ? { ...item, note } : item)));
+  const updateItemNote = (id: number, note: string, variantKey?: string) => {
+    setCart(prev =>
+      prev.map(item =>
+        item.id === id && item.variantKey === variantKey ? { ...item, note } : item
+      )
+    );
   };
 
   const toggleDrawer = (state?: boolean) => {

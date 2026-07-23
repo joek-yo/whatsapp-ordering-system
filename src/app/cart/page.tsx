@@ -8,7 +8,7 @@ import { useCart } from "@/context/CartContext";
 import menuData from "@/data/menu.json";
 import Button from "@/components/ui/Button";
 import ProductCard from "@/components/home/ProductCard";
-import { FaLightbulb, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaLightbulb, FaChevronLeft, FaChevronRight, FaArrowLeft } from "react-icons/fa";
 
 const CartPage: React.FC = () => {
   const {
@@ -21,6 +21,7 @@ const CartPage: React.FC = () => {
     orderNotes,
     setOrderNotes,
     addToCart,
+    clearCart,
   } = useCart();
 
   const router = useRouter();
@@ -57,15 +58,41 @@ const CartPage: React.FC = () => {
   const toggleNoteEditor = (id: number) => {
     setOpenNoteId((prev) => (prev === id ? null : id));
   };
+  const handleClearCart = () => {
+    if (window.confirm("Clear your entire cart?")) {
+      clearCart();
+      setToastMessage("Cart cleared");
+      setTimeout(() => setToastMessage(null), 2000);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-background pb-16 pt-[80px] relative">
       {/* HEADER */}
-      <div className="px-4 pt-4 pb-6 text-center">
-        <h1 className="text-2xl sm:text-3xl font-black text-foreground uppercase tracking-tighter">Your Cart</h1>
-        <p className="text-sm text-subtext mt-1">
-          {cart.length} item{cart.length !== 1 && "s"} in your order
-        </p>
+      <div className="px-4 pt-4 pb-6">
+        <div className="flex items-center justify-between max-w-3xl mx-auto mb-3">
+          <button
+            onClick={() => router.back()}
+            className="flex items-center gap-2 text-xs font-bold text-subtext hover:text-green transition cursor-pointer"
+          >
+            <FaArrowLeft size={12} />
+            Back
+          </button>
+          {cart.length > 0 && (
+            <button
+              onClick={handleClearCart}
+              className="text-xs font-bold text-danger hover:underline cursor-pointer"
+            >
+              Clear Cart
+            </button>
+          )}
+        </div>
+        <div className="text-center">
+          <h1 className="text-2xl sm:text-3xl font-black text-foreground uppercase tracking-tighter">Your Cart</h1>
+          <p className="text-sm text-subtext mt-1">
+            {cart.length} item{cart.length !== 1 && "s"} in your order
+          </p>
+        </div>
       </div>
 
       <div className="max-w-3xl mx-auto px-4 space-y-8">
@@ -256,17 +283,8 @@ const CartPage: React.FC = () => {
           />
         </div>
 
-        {/* REVIEW CUSTOM ORDER BUTTON */}
-        {customOrder.trim() && (
-          <div className="bg-surface border border-border rounded-xl p-5">
-            <Button onClick={handleProceed} variant="primary" fullWidth>
-              Review Custom Order
-            </Button>
-          </div>
-        )}
-
-        {/* BOTTOM REVIEW CTA - for pages with a lot of scroll content */}
-        {cart.length > 0 && (
+        {/* BOTTOM REVIEW CTA - covers both cart items and custom-order-only flow */}
+        {(cart.length > 0 || customOrder.trim()) && (
           <div className="bg-surface border border-border rounded-xl p-5">
             <Button onClick={handleProceed} variant="primary" fullWidth>
               Review Cart Order

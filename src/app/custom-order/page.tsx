@@ -106,7 +106,7 @@ const CustomOrderPage: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-center space-y-3"
         >
-          <div className="inline-flex items-center gap-2 bg-surface2 border border-border px-4 py-1.5 rounded-full text-green">
+          <div className="inline-flex items-center gap-2 bg-surface2 border border-gold/30 px-4 py-1.5 rounded-full text-gold">
             <FaGem size={11} />
             <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[0.2em]">
               Bespoke Orders

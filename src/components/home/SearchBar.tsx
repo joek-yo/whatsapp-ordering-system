@@ -60,6 +60,11 @@ const SearchBar: React.FC = () => {
     setIsFocused(false);
     router.push(`/menu?search=${encodeURIComponent(q)}`);
   };
+  const handleResultClick = (product: any) => {
+    setIsFocused(false);
+    setQuery("");
+    router.push(`/product/${product.id}`);
+  };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") submitSearch();
@@ -121,7 +126,7 @@ const SearchBar: React.FC = () => {
                     {results.map((p: any) => (
                       <button
                         key={p.id}
-                        onClick={() => submitSearch(p.name)}
+                        onClick={() => handleResultClick(p)}
                         className="w-full flex items-center gap-3 p-3 hover:bg-surface2 transition-colors text-left cursor-pointer border-b border-border last:border-0"
                       >
                         <div className="relative w-11 h-11 rounded-lg overflow-hidden bg-surface2 border border-border flex-shrink-0">

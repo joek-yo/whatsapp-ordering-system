@@ -205,7 +205,7 @@ const ProductDetail = ({ product }: { product: any }) => {
               <div className="flex items-center gap-2 text-xs text-subtext">
                 <span className="flex items-center gap-0.5 text-green">
                   {[...Array(5)].map((_, i) => (
-                    <FaStar key={i} size={11} className={i < Math.round(product.rating) ? "" : "opacity-25"} />
+                    <FaStar key={i} size={11} className={`text-gold ${i < Math.round(product.rating) ? "" : "opacity-25"}`} />
                   ))}
                 </span>
                 <span>{product.rating.toFixed(1)} ({product.reviewCount || 0} reviews)</span>
@@ -393,7 +393,7 @@ const ProductDetail = ({ product }: { product: any }) => {
                     <span className="text-[10px] font-black text-foreground uppercase tracking-wide">{t.name}</span>
                     <span className="flex items-center gap-0.5 text-green">
                       {[...Array(5)].map((_, i2) => (
-                        <FaStar key={i2} size={9} className={i2 < t.rating ? "" : "opacity-25"} />
+                        <FaStar key={i2} size={9} className={`text-gold ${i2 < t.rating ? "" : "opacity-25"}`} />
                       ))}
                     </span>
                   </div>

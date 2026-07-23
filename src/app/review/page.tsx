@@ -1,9 +1,11 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { FaWhatsapp } from "react-icons/fa";
+import { useRouter } from "next/navigation";
+import { FaWhatsapp, FaArrowLeft } from "react-icons/fa";
 import { useCart } from "@/context/CartContext";
 import { openWhatsApp } from "@/lib/whatsapp";
+import Button from "@/components/ui/Button";
 
 const ReviewPage: React.FC = () => {
   const {
@@ -18,6 +20,7 @@ const ReviewPage: React.FC = () => {
     setScheduleTime,
     clearCart,
   } = useCart();
+  const router = useRouter();
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -70,11 +73,20 @@ const ReviewPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-background pb-32 pt-[100px] sm:pt-[80px]">
-      <div className="px-4 pt-2 pb-6 text-center">
-        <h1 className="text-2xl font-black uppercase tracking-tight text-foreground">Review Your Order</h1>
-        <p className="text-sm text-subtext mt-1">
-          Confirm everything before sending to the restaurant
-        </p>
+      <div className="px-4 pt-2 pb-6">
+        <button
+          onClick={() => router.back()}
+          className="flex items-center gap-2 text-xs font-bold text-subtext hover:text-green transition cursor-pointer mb-3 max-w-xl mx-auto"
+        >
+          <FaArrowLeft size={12} />
+          Back
+        </button>
+        <div className="text-center">
+          <h1 className="text-2xl font-black uppercase tracking-tight text-foreground">Review Your Order</h1>
+          <p className="text-sm text-subtext mt-1">
+            Confirm everything before sending to the restaurant
+          </p>
+        </div>
       </div>
 
       <div className="max-w-xl mx-auto px-4 space-y-6 pb-32">
@@ -195,13 +207,20 @@ const ReviewPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Floating WhatsApp Button */}
-      <button
-        onClick={handleSendOrder}
-        className="fixed bottom-5 right-5 z-50 rounded-full p-4 bg-whatsapp text-white shadow-glow text-lg hover:opacity-90 transition cursor-pointer"
-      >
-        <FaWhatsapp size={22} />
-      </button>
+      {/* CONFIRM ORDER CTA */}
+      <div className="fixed bottom-0 left-0 w-full bg-surface border-t border-border p-4 z-50 shadow-[0_-10px_20px_rgba(0,0,0,0.1)]">
+        <div className="max-w-xl mx-auto">
+          <Button
+            onClick={handleSendOrder}
+            variant="whatsapp"
+            fullWidth
+            leftIcon={<FaWhatsapp size={16} />}
+            className="hover:!bg-[#1DA851] transition-colors"
+          >
+            Confirm &amp; Send Order via WhatsApp
+          </Button>
+        </div>
+      </div>
     </div>
   );
 };

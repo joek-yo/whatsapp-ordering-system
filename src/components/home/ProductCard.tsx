@@ -82,7 +82,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           {stock && stock <= 5 ? (
             <span className={badgeBase + " bg-danger text-background"}>Only {stock}</span>
           ) : jabysFavorite ? (
-            <span className={badgeBase + " bg-background text-foreground border border-border-strong"}>Favorite</span>
+            <span className={badgeBase + " bg-gold-soft text-gold border border-gold/30"}>Favorite</span>
           ) : bestSelling ? (
             <span className={badgeBase + " bg-green text-background"}>Hot</span>
           ) : discountPercent ? (

@@ -51,8 +51,8 @@
             "Eggs",
             "Dairy"
           ],
-          "servingInfo": "Serves 8\u201310",
-          "prepInfo": "Baked fresh same-day, ready in 2\u20133 hours",
+          "servingInfo": "Serves 8–10",
+          "prepInfo": "Baked fresh same-day, ready in 2–3 hours",
           "occasionTags": [
             "Birthday",
             "Celebration"
@@ -60,7 +60,35 @@
           "rating": 4.8,
           "reviewCount": 94,
           "category": "Cakes",
-          "allowCustomMessage": true
+          "allowCustomMessage": true,
+          "sizes": [
+            {
+              "label": "1kg (Serves 8-10)",
+              "price": 2100
+            },
+            {
+              "label": "1.5kg (Serves 12-15)",
+              "price": 2900
+            },
+            {
+              "label": "2kg (Serves 18-20)",
+              "price": 3600
+            }
+          ],
+          "eggOptions": [
+            {
+              "label": "With Egg",
+              "priceAdd": 0
+            },
+            {
+              "label": "Eggless",
+              "priceAdd": 200
+            },
+            {
+              "label": "Vegan",
+              "priceAdd": 350
+            }
+          ]
         },
         {
           "id": 102,
@@ -114,8 +142,8 @@
             "Eggs",
             "Dairy"
           ],
-          "servingInfo": "Serves 8\u201310",
-          "prepInfo": "Baked fresh same-day, ready in 2\u20133 hours",
+          "servingInfo": "Serves 8–10",
+          "prepInfo": "Baked fresh same-day, ready in 2–3 hours",
           "occasionTags": [
             "Birthday",
             "Wedding",
@@ -124,7 +152,35 @@
           "rating": 4.7,
           "reviewCount": 63,
           "category": "Cakes",
-          "allowCustomMessage": true
+          "allowCustomMessage": true,
+          "sizes": [
+            {
+              "label": "1kg (Serves 8-10)",
+              "price": 2300
+            },
+            {
+              "label": "1.5kg (Serves 12-15)",
+              "price": 3200
+            },
+            {
+              "label": "2kg (Serves 18-20)",
+              "price": 3900
+            }
+          ],
+          "eggOptions": [
+            {
+              "label": "With Egg",
+              "priceAdd": 0
+            },
+            {
+              "label": "Eggless",
+              "priceAdd": 200
+            },
+            {
+              "label": "Vegan",
+              "priceAdd": 350
+            }
+          ]
         },
         {
           "id": 104,
@@ -150,8 +206,8 @@
             "Eggs",
             "Dairy"
           ],
-          "servingInfo": "Serves 8\u201310",
-          "prepInfo": "Baked fresh same-day, ready in 2\u20133 hours",
+          "servingInfo": "Serves 8–10",
+          "prepInfo": "Baked fresh same-day, ready in 2–3 hours",
           "occasionTags": [
             "Birthday",
             "Celebration",
@@ -160,7 +216,35 @@
           "rating": 4.9,
           "reviewCount": 110,
           "category": "Cakes",
-          "allowCustomMessage": true
+          "allowCustomMessage": true,
+          "sizes": [
+            {
+              "label": "1kg (Serves 8-10)",
+              "price": 2200
+            },
+            {
+              "label": "1.5kg (Serves 12-15)",
+              "price": 3000
+            },
+            {
+              "label": "2kg (Serves 18-20)",
+              "price": 3800
+            }
+          ],
+          "eggOptions": [
+            {
+              "label": "With Egg",
+              "priceAdd": 0
+            },
+            {
+              "label": "Eggless",
+              "priceAdd": 200
+            },
+            {
+              "label": "Vegan",
+              "priceAdd": 350
+            }
+          ]
         },
         {
           "id": 108,
@@ -183,8 +267,8 @@
             "Eggs",
             "Dairy"
           ],
-          "servingInfo": "Serves 10\u201312",
-          "prepInfo": "Baked fresh same-day, ready in 2\u20133 hours",
+          "servingInfo": "Serves 10–12",
+          "prepInfo": "Baked fresh same-day, ready in 2–3 hours",
           "occasionTags": [
             "Birthday",
             "Celebration"
@@ -192,7 +276,35 @@
           "rating": 4.8,
           "reviewCount": 71,
           "category": "Cakes",
-          "allowCustomMessage": true
+          "allowCustomMessage": true,
+          "sizes": [
+            {
+              "label": "1kg (Serves 8-10)",
+              "price": 3000
+            },
+            {
+              "label": "1.5kg (Serves 12-15)",
+              "price": 4100
+            },
+            {
+              "label": "2kg (Serves 18-20)",
+              "price": 5200
+            }
+          ],
+          "eggOptions": [
+            {
+              "label": "With Egg",
+              "priceAdd": 0
+            },
+            {
+              "label": "Eggless",
+              "priceAdd": 200
+            },
+            {
+              "label": "Vegan",
+              "priceAdd": 350
+            }
+          ]
         },
         {
           "id": 105,
@@ -215,8 +327,8 @@
             "Eggs",
             "Dairy"
           ],
-          "servingInfo": "Serves 8\u201310",
-          "prepInfo": "Baked fresh same-day, ready in 2\u20133 hours",
+          "servingInfo": "Serves 8–10",
+          "prepInfo": "Baked fresh same-day, ready in 2–3 hours",
           "occasionTags": [
             "Birthday",
             "Anniversary"
@@ -224,7 +336,35 @@
           "rating": 4.7,
           "reviewCount": 48,
           "category": "Cakes",
-          "allowCustomMessage": true
+          "allowCustomMessage": true,
+          "sizes": [
+            {
+              "label": "1kg (Serves 8-10)",
+              "price": 2600
+            },
+            {
+              "label": "1.5kg (Serves 12-15)",
+              "price": 3600
+            },
+            {
+              "label": "2kg (Serves 18-20)",
+              "price": 4400
+            }
+          ],
+          "eggOptions": [
+            {
+              "label": "With Egg",
+              "priceAdd": 0
+            },
+            {
+              "label": "Eggless",
+              "priceAdd": 200
+            },
+            {
+              "label": "Vegan",
+              "priceAdd": 350
+            }
+          ]
         },
         {
           "id": 106,
@@ -248,15 +388,43 @@
             "Dairy",
             "Nuts"
           ],
-          "servingInfo": "Serves 8\u201310",
-          "prepInfo": "Baked fresh same-day, ready in 2\u20133 hours",
+          "servingInfo": "Serves 8–10",
+          "prepInfo": "Baked fresh same-day, ready in 2–3 hours",
           "occasionTags": [
             "Everyday Treat"
           ],
           "rating": 4.5,
           "reviewCount": 29,
           "category": "Cakes",
-          "allowCustomMessage": true
+          "allowCustomMessage": true,
+          "sizes": [
+            {
+              "label": "1kg (Serves 8-10)",
+              "price": 2400
+            },
+            {
+              "label": "1.5kg (Serves 12-15)",
+              "price": 3300
+            },
+            {
+              "label": "2kg (Serves 18-20)",
+              "price": 4100
+            }
+          ],
+          "eggOptions": [
+            {
+              "label": "With Egg",
+              "priceAdd": 0
+            },
+            {
+              "label": "Eggless",
+              "priceAdd": 200
+            },
+            {
+              "label": "Vegan",
+              "priceAdd": 350
+            }
+          ]
         },
         {
           "id": 107,
@@ -279,8 +447,8 @@
             "Eggs",
             "Dairy"
           ],
-          "servingInfo": "Serves 8\u201310",
-          "prepInfo": "Baked fresh same-day, ready in 2\u20133 hours",
+          "servingInfo": "Serves 8–10",
+          "prepInfo": "Baked fresh same-day, ready in 2–3 hours",
           "occasionTags": [
             "Afternoon Tea",
             "Everyday Treat"
@@ -288,7 +456,35 @@
           "rating": 4.6,
           "reviewCount": 37,
           "category": "Cakes",
-          "allowCustomMessage": true
+          "allowCustomMessage": true,
+          "sizes": [
+            {
+              "label": "1kg (Serves 8-10)",
+              "price": 2200
+            },
+            {
+              "label": "1.5kg (Serves 12-15)",
+              "price": 3000
+            },
+            {
+              "label": "2kg (Serves 18-20)",
+              "price": 3800
+            }
+          ],
+          "eggOptions": [
+            {
+              "label": "With Egg",
+              "priceAdd": 0
+            },
+            {
+              "label": "Eggless",
+              "priceAdd": 200
+            },
+            {
+              "label": "Vegan",
+              "priceAdd": 350
+            }
+          ]
         },
         {
           "id": 109,
@@ -312,7 +508,7 @@
             "Dairy"
           ],
           "servingInfo": "Custom size, serves as requested",
-          "prepInfo": "Made to order \u2014 24hr notice required, design consultation via WhatsApp",
+          "prepInfo": "Made to order — 24hr notice required, design consultation via WhatsApp",
           "occasionTags": [
             "Birthday",
             "Wedding",
@@ -321,7 +517,35 @@
           "rating": 4.9,
           "reviewCount": 41,
           "category": "Cakes",
-          "allowCustomMessage": true
+          "allowCustomMessage": true,
+          "sizes": [
+            {
+              "label": "1kg (Serves 8-10)",
+              "price": 3500
+            },
+            {
+              "label": "1.5kg (Serves 12-15)",
+              "price": 4800
+            },
+            {
+              "label": "2kg (Serves 18-20)",
+              "price": 6000
+            }
+          ],
+          "eggOptions": [
+            {
+              "label": "With Egg",
+              "priceAdd": 0
+            },
+            {
+              "label": "Eggless",
+              "priceAdd": 200
+            },
+            {
+              "label": "Vegan",
+              "priceAdd": 350
+            }
+          ]
         },
         {
           "id": 110,
@@ -975,7 +1199,7 @@
         "Eggs",
         "Dairy"
       ],
-      "servingInfo": "Serves 8\u201310 + extras",
+      "servingInfo": "Serves 8–10 + extras",
       "prepInfo": "Baked and prepared fresh same-day",
       "occasionTags": [
         "Birthday",
@@ -1034,7 +1258,7 @@
         "Eggs",
         "Dairy"
       ],
-      "servingInfo": "Serves 4\u20136",
+      "servingInfo": "Serves 4–6",
       "prepInfo": "Prepared fresh same-day",
       "occasionTags": [
         "Weekend Treat"
@@ -1061,7 +1285,7 @@
         "Gluten",
         "Dairy"
       ],
-      "servingInfo": "Serves 1\u20132",
+      "servingInfo": "Serves 1–2",
       "prepInfo": "Prepared fresh to order",
       "occasionTags": [
         "Breakfast",
@@ -1178,7 +1402,7 @@
         "Eggs",
         "Dairy"
       ],
-      "servingInfo": "Serves 4\u20136 kids",
+      "servingInfo": "Serves 4–6 kids",
       "prepInfo": "Baked and prepared fresh same-day",
       "occasionTags": [
         "Kids Birthday",
@@ -1239,7 +1463,7 @@
     },
     {
       "q": "Can I customize the flavor or size?",
-      "a": "Yes \u2014 message us on WhatsApp with your preferred flavor, size, and design and we'll confirm availability and pricing."
+      "a": "Yes — message us on WhatsApp with your preferred flavor, size, and design and we'll confirm availability and pricing."
     },
     {
       "q": "Do you deliver, or is it pickup only?",
@@ -1247,7 +1471,7 @@
     },
     {
       "q": "How should I store my order?",
-      "a": "Cakes and pastries are best enjoyed within 1\u20132 days. Keep cakes refrigerated if not eating the same day, and bring to room temperature before serving."
+      "a": "Cakes and pastries are best enjoyed within 1–2 days. Keep cakes refrigerated if not eating the same day, and bring to room temperature before serving."
     },
     {
       "q": "Do you cater for allergies or dietary needs?",
@@ -1275,7 +1499,7 @@
     "Drinks": [
       {
         "name": "Peter O.",
-        "text": "Freshest juice I've had delivered \u2014 you can tell it's squeezed to order, not sitting around.",
+        "text": "Freshest juice I've had delivered — you can tell it's squeezed to order, not sitting around.",
         "rating": 5
       },
       {
@@ -1304,7 +1528,7 @@
       },
       {
         "name": "Lucy A.",
-        "text": "Got the movie night bundle for the kids' weekend \u2014 portions were generous.",
+        "text": "Got the movie night bundle for the kids' weekend — portions were generous.",
         "rating": 5
       }
     ]

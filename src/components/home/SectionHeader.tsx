@@ -14,7 +14,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({ title, badge, icon: Icon,
   return (
     <div className="flex items-center justify-between mb-6 border-b border-border pb-4">
       <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2 text-green mb-1">
+        <div className="flex items-center gap-2 text-gold mb-1">
           <Icon size={11} />
           <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[0.25em]">{badge}</span>
         </div>

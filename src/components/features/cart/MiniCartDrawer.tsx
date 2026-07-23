@@ -9,7 +9,7 @@ import Button from "@/components/ui/Button";
 import { useCart } from "@/context/CartContext";
 
 const MiniCartDrawer: React.FC = () => {
-  const { cart, removeFromCart, updateQuantity, isDrawerOpen, toggleDrawer } = useCart();
+  const { cart, removeFromCart, updateQuantity, isDrawerOpen, toggleDrawer, clearCart } = useCart();
   const router = useRouter();
   const pathname = usePathname();
   const hideFabOnRoute = pathname === "/cart" || pathname === "/review";
@@ -39,6 +39,12 @@ const MiniCartDrawer: React.FC = () => {
     setViewClicked(true);
     toggleDrawer(false);
     router.push("/cart");
+  };
+
+  const handleClearCart = () => {
+    if (window.confirm("Clear your entire cart?")) {
+      clearCart();
+    }
   };
 
   return (
@@ -79,16 +85,26 @@ const MiniCartDrawer: React.FC = () => {
                 <h2 className="text-lg font-black uppercase tracking-tight text-foreground">
                   Your Cart ({cart.length})
                 </h2>
-                <Button
-                  onClick={() => toggleDrawer(false)}
-                  variant="ghost"
-                  size="sm"
-                  iconOnly
-                  aria-label="Close cart"
-                  className="!p-2 !rounded-lg"
-                >
-                  <FaTimes size={16} />
-                </Button>
+                <div className="flex items-center gap-3">
+                  {cart.length > 0 && (
+                    <button
+                      onClick={handleClearCart}
+                      className="text-[10px] font-bold text-danger hover:underline cursor-pointer uppercase tracking-wide"
+                    >
+                      Clear
+                    </button>
+                  )}
+                  <Button
+                    onClick={() => toggleDrawer(false)}
+                    variant="ghost"
+                    size="sm"
+                    iconOnly
+                    aria-label="Close cart"
+                    className="!p-2 !rounded-lg"
+                  >
+                    <FaTimes size={16} />
+                  </Button>
+                </div>
               </div>
 
               <div className="flex-1 overflow-y-auto p-6 space-y-5">

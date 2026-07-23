@@ -41,7 +41,7 @@ const SocialProof: React.FC = () => {
                 </div>
                 <span className="flex items-center gap-0.5 text-green">
                   {[...Array(5)].map((_, si) => (
-                    <FaStar key={si} size={10} className={si < t.rating ? "" : "opacity-25"} />
+                    <FaStar key={si} size={10} className={`text-gold ${si < t.rating ? "" : "opacity-25"}`} />
                   ))}
                 </span>
               </div>
