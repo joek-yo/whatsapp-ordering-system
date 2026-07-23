@@ -16,7 +16,6 @@ import { getBusinessData, getPairingSuggestions, getTestimonialsFor, getFaqs, ge
 import RelatedProducts from "@/components/features/products/RelatedProducts";
 import RecentlyViewed, { logProductView } from "@/components/features/products/RecentlyViewed";
 import ProductCard from "@/components/home/ProductCard";
-import VariantDropdown from "@/components/ui/VariantDropdown";
 
 const ProductDetail = ({ product }: { product: any }) => {
   const business = getBusinessData() as any;
@@ -268,25 +267,39 @@ const ProductDetail = ({ product }: { product: any }) => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div className="space-y-2">
                   <span className="text-[10px] font-black uppercase tracking-widest text-muted ml-1">Size</span>
-                  <VariantDropdown
-                    options={product.sizes}
+                  <select
                     value={selectedSize?.label || ""}
-                    onChange={(option) => setSelectedSize(option)}
-                    renderOption={(option) => option.label + " — KES " + option.price.toLocaleString()}
-                  />
+                    onChange={(e) => {
+                      const found = product.sizes.find((s: any) => s.label === e.target.value);
+                      if (found) setSelectedSize(found);
+                    }}
+                    className="w-full bg-surface2 border border-border-strong rounded-lg p-3 text-sm font-bold text-foreground focus:outline-none focus:ring-2 focus:ring-green cursor-pointer"
+                  >
+                    {product.sizes.map((size: any) => (
+                      <option key={size.label} value={size.label}>
+                        {size.label} — KES {size.price.toLocaleString()}
+                      </option>
+                    ))}
+                  </select>
                 </div>
 
                 {product.eggOptions && product.eggOptions.length > 0 && (
                   <div className="space-y-2">
                     <span className="text-[10px] font-black uppercase tracking-widest text-muted ml-1">Egg Option</span>
-                    <VariantDropdown
-                      options={product.eggOptions}
+                    <select
                       value={selectedEggOption?.label || ""}
-                      onChange={(option) => setSelectedEggOption(option)}
-                      renderOption={(option) =>
-                        option.label + (option.priceAdd > 0 ? " (+KES " + option.priceAdd.toLocaleString() + ")" : "")
-                      }
-                    />
+                      onChange={(e) => {
+                        const found = product.eggOptions.find((o: any) => o.label === e.target.value);
+                        if (found) setSelectedEggOption(found);
+                      }}
+                      className="w-full bg-surface2 border border-border-strong rounded-lg p-3 text-sm font-bold text-foreground focus:outline-none focus:ring-2 focus:ring-green cursor-pointer"
+                    >
+                      {product.eggOptions.map((option: any) => (
+                        <option key={option.label} value={option.label}>
+                          {option.label}{option.priceAdd > 0 ? " (+KES " + option.priceAdd.toLocaleString() + ")" : ""}
+                        </option>
+                      ))}
+                    </select>
                   </div>
                 )}
               </div>
