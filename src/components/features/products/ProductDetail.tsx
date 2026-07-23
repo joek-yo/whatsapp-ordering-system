@@ -280,7 +280,7 @@ const ProductDetail = ({ product }: { product: any }) => {
             {hasVariants && (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div className="space-y-2">
-                  <span className="text-[10px] font-black uppercase tracking-widest text-muted ml-1">Size</span>
+                  <span className="text-[10px] font-black uppercase tracking-widest text-muted ml-1">Cake Size</span>
                   <VariantDropdown
                     options={product.sizes}
                     value={selectedSize?.label || ""}

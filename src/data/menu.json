@@ -32,7 +32,7 @@
           "name": "1kg Chocolate Cake",
           "price": 2100,
           "image": "/images/chocolate-cake.jpg",
-          "description": "Rich chocolate cake for every occasion",
+          "description": "Deep, dark, and unapologetically rich — this chocolate cake is baked fresh with premium cocoa and layered with silky chocolate ganache for that first-bite moment everyone remembers. Moist, dense, and finished with a glossy chocolate drip, it's the kind of cake that turns a normal Tuesday into an occasion. Whether it's a birthday, a surprise, or just because — this one delivers every single time.",
           "available": true,
           "jabysFavorite": true,
           "bestSelling": false,
@@ -63,6 +63,10 @@
           "allowCustomMessage": true,
           "sizes": [
             {
+              "label": "0.5kg (Serves 4-6)",
+              "price": 1400
+            },
+            {
               "label": "1kg (Serves 8-10)",
               "price": 2100
             },
@@ -73,6 +77,38 @@
             {
               "label": "2kg (Serves 18-20)",
               "price": 3600
+            },
+            {
+              "label": "2.5kg (Serves 22-25)",
+              "price": 4300
+            },
+            {
+              "label": "3kg (Serves 28-30)",
+              "price": 5000
+            },
+            {
+              "label": "3.5kg (Serves 32-35)",
+              "price": 5700
+            },
+            {
+              "label": "4kg (Serves 38-40)",
+              "price": 6400
+            },
+            {
+              "label": "4.5kg (Serves 42-45)",
+              "price": 7100
+            },
+            {
+              "label": "5kg (Serves 48-50)",
+              "price": 7800
+            },
+            {
+              "label": "6kg (Serves 55-60)",
+              "price": 9200
+            },
+            {
+              "label": "8kg (Serves 70-80)",
+              "price": 12000
             }
           ],
           "eggOptions": [
@@ -95,7 +131,7 @@
           "name": "Red Velvet Cupcakes (6pcs)",
           "price": 1200,
           "image": "/images/red-velvet.jpg",
-          "description": "Box of 6 soft and creamy red velvet cupcakes",
+          "description": "Soft, blush-red cupcakes with just a whisper of cocoa, crowned with thick, tangy cream cheese frosting swirled to perfection. Each bite is pillowy-light with a subtle richness that keeps you reaching for another. A box of 6 that disappears faster than you'd expect.",
           "available": true,
           "jabysFavorite": true,
           "bestSelling": false,
@@ -126,7 +162,7 @@
           "name": "Vanilla Celebration Cake",
           "price": 2300,
           "image": "/images/vanilla-cake.jpg",
-          "description": "Classic vanilla sponge with buttercream frosting",
+          "description": "Classic never gets old — this vanilla sponge is baked golden and tender, layered with smooth, dreamy buttercream that melts on the tongue. It's the timeless favorite that suits every celebration, from milestone birthdays to quiet Sunday treats. Simple, elegant, and always a crowd-pleaser.",
           "available": true,
           "jabysFavorite": true,
           "bestSelling": false,
@@ -155,6 +191,10 @@
           "allowCustomMessage": true,
           "sizes": [
             {
+              "label": "0.5kg (Serves 4-6)",
+              "price": 1500
+            },
+            {
               "label": "1kg (Serves 8-10)",
               "price": 2300
             },
@@ -165,6 +205,38 @@
             {
               "label": "2kg (Serves 18-20)",
               "price": 3900
+            },
+            {
+              "label": "2.5kg (Serves 22-25)",
+              "price": 4700
+            },
+            {
+              "label": "3kg (Serves 28-30)",
+              "price": 5500
+            },
+            {
+              "label": "3.5kg (Serves 32-35)",
+              "price": 6300
+            },
+            {
+              "label": "4kg (Serves 38-40)",
+              "price": 7100
+            },
+            {
+              "label": "4.5kg (Serves 42-45)",
+              "price": 7900
+            },
+            {
+              "label": "5kg (Serves 48-50)",
+              "price": 8700
+            },
+            {
+              "label": "6kg (Serves 55-60)",
+              "price": 10300
+            },
+            {
+              "label": "8kg (Serves 70-80)",
+              "price": 13500
             }
           ],
           "eggOptions": [
@@ -187,7 +259,7 @@
           "name": "Black Forest Cake",
           "price": 2200,
           "image": "/images/black-forest.jpg",
-          "description": "Chocolate sponge layered with cream and cherries",
+          "description": "Layers of moist chocolate sponge, whipped cream, and juicy cherries come together in this German classic done the Jaby way. Every slice delivers that perfect balance of rich chocolate and bright fruity sweetness, finished with chocolate shavings for good measure. A showstopper that photographs as well as it tastes.",
           "available": true,
           "jabysFavorite": true,
           "bestSelling": false,
@@ -219,6 +291,10 @@
           "allowCustomMessage": true,
           "sizes": [
             {
+              "label": "0.5kg (Serves 4-6)",
+              "price": 1400
+            },
+            {
               "label": "1kg (Serves 8-10)",
               "price": 2200
             },
@@ -229,6 +305,38 @@
             {
               "label": "2kg (Serves 18-20)",
               "price": 3800
+            },
+            {
+              "label": "2.5kg (Serves 22-25)",
+              "price": 4600
+            },
+            {
+              "label": "3kg (Serves 28-30)",
+              "price": 5400
+            },
+            {
+              "label": "3.5kg (Serves 32-35)",
+              "price": 6200
+            },
+            {
+              "label": "4kg (Serves 38-40)",
+              "price": 7000
+            },
+            {
+              "label": "4.5kg (Serves 42-45)",
+              "price": 7800
+            },
+            {
+              "label": "5kg (Serves 48-50)",
+              "price": 8600
+            },
+            {
+              "label": "6kg (Serves 55-60)",
+              "price": 10200
+            },
+            {
+              "label": "8kg (Serves 70-80)",
+              "price": 13400
             }
           ],
           "eggOptions": [
@@ -251,7 +359,7 @@
           "name": "Chocolate Fudge Cake",
           "price": 3000,
           "image": "/images/chocolate-fudge.jpg",
-          "description": "Extra rich chocolate cake layered with fudge",
+          "description": "For the true chocolate lover — this is our most indulgent cake, packed with dense fudge layers and finished with a thick, glossy fudge coating. Every bite is deep, dark, and decadently rich, built for people who never say no to extra chocolate. Not for the faint of heart.",
           "available": true,
           "jabysFavorite": true,
           "bestSelling": false,
@@ -279,6 +387,10 @@
           "allowCustomMessage": true,
           "sizes": [
             {
+              "label": "0.5kg (Serves 4-6)",
+              "price": 1900
+            },
+            {
               "label": "1kg (Serves 8-10)",
               "price": 3000
             },
@@ -289,6 +401,38 @@
             {
               "label": "2kg (Serves 18-20)",
               "price": 5200
+            },
+            {
+              "label": "2.5kg (Serves 22-25)",
+              "price": 6300
+            },
+            {
+              "label": "3kg (Serves 28-30)",
+              "price": 7400
+            },
+            {
+              "label": "3.5kg (Serves 32-35)",
+              "price": 8500
+            },
+            {
+              "label": "4kg (Serves 38-40)",
+              "price": 9600
+            },
+            {
+              "label": "4.5kg (Serves 42-45)",
+              "price": 10700
+            },
+            {
+              "label": "5kg (Serves 48-50)",
+              "price": 11800
+            },
+            {
+              "label": "6kg (Serves 55-60)",
+              "price": 14000
+            },
+            {
+              "label": "8kg (Serves 70-80)",
+              "price": 18400
             }
           ],
           "eggOptions": [
@@ -311,7 +455,7 @@
           "name": "Strawberry Delight Cake",
           "price": 2600,
           "image": "/images/strawberry-cake.jpg",
-          "description": "Fresh strawberry flavored cake with cream topping",
+          "description": "Light, fluffy sponge infused with real strawberry flavor and finished with a cloud of fresh cream and juicy strawberry pieces. It's bright, fruity, and refreshingly not-too-sweet — the cake that makes any table feel a little more special. A best-seller for good reason.",
           "available": true,
           "jabysFavorite": false,
           "bestSelling": true,
@@ -339,6 +483,10 @@
           "allowCustomMessage": true,
           "sizes": [
             {
+              "label": "0.5kg (Serves 4-6)",
+              "price": 1700
+            },
+            {
               "label": "1kg (Serves 8-10)",
               "price": 2600
             },
@@ -349,6 +497,38 @@
             {
               "label": "2kg (Serves 18-20)",
               "price": 4400
+            },
+            {
+              "label": "2.5kg (Serves 22-25)",
+              "price": 5300
+            },
+            {
+              "label": "3kg (Serves 28-30)",
+              "price": 6200
+            },
+            {
+              "label": "3.5kg (Serves 32-35)",
+              "price": 7100
+            },
+            {
+              "label": "4kg (Serves 38-40)",
+              "price": 8000
+            },
+            {
+              "label": "4.5kg (Serves 42-45)",
+              "price": 8900
+            },
+            {
+              "label": "5kg (Serves 48-50)",
+              "price": 9800
+            },
+            {
+              "label": "6kg (Serves 55-60)",
+              "price": 11600
+            },
+            {
+              "label": "8kg (Serves 70-80)",
+              "price": 15200
             }
           ],
           "eggOptions": [
@@ -371,7 +551,7 @@
           "name": "Carrot Cake",
           "price": 2400,
           "image": "/images/carrot-cake.jpg",
-          "description": "Moist carrot cake topped with cream cheese frosting",
+          "description": "Warmly spiced, packed with grated carrots and toasted walnuts, and finished with tangy cream cheese frosting that ties it all together. Moist, comforting, and just sweet enough, it's the cake that feels like a treat and a tradition at the same time. A quiet favorite that always wins people over.",
           "available": false,
           "jabysFavorite": false,
           "bestSelling": true,
@@ -399,6 +579,10 @@
           "allowCustomMessage": true,
           "sizes": [
             {
+              "label": "0.5kg (Serves 4-6)",
+              "price": 1550
+            },
+            {
               "label": "1kg (Serves 8-10)",
               "price": 2400
             },
@@ -409,6 +593,38 @@
             {
               "label": "2kg (Serves 18-20)",
               "price": 4100
+            },
+            {
+              "label": "2.5kg (Serves 22-25)",
+              "price": 4950
+            },
+            {
+              "label": "3kg (Serves 28-30)",
+              "price": 5800
+            },
+            {
+              "label": "3.5kg (Serves 32-35)",
+              "price": 6650
+            },
+            {
+              "label": "4kg (Serves 38-40)",
+              "price": 7500
+            },
+            {
+              "label": "4.5kg (Serves 42-45)",
+              "price": 8350
+            },
+            {
+              "label": "5kg (Serves 48-50)",
+              "price": 9200
+            },
+            {
+              "label": "6kg (Serves 55-60)",
+              "price": 10900
+            },
+            {
+              "label": "8kg (Serves 70-80)",
+              "price": 14300
             }
           ],
           "eggOptions": [
@@ -431,7 +647,7 @@
           "name": "Lemon Drizzle Cake",
           "price": 2200,
           "image": "/images/lemon-cake.jpg",
-          "description": "Zesty lemon cake with sweet glaze drizzle",
+          "description": "Bright, zesty, and finished with a sweet lemon glaze that soaks into every layer — this cake is sunshine on a plate. The tang of fresh lemon zest cuts through the sweetness for a cake that's refreshing rather than heavy. Perfect with afternoon tea or any time you need a lift.",
           "available": true,
           "jabysFavorite": false,
           "bestSelling": false,
@@ -459,6 +675,10 @@
           "allowCustomMessage": true,
           "sizes": [
             {
+              "label": "0.5kg (Serves 4-6)",
+              "price": 1400
+            },
+            {
               "label": "1kg (Serves 8-10)",
               "price": 2200
             },
@@ -469,6 +689,38 @@
             {
               "label": "2kg (Serves 18-20)",
               "price": 3800
+            },
+            {
+              "label": "2.5kg (Serves 22-25)",
+              "price": 4600
+            },
+            {
+              "label": "3kg (Serves 28-30)",
+              "price": 5400
+            },
+            {
+              "label": "3.5kg (Serves 32-35)",
+              "price": 6200
+            },
+            {
+              "label": "4kg (Serves 38-40)",
+              "price": 7000
+            },
+            {
+              "label": "4.5kg (Serves 42-45)",
+              "price": 7800
+            },
+            {
+              "label": "5kg (Serves 48-50)",
+              "price": 8600
+            },
+            {
+              "label": "6kg (Serves 55-60)",
+              "price": 10200
+            },
+            {
+              "label": "8kg (Serves 70-80)",
+              "price": 13400
             }
           ],
           "eggOptions": [
@@ -491,7 +743,7 @@
           "name": "Custom Birthday Cake",
           "price": 3500,
           "image": "/images/birthday-cake.jpg",
-          "description": "Personalized birthday cake with custom design",
+          "description": "Your vision, our craft — this fully personalized cake is designed around your theme, colors, and message, made from scratch just for your celebration. From superheroes to elegant florals, our team works with you via WhatsApp to bring the exact cake you're picturing to life. Because the best birthdays deserve a cake as unique as the person celebrating.",
           "available": true,
           "jabysFavorite": false,
           "bestSelling": false,
@@ -520,6 +772,10 @@
           "allowCustomMessage": true,
           "sizes": [
             {
+              "label": "0.5kg (Serves 4-6)",
+              "price": 2250
+            },
+            {
               "label": "1kg (Serves 8-10)",
               "price": 3500
             },
@@ -530,6 +786,38 @@
             {
               "label": "2kg (Serves 18-20)",
               "price": 6000
+            },
+            {
+              "label": "2.5kg (Serves 22-25)",
+              "price": 7250
+            },
+            {
+              "label": "3kg (Serves 28-30)",
+              "price": 8500
+            },
+            {
+              "label": "3.5kg (Serves 32-35)",
+              "price": 9750
+            },
+            {
+              "label": "4kg (Serves 38-40)",
+              "price": 11000
+            },
+            {
+              "label": "4.5kg (Serves 42-45)",
+              "price": 12250
+            },
+            {
+              "label": "5kg (Serves 48-50)",
+              "price": 13500
+            },
+            {
+              "label": "6kg (Serves 55-60)",
+              "price": 16000
+            },
+            {
+              "label": "8kg (Serves 70-80)",
+              "price": 21000
             }
           ],
           "eggOptions": [
@@ -552,7 +840,7 @@
           "name": "Mini Cupcake Assortment (12pcs)",
           "price": 1800,
           "image": "/images/mini-cupcakes.jpg",
-          "description": "Assorted mini cupcakes in different flavors",
+          "description": "A little bit of everything — 12 bite-sized cupcakes in a rotating mix of flavors, each one frosted and finished with its own personality. Perfect for parties where everyone wants something different, or for indecisive cupcake lovers who can't pick just one. Small in size, big on variety.",
           "available": true,
           "jabysFavorite": false,
           "bestSelling": false,
@@ -591,7 +879,7 @@
           "name": "Fresh Orange Juice",
           "price": 400,
           "image": "/images/orange-juice.jpg",
-          "description": "Freshly squeezed orange juice",
+          "description": "Squeezed fresh the moment you order — no concentrate, no shortcuts, just real oranges turned into pure, sun-bright juice. Naturally sweet, packed with vitamin C, and the kind of refresh that actually wakes you up. Simple, honest, and always in season.",
           "available": true,
           "jabysFavorite": true,
           "bestSelling": false,
@@ -615,7 +903,7 @@
           "name": "Mango Smoothie",
           "price": 450,
           "image": "/images/mango-smoothie.jpg",
-          "description": "Creamy mango smoothie with ice",
+          "description": "Ripe, golden mango blended thick and creamy with milk and yogurt for a smoothie that tastes like tropical sunshine in a cup. Cold, smooth, and naturally sweet — no added sugar needed when the mango's this good. A rotating favorite for a reason.",
           "available": true,
           "jabysFavorite": true,
           "bestSelling": false,
@@ -646,7 +934,7 @@
           "name": "Passion Fruit Juice",
           "price": 450,
           "image": "/images/passion-juice.jpg",
-          "description": "Sweet and tangy passion fruit juice",
+          "description": "Bold, tangy, and unmistakably tropical — real passion fruit blended fresh for that sharp-sweet punch you can't get from a carton. It's the juice that wakes up your taste buds and keeps you coming back for the next sip.",
           "available": true,
           "jabysFavorite": true,
           "bestSelling": false,
@@ -671,7 +959,7 @@
           "name": "Pineapple Mint Juice",
           "price": 450,
           "image": "/images/pineapple-juice.jpg",
-          "description": "Refreshing pineapple juice with mint flavor",
+          "description": "Sweet pineapple meets cool, fresh mint for a juice that tastes like a beach breeze in a glass. Light, refreshing, and just the right amount of zing — perfect for hot afternoons or whenever you need a reset.",
           "available": true,
           "jabysFavorite": true,
           "bestSelling": false,
@@ -696,7 +984,7 @@
           "name": "Vanilla Milkshake",
           "price": 600,
           "image": "/images/vanilla-milkshake.jpg",
-          "description": "Classic vanilla milkshake with smooth texture",
+          "description": "Thick, cold, and unapologetically classic — real vanilla ice cream blended smooth with milk and vanilla syrup for that nostalgic milkshake experience. Simple done exceptionally well, straw included.",
           "available": false,
           "jabysFavorite": true,
           "bestSelling": false,
@@ -723,7 +1011,7 @@
           "name": "Strawberry Smoothie",
           "price": 550,
           "image": "/images/strawberry-smoothie.jpg",
-          "description": "Creamy strawberry smoothie with fresh fruits",
+          "description": "Fresh strawberries blended creamy with milk and yogurt for a smoothie that's naturally sweet, satisfyingly thick, and bursting with fruity flavor in every sip. A best-seller that never goes out of style.",
           "available": true,
           "jabysFavorite": false,
           "bestSelling": true,
@@ -751,7 +1039,7 @@
           "name": "Chocolate Milkshake",
           "price": 600,
           "image": "/images/chocolate-milkshake.jpg",
-          "description": "Thick chocolate milkshake topped with cream",
+          "description": "Rich chocolate syrup and chocolate ice cream blended into a thick, cold shake topped with a swirl of cream — this is chocolate done right. Decadent, smooth, and the perfect companion to anything on the menu.",
           "available": true,
           "jabysFavorite": false,
           "bestSelling": true,
@@ -778,7 +1066,7 @@
           "name": "Iced Coffee",
           "price": 400,
           "image": "/images/iced-coffee.jpg",
-          "description": "Cold brewed coffee served over ice",
+          "description": "Bold espresso, cold milk, and plenty of ice — this is the coffee fix for anyone who needs their caffeine cold, smooth, and no-nonsense. Brewed fresh to order, never sitting around getting stale.",
           "available": true,
           "jabysFavorite": false,
           "bestSelling": false,
@@ -808,7 +1096,7 @@
           "name": "Hot Cappuccino",
           "price": 450,
           "image": "/images/cappuccino.jpg",
-          "description": "Freshly brewed cappuccino with milk foam",
+          "description": "Rich espresso topped with a thick layer of steamed milk foam, brewed fresh for that perfect balance of bold and creamy. The kind of cappuccino that makes slowing down for five minutes worth it.",
           "available": true,
           "jabysFavorite": false,
           "bestSelling": false,
@@ -835,7 +1123,7 @@
           "name": "Bottled Water (500ml)",
           "price": 100,
           "image": "/images/water.jpg",
-          "description": "500ml bottled drinking water",
+          "description": "Clean, cold, and simple — pure drinking water for whenever you just need to stay refreshed. No frills, just the essentials.",
           "available": true,
           "jabysFavorite": false,
           "bestSelling": false,
@@ -866,7 +1154,7 @@
           "name": "Cheese Danish",
           "price": 300,
           "image": "/images/cheese-danish.jpg",
-          "description": "Flaky pastry with cream cheese filling",
+          "description": "Flaky, golden layers of buttery pastry wrapped around a rich, tangy cream cheese filling. Baked fresh daily until the edges turn perfectly crisp and the inside stays soft and creamy — a breakfast classic done right.",
           "available": true,
           "jabysFavorite": true,
           "bestSelling": false,
@@ -896,7 +1184,7 @@
           "name": "Chocolate Croissant",
           "price": 300,
           "image": "/images/chocolate-croissant.jpg",
-          "description": "Buttery croissant filled with chocolate",
+          "description": "Buttery, flaky croissant pastry wrapped around a generous core of dark chocolate that turns molten-soft the moment it's warmed. Crisp on the outside, rich and gooey within — the pastry that makes mornings worth getting up for.",
           "available": true,
           "jabysFavorite": true,
           "bestSelling": false,
@@ -929,7 +1217,7 @@
           "name": "Apple Turnover",
           "price": 300,
           "image": "/images/apple-turnover.jpg",
-          "description": "Sweet apple-filled puff pastry",
+          "description": "Sweet, cinnamon-spiced apples wrapped in golden, flaky puff pastry that shatters with every bite. Baked fresh daily for that perfect contrast of crisp pastry and warm, soft fruit filling.",
           "available": true,
           "jabysFavorite": true,
           "bestSelling": false,
@@ -959,7 +1247,7 @@
           "name": "Almond Croissant",
           "price": 400,
           "image": "/images/almond-croissant.jpg",
-          "description": "Flaky croissant topped with almond slices",
+          "description": "A classic croissant taken further — filled with rich almond paste, topped with sliced almonds, and baked until deeply golden. Nutty, buttery, and just sweet enough, it's a bakery-counter favorite for a reason.",
           "available": true,
           "jabysFavorite": true,
           "bestSelling": false,
@@ -991,7 +1279,7 @@
           "name": "Chocolate Eclair",
           "price": 350,
           "image": "/images/chocolate-eclair.jpg",
-          "description": "Cream-filled pastry topped with chocolate",
+          "description": "Light choux pastry filled with smooth cream and finished with a glossy chocolate glaze — this eclair is soft, rich, and elegantly simple. Baked and filled fresh daily so every bite stays perfectly light.",
           "available": true,
           "jabysFavorite": true,
           "bestSelling": false,
@@ -1022,7 +1310,7 @@
           "name": "Cinnamon Roll",
           "price": 250,
           "image": "/images/cinnamon-roll.jpg",
-          "description": "Soft roll with cinnamon sugar swirl",
+          "description": "Soft, pillowy dough swirled with buttery cinnamon sugar and finished with a generous drizzle of icing. Warm, comforting, and best-selling for good reason — this is the roll that makes any morning better.",
           "available": true,
           "jabysFavorite": false,
           "bestSelling": true,
@@ -1053,7 +1341,7 @@
           "name": "Fruit Tart",
           "price": 400,
           "image": "/images/fruit-tart.jpg",
-          "description": "Pastry filled with custard and fresh fruits",
+          "description": "A crisp pastry shell filled with silky custard and topped with a vibrant arrangement of fresh seasonal fruit. Light, elegant, and as beautiful to look at as it is to eat.",
           "available": true,
           "jabysFavorite": false,
           "bestSelling": true,
@@ -1086,7 +1374,7 @@
           "name": "Pecan Pie Slice",
           "price": 400,
           "image": "/images/pecan-pie.jpg",
-          "description": "Mini slice of pecan pie with caramel",
+          "description": "Buttery pastry crust filled with rich caramel and toasted pecans, baked until perfectly set and satisfyingly gooey. A rich, nutty treat for anyone who loves a proper Southern-style dessert.",
           "available": true,
           "jabysFavorite": false,
           "bestSelling": false,
@@ -1118,7 +1406,7 @@
           "name": "Blueberry Muffin",
           "price": 250,
           "image": "/images/blueberry-muffin.jpg",
-          "description": "Moist muffin with fresh blueberries",
+          "description": "Soft, moist muffin packed with plump blueberries that burst with every bite. Baked fresh daily with a lightly golden top — simple, comforting, and always reliable.",
           "available": true,
           "jabysFavorite": false,
           "bestSelling": false,
@@ -1149,7 +1437,7 @@
           "name": "Lemon Tart",
           "price": 450,
           "image": "/images/lemon-tart.jpg",
-          "description": "Tangy lemon tart with crisp pastry shell",
+          "description": "A crisp, buttery pastry shell filled with silky, tangy lemon curd that's bright, zesty, and perfectly balanced. Small in size but big on flavor — the tart that cuts through the sweetness of everything else on the table.",
           "available": true,
           "jabysFavorite": false,
           "bestSelling": false,
@@ -1185,7 +1473,7 @@
       "name": "Birthday Combo",
       "price": 4500,
       "image": "/images/birthday-bundle.jpg",
-      "description": "1kg cake + 6 cupcakes + 1 juice",
+      "description": "Everything you need for a celebration in one order — a full 1kg cake of your choice, 6 soft cupcakes, and a fresh juice to round it off. Baked and prepared fresh the same day, this combo turns any birthday into a full spread without the hassle of ordering separately.",
       "available": true,
       "jabysFavorite": true,
       "bestSelling": false,
@@ -1215,7 +1503,7 @@
       "name": "Family Treat Pack",
       "price": 3500,
       "image": "/images/family-bundle.jpg",
-      "description": "Chocolate cake + 4 drinks + fries",
+      "description": "A full chocolate cake, 4 assorted drinks, and a side of fries — built for movie nights, family catch-ups, or just because everyone deserves a treat sometimes. Prepared fresh and ready to share.",
       "available": true,
       "jabysFavorite": false,
       "bestSelling": true,
@@ -1244,7 +1532,7 @@
       "name": "Weekend Chill Bundle",
       "price": 4200,
       "image": "/images/weekend-chill.jpg",
-      "description": "Cake + 2 drinks + pastries",
+      "description": "Your choice of cake, 2 drinks, and a mix of fresh pastries — the ultimate lineup for a slow, easy weekend at home. Everything prepared fresh the same day so you can just relax and enjoy.",
       "available": true,
       "jabysFavorite": false,
       "bestSelling": false,
@@ -1273,7 +1561,7 @@
       "name": "Morning Boost Pack",
       "price": 2800,
       "image": "/images/morning-boost.jpg",
-      "description": "Fresh juice + pastry combo",
+      "description": "Fresh juice paired with a pastry of your choice — the simple, satisfying combo to kickstart your morning without overdoing it. Prepared fresh to order, every time.",
       "available": true,
       "jabysFavorite": false,
       "bestSelling": false,
@@ -1301,7 +1589,7 @@
       "name": "Couple's Delight Bundle",
       "price": 5000,
       "image": "/images/couples-delight.jpg",
-      "description": "Chocolate cake + cupcakes + drinks for two",
+      "description": "Chocolate cake, cupcakes, and two drinks — designed for date nights, anniversaries, or any excuse to treat yourselves together. A little indulgence made for sharing.",
       "available": true,
       "jabysFavorite": false,
       "bestSelling": false,
@@ -1331,7 +1619,7 @@
       "name": "Family Movie Night",
       "price": 4600,
       "image": "/images/family-movie.jpg",
-      "description": "Cake + popcorn + 4 drinks",
+      "description": "A cake of your choice, popcorn, and 4 drinks — everything you need to turn screen time into an event. Prepared fresh same-day so movie night actually feels special.",
       "available": true,
       "jabysFavorite": false,
       "bestSelling": false,
@@ -1361,7 +1649,7 @@
       "name": "Tea Time Special",
       "price": 3000,
       "image": "/images/tea-time.jpg",
-      "description": "Pastry + tea or coffee combo",
+      "description": "A pastry of your choice paired with tea or coffee — the perfect quiet-afternoon combo for slowing down and enjoying a proper break. Simple, satisfying, and always fresh.",
       "available": true,
       "jabysFavorite": false,
       "bestSelling": false,
@@ -1388,7 +1676,7 @@
       "name": "Kids Birthday Pack",
       "price": 3800,
       "image": "/images/kids-birthday.jpg",
-      "description": "Mini cake + cupcakes + juice",
+      "description": "A mini cake, cupcakes, and juice sized just right for a kids' celebration — colorful, fun, and built to make the birthday child feel like the star. Baked and prepared fresh the same day.",
       "available": true,
       "jabysFavorite": false,
       "bestSelling": false,
