@@ -72,7 +72,7 @@ const ReviewPage: React.FC = () => {
     "w-full bg-surface2 border border-border rounded-lg p-3 text-foreground placeholder:text-muted focus:ring-2 focus:ring-green focus:border-green outline-none transition";
 
   return (
-    <div className="min-h-screen bg-background pb-32 pt-[100px] sm:pt-[80px]">
+    <div className="min-h-screen bg-background pb-32 pt-4">
       <div className="px-4 pt-2 pb-6">
         <button
           onClick={() => router.back()}
