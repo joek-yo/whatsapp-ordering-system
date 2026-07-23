@@ -40,4 +40,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 *.bak
-*.bak[0-9]
+*.bak[0-9]*
