@@ -111,8 +111,10 @@ const MiniCartDrawer: React.FC = () => {
                 {cart.length === 0 ? (
                   <p className="text-subtext text-center text-sm py-12">Your cart is empty.</p>
                 ) : (
-                  cart.map((item) => (
-                    <div key={item.id} className="flex items-center gap-4 border-b border-border pb-5">
+                  cart.map((item) => {
+                    const itemKey = String(item.id) + "-" + (item.variantKey || "base");
+                    return (
+                    <div key={itemKey} className="flex items-center gap-4 border-b border-border pb-5">
                       <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-border">
                         {item.image ? (
                           <Image src={item.image} alt={item.name} width={64} height={64} className="object-cover w-full h-full" />
@@ -125,18 +127,21 @@ const MiniCartDrawer: React.FC = () => {
 
                       <div className="flex-1 min-w-0">
                         <h4 className="font-bold text-sm text-foreground truncate">{item.name}</h4>
+                        {item.variantLabel && (
+                          <p className="text-[10px] text-muted font-bold truncate">{item.variantLabel}</p>
+                        )}
                         <p className="text-xs text-subtext mt-0.5">KES {item.price.toLocaleString()}</p>
 
                         <div className="flex items-center mt-2 gap-2">
                           <button
-                            onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                            onClick={() => updateQuantity(item.id, item.quantity - 1, item.variantKey)}
                             className="w-6 h-6 flex items-center justify-center bg-surface2 border border-border rounded-md hover:border-green hover:text-green transition cursor-pointer"
                           >
                             <FaMinus size={9} />
                           </button>
                           <span className="text-sm font-bold w-5 text-center text-foreground">{item.quantity}</span>
                           <button
-                            onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                            onClick={() => updateQuantity(item.id, item.quantity + 1, item.variantKey)}
                             className="w-6 h-6 flex items-center justify-center bg-surface2 border border-border rounded-md hover:border-green hover:text-green transition cursor-pointer"
                           >
                             <FaPlus size={9} />
@@ -149,14 +154,15 @@ const MiniCartDrawer: React.FC = () => {
                           KES {(item.price * item.quantity).toLocaleString()}
                         </p>
                         <button
-                          onClick={() => removeFromCart(item.id)}
+                          onClick={() => removeFromCart(item.id, item.variantKey)}
                           className="text-[10px] text-danger hover:underline mt-1.5 flex items-center gap-1 ml-auto cursor-pointer"
                         >
                           <FaTrash size={9} /> Remove
                         </button>
                       </div>
                     </div>
-                  ))
+                    );
+                  })
                 )}
               </div>
 

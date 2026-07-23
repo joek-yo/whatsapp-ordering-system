@@ -26,7 +26,7 @@ const CartPage: React.FC = () => {
 
   const router = useRouter();
   const [toastMessage, setToastMessage] = useState<string | null>(null);
-  const [openNoteId, setOpenNoteId] = useState<number | null>(null);
+  const [openNoteId, setOpenNoteId] = useState<string | null>(null);
   const [suggestedDeals, setSuggestedDeals] = useState<any[]>([]);
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -55,8 +55,8 @@ const CartPage: React.FC = () => {
   const handleProceed = () => router.push("/review");
 
   // --- DYNAMIC BEST SELLERS / SUGGESTIONS (exclude items already in cart) ---
-  const toggleNoteEditor = (id: number) => {
-    setOpenNoteId((prev) => (prev === id ? null : id));
+  const toggleNoteEditor = (key: string) => {
+    setOpenNoteId((prev) => (prev === key ? null : key));
   };
   const handleClearCart = () => {
     if (window.confirm("Clear your entire cart?")) {
@@ -99,9 +99,11 @@ const CartPage: React.FC = () => {
         {/* CART ITEMS */}
         {cart.length > 0 && (
           <div className="space-y-4">
-            {cart.map((item) => (
+            {cart.map((item) => {
+              const itemKey = String(item.id) + "-" + (item.variantKey || "base");
+              return (
               <div
-                key={item.id}
+                key={itemKey}
                 className="bg-surface border border-border rounded-xl p-4 transition hover:shadow-glow"
               >
                 <div className="flex gap-4">
@@ -123,6 +125,9 @@ const CartPage: React.FC = () => {
 
                   <div className="flex-1">
                     <h3 className="font-bold text-sm sm:text-base text-foreground">{item.name}</h3>
+                    {item.variantLabel && (
+                      <p className="text-[11px] text-muted font-bold mt-0.5">{item.variantLabel}</p>
+                    )}
                     <p className="text-xs sm:text-sm text-subtext mt-1">
                       KES {item.price.toLocaleString()}
                     </p>
@@ -130,14 +135,14 @@ const CartPage: React.FC = () => {
                     {/* QUANTITY */}
                     <div className="flex items-center gap-3 mt-3">
                       <button
-                        onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                        onClick={() => updateQuantity(item.id, item.quantity - 1, item.variantKey)}
                         className="w-9 h-9 rounded-lg border border-border-strong flex items-center justify-center text-lg font-semibold text-foreground transition hover:bg-green hover:text-background hover:border-green active:scale-95 cursor-pointer"
                       >
                         −
                       </button>
                       <span className="font-medium min-w-[24px] text-center text-foreground">{item.quantity}</span>
                       <button
-                        onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                        onClick={() => updateQuantity(item.id, item.quantity + 1, item.variantKey)}
                         className="w-9 h-9 rounded-lg border border-border-strong flex items-center justify-center text-lg font-semibold text-foreground transition hover:bg-green hover:text-background hover:border-green active:scale-95 cursor-pointer"
                       >
                         +
@@ -146,13 +151,13 @@ const CartPage: React.FC = () => {
 
                     <div className="flex items-center gap-4 mt-2">
                       <button
-                        onClick={() => toggleNoteEditor(item.id)}
+                        onClick={() => toggleNoteEditor(itemKey)}
                         className="text-xs font-bold text-green hover:text-green-strong transition cursor-pointer"
                       >
                         {item.note && item.note.trim() ? "✏️ Edit note" : "+ Add note"}
                       </button>
                       <button
-                        onClick={() => removeFromCart(item.id)}
+                        onClick={() => removeFromCart(item.id, item.variantKey)}
                         className="text-xs text-danger hover:opacity-80 transition cursor-pointer"
                       >
                         Remove
@@ -167,17 +172,17 @@ const CartPage: React.FC = () => {
                   </div>
                 </div>
 
-                {item.note && item.note.trim() && openNoteId !== item.id && (
+                {item.note && item.note.trim() && openNoteId !== itemKey && (
                   <div className="mt-3 pt-3 border-t border-border text-xs text-subtext">
                     <span className="font-bold text-foreground">Note:</span> {item.note}
                   </div>
                 )}
 
-                {openNoteId === item.id && (
+                {openNoteId === itemKey && (
                   <div className="mt-3 pt-3 border-t border-border">
                     <textarea
                       value={item.note || ""}
-                      onChange={(e) => updateItemNote(item.id, e.target.value)}
+                      onChange={(e) => updateItemNote(item.id, e.target.value, item.variantKey)}
                       placeholder='e.g. "Happy Birthday Amy" or "Extra chocolate drizzle"'
                       className="w-full bg-surface2 border border-border-strong rounded-lg p-3 text-sm text-foreground placeholder:text-muted min-h-[80px] focus:outline-none focus:ring-2 focus:ring-green"
                     />
@@ -190,7 +195,8 @@ const CartPage: React.FC = () => {
                   </div>
                 )}
               </div>
-            ))}
+              );
+            })}
 
             {/* SUBTOTAL */}
             <div className="bg-surface border border-border rounded-xl p-5 space-y-4">
