@@ -64,15 +64,28 @@ const ProductDetail = ({ product }: { product: any }) => {
     (hasDiscount ? Math.round(((product.oldPrice - product.price) / product.oldPrice) * 100) : 0);
 
   const categoryLabel = getCategoryLabel(product);
-  const pairings = getPairingSuggestions(product, 3);
   const testimonials = getTestimonialsFor(categoryLabel);
   const faqs = getFaqs();
+
+  // Pairing suggestions: computed deterministically for SSR (via useState initializer),
+  // then reshuffled client-side only in the effect below, so the initial client render
+  // still matches the server-rendered HTML and avoids a hydration mismatch.
+  const [pairings, setPairings] = useState<any[]>(() => getPairingSuggestions(product, 3));
 
   useEffect(() => {
     setActiveImage(product.image);
     if (product.sizes && product.sizes.length > 0) setSelectedSize(product.sizes[0]);
     if (product.eggOptions && product.eggOptions.length > 0) setSelectedEggOption(product.eggOptions[0]);
     logProductView(product.id);
+
+    const basePairings = getPairingSuggestions(product, 3);
+    const shuffledPairings = [...basePairings];
+    for (let i = shuffledPairings.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledPairings[i], shuffledPairings[j]] = [shuffledPairings[j], shuffledPairings[i]];
+    }
+    setPairings(shuffledPairings);
+
     const handleScroll = () => setIsSticky(window.scrollY > 500);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);

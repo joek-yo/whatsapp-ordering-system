@@ -123,7 +123,10 @@ export function getPairingSuggestions(product: any, limit = 3) {
 
   const candidates = pairedCategory.items.filter((p: any) => p.id !== product?.id);
 
-  // Prefer bestSelling / jabysFavorite items first, then fill with the rest
+  // Prefer bestSelling / jabysFavorite items first, then fill with the rest.
+  // NOTE: deterministic on purpose — this runs during SSR. Randomization for
+  // display variety is applied client-side only, in ProductDetail's useEffect,
+  // to avoid hydration mismatches.
   const preferred = candidates.filter((p: any) => p.bestSelling || p.jabysFavorite);
   const rest = candidates.filter((p: any) => !p.bestSelling && !p.jabysFavorite);
 
