@@ -4,13 +4,15 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FaHeart, FaLeaf, FaWhatsapp, FaArrowRight } from "react-icons/fa";
+import { FaHeart, FaLeaf, FaWhatsapp, FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 import { getBusinessData } from "@/lib/getBusinessData";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 
 const AboutSection: React.FC = () => {
   const business = getBusinessData() as any;
+  const router = useRouter();
 
   // ⚠️ PLACEHOLDER COPY — replace with the real House of Jaby story before launch.
   const values = [
@@ -41,6 +43,13 @@ const AboutSection: React.FC = () => {
     <>
       {/* HERO */}
       <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+        <button
+          onClick={() => router.back()}
+          className="absolute top-4 left-4 z-20 flex items-center gap-2 text-[9px] font-black uppercase tracking-widest text-white/90 hover:text-white transition-all cursor-pointer bg-black/20 backdrop-blur-md px-3 py-2 rounded-full"
+        >
+          <FaArrowLeft size={8} />
+          <span>Back</span>
+        </button>
         {business.banner && (
           <Image
             src={business.banner}

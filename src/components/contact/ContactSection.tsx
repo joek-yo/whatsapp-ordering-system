@@ -2,12 +2,14 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaWhatsapp, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaWhatsapp, FaPhoneAlt, FaEnvelope, FaArrowLeft } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 import { getBusinessData } from "@/lib/getBusinessData";
 import Button from "@/components/ui/Button";
 
 const ContactSection: React.FC = () => {
   const business = getBusinessData();
+  const router = useRouter();
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
 
@@ -58,6 +60,13 @@ const ContactSection: React.FC = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 bg-background">
+      <button
+        onClick={() => router.back()}
+        className="flex items-center gap-2 text-[9px] font-black uppercase tracking-widest text-muted hover:text-foreground transition-all cursor-pointer mb-6"
+      >
+        <FaArrowLeft size={8} />
+        <span>Back</span>
+      </button>
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

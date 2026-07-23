@@ -11,6 +11,7 @@ import {
   FaPen,
   FaStickyNote,
   FaArrowRight,
+  FaArrowLeft,
 } from "react-icons/fa";
 import { useCart } from "@/context/CartContext";
 
@@ -98,6 +99,14 @@ const CustomOrderPage: React.FC = () => {
       <div className="absolute top-0 left-0 right-0 h-[40vh] bg-gradient-to-b from-green-soft to-transparent pointer-events-none -z-10" />
 
       <div className="max-w-3xl mx-auto space-y-8">
+
+        <button
+          onClick={() => router.back()}
+          className="flex items-center gap-2 text-[9px] font-black uppercase tracking-widest text-muted hover:text-foreground transition-all cursor-pointer"
+        >
+          <FaArrowLeft size={8} />
+          <span>Back</span>
+        </button>
 
         {/* HERO */}
         <motion.div
