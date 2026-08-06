@@ -31,6 +31,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://houseofjaby.vercel.app"),
   title: {
     default: `${business.name} | ${business.slogan}`,
     template: `%s | ${business.name}`,

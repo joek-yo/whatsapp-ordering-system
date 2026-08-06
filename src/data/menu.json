@@ -614,6 +614,14 @@
             {
               "label": "Two-Tier Standard (20–25 Servings)",
               "price": 3800
+            },
+            {
+              "label": "Two-Tier Large (30–35 Servings)",
+              "price": 5000
+            },
+            {
+              "label": "Two-Tier XL (40–50 Servings)",
+              "price": 6300
             }
           ],
           "eggOptions": [
