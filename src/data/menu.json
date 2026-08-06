@@ -29,10 +29,10 @@
       "items": [
         {
           "id": 101,
-          "name": "Golden Calendar Milestone Birthday Cake",
+          "name": "Golden Calendar Milestone Celebration Cake",
           "price": 2000,
           "image": "/images/A01.jpg",
-          "description": "An exquisite custom-designed celebration cake featuring a personalized calendar edible print motif, elegant black and soft pink sphere accents, gold drip details, and edible gold leaf flake touches. Topped with a golden 'Happy Birthday' topper, this luxurious cake is baked fresh to order with moist sponge layers and smooth frosting.",
+          "description": "Every milestone tells a story, and every story deserves to be celebrated beautifully. The Golden Calendar Milestone Celebration Cake is thoughtfully designed to honor life's most memorable dates, turning birthdays, anniversaries, promotions, and personal achievements into unforgettable moments. Featuring a personalized edible calendar print, elegant gold detailing, modern decorative spheres, and delicate edible gold leaf accents, this handcrafted centerpiece is as meaningful as it is beautiful. Freshly baked to order and customized with your preferred message, it's created to celebrate your journey—crafted the Jaby way.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": true,
@@ -146,10 +146,10 @@
         },
         {
           "id": 102,
-          "name": "Velvet Lilac Dream Birthday Cake",
+          "name": "Velvet Lilac Dream Celebration Cake",
           "price": 1900,
           "image": "/images/A02.jpg",
-          "description": "A graceful and elegant celebration cake featuring smooth white and lavender watercolor-style buttercream frosting. Accented with delicate silver and gold sprinkles, shimmering edible gold leaf flakes, and custom inscription lettering, finished with a classic gold 'Happy Birthday' cake topper.",
+          "description": "Graceful, timeless, and effortlessly elegant, the Velvet Lilac Dream Celebration Cake is crafted for celebrations that deserve a touch of sophistication. Finished with smooth white and lavender watercolor-inspired buttercream, shimmering gold leaf accents, delicate decorative sprinkles, and personalized lettering, this cake creates a beautiful balance of luxury and charm. Whether you're celebrating a birthday, bridal shower, anniversary, baby shower, or intimate gathering, every detail is customized to reflect your unique occasion and style.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
@@ -261,10 +261,10 @@
         },
         {
           "id": 103,
-          "name": "Celestial Sky Blue Birthday Cake",
+          "name": "Celestial Sky Celebration Cake",
           "price": 1850,
           "image": "/images/A03.jpg",
-          "description": "A stunning sky-blue frosted celebration cake featuring meticulous piped shell borders, lovely piped corner rosettes, and hand-written custom birthday lettering. Decorated with shimmering gold leaf splashes, gold pearl accents, and tiny white pearls for an immaculate look.",
+          "description": "Inspired by clear skies and joyful celebrations, the Celestial Sky Celebration Cake brings elegance and warmth to every special occasion. Beautifully finished in soft sky-blue buttercream with intricate piped borders, delicate rosettes, shimmering gold leaf accents, and pearl details, this handcrafted creation is designed to leave a lasting impression. Perfect for birthdays, graduations, family gatherings, and milestone celebrations, it can be personalized to match your message, colors, and theme, making every event uniquely yours.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
@@ -378,10 +378,10 @@
         },
         {
           "id": 108,
-          "name": "Freshly Baked Vanilla Cupcakes",
+          "name": "Signature Vanilla Cupcakes",
           "price": 150,
           "image": "/images/A08.jpg",
-          "description": "Fluffy, golden-brown vanilla cupcakes baked to perfection with a light, tender crumb and delightfully cracked tops. Hygienically packaged in a tray, these delicious treats are baked fresh same-day and make a wonderful addition to tea time or dessert.",
+          "description": "Sometimes the simplest treats create the sweetest memories. Our Signature Vanilla Cupcakes are freshly baked to a light, fluffy texture with a beautifully golden finish, making them the perfect addition to birthdays, office celebrations, dessert tables, tea parties, or everyday indulgence. Prepared fresh and carefully packaged for quality and freshness, these delightful cupcakes are ideal for sharing with loved ones—or simply treating yourself to a well-deserved moment of sweetness.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
@@ -446,10 +446,10 @@
         },
         {
           "id": 116,
-          "name": "Lavender Thanks Drip Cake",
+          "name": "Lavender Appreciation Celebration Cake",
           "price": 1950,
           "image": "/images/A16.jpg",
-          "description": "A charming appreciation cake covered in soft lavender-hued Italian meringue buttercream. Features an elegant dark chocolate ganache drip along the side and a decorative border of piped buttercream rosettes and stars. Adorned with multi-colored nonpareil sprinkles and delicate edible gold leaf flakes. The top bears a custom text print.",
+          "description": "Some words deserve more than a card—they deserve a beautiful celebration. The Lavender Appreciation Celebration Cake is thoughtfully crafted to express gratitude, celebrate achievements, and honor the people who make a difference in our lives. Finished in soft lavender Italian meringue buttercream with a rich chocolate ganache drip, elegant piped rosettes, delicate gold leaf accents, and a personalized message, this handcrafted creation transforms appreciation into an unforgettable experience. Perfect for thank-you gifts, employee recognition, farewells, celebrations, and meaningful milestones.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
@@ -490,16 +490,64 @@
           "allowCustomMessage": true,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4–6)",
+              "label": "0.5kg (Serves 2–4 people)",
               "price": 1150
             },
             {
-              "label": "1kg (Serves 8–10)",
+              "label": "0.75kg (Serves 5–7 people)",
+              "price": 1550
+            },
+            {
+              "label": "1kg (Serves 8–10 people)",
               "price": 1950
             },
             {
-              "label": "1.5kg (Serves 12–15)",
-              "price": 2800
+              "label": "1.25kg (Serves 11–14 people)",
+              "price": 2450
+            },
+            {
+              "label": "1.5kg (Serves 15–18 people)",
+              "price": 2950
+            },
+            {
+              "label": "1.75kg (Serves 19–22 people)",
+              "price": 3400
+            },
+            {
+              "label": "2kg (Serves 23–26 people)",
+              "price": 3900
+            },
+            {
+              "label": "2.25kg (Serves 27–30 people)",
+              "price": 4400
+            },
+            {
+              "label": "2.5kg (Serves 31–35 people)",
+              "price": 4900
+            },
+            {
+              "label": "3kg (Serves 36–42 people)",
+              "price": 5850
+            },
+            {
+              "label": "3.5kg (Serves 43–50 people)",
+              "price": 6850
+            },
+            {
+              "label": "4kg (Serves 51–60 people)",
+              "price": 7800
+            },
+            {
+              "label": "4.5kg (Serves 61–70 people)",
+              "price": 8800
+            },
+            {
+              "label": "5kg (Serves 71–85 people)",
+              "price": 9750
+            },
+            {
+              "label": "6kg+ (Serves 90–120 people)",
+              "price": 11700
             }
           ],
           "eggOptions": [
@@ -518,10 +566,10 @@
         },
         {
           "id": 117,
-          "name": "Liverpool FC Lamech's Football Themed Birthday Cake",
+          "name": "Signature Football Club Celebration Cake",
           "price": 3800,
           "image": "/images/A17.jpg",
-          "description": "A two-tier, custom-designed celebration cake for Lamech, themed around Liverpool FC. The tiers are covered in smooth white buttercream with distinct red watercolor bands at the base. Both tiers feature a dramatic dark chocolate ganache drip and are decorated with small gold dragees. The top tier includes a cluster of three large red spheres and paper toppers of LFC players and the club crest. The lower tier features a cluster of three large light blue spheres. A large gold 'Happy Birthday' script topper is centrally placed, bridging the two tiers. Red piped shell borders define the mid-section and base, and edible red sugar text reading '#72' is on the cake board. Baked fresh to order with moist sponge layers.",
+          "description": "Every football fan deserves a celebration worthy of their passion. This striking two-tier celebration cake is inspired by the excitement of the beautiful game, combining bold team colors, elegant chocolate drip detailing, premium decorative spheres, and custom football-themed toppers to create a showstopping centerpiece. Whether you're celebrating a birthday, match-day party, tournament victory, or your favorite club, every design is personalized with your preferred team, colors, and message—making every celebration uniquely yours.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": true,
@@ -557,7 +605,7 @@
             "Birthday",
             "Football Fan",
             "Milestone",
-            "Liverpool FC"
+            "Football Club"
           ],
           "rating": 5,
           "reviewCount": 14,
@@ -584,10 +632,10 @@
         },
         {
           "id": 118,
-          "name": "HBD Peter Yellow Drip Birthday Cake",
+          "name": "Golden Sunshine Drip Celebration Cake",
           "price": 1950,
           "image": "/images/A18.jpg",
-          "description": "A vibrant celebration cake covered in smooth yellow buttercream with distinct horizontal comb lines around the sides. Features a dark chocolate ganache drip cascading down the edges and a border of piped white buttercream swirls on top. Adorned with scattered gold dragees, a few blue pearl accents, and custom dark chocolate lettering on the top reading 'HBD PETER'.",
+          "description": "Bright, cheerful, and impossible to ignore, the Golden Sunshine Drip Celebration Cake brings warmth and joy to every special occasion. Smooth yellow buttercream, elegant comb-textured finishes, a rich chocolate ganache drip, delicate gold accents, and handcrafted buttercream swirls come together in a design that's both playful and sophisticated. Personalized with your own message, it's the perfect centerpiece for birthdays, graduations, congratulations, and celebrations filled with happiness.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
@@ -626,16 +674,64 @@
           "allowCustomMessage": true,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4–6)",
+              "label": "0.5kg (Serves 2–4 people)",
               "price": 1150
             },
             {
-              "label": "1kg (Serves 8–10)",
+              "label": "0.75kg (Serves 5–7 people)",
+              "price": 1550
+            },
+            {
+              "label": "1kg (Serves 8–10 people)",
               "price": 1950
             },
             {
-              "label": "1.5kg (Serves 12–15)",
-              "price": 2800
+              "label": "1.25kg (Serves 11–14 people)",
+              "price": 2450
+            },
+            {
+              "label": "1.5kg (Serves 15–18 people)",
+              "price": 2950
+            },
+            {
+              "label": "1.75kg (Serves 19–22 people)",
+              "price": 3400
+            },
+            {
+              "label": "2kg (Serves 23–26 people)",
+              "price": 3900
+            },
+            {
+              "label": "2.25kg (Serves 27–30 people)",
+              "price": 4400
+            },
+            {
+              "label": "2.5kg (Serves 31–35 people)",
+              "price": 4900
+            },
+            {
+              "label": "3kg (Serves 36–42 people)",
+              "price": 5850
+            },
+            {
+              "label": "3.5kg (Serves 43–50 people)",
+              "price": 6850
+            },
+            {
+              "label": "4kg (Serves 51–60 people)",
+              "price": 7800
+            },
+            {
+              "label": "4.5kg (Serves 61–70 people)",
+              "price": 8800
+            },
+            {
+              "label": "5kg (Serves 71–85 people)",
+              "price": 9750
+            },
+            {
+              "label": "6kg+ (Serves 90–120 people)",
+              "price": 11700
             }
           ],
           "eggOptions": [
@@ -652,10 +748,10 @@
         },
         {
           "id": 119,
-          "name": "Frozen Theme Elina's Birthday Cake",
+          "name": "Fairytale Princess Celebration Cake",
           "price": 2100,
           "image": "/images/A19.jpg",
-          "description": "A magical, custom-designed celebration cake themed around Disney's Frozen, crafted for Elina's birthday. Covered in smooth light-purple buttercream, the cake is decorated with edible gold leaf flakes, tiny blue and white sugar pearls, and paper sticker accents featuring Elsa on the side. The top features an assortment of character toppers including Elsa, Anna, Kristoff, and Olaf, alongside a central 'Frozen Happy Birthday' logo topper and blue snowflake picks. Custom dark chocolate lettering on top reads 'HAPPY B-DAY ELINA'.",
+          "description": "Bring magical dreams to life with a celebration cake inspired by beloved fairytale adventures. Beautifully finished in soft lavender buttercream and decorated with shimmering gold accents, delicate sugar pearls, snowflake details, and enchanting character-themed toppers, this handcrafted creation captures the wonder of childhood celebrations. Perfect for princess birthdays and themed parties, every cake is customized to feature your child's favorite characters, colors, and personal message for a truly unforgettable day.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": true,
@@ -686,7 +782,7 @@
           "prepInfo": "Baked fresh same-day",
           "occasionTags": [
             "Birthday",
-            "Frozen Theme",
+            "Fairytale Theme",
             "Kids Party",
             "Custom Name"
           ],
@@ -695,16 +791,64 @@
           "allowCustomMessage": true,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4–6)",
-              "price": 1300
+              "label": "0.5kg (Serves 2–4 people)",
+              "price": 1250
             },
             {
-              "label": "1kg (Serves 8–10)",
+              "label": "0.75kg (Serves 5–7 people)",
+              "price": 1700
+            },
+            {
+              "label": "1kg (Serves 8–10 people)",
               "price": 2100
             },
             {
-              "label": "1.5kg (Serves 12–15)",
-              "price": 3000
+              "label": "1.25kg (Serves 11–14 people)",
+              "price": 2650
+            },
+            {
+              "label": "1.5kg (Serves 15–18 people)",
+              "price": 3150
+            },
+            {
+              "label": "1.75kg (Serves 19–22 people)",
+              "price": 3700
+            },
+            {
+              "label": "2kg (Serves 23–26 people)",
+              "price": 4200
+            },
+            {
+              "label": "2.25kg (Serves 27–30 people)",
+              "price": 4750
+            },
+            {
+              "label": "2.5kg (Serves 31–35 people)",
+              "price": 5250
+            },
+            {
+              "label": "3kg (Serves 36–42 people)",
+              "price": 6300
+            },
+            {
+              "label": "3.5kg (Serves 43–50 people)",
+              "price": 7350
+            },
+            {
+              "label": "4kg (Serves 51–60 people)",
+              "price": 8400
+            },
+            {
+              "label": "4.5kg (Serves 61–70 people)",
+              "price": 9450
+            },
+            {
+              "label": "5kg (Serves 71–85 people)",
+              "price": 10500
+            },
+            {
+              "label": "6kg+ (Serves 90–120 people)",
+              "price": 12600
             }
           ],
           "eggOptions": [
@@ -721,10 +865,10 @@
         },
         {
           "id": 120,
-          "name": "Pink Butterfly and Gold Leaf Celebration Cake",
+          "name": "Butterfly Elegance Celebration Cake",
           "price": 2000,
           "image": "/images/A20.jpg",
-          "description": "An elegant, tall celebration cake covered in smooth pastel pink buttercream. Features a cascading vertical border of piped buttercream rosettes running down one side, accented with delicate pink and purple butterfly toppers, scattered gold dragees, and edible gold leaf flake accents. The top features a geometric gold acrylic 'Happy Birthday' topper and custom handwritten dark chocolate text.",
+          "description": "Inspired by beauty, growth, and joyful new beginnings, the Butterfly Elegance Celebration Cake is designed to make every celebration feel extraordinary. Finished in smooth pastel pink buttercream with cascading handcrafted rosettes, graceful butterfly accents, shimmering gold leaf, and elegant decorative details, this sophisticated centerpiece is perfect for birthdays, bridal showers, anniversaries, baby showers, and milestone celebrations. Personalized to suit your occasion, it's crafted to leave a lasting impression.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
@@ -765,16 +909,64 @@
           "allowCustomMessage": true,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4–6)",
+              "label": "0.5kg (Serves 2–4 people)",
               "price": 1200
             },
             {
-              "label": "1kg (Serves 8–10)",
+              "label": "0.75kg (Serves 5–7 people)",
+              "price": 1600
+            },
+            {
+              "label": "1kg (Serves 8–10 people)",
               "price": 2000
             },
             {
-              "label": "1.5kg (Serves 12–15)",
-              "price": 2900
+              "label": "1.25kg (Serves 11–14 people)",
+              "price": 2500
+            },
+            {
+              "label": "1.5kg (Serves 15–18 people)",
+              "price": 3000
+            },
+            {
+              "label": "1.75kg (Serves 19–22 people)",
+              "price": 3500
+            },
+            {
+              "label": "2kg (Serves 23–26 people)",
+              "price": 4000
+            },
+            {
+              "label": "2.25kg (Serves 27–30 people)",
+              "price": 4500
+            },
+            {
+              "label": "2.5kg (Serves 31–35 people)",
+              "price": 5000
+            },
+            {
+              "label": "3kg (Serves 36–42 people)",
+              "price": 6000
+            },
+            {
+              "label": "3.5kg (Serves 43–50 people)",
+              "price": 7000
+            },
+            {
+              "label": "4kg (Serves 51–60 people)",
+              "price": 8000
+            },
+            {
+              "label": "4.5kg (Serves 61–70 people)",
+              "price": 9000
+            },
+            {
+              "label": "5kg (Serves 71–85 people)",
+              "price": 10000
+            },
+            {
+              "label": "6kg+ (Serves 90–120 people)",
+              "price": 12000
             }
           ],
           "eggOptions": [
@@ -791,10 +983,10 @@
         },
         {
           "id": 121,
-          "name": "Happy B-Day Ceci Pink and Black Sphere Cake",
+          "name": "Modern Luxe Celebration Cake",
           "price": 2000,
           "image": "/images/A21.jpg",
-          "description": "A custom celebration cake covered in smooth light pink buttercream with a dark chocolate drip detail around the lower edge. The top features a piped pink rosette border accented with edible gold leaf flakes and scattered gold dragees. Styled with glossy black spherical ornaments clustered on the top-left and lower-right edges. Custom dark chocolate lettering centered on top reads 'HAPPY B-DAY CECI'.",
+          "description": "Bold, contemporary, and beautifully refined, the Modern Luxe Celebration Cake is designed for those who appreciate sophisticated style. Finished in smooth blush buttercream with an elegant chocolate drip, handcrafted rosette borders, luxurious gold detailing, and striking decorative spheres, this premium creation commands attention from every angle. Personalized with your own message, it's ideal for birthdays, engagements, milestone celebrations, and stylish gatherings where every detail matters.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
@@ -833,16 +1025,64 @@
           "allowCustomMessage": true,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4–6)",
+              "label": "0.5kg (Serves 2–4 people)",
               "price": 1200
             },
             {
-              "label": "1kg (Serves 8–10)",
+              "label": "0.75kg (Serves 5–7 people)",
+              "price": 1600
+            },
+            {
+              "label": "1kg (Serves 8–10 people)",
               "price": 2000
             },
             {
-              "label": "1.5kg (Serves 12–15)",
-              "price": 2900
+              "label": "1.25kg (Serves 11–14 people)",
+              "price": 2500
+            },
+            {
+              "label": "1.5kg (Serves 15–18 people)",
+              "price": 3000
+            },
+            {
+              "label": "1.75kg (Serves 19–22 people)",
+              "price": 3500
+            },
+            {
+              "label": "2kg (Serves 23–26 people)",
+              "price": 4000
+            },
+            {
+              "label": "2.25kg (Serves 27–30 people)",
+              "price": 4500
+            },
+            {
+              "label": "2.5kg (Serves 31–35 people)",
+              "price": 5000
+            },
+            {
+              "label": "3kg (Serves 36–42 people)",
+              "price": 6000
+            },
+            {
+              "label": "3.5kg (Serves 43–50 people)",
+              "price": 7000
+            },
+            {
+              "label": "4kg (Serves 51–60 people)",
+              "price": 8000
+            },
+            {
+              "label": "4.5kg (Serves 61–70 people)",
+              "price": 9000
+            },
+            {
+              "label": "5kg (Serves 71–85 people)",
+              "price": 10000
+            },
+            {
+              "label": "6kg+ (Serves 90–120 people)",
+              "price": 12000
             }
           ],
           "eggOptions": [
@@ -859,10 +1099,10 @@
         },
         {
           "id": 122,
-          "name": "Arsenal FC Themed Birthday Cake",
+          "name": "Signature Football Fan Celebration Cake",
           "price": 2000,
           "image": "/images/A22.jpg",
-          "description": "A custom football-themed celebration cake dedicated to Arsenal FC. Covered in smooth white buttercream with a bold red watercolor effect across the bottom half. Features a prominent Arsenal club crest printed logo on the front, accented with circular Arsenal ball stickers on the sides. The top is finished with a vibrant red piped rosette border and custom paper toppers including an Arsenal jersey, club logo sign, and a player cutout.",
+          "description": "Celebrate your love for football with a cake that's as passionate as the fans themselves. Designed with bold club-inspired colors, themed toppers, iconic football graphics, and premium handcrafted finishes, this celebration cake is made to bring excitement to birthdays, match-day parties, championship celebrations, and fan gatherings. Choose your favorite club, personalize the design, and let House of Jaby create a centerpiece worthy of every football celebration.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
@@ -891,7 +1131,7 @@
           "occasionTags": [
             "Birthday",
             "Football Fan",
-            "Arsenal",
+            "Football Club",
             "Sports"
           ],
           "rating": 4.9,
@@ -899,16 +1139,64 @@
           "allowCustomMessage": true,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4–6)",
+              "label": "0.5kg (Serves 2–4 people)",
               "price": 1200
             },
             {
-              "label": "1kg (Serves 8–10)",
+              "label": "0.75kg (Serves 5–7 people)",
+              "price": 1600
+            },
+            {
+              "label": "1kg (Serves 8–10 people)",
               "price": 2000
             },
             {
-              "label": "1.5kg (Serves 12–15)",
-              "price": 2900
+              "label": "1.25kg (Serves 11–14 people)",
+              "price": 2500
+            },
+            {
+              "label": "1.5kg (Serves 15–18 people)",
+              "price": 3000
+            },
+            {
+              "label": "1.75kg (Serves 19–22 people)",
+              "price": 3500
+            },
+            {
+              "label": "2kg (Serves 23–26 people)",
+              "price": 4000
+            },
+            {
+              "label": "2.25kg (Serves 27–30 people)",
+              "price": 4500
+            },
+            {
+              "label": "2.5kg (Serves 31–35 people)",
+              "price": 5000
+            },
+            {
+              "label": "3kg (Serves 36–42 people)",
+              "price": 6000
+            },
+            {
+              "label": "3.5kg (Serves 43–50 people)",
+              "price": 7000
+            },
+            {
+              "label": "4kg (Serves 51–60 people)",
+              "price": 8000
+            },
+            {
+              "label": "4.5kg (Serves 61–70 people)",
+              "price": 9000
+            },
+            {
+              "label": "5kg (Serves 71–85 people)",
+              "price": 10000
+            },
+            {
+              "label": "6kg+ (Serves 90–120 people)",
+              "price": 12000
             }
           ],
           "eggOptions": [
@@ -925,10 +1213,10 @@
         },
         {
           "id": 123,
-          "name": "Best Brother Photo Print Celebration Cake",
+          "name": "Personalized Photo Celebration Cake",
           "price": 2100,
           "image": "/images/A23.jpg",
-          "description": "A custom personalized celebration cake covered in smooth light blue buttercream, featuring a shaded blue watercolor effect near the base. The top surface displays a centered edible photo print of a man in a white shirt, accompanied by the printed text 'To The World Best Brother'. Decorated with a neat piped blue rosette border, scattered gold dragees, blue pearl accents, and subtle edible gold leaf flecks.",
+          "description": "The most meaningful celebrations are the ones that tell your story. Our Personalized Photo Celebration Cake transforms your favorite photograph into a beautifully crafted edible centerpiece, creating a celebration that's truly one of a kind. Finished in elegant light blue buttercream with subtle watercolor shading, handcrafted rosette borders, delicate pearl accents, and luxurious gold detailing, this cake is perfect for birthdays, anniversaries, graduations, family celebrations, and heartfelt surprises. Add your favorite photo and personalized message to create memories that last long after the final slice.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
@@ -959,25 +1247,73 @@
           "prepInfo": "Baked fresh same-day",
           "occasionTags": [
             "Birthday",
-            "Brother",
             "Personalized Photo",
-            "Gift"
+            "Gift",
+            "Family"
           ],
           "rating": 4.9,
           "reviewCount": 22,
           "allowCustomMessage": true,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4–6)",
-              "price": 1300
+              "label": "0.5kg (Serves 2–4 people)",
+              "price": 1250
             },
             {
-              "label": "1kg (Serves 8–10)",
+              "label": "0.75kg (Serves 5–7 people)",
+              "price": 1700
+            },
+            {
+              "label": "1kg (Serves 8–10 people)",
               "price": 2100
             },
             {
-              "label": "1.5kg (Serves 12–15)",
-              "price": 3000
+              "label": "1.25kg (Serves 11–14 people)",
+              "price": 2650
+            },
+            {
+              "label": "1.5kg (Serves 15–18 people)",
+              "price": 3150
+            },
+            {
+              "label": "1.75kg (Serves 19–22 people)",
+              "price": 3700
+            },
+            {
+              "label": "2kg (Serves 23–26 people)",
+              "price": 4200
+            },
+            {
+              "label": "2.25kg (Serves 27–30 people)",
+              "price": 4750
+            },
+            {
+              "label": "2.5kg (Serves 31–35 people)",
+              "price": 5250
+            },
+            {
+              "label": "3kg (Serves 36–42 people)",
+              "price": 6300
+            },
+            {
+              "label": "3.5kg (Serves 43–50 people)",
+              "price": 7350
+            },
+            {
+              "label": "4kg (Serves 51–60 people)",
+              "price": 8400
+            },
+            {
+              "label": "4.5kg (Serves 61–70 people)",
+              "price": 9450
+            },
+            {
+              "label": "5kg (Serves 71–85 people)",
+              "price": 10500
+            },
+            {
+              "label": "6kg+ (Serves 90–120 people)",
+              "price": 12600
             }
           ],
           "eggOptions": [
@@ -994,10 +1330,10 @@
         },
         {
           "id": 124,
-          "name": "God Knew I Needed You Romantic Cake",
+          "name": "Heartfelt Message Celebration Cake",
           "price": 1950,
           "image": "/images/A24.jpg",
-          "description": "A heartfelt custom celebration cake covered in smooth white buttercream. The top surface features bold yellow raised lettering reading 'GOD KNEW I NEEDED YOU', framed by a lavish border of glistening edible gold leaf flakes and scattered gold dragees. The white cake board below is styled with matching yellow lettering that reads 'I LOVE YOU'. Baked fresh to order with moist sponge layers.",
+          "description": "Some moments are too special for words alone. The Heartfelt Message Celebration Cake is designed to help you express love, appreciation, and meaningful emotions in the sweetest way possible. Beautifully finished in smooth white buttercream with luxurious edible gold leaf detailing, shimmering gold accents, and personalized message styling, this elegant creation transforms heartfelt words into unforgettable memories. Perfect for anniversaries, proposals, romantic surprises, appreciation gifts, or any occasion where your message deserves to be remembered.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": true,
@@ -1035,16 +1371,64 @@
           "allowCustomMessage": true,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4–6)",
+              "label": "0.5kg (Serves 2–4 people)",
               "price": 1150
             },
             {
-              "label": "1kg (Serves 8–10)",
+              "label": "0.75kg (Serves 5–7 people)",
+              "price": 1550
+            },
+            {
+              "label": "1kg (Serves 8–10 people)",
               "price": 1950
             },
             {
-              "label": "1.5kg (Serves 12–15)",
-              "price": 2800
+              "label": "1.25kg (Serves 11–14 people)",
+              "price": 2450
+            },
+            {
+              "label": "1.5kg (Serves 15–18 people)",
+              "price": 2950
+            },
+            {
+              "label": "1.75kg (Serves 19–22 people)",
+              "price": 3400
+            },
+            {
+              "label": "2kg (Serves 23–26 people)",
+              "price": 3900
+            },
+            {
+              "label": "2.25kg (Serves 27–30 people)",
+              "price": 4400
+            },
+            {
+              "label": "2.5kg (Serves 31–35 people)",
+              "price": 4900
+            },
+            {
+              "label": "3kg (Serves 36–42 people)",
+              "price": 5850
+            },
+            {
+              "label": "3.5kg (Serves 43–50 people)",
+              "price": 6850
+            },
+            {
+              "label": "4kg (Serves 51–60 people)",
+              "price": 7800
+            },
+            {
+              "label": "4.5kg (Serves 61–70 people)",
+              "price": 8800
+            },
+            {
+              "label": "5kg (Serves 71–85 people)",
+              "price": 9750
+            },
+            {
+              "label": "6kg+ (Serves 90–120 people)",
+              "price": 11700
             }
           ],
           "eggOptions": [
@@ -1061,10 +1445,10 @@
         },
         {
           "id": 125,
-          "name": "Congrats Pr Kinuthia Celebration Cake",
+          "name": "Elegant Congratulations Celebration Cake",
           "price": 1950,
           "image": "/images/A25.jpg",
-          "description": "An elegant custom congratulatory cake covered in smooth light brown/mocha buttercream. Features delicate white piped rosette clusters on the top-left and lower edge, accented with scattered gold dragees and subtle edible gold leaf flakes. Centered dark chocolate handwritten lettering reads 'CONGRATS PR KINUTHIA'. Baked fresh to order with moist sponge layers.",
+          "description": "Celebrate achievements with a cake that reflects the pride and joy of the moment. Beautifully handcrafted in smooth mocha buttercream and finished with delicate piped rosettes, subtle gold leaf accents, and elegant decorative details, this sophisticated creation is designed to honor milestones with style. Whether you're celebrating a graduation, promotion, ordination, retirement, business success, or personal achievement, every cake is personalized with your own congratulatory message to make the occasion truly memorable.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
@@ -1093,25 +1477,73 @@
           "prepInfo": "Baked fresh same-day",
           "occasionTags": [
             "Congratulations",
-            "Pastor",
             "Milestone",
-            "Achievement"
+            "Achievement",
+            "Graduation"
           ],
           "rating": 4.9,
           "reviewCount": 15,
           "allowCustomMessage": true,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4–6)",
+              "label": "0.5kg (Serves 2–4 people)",
               "price": 1150
             },
             {
-              "label": "1kg (Serves 8–10)",
+              "label": "0.75kg (Serves 5–7 people)",
+              "price": 1550
+            },
+            {
+              "label": "1kg (Serves 8–10 people)",
               "price": 1950
             },
             {
-              "label": "1.5kg (Serves 12–15)",
-              "price": 2800
+              "label": "1.25kg (Serves 11–14 people)",
+              "price": 2450
+            },
+            {
+              "label": "1.5kg (Serves 15–18 people)",
+              "price": 2950
+            },
+            {
+              "label": "1.75kg (Serves 19–22 people)",
+              "price": 3400
+            },
+            {
+              "label": "2kg (Serves 23–26 people)",
+              "price": 3900
+            },
+            {
+              "label": "2.25kg (Serves 27–30 people)",
+              "price": 4400
+            },
+            {
+              "label": "2.5kg (Serves 31–35 people)",
+              "price": 4900
+            },
+            {
+              "label": "3kg (Serves 36–42 people)",
+              "price": 5850
+            },
+            {
+              "label": "3.5kg (Serves 43–50 people)",
+              "price": 6850
+            },
+            {
+              "label": "4kg (Serves 51–60 people)",
+              "price": 7800
+            },
+            {
+              "label": "4.5kg (Serves 61–70 people)",
+              "price": 8800
+            },
+            {
+              "label": "5kg (Serves 71–85 people)",
+              "price": 9750
+            },
+            {
+              "label": "6kg+ (Serves 90–120 people)",
+              "price": 11700
             }
           ],
           "eggOptions": [
@@ -1128,10 +1560,10 @@
         },
         {
           "id": 126,
-          "name": "Happy Birthday Love Pink and Gold Sphere Cake",
+          "name": "Love & Celebration Signature Cake",
           "price": 2000,
           "image": "/images/A26.jpg",
-          "description": "An elegant romance and celebration cake covered in smooth white buttercream over a soft pink base layer. Features a striking band of edible gold leaf flakes separating the tiers with clusters of metallic gold spherical ornaments on the top-right and lower-left. Accented with piped pink buttercream swirls along the top edge, scattered silver and gold sugar pearls, and a central gold acrylic 'Happy Birthday Love' topper.",
+          "description": "Celebrate love, laughter, and life's most treasured moments with a cake that radiates elegance from every angle. Finished in smooth white and blush buttercream, highlighted by a luxurious band of edible gold leaf, metallic decorative spheres, and graceful buttercream swirls, this handcrafted centerpiece is designed to capture attention and admiration. Whether it's a birthday, anniversary, engagement, bridal shower, or romantic celebration, every detail is personalized to tell your unique story—crafted beautifully, the Jaby way.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
@@ -1171,16 +1603,64 @@
           "allowCustomMessage": true,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4–6)",
+              "label": "0.5kg (Serves 2–4 people)",
               "price": 1200
             },
             {
-              "label": "1kg (Serves 8–10)",
+              "label": "0.75kg (Serves 5–7 people)",
+              "price": 1600
+            },
+            {
+              "label": "1kg (Serves 8–10 people)",
               "price": 2000
             },
             {
-              "label": "1.5kg (Serves 12–15)",
-              "price": 2900
+              "label": "1.25kg (Serves 11–14 people)",
+              "price": 2500
+            },
+            {
+              "label": "1.5kg (Serves 15–18 people)",
+              "price": 3000
+            },
+            {
+              "label": "1.75kg (Serves 19–22 people)",
+              "price": 3500
+            },
+            {
+              "label": "2kg (Serves 23–26 people)",
+              "price": 4000
+            },
+            {
+              "label": "2.25kg (Serves 27–30 people)",
+              "price": 4500
+            },
+            {
+              "label": "2.5kg (Serves 31–35 people)",
+              "price": 5000
+            },
+            {
+              "label": "3kg (Serves 36–42 people)",
+              "price": 6000
+            },
+            {
+              "label": "3.5kg (Serves 43–50 people)",
+              "price": 7000
+            },
+            {
+              "label": "4kg (Serves 51–60 people)",
+              "price": 8000
+            },
+            {
+              "label": "4.5kg (Serves 61–70 people)",
+              "price": 9000
+            },
+            {
+              "label": "5kg (Serves 71–85 people)",
+              "price": 10000
+            },
+            {
+              "label": "6kg+ (Serves 90–120 people)",
+              "price": 12000
             }
           ],
           "eggOptions": [
@@ -1197,10 +1677,10 @@
         },
         {
           "id": 127,
-          "name": "Congrats Pr Waweru Lavender Celebration Cake",
+          "name": "Lavender Milestone Celebration Cake",
           "price": 1950,
           "image": "/images/A27.jpg",
-          "description": "An elegant custom congratulatory cake covered in smooth soft lavender buttercream. Features clusters of piped lavender rosettes on the top and lower base, accented with silver sugar pearls and subtle edible gold leaf flecks. Centered dark chocolate handwritten lettering reads 'CONGRATS PR WAWERU'. Baked fresh to order with moist sponge layers.",
+          "description": "Every success deserves a celebration that feels just as special. This elegant lavender-inspired celebration cake combines soft buttercream finishes, handcrafted rosette details, shimmering silver pearls, and delicate gold accents to create a timeless expression of achievement. Ideal for graduations, promotions, appreciation ceremonies, church milestones, retirements, and personal accomplishments, each cake is customized with your own message, making every celebration uniquely meaningful.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
@@ -1230,25 +1710,73 @@
           "prepInfo": "Baked fresh same-day",
           "occasionTags": [
             "Congratulations",
-            "Pastor",
             "Milestone",
-            "Achievement"
+            "Achievement",
+            "Graduation"
           ],
           "rating": 4.9,
           "reviewCount": 17,
           "allowCustomMessage": true,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4–6)",
+              "label": "0.5kg (Serves 2–4 people)",
               "price": 1150
             },
             {
-              "label": "1kg (Serves 8–10)",
+              "label": "0.75kg (Serves 5–7 people)",
+              "price": 1550
+            },
+            {
+              "label": "1kg (Serves 8–10 people)",
               "price": 1950
             },
             {
-              "label": "1.5kg (Serves 12–15)",
-              "price": 2800
+              "label": "1.25kg (Serves 11–14 people)",
+              "price": 2450
+            },
+            {
+              "label": "1.5kg (Serves 15–18 people)",
+              "price": 2950
+            },
+            {
+              "label": "1.75kg (Serves 19–22 people)",
+              "price": 3400
+            },
+            {
+              "label": "2kg (Serves 23–26 people)",
+              "price": 3900
+            },
+            {
+              "label": "2.25kg (Serves 27–30 people)",
+              "price": 4400
+            },
+            {
+              "label": "2.5kg (Serves 31–35 people)",
+              "price": 4900
+            },
+            {
+              "label": "3kg (Serves 36–42 people)",
+              "price": 5850
+            },
+            {
+              "label": "3.5kg (Serves 43–50 people)",
+              "price": 6850
+            },
+            {
+              "label": "4kg (Serves 51–60 people)",
+              "price": 7800
+            },
+            {
+              "label": "4.5kg (Serves 61–70 people)",
+              "price": 8800
+            },
+            {
+              "label": "5kg (Serves 71–85 people)",
+              "price": 9750
+            },
+            {
+              "label": "6kg+ (Serves 90–120 people)",
+              "price": 11700
             }
           ],
           "eggOptions": [
@@ -1265,10 +1793,10 @@
         },
         {
           "id": 128,
-          "name": "Manchester United Njoro's Football Themed Birthday Cake",
+          "name": "Championship Football Celebration Cake",
           "price": 2000,
           "image": "/images/A28.jpg",
-          "description": "A custom football-themed celebration cake dedicated to Manchester United, personalized for Njoro's birthday. Covered in smooth white buttercream with chocolate crumb details along the base. Features a prominent Manchester United club crest centerpiece, a 'Happy Birthday Njoro' banner topper, a player cutout, a trophy graphic, soccer ball accents, and a Manchester United jersey design sticker on the side, finished with scattered gold dragees.",
+          "description": "Bring the excitement of the stadium to your celebration with a cake inspired by the passion of football. Featuring club-themed decorations, premium handcrafted finishes, chocolate crumb detailing, football-inspired toppers, and personalized design elements, this celebration cake is created for fans who live and breathe the beautiful game. Whether you're celebrating a birthday, championship victory, tournament, or match-day gathering, every design is customized around your favorite club, colors, and message to create a winning centerpiece.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
@@ -1298,7 +1826,7 @@
           "occasionTags": [
             "Birthday",
             "Football Fan",
-            "Manchester United",
+            "Football Club",
             "Sports"
           ],
           "rating": 4.9,
@@ -1306,16 +1834,64 @@
           "allowCustomMessage": true,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4–6)",
+              "label": "0.5kg (Serves 2–4 people)",
               "price": 1200
             },
             {
-              "label": "1kg (Serves 8–10)",
+              "label": "0.75kg (Serves 5–7 people)",
+              "price": 1600
+            },
+            {
+              "label": "1kg (Serves 8–10 people)",
               "price": 2000
             },
             {
-              "label": "1.5kg (Serves 12–15)",
-              "price": 2900
+              "label": "1.25kg (Serves 11–14 people)",
+              "price": 2500
+            },
+            {
+              "label": "1.5kg (Serves 15–18 people)",
+              "price": 3000
+            },
+            {
+              "label": "1.75kg (Serves 19–22 people)",
+              "price": 3500
+            },
+            {
+              "label": "2kg (Serves 23–26 people)",
+              "price": 4000
+            },
+            {
+              "label": "2.25kg (Serves 27–30 people)",
+              "price": 4500
+            },
+            {
+              "label": "2.5kg (Serves 31–35 people)",
+              "price": 5000
+            },
+            {
+              "label": "3kg (Serves 36–42 people)",
+              "price": 6000
+            },
+            {
+              "label": "3.5kg (Serves 43–50 people)",
+              "price": 7000
+            },
+            {
+              "label": "4kg (Serves 51–60 people)",
+              "price": 8000
+            },
+            {
+              "label": "4.5kg (Serves 61–70 people)",
+              "price": 9000
+            },
+            {
+              "label": "5kg (Serves 71–85 people)",
+              "price": 10000
+            },
+            {
+              "label": "6kg+ (Serves 90–120 people)",
+              "price": 12000
             }
           ],
           "eggOptions": [
@@ -1329,6 +1905,119 @@
             }
           ],
           "extraImages": []
+        },
+        {
+          "id": 129,
+          "name": "House of Jaby Signature Red Velvet Loaf Slices",
+          "price": 350,
+          "image": "/images/A29.jpg",
+          "description": "Treat yourself to a moment of pure indulgence with our Signature Red Velvet Loaf Slices. Expertly handcrafted with the classic richness of authentic red velvet, a delicate hint of cocoa, and an irresistibly soft, velvety crumb, every slice delivers the perfect balance of flavor and comfort. Beautifully presented with an artistic cocoa dusting, this premium loaf is perfect for tea time, dessert, coffee breaks, or simply enjoying life's sweeter moments. Freshly baked and crafted with care, it's an everyday luxury you'll want to savor again and again.",
+          "available": true,
+          "category": "Cakes",
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "oldPrice": 350,
+          "ingredients": [
+            "Premium Wheat Flour",
+            "Fresh Eggs",
+            "Buttermilk",
+            "Cocoa Powder",
+            "Red Food Coloring",
+            "Vanilla Extract",
+            "Baking Powder",
+            "Sugar",
+            "Cocoa Dusting"
+          ],
+          "allergens": [
+            "Wheat",
+            "Eggs",
+            "Dairy"
+          ],
+          "servingInfo": "Full loaf serves 6–8 slices",
+          "prepInfo": "Baked fresh same-day",
+          "occasionTags": [
+            "Tea Time",
+            "Dessert",
+            "Gift",
+            "Everyday Treat"
+          ],
+          "rating": 4.8,
+          "reviewCount": 0,
+          "allowCustomMessage": false,
+          "sizes": [
+            {
+              "label": "Single Slice",
+              "price": 80
+            },
+            {
+              "label": "Half Loaf (4 slices)",
+              "price": 200
+            },
+            {
+              "label": "Full Loaf (8 slices)",
+              "price": 350
+            }
+          ],
+          "eggOptions": [],
+          "extraImages": []
+        },
+        {
+          "id": 130,
+          "name": "House of Jaby Decadent Black Forest Loaf Slices",
+          "price": 350,
+          "image": "/images/A30.jpg",
+          "description": "Rich, chocolatey, and irresistibly satisfying, our Decadent Black Forest Loaf Slices are crafted for true chocolate lovers. Made with a soft, moist Black Forest-inspired sponge and beautifully finished with an elegant cocoa dusting, every slice delivers deep cocoa flavor and comforting indulgence in every bite. Perfect for dessert, afternoon tea, coffee dates, office treats, or sharing with loved ones, this handcrafted loaf transforms ordinary moments into delicious memories.",
+          "available": true,
+          "category": "Cakes",
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "oldPrice": 350,
+          "ingredients": [
+            "Premium Wheat Flour",
+            "Fresh Eggs",
+            "Cocoa Powder",
+            "Dark Chocolate",
+            "Whipped Cream",
+            "Sugar",
+            "Baking Powder",
+            "Cocoa Dusting"
+          ],
+          "allergens": [
+            "Wheat",
+            "Eggs",
+            "Dairy"
+          ],
+          "servingInfo": "Full loaf serves 6–8 slices",
+          "prepInfo": "Baked fresh same-day",
+          "occasionTags": [
+            "Tea Time",
+            "Dessert",
+            "Gift",
+            "Everyday Treat"
+          ],
+          "rating": 4.8,
+          "reviewCount": 0,
+          "allowCustomMessage": false,
+          "sizes": [
+            {
+              "label": "Single Slice",
+              "price": 80
+            },
+            {
+              "label": "Half Loaf (4 slices)",
+              "price": 200
+            },
+            {
+              "label": "Full Loaf (8 slices)",
+              "price": 350
+            }
+          ],
+          "eggOptions": [],
+          "extraImages": []
         }
       ],
       "icon": "cake",
@@ -1340,10 +2029,10 @@
       "items": [
         {
           "id": 104,
-          "name": "Precooked Ready-to-Eat Cassava Pack (Mahogo)",
+          "name": "Ready-to-Eat Cassava Delight",
           "price": 100,
           "image": "/images/A04.jpg",
-          "description": "Freshly boiled, tender cassava roots hygienically packaged in a cling-wrapped tray. Sold pre-cooked and ready to eat immediately or lightly pan-fried for a delicious snack.",
+          "description": "Simple, wholesome, and full of comforting flavor, our Ready-to-Eat Cassava Delight celebrates one of Africa's most loved traditional foods. Carefully selected, perfectly cooked, and hygienically packed for freshness, it's ready to enjoy straight from the pack or lightly pan-fried for a delicious golden finish. Perfect as a nourishing snack, side dish, or light meal, it's homemade comfort made beautifully convenient.",
           "available": true,
           "category": "Snacks",
           "jabysFavorite": false,
@@ -1383,10 +2072,10 @@
         },
         {
           "id": 107,
-          "name": "Golden Sweet Dough Donuts",
+          "name": "Golden Delight Donuts",
           "price": 150,
           "image": "/images/A07.jpg",
-          "description": "Deliciously golden brown, round puffed sweet dough donuts, fried to a crisp exterior and soft, fluffy interior. Packaged fresh and ready to enjoy as a sweet breakfast treat, tea-time snack, or party bite.",
+          "description": "Freshly prepared, beautifully golden, and irresistibly soft, our Golden Delight Donuts are made to brighten every moment. With a light, fluffy center and a delicately crisp exterior, they're perfect for breakfast, tea breaks, celebrations, office meetings, dessert tables, or simply satisfying a sweet craving. Every batch is freshly made to deliver the comforting taste of homemade goodness.",
           "available": true,
           "category": "Snacks",
           "jabysFavorite": true,
@@ -1437,10 +2126,10 @@
         },
         {
           "id": 110,
-          "name": "Crispy Golden Fried Samosas",
+          "name": "Signature Crispy Samosas",
           "price": 300,
           "image": "/images/A10C.jpg",
-          "description": "Crispy, golden-brown triangular samosas fried to perfection, packed with savory fillings, and drained on paper-lined trays. Available pre-cooked and ready to eat or fresh-frozen for your convenience. Perfect as a party appetizer, snack, or meal accompaniment.",
+          "description": "Every gathering deserves a crowd favorite. Our Signature Crispy Samosas are handcrafted with perfectly crisp pastry and generously filled with delicious savory goodness, creating a satisfying bite every time. Ideal for parties, family gatherings, corporate events, celebrations, or everyday snacking, they're available ready to enjoy or freshly prepared for your convenience. Crispy, flavorful, and always memorable.",
           "available": true,
           "category": "Snacks",
           "jabysFavorite": true,
@@ -1491,10 +2180,10 @@
         },
         {
           "id": 113,
-          "name": "Classic Swahili Mandazi (Ready-to-Eat)",
+          "name": "Classic Swahili Mandazi",
           "price": 150,
           "image": "/images/A13.jpg",
-          "description": "Authentic, golden-brown triangular Swahili mandazi fried to fluffy, aromatic perfection with a hint of cardamom. Hygienically cling-wrapped in a fresh tray, these delicious treats are fully pre-cooked and ready to eat for breakfast, tea time, or a quick snack.",
+          "description": "Inspired by generations of Swahili tradition, our Classic Swahili Mandazi deliver the comforting taste of home in every bite. Soft, fluffy, and beautifully golden with a gentle hint of aromatic spice, they're freshly prepared to complement breakfast, afternoon tea, family gatherings, or everyday moments worth sharing. Simple, authentic, and made with care.",
           "available": true,
           "category": "Snacks",
           "jabysFavorite": true,
@@ -1544,10 +2233,10 @@
         },
         {
           "id": 114,
-          "name": "Uncooked Raw Samosas (Ready-to-Fry)",
+          "name": "Ready-to-Fry Fresh Samosas",
           "price": 550,
           "image": "/images/A14.jpg",
-          "description": "Freshly folded, raw unfilled or filled triangular samosas dusted with flour, ready for your home kitchen. Perfectly shaped and prepared fresh same-day, these uncooked samosas can be frozen or fried straight from the pack for a hot, crispy treat anytime.",
+          "description": "Bring the irresistible aroma of freshly fried samosas into your own kitchen whenever you choose. Expertly handcrafted and carefully prepared, our Ready-to-Fry Fresh Samosas offer the perfect balance of convenience and quality. Simply fry to a crisp golden finish for family meals, parties, catering events, or unexpected guests. Freshly prepared today, ready whenever you are.",
           "available": true,
           "category": "Snacks",
           "jabysFavorite": true,
@@ -1594,10 +2283,10 @@
         },
         {
           "id": 115,
-          "name": "Soft Folded Golden Crepes (Pancakes)",
+          "name": "Signature Golden Crepes",
           "price": 250,
           "image": "/images/A15.jpg",
-          "description": "Delicately thin, soft, and lightly browned golden crepes folded into neat triangles. Made fresh same-day with rich batter and cooked to a tender finish, these delicious pancakes are fully pre-cooked and ready to enjoy for breakfast, tea time, or as a sweet snack.",
+          "description": "Light, delicate, and wonderfully versatile, our Signature Golden Crepes are crafted to suit every taste and every occasion. Their soft texture and beautifully golden finish make them perfect with fresh fruit, chocolate, honey, savory fillings, or your own favorite recipe. Whether served for breakfast, brunch, dessert, tea time, or a special gathering, these handcrafted crepes bring effortless elegance to every table.",
           "available": true,
           "category": "Snacks",
           "jabysFavorite": true,
@@ -1661,10 +2350,10 @@
       "items": [
         {
           "id": 105,
-          "name": "Artisanal Heart-Shaped Butter Cookies",
+          "name": "Signature Heart Butter Cookies",
           "price": 450,
           "image": "/images/A05.jpg",
-          "description": "Delicately handcrafted heart-shaped cookies freshly cut and arranged on a baking tray, showcasing our custom artisanal pastry capabilities. Made from scratch with rich butter, premium flour, and a hint of vanilla, these melt-in-your-mouth treats are baked to golden perfection for any special occasion, gift box, or sweet craving.",
+          "description": "Thoughtfully handcrafted to celebrate life's sweetest moments, our Signature Heart Butter Cookies are as beautiful as they are delicious. Made with rich butter, premium flour, and a delicate hint of vanilla, these charming heart-shaped treats are baked to a perfectly golden finish with a light, melt-in-your-mouth texture. Whether you're creating a gift box, celebrating a special occasion, or simply treating someone you love, these artisan cookies add warmth and sweetness to every moment.",
           "available": true,
           "category": "Cookies",
           "jabysFavorite": false,
@@ -1724,10 +2413,10 @@
         },
         {
           "id": 106,
-          "name": "Assorted Baked Shape Cookies Pack",
+          "name": "Assorted Celebration Cookies",
           "price": 350,
           "image": "/images/A06.jpg",
-          "description": "A delightful assortment of freshly baked cookies in fun shapes like stars, circles, and hearts. Packaged neatly in trays and baked to golden-brown perfection, these crunchy and flavorful treats are ideal for snacking, kids' lunchboxes, or sharing with friends and family.",
+          "description": "Every box brings a little surprise. Our Assorted Celebration Cookies feature a delightful collection of beautifully baked shapes, including hearts, stars, circles, and other playful designs that make every bite a little more special. Freshly baked to a crisp golden finish and carefully packed for freshness, they're perfect for family gatherings, children's parties, office treats, gift hampers, lunchboxes, or simply sharing around the table. A colorful assortment made to spread smiles with every bite.",
           "available": true,
           "category": "Cookies",
           "jabysFavorite": false,
@@ -1788,10 +2477,10 @@
         },
         {
           "id": 109,
-          "name": "Buttery Flower-Shaped Shortbread Cookies",
+          "name": "Classic Butter Shortbread Flowers",
           "price": 300,
           "image": "/images/A09.jpg",
-          "description": "Delightful golden-brown flower-shaped shortbread cookies baked to a rich, crumbly perfection. Packaged neatly in a protective tray, these buttery treats offer a wonderful melt-in-your-mouth experience that pairs perfectly with tea or coffee.",
+          "description": "Elegant in appearance and timeless in flavor, our Classic Butter Shortbread Flowers are handcrafted to deliver a rich, buttery taste with a perfectly delicate, crumbly texture. Beautifully shaped into floral designs and baked until lightly golden, these artisan cookies pair wonderfully with tea, coffee, or your favorite warm beverage. Whether enjoyed during a quiet afternoon break, served to guests, or shared with loved ones, they're a simple indulgence crafted to make everyday moments feel extraordinary.",
           "available": true,
           "category": "Cookies",
           "jabysFavorite": false,
@@ -1853,10 +2542,10 @@
       "items": [
         {
           "id": 111,
-          "name": "Artisanal Fresh Cinnamon Rolls",
+          "name": "Signature Cinnamon Rolls",
           "price": 600,
           "image": "/images/A11.jpg",
-          "description": "Soft, fluffy, freshly baked cinnamon rolls glazed to absolute perfection. Packed with rich cinnamon-sugar filling and baked golden, these sweet rolls are sold fully pre-cooked and ready to eat for your morning treat or tea-time indulgence.",
+          "description": "Soft, fluffy, and wonderfully indulgent, our Signature Cinnamon Rolls are handcrafted for those who appreciate the perfect balance of sweetness and comfort. Every roll is generously layered with rich cinnamon-sugar filling, baked until beautifully golden, and finished with a smooth, irresistible glaze that melts into every swirl. Perfect for breakfast, brunch, tea time, dessert, or sharing with loved ones, these freshly baked pastries are a comforting treat you'll want to enjoy again and again.",
           "available": true,
           "category": "Pastries",
           "jabysFavorite": true,
@@ -1915,10 +2604,10 @@
         },
         {
           "id": 112,
-          "name": "Freshly Baked Golden Cinnamon Rolls (Ready-to-Eat)",
+          "name": "Golden Oven-Fresh Cinnamon Rolls",
           "price": 600,
           "image": "/images/A12C.jpg",
-          "description": "Warm, golden-brown cinnamon rolls baked to perfection and straight out of the oven. Soft, fluffy, and swirling with rich cinnamon-sugar goodness, these delicious pastries are fully pre-cooked and ready to eat immediately for breakfast, tea time, or as a sweet treat.",
+          "description": "There's something magical about the aroma of freshly baked cinnamon rolls. Our Golden Oven-Fresh Cinnamon Rolls are baked to a beautiful golden finish with soft, pillowy layers wrapped around a rich cinnamon-sugar filling, creating a warm and satisfying treat in every bite. Ready to enjoy and crafted for convenience, they're perfect for breakfast, afternoon tea, office meetings, family gatherings, or simply rewarding yourself with a little everyday indulgence. Freshly baked, beautifully prepared, and always made to brighten your day.",
           "available": true,
           "category": "Pastries",
           "jabysFavorite": true,
@@ -1985,10 +2674,10 @@
   "bundles": [
     {
       "id": 501,
-      "name": "The Ultimate Tea-Time Party Pack",
+      "name": "Ultimate Tea-Time Sharing Box",
       "price": 950,
       "image": "/images/bundle-01.jpg",
-      "description": "Combine crunchy, savory, and sweet items into one ultimate hosting package for family gatherings or guests. Includes crispy samosas, donuts, and fresh mandazi.",
+      "description": "Great conversations deserve great food. The Ultimate Tea-Time Sharing Box brings together a delicious selection of House of Jaby favorites, including crispy samosas, freshly prepared mandazi, and our signature golden donuts. Perfect for family gatherings, office meetings, afternoon tea, celebrations, or welcoming guests, this thoughtfully curated box offers the perfect balance of savory and sweet—making every shared moment feel a little more special.",
       "available": true,
       "jabysFavorite": false,
       "bestSelling": true,
@@ -2016,10 +2705,10 @@
     },
     {
       "id": 502,
-      "name": "Morning Breakfast & Pastry Combo",
+      "name": "Morning Breakfast Box",
       "price": 800,
       "image": "/images/bundle-02.jpg",
-      "description": "The perfect cross-sell for morning deliveries, weekend treats, or brunch. Features fully baked cinnamon rolls paired with soft folded crepes.",
+      "description": "Start the day with comfort, warmth, and freshly baked goodness. Our Morning Breakfast Box pairs soft, freshly baked cinnamon rolls with delicate golden crepes to create a satisfying breakfast or brunch experience. Whether you're enjoying a relaxed weekend morning, hosting guests, planning a team breakfast, or sending a thoughtful surprise, this bundle brings together everything needed to begin the day beautifully.",
       "available": true,
       "jabysFavorite": false,
       "bestSelling": false,
@@ -2046,10 +2735,10 @@
     },
     {
       "id": 503,
-      "name": "House of Jaby Sweet Tooth Box",
+      "name": "Sweet Moments Treat Box",
       "price": 750,
       "image": "/images/bundle-03.jpg",
-      "description": "A delightful box for snack lovers, featuring buttery shortbread cookies, vanilla cupcakes, and classic Swahili mandazi.",
+      "description": "Created for those who believe every celebration deserves something sweet, the Sweet Moments Treat Box combines buttery artisan cookies, freshly baked vanilla cupcakes, and soft, comforting Swahili mandazi in one delightful collection. Perfect for birthdays, thoughtful gifts, family visits, office celebrations, dessert tables, or simply sharing with loved ones, it's a carefully curated box designed to spread joy with every bite.",
       "available": true,
       "jabysFavorite": false,
       "bestSelling": false,
