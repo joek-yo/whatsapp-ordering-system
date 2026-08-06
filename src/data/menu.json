@@ -2021,7 +2021,9 @@
         }
       ],
       "icon": "cake",
-      "hot": true
+      "hot": true,
+      "intro": "Signature Celebration Cakes\nCrafted Moments, The Jaby Way\n\nSome moments only happen once, and they deserve a cake that's just as unforgettable. At House of Jaby, every celebration cake is thoughtfully handcrafted, beautifully designed, and freshly baked to reflect your unique story. From birthdays and anniversaries to graduations, milestones, romantic surprises, and heartfelt celebrations, we create cakes that bring people together and turn meaningful occasions into lasting memories. Every detail is crafted with care, every design personalized with purpose, and every bite made to be remembered.",
+      "outro": "Every Celebration Deserves Something Special\n\nAt House of Jaby, we believe every celebration tells a story worth remembering. That's why every cake is handcrafted with passion, personalized to reflect your vision, and freshly baked using quality ingredients to deliver exceptional taste and beautiful presentation. Whether you're celebrating life's biggest milestones or its simplest joys, we're honored to help make every occasion unforgettable."
     },
     {
       "id": "snacks",
@@ -2342,7 +2344,9 @@
         }
       ],
       "icon": "snack",
-      "hot": true
+      "hot": true,
+      "intro": "Signature Bites — Freshly Prepared. Wonderfully Shared.\n\nFrom comforting everyday favorites to crowd-pleasing party bites, our Signature Bites are handcrafted with quality ingredients, prepared fresh, and made to bring people together. Whether you're enjoying a quiet breakfast, entertaining guests, or planning a special event, every bite is thoughtfully crafted to add warmth, flavor, and joy to the occasion.",
+      "outro": "Made Fresh. Shared with Joy.\n\nAt House of Jaby, every Signature Bite is prepared with care, quality ingredients, and genuine passion for great food. From comforting everyday treats to event-ready favorites, we create delicious bites that bring families together, welcome guests warmly, and turn ordinary moments into something worth remembering."
     },
     {
       "id": "cookies",
@@ -2534,7 +2538,9 @@
         }
       ],
       "icon": "cookie",
-      "hot": false
+      "hot": false,
+      "intro": "Artisan Cookies — Handcrafted Goodness in Every Bite\n\nEvery cookie at House of Jaby is lovingly handcrafted, freshly baked, and made to bring simple moments of joy. Whether you're looking for a thoughtful gift, a comforting tea-time companion, a lunchbox treat, or something sweet to share with loved ones, our artisan cookies are baked with quality ingredients and finished with the care that makes every bite memorable.",
+      "outro": "Freshly Baked. Beautifully Shared.\n\nFrom thoughtful gifts to comforting everyday treats, our Artisan Cookies are made with premium ingredients, handcrafted attention to detail, and a passion for creating moments worth sharing. Because sometimes the simplest pleasures leave the sweetest memories."
     },
     {
       "id": "pastries",
@@ -2668,7 +2674,9 @@
         }
       ],
       "icon": "bread",
-      "hot": false
+      "hot": false,
+      "intro": "Signature Pastries — Freshly Baked Comfort, Crafted with Care\n\nNothing compares to the comforting aroma of freshly baked pastries. At House of Jaby, every pastry is handcrafted using quality ingredients, carefully baked to perfection, and prepared fresh to bring warmth, comfort, and a little everyday indulgence. Whether you're starting your morning, enjoying an afternoon break, or treating someone special, our pastries are made to turn simple moments into something memorable.",
+      "outro": "Baked Fresh. Enjoyed Together.\n\nEvery pastry at House of Jaby is made with quality ingredients, handcrafted attention to detail, and a genuine passion for creating food that brings people together. Whether shared over coffee, served at brunch, or enjoyed as a quiet personal treat, our Signature Pastries are baked to make every moment a little warmer and every bite a little more memorable."
     }
   ],
   "bundles": [
@@ -2890,5 +2898,9 @@
         "rating": 5
       }
     ]
+  },
+  "bundlesCopy": {
+    "intro": "Signature Boxes & Bundles — Thoughtfully Curated for Every Occasion\n\nSome moments are even better when everything comes together perfectly. Our Signature Boxes & Bundles are carefully curated to bring together House of Jaby favorites in one convenient package, making hosting, gifting, sharing, and celebrating effortless. Whether you're planning breakfast, welcoming guests, organizing an office meeting, or surprising someone special, every bundle is crafted to make your moments easier, more memorable, and deliciously satisfying.",
+    "outro": "Curated with Care. Shared with Love.\n\nEvery House of Jaby box is thoughtfully assembled to make hosting easier, gifting more meaningful, and everyday moments more enjoyable. Whether you're celebrating a milestone, welcoming guests, or simply sharing great food with the people who matter most, our curated bundles are crafted to bring people together—one delicious bite at a time."
   }
 }

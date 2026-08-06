@@ -152,3 +152,10 @@ export function getFeaturedTestimonials(limit = 6) {
 
   return picked.slice(0, limit);
 }
+
+// 🔹 Returns the intro/outro copy for the synthetic Bundles category
+// (Bundles isn't a real category object in menu.json, so it can't use
+// activeCategory.intro/outro like other categories — it needs its own accessor)
+export function getBundlesCopy() {
+  return (menuData as any).bundlesCopy || { intro: "", outro: "" };
+}
