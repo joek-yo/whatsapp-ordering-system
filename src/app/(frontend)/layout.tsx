@@ -57,8 +57,8 @@ export default function RootLayout({
         <ThemeProvider>
           <CartProvider>
             <div className="sticky top-0 left-0 w-full z-50">
-              <Header />
               <AnnouncementBar />
+              <Header />
             </div>
             <SearchBar />
             <MiniCartDrawer />
