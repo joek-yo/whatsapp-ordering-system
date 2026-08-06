@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@config "../../../tailwind.config.js";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-background: #0B0F0D;
+  --color-surface: #121613;
+  --color-surface2: #161C18;
+  --color-foreground: #EDEDE8;
+  --color-subtext: #9CA69E;
+  --color-muted: #6B756D;
+  --color-border: #212823;
+  --color-border-strong: #2C352E;
+  --color-green: #3FA66B;
+  --color-green-strong: #2F7F52;
+  --color-green-soft: rgba(63, 166, 107, 0.16);
+  --color-gold: #C9A227;
+  --color-gold-soft: rgba(201, 162, 39, 0.14);
+  --color-danger: #e08a8a;
+  --color-whatsapp: #25D366;
+}
+
+html.light {
+  --color-background: #F7F5F0;
+  --color-surface: #FFFFFF;
+  --color-surface2: #F1EEE7;
+  --color-foreground: #171712;
+  --color-subtext: #6b6558;
+  --color-muted: #9a9488;
+  --color-border: #E5E0D5;
+  --color-border-strong: #D6CFBE;
+  --color-green: #1F4D3A;
+  --color-green-strong: #163A2B;
+  --color-green-soft: rgba(31, 77, 58, 0.08);
+  --color-gold: #B8863A;
+  --color-gold-soft: rgba(184, 134, 58, 0.1);
+  --color-danger: #c85a5a;
+  --color-whatsapp: #1DA851;
+}
+
+html {
+  background-color: var(--color-background);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* subtle grain texture for depth on dark bg */
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  z-index: 1;
+}

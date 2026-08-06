@@ -29,1120 +29,925 @@
       "items": [
         {
           "id": 101,
-          "name": "1kg Chocolate Cake",
-          "price": 2100,
-          "image": "/images/chocolate-cake.jpg",
-          "description": "Deep, dark, and unapologetically rich — this chocolate cake is baked fresh with premium cocoa and layered with silky chocolate ganache for that first-bite moment everyone remembers. Moist, dense, and finished with a glossy chocolate drip, it's the kind of cake that turns a normal Tuesday into an occasion. Whether it's a birthday, a surprise, or just because — this one delivers every single time.",
+          "name": "Golden Calendar Milestone Birthday Cake",
+          "price": 2000,
+          "image": "/images/A01.jpg",
+          "description": "An exquisite custom-designed celebration cake featuring a personalized calendar edible print motif, elegant black and soft pink sphere accents, gold drip details, and edible gold leaf flake touches. Topped with a golden 'Happy Birthday' topper, this luxurious cake is baked fresh to order with moist sponge layers and smooth frosting.",
           "available": true,
+          "category": "Cakes",
           "jabysFavorite": true,
-          "bestSelling": false,
-          "discountPercent": 15,
+          "bestSelling": true,
+          "discountPercent": 10,
           "onFlashSale": true,
-          "oldPrice": 2500,
+          "oldPrice": 2220,
           "ingredients": [
-            "Wheat flour",
-            "Cocoa powder",
-            "Fresh butter",
-            "Eggs",
-            "Sugar"
+            "Premium Wheat Flour",
+            "Fresh Eggs",
+            "Caster Sugar",
+            "Unsalted Butter",
+            "Whole Milk",
+            "Vanilla Extract",
+            "Baking Powder",
+            "Edible Gold Leaf",
+            "Fondant Spheres",
+            "Custom Printed Edible Sheet"
           ],
           "allergens": [
-            "Gluten",
+            "Wheat",
             "Eggs",
             "Dairy"
           ],
-          "servingInfo": "Serves 8–10",
-          "prepInfo": "Baked fresh same-day, ready in 2–3 hours",
+          "servingInfo": "Serves 4 to 120 people across size variants",
+          "prepInfo": "Baked fresh same-day",
           "occasionTags": [
             "Birthday",
-            "Celebration"
+            "Milestone",
+            "Custom Calendar",
+            "Anniversary"
           ],
-          "rating": 4.8,
-          "reviewCount": 94,
-          "category": "Cakes",
+          "rating": 4.9,
+          "reviewCount": 38,
           "allowCustomMessage": true,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4-6)",
-              "price": 1400
+              "label": "0.5kg (Serves 2–4 people)",
+              "price": 1200
             },
             {
-              "label": "1kg (Serves 8-10)",
-              "price": 2100
+              "label": "0.75kg (Serves 5–7 people)",
+              "price": 1600
             },
             {
-              "label": "1.5kg (Serves 12-15)",
-              "price": 2900
+              "label": "1kg (Serves 8–10 people)",
+              "price": 2000
             },
             {
-              "label": "2kg (Serves 18-20)",
-              "price": 3600
+              "label": "1.25kg (Serves 11–14 people)",
+              "price": 2500
             },
             {
-              "label": "2.5kg (Serves 22-25)",
-              "price": 4300
+              "label": "1.5kg (Serves 15–18 people)",
+              "price": 3000
             },
             {
-              "label": "3kg (Serves 28-30)",
+              "label": "1.75kg (Serves 19–22 people)",
+              "price": 3500
+            },
+            {
+              "label": "2kg (Serves 23–26 people)",
+              "price": 4000
+            },
+            {
+              "label": "2.25kg (Serves 27–30 people)",
+              "price": 4500
+            },
+            {
+              "label": "2.5kg (Serves 31–35 people)",
               "price": 5000
             },
             {
-              "label": "3.5kg (Serves 32-35)",
-              "price": 5700
+              "label": "3kg (Serves 36–42 people)",
+              "price": 6000
             },
             {
-              "label": "4kg (Serves 38-40)",
-              "price": 6400
+              "label": "3.5kg (Serves 43–50 people)",
+              "price": 7000
             },
             {
-              "label": "4.5kg (Serves 42-45)",
-              "price": 7100
+              "label": "4kg (Serves 51–60 people)",
+              "price": 8000
             },
             {
-              "label": "5kg (Serves 48-50)",
-              "price": 7800
+              "label": "4.5kg (Serves 61–70 people)",
+              "price": 9000
             },
             {
-              "label": "6kg (Serves 55-60)",
-              "price": 9200
+              "label": "5kg (Serves 71–85 people)",
+              "price": 10000
             },
             {
-              "label": "8kg (Serves 70-80)",
+              "label": "6kg+ (Serves 90–120 people)",
               "price": 12000
             }
           ],
           "eggOptions": [
             {
-              "label": "With Egg",
+              "label": "Standard (Contains Eggs)",
               "priceAdd": 0
             },
             {
-              "label": "Eggless",
-              "priceAdd": 200
-            },
-            {
-              "label": "Vegan",
-              "priceAdd": 350
+              "label": "Eggless Special",
+              "priceAdd": 300
             }
+          ],
+          "extraImages": [
+            "/images/A01B.jpg"
           ]
         },
         {
           "id": 102,
-          "name": "Red Velvet Cupcakes (6pcs)",
-          "price": 1200,
-          "image": "/images/red-velvet.jpg",
-          "description": "Soft, blush-red cupcakes with just a whisper of cocoa, crowned with thick, tangy cream cheese frosting swirled to perfection. Each bite is pillowy-light with a subtle richness that keeps you reaching for another. A box of 6 that disappears faster than you'd expect.",
+          "name": "Velvet Lilac Dream Birthday Cake",
+          "price": 1900,
+          "image": "/images/A02.jpg",
+          "description": "A graceful and elegant celebration cake featuring smooth white and lavender watercolor-style buttercream frosting. Accented with delicate silver and gold sprinkles, shimmering edible gold leaf flakes, and custom inscription lettering, finished with a classic gold 'Happy Birthday' cake topper.",
           "available": true,
-          "jabysFavorite": true,
-          "bestSelling": false,
-          "ingredients": [
-            "Wheat flour",
-            "Cocoa",
-            "Buttermilk",
-            "Cream cheese frosting"
-          ],
-          "allergens": [
-            "Gluten",
-            "Eggs",
-            "Dairy"
-          ],
-          "servingInfo": "6 pieces",
-          "prepInfo": "Baked fresh daily",
-          "occasionTags": [
-            "Snack",
-            "Party"
-          ],
-          "rating": 4.6,
-          "reviewCount": 52,
           "category": "Cakes",
-          "allowCustomMessage": true
-        },
-        {
-          "id": 103,
-          "name": "Vanilla Celebration Cake",
-          "price": 2300,
-          "image": "/images/vanilla-cake.jpg",
-          "description": "Classic never gets old — this vanilla sponge is baked golden and tender, layered with smooth, dreamy buttercream that melts on the tongue. It's the timeless favorite that suits every celebration, from milestone birthdays to quiet Sunday treats. Simple, elegant, and always a crowd-pleaser.",
-          "available": true,
-          "jabysFavorite": true,
-          "bestSelling": false,
+          "jabysFavorite": false,
+          "bestSelling": true,
+          "discountPercent": 5,
+          "onFlashSale": true,
+          "oldPrice": 2000,
           "ingredients": [
-            "Wheat flour",
-            "Vanilla extract",
-            "Fresh cream",
-            "Eggs",
-            "Sugar"
+            "Premium Wheat Flour",
+            "Fresh Eggs",
+            "Granulated Sugar",
+            "Unsalted Butter",
+            "Whole Milk",
+            "Vanilla Extract",
+            "Baking Powder",
+            "Food Grade Gel Color (Purple)",
+            "Edible Silver & Gold Sprinkles",
+            "Edible Gold Leaf"
           ],
           "allergens": [
-            "Gluten",
+            "Wheat",
             "Eggs",
             "Dairy"
           ],
-          "servingInfo": "Serves 8–10",
-          "prepInfo": "Baked fresh same-day, ready in 2–3 hours",
+          "servingInfo": "Serves 4 to 120 people across size variants",
+          "prepInfo": "Baked fresh same-day",
           "occasionTags": [
             "Birthday",
-            "Wedding",
-            "Anniversary"
+            "Personalized",
+            "Celebration",
+            "Custom Name"
           ],
-          "rating": 4.7,
-          "reviewCount": 63,
-          "category": "Cakes",
+          "rating": 4.8,
+          "reviewCount": 29,
           "allowCustomMessage": true,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4-6)",
+              "label": "0.5kg (Serves 2–4 people)",
+              "price": 1150
+            },
+            {
+              "label": "0.75kg (Serves 5–7 people)",
               "price": 1500
             },
             {
-              "label": "1kg (Serves 8-10)",
-              "price": 2300
+              "label": "1kg (Serves 8–10 people)",
+              "price": 1900
             },
             {
-              "label": "1.5kg (Serves 12-15)",
-              "price": 3200
+              "label": "1.25kg (Serves 11–14 people)",
+              "price": 2400
             },
             {
-              "label": "2kg (Serves 18-20)",
+              "label": "1.5kg (Serves 15–18 people)",
+              "price": 2900
+            },
+            {
+              "label": "1.75kg (Serves 19–22 people)",
+              "price": 3400
+            },
+            {
+              "label": "2kg (Serves 23–26 people)",
               "price": 3900
             },
             {
-              "label": "2.5kg (Serves 22-25)",
-              "price": 4700
+              "label": "2.25kg (Serves 27–30 people)",
+              "price": 4400
             },
             {
-              "label": "3kg (Serves 28-30)",
-              "price": 5500
+              "label": "2.5kg (Serves 31–35 people)",
+              "price": 4900
             },
             {
-              "label": "3.5kg (Serves 32-35)",
-              "price": 6300
+              "label": "3kg (Serves 36–42 people)",
+              "price": 5800
             },
             {
-              "label": "4kg (Serves 38-40)",
-              "price": 7100
+              "label": "3.5kg (Serves 43–50 people)",
+              "price": 6800
             },
             {
-              "label": "4.5kg (Serves 42-45)",
-              "price": 7900
+              "label": "4kg (Serves 51–60 people)",
+              "price": 7800
             },
             {
-              "label": "5kg (Serves 48-50)",
-              "price": 8700
+              "label": "4.5kg (Serves 61–70 people)",
+              "price": 8800
             },
             {
-              "label": "6kg (Serves 55-60)",
-              "price": 10300
+              "label": "5kg (Serves 71–85 people)",
+              "price": 9800
             },
             {
-              "label": "8kg (Serves 70-80)",
-              "price": 13500
+              "label": "6kg+ (Serves 90–120 people)",
+              "price": 11800
             }
           ],
           "eggOptions": [
             {
-              "label": "With Egg",
+              "label": "Standard (Contains Eggs)",
               "priceAdd": 0
             },
             {
-              "label": "Eggless",
-              "priceAdd": 200
-            },
-            {
-              "label": "Vegan",
-              "priceAdd": 350
+              "label": "Eggless Special",
+              "priceAdd": 300
             }
           ]
         },
         {
-          "id": 104,
-          "name": "Black Forest Cake",
-          "price": 2200,
-          "image": "/images/black-forest.jpg",
-          "description": "Layers of moist chocolate sponge, whipped cream, and juicy cherries come together in this German classic done the Jaby way. Every slice delivers that perfect balance of rich chocolate and bright fruity sweetness, finished with chocolate shavings for good measure. A showstopper that photographs as well as it tastes.",
+          "id": 103,
+          "name": "Celestial Sky Blue Birthday Cake",
+          "price": 1850,
+          "image": "/images/A03.jpg",
+          "description": "A stunning sky-blue frosted celebration cake featuring meticulous piped shell borders, lovely piped corner rosettes, and hand-written custom birthday lettering. Decorated with shimmering gold leaf splashes, gold pearl accents, and tiny white pearls for an immaculate look.",
           "available": true,
-          "jabysFavorite": true,
+          "category": "Cakes",
+          "jabysFavorite": false,
           "bestSelling": false,
-          "discountPercent": 20,
-          "onFlashSale": true,
-          "oldPrice": 2800,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "oldPrice": 1850,
           "ingredients": [
-            "Wheat flour",
-            "Dark chocolate",
-            "Fresh cream",
-            "Cherries",
-            "Eggs"
+            "Premium Wheat Flour",
+            "Fresh Eggs",
+            "Granulated Sugar",
+            "Unsalted Butter",
+            "Whole Milk",
+            "Vanilla Extract",
+            "Baking Powder",
+            "Food Grade Gel Color (Sky Blue)",
+            "Edible Gold Leaf Flakes",
+            "Gold and White Sugar Pearls"
           ],
           "allergens": [
-            "Gluten",
+            "Wheat",
             "Eggs",
             "Dairy"
           ],
-          "servingInfo": "Serves 8–10",
-          "prepInfo": "Baked fresh same-day, ready in 2–3 hours",
+          "servingInfo": "Serves 4 to 120 people across size variants",
+          "prepInfo": "Baked fresh same-day",
           "occasionTags": [
             "Birthday",
-            "Celebration",
-            "Anniversary"
+            "Men's Birthday",
+            "Personalized",
+            "Celebration"
           ],
-          "rating": 4.9,
-          "reviewCount": 110,
-          "category": "Cakes",
+          "rating": 4.7,
+          "reviewCount": 21,
           "allowCustomMessage": true,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4-6)",
-              "price": 1400
+              "label": "0.5kg (Serves 2–4 people)",
+              "price": 1100
             },
             {
-              "label": "1kg (Serves 8-10)",
-              "price": 2200
+              "label": "0.75kg (Serves 5–7 people)",
+              "price": 1450
             },
             {
-              "label": "1.5kg (Serves 12-15)",
-              "price": 3000
+              "label": "1kg (Serves 8–10 people)",
+              "price": 1850
             },
             {
-              "label": "2kg (Serves 18-20)",
+              "label": "1.25kg (Serves 11–14 people)",
+              "price": 2300
+            },
+            {
+              "label": "1.5kg (Serves 15–18 people)",
+              "price": 2800
+            },
+            {
+              "label": "1.75kg (Serves 19–22 people)",
+              "price": 3300
+            },
+            {
+              "label": "2kg (Serves 23–26 people)",
               "price": 3800
             },
             {
-              "label": "2.5kg (Serves 22-25)",
-              "price": 4600
+              "label": "2.25kg (Serves 27–30 people)",
+              "price": 4300
             },
             {
-              "label": "3kg (Serves 28-30)",
-              "price": 5400
+              "label": "2.5kg (Serves 31–35 people)",
+              "price": 4800
             },
             {
-              "label": "3.5kg (Serves 32-35)",
-              "price": 6200
+              "label": "3kg (Serves 36–42 people)",
+              "price": 5700
             },
             {
-              "label": "4kg (Serves 38-40)",
-              "price": 7000
+              "label": "3.5kg (Serves 43–50 people)",
+              "price": 6700
             },
             {
-              "label": "4.5kg (Serves 42-45)",
-              "price": 7800
+              "label": "4kg (Serves 51–60 people)",
+              "price": 7700
             },
             {
-              "label": "5kg (Serves 48-50)",
-              "price": 8600
+              "label": "4.5kg (Serves 61–70 people)",
+              "price": 8700
             },
             {
-              "label": "6kg (Serves 55-60)",
-              "price": 10200
+              "label": "5kg (Serves 71–85 people)",
+              "price": 9700
             },
             {
-              "label": "8kg (Serves 70-80)",
-              "price": 13400
+              "label": "6kg+ (Serves 90–120 people)",
+              "price": 11500
             }
           ],
           "eggOptions": [
             {
-              "label": "With Egg",
+              "label": "Standard (Contains Eggs)",
               "priceAdd": 0
             },
             {
-              "label": "Eggless",
-              "priceAdd": 200
-            },
-            {
-              "label": "Vegan",
-              "priceAdd": 350
+              "label": "Eggless Special",
+              "priceAdd": 300
             }
+          ],
+          "extraImages": [
+            "/images/A03B.jpg"
           ]
         },
         {
           "id": 108,
-          "name": "Chocolate Fudge Cake",
-          "price": 3000,
-          "image": "/images/chocolate-fudge.jpg",
-          "description": "For the true chocolate lover — this is our most indulgent cake, packed with dense fudge layers and finished with a thick, glossy fudge coating. Every bite is deep, dark, and decadently rich, built for people who never say no to extra chocolate. Not for the faint of heart.",
+          "name": "Freshly Baked Vanilla Cupcakes",
+          "price": 150,
+          "image": "/images/A08.jpg",
+          "description": "Fluffy, golden-brown vanilla cupcakes baked to perfection with a light, tender crumb and delightfully cracked tops. Hygienically packaged in a tray, these delicious treats are baked fresh same-day and make a wonderful addition to tea time or dessert.",
           "available": true,
-          "jabysFavorite": true,
-          "bestSelling": false,
+          "category": "Cakes",
+          "jabysFavorite": false,
+          "bestSelling": true,
+          "discountPercent": 17,
+          "onFlashSale": true,
+          "oldPrice": 180,
           "ingredients": [
-            "Wheat flour",
-            "Dark chocolate fudge",
-            "Butter",
-            "Eggs",
-            "Sugar"
+            "Premium Wheat Flour",
+            "Fresh Eggs",
+            "Sugar",
+            "Unsalted Butter",
+            "Milk",
+            "Vanilla Extract",
+            "Baking Powder"
           ],
           "allergens": [
-            "Gluten",
+            "Wheat",
             "Eggs",
             "Dairy"
           ],
-          "servingInfo": "Serves 10–12",
-          "prepInfo": "Baked fresh same-day, ready in 2–3 hours",
+          "servingInfo": "Pack of 3 pieces",
+          "prepInfo": "Baked fresh same-day",
           "occasionTags": [
-            "Birthday",
-            "Celebration"
+            "Tea Time",
+            "Snack",
+            "Kids Treat",
+            "Dessert"
           ],
           "rating": 4.8,
-          "reviewCount": 71,
-          "category": "Cakes",
-          "allowCustomMessage": true,
+          "reviewCount": 14,
+          "allowCustomMessage": false,
           "sizes": [
             {
-              "label": "0.5kg (Serves 4-6)",
-              "price": 1900
+              "label": "Single Piece",
+              "price": 50
             },
             {
-              "label": "1kg (Serves 8-10)",
-              "price": 3000
+              "label": "Pack of 3",
+              "price": 150
             },
             {
-              "label": "1.5kg (Serves 12-15)",
-              "price": 4100
+              "label": "Box of 6",
+              "price": 300
             },
             {
-              "label": "2kg (Serves 18-20)",
-              "price": 5200
-            },
-            {
-              "label": "2.5kg (Serves 22-25)",
-              "price": 6300
-            },
-            {
-              "label": "3kg (Serves 28-30)",
-              "price": 7400
-            },
-            {
-              "label": "3.5kg (Serves 32-35)",
-              "price": 8500
-            },
-            {
-              "label": "4kg (Serves 38-40)",
-              "price": 9600
-            },
-            {
-              "label": "4.5kg (Serves 42-45)",
-              "price": 10700
-            },
-            {
-              "label": "5kg (Serves 48-50)",
-              "price": 11800
-            },
-            {
-              "label": "6kg (Serves 55-60)",
-              "price": 14000
-            },
-            {
-              "label": "8kg (Serves 70-80)",
-              "price": 18400
+              "label": "Box of 12",
+              "price": 580
             }
           ],
           "eggOptions": [
             {
-              "label": "With Egg",
+              "label": "Standard (Contains Eggs)",
               "priceAdd": 0
             },
             {
-              "label": "Eggless",
-              "priceAdd": 200
-            },
-            {
-              "label": "Vegan",
-              "priceAdd": 350
+              "label": "Eggless Option",
+              "priceAdd": 30
             }
           ]
-        },
-        {
-          "id": 105,
-          "name": "Strawberry Delight Cake",
-          "price": 2600,
-          "image": "/images/strawberry-cake.jpg",
-          "description": "Light, fluffy sponge infused with real strawberry flavor and finished with a cloud of fresh cream and juicy strawberry pieces. It's bright, fruity, and refreshingly not-too-sweet — the cake that makes any table feel a little more special. A best-seller for good reason.",
-          "available": true,
-          "jabysFavorite": false,
-          "bestSelling": true,
-          "ingredients": [
-            "Wheat flour",
-            "Fresh strawberries",
-            "Cream",
-            "Eggs",
-            "Sugar"
-          ],
-          "allergens": [
-            "Gluten",
-            "Eggs",
-            "Dairy"
-          ],
-          "servingInfo": "Serves 8–10",
-          "prepInfo": "Baked fresh same-day, ready in 2–3 hours",
-          "occasionTags": [
-            "Birthday",
-            "Anniversary"
-          ],
-          "rating": 4.7,
-          "reviewCount": 48,
-          "category": "Cakes",
-          "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 4-6)",
-              "price": 1700
-            },
-            {
-              "label": "1kg (Serves 8-10)",
-              "price": 2600
-            },
-            {
-              "label": "1.5kg (Serves 12-15)",
-              "price": 3600
-            },
-            {
-              "label": "2kg (Serves 18-20)",
-              "price": 4400
-            },
-            {
-              "label": "2.5kg (Serves 22-25)",
-              "price": 5300
-            },
-            {
-              "label": "3kg (Serves 28-30)",
-              "price": 6200
-            },
-            {
-              "label": "3.5kg (Serves 32-35)",
-              "price": 7100
-            },
-            {
-              "label": "4kg (Serves 38-40)",
-              "price": 8000
-            },
-            {
-              "label": "4.5kg (Serves 42-45)",
-              "price": 8900
-            },
-            {
-              "label": "5kg (Serves 48-50)",
-              "price": 9800
-            },
-            {
-              "label": "6kg (Serves 55-60)",
-              "price": 11600
-            },
-            {
-              "label": "8kg (Serves 70-80)",
-              "price": 15200
-            }
-          ],
-          "eggOptions": [
-            {
-              "label": "With Egg",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless",
-              "priceAdd": 200
-            },
-            {
-              "label": "Vegan",
-              "priceAdd": 350
-            }
-          ]
-        },
-        {
-          "id": 106,
-          "name": "Carrot Cake",
-          "price": 2400,
-          "image": "/images/carrot-cake.jpg",
-          "description": "Warmly spiced, packed with grated carrots and toasted walnuts, and finished with tangy cream cheese frosting that ties it all together. Moist, comforting, and just sweet enough, it's the cake that feels like a treat and a tradition at the same time. A quiet favorite that always wins people over.",
-          "available": false,
-          "jabysFavorite": false,
-          "bestSelling": true,
-          "ingredients": [
-            "Wheat flour",
-            "Grated carrots",
-            "Walnuts",
-            "Cream cheese frosting",
-            "Eggs"
-          ],
-          "allergens": [
-            "Gluten",
-            "Eggs",
-            "Dairy",
-            "Nuts"
-          ],
-          "servingInfo": "Serves 8–10",
-          "prepInfo": "Baked fresh same-day, ready in 2–3 hours",
-          "occasionTags": [
-            "Everyday Treat"
-          ],
-          "rating": 4.5,
-          "reviewCount": 29,
-          "category": "Cakes",
-          "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 4-6)",
-              "price": 1550
-            },
-            {
-              "label": "1kg (Serves 8-10)",
-              "price": 2400
-            },
-            {
-              "label": "1.5kg (Serves 12-15)",
-              "price": 3300
-            },
-            {
-              "label": "2kg (Serves 18-20)",
-              "price": 4100
-            },
-            {
-              "label": "2.5kg (Serves 22-25)",
-              "price": 4950
-            },
-            {
-              "label": "3kg (Serves 28-30)",
-              "price": 5800
-            },
-            {
-              "label": "3.5kg (Serves 32-35)",
-              "price": 6650
-            },
-            {
-              "label": "4kg (Serves 38-40)",
-              "price": 7500
-            },
-            {
-              "label": "4.5kg (Serves 42-45)",
-              "price": 8350
-            },
-            {
-              "label": "5kg (Serves 48-50)",
-              "price": 9200
-            },
-            {
-              "label": "6kg (Serves 55-60)",
-              "price": 10900
-            },
-            {
-              "label": "8kg (Serves 70-80)",
-              "price": 14300
-            }
-          ],
-          "eggOptions": [
-            {
-              "label": "With Egg",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless",
-              "priceAdd": 200
-            },
-            {
-              "label": "Vegan",
-              "priceAdd": 350
-            }
-          ]
-        },
-        {
-          "id": 107,
-          "name": "Lemon Drizzle Cake",
-          "price": 2200,
-          "image": "/images/lemon-cake.jpg",
-          "description": "Bright, zesty, and finished with a sweet lemon glaze that soaks into every layer — this cake is sunshine on a plate. The tang of fresh lemon zest cuts through the sweetness for a cake that's refreshing rather than heavy. Perfect with afternoon tea or any time you need a lift.",
-          "available": true,
-          "jabysFavorite": false,
-          "bestSelling": false,
-          "ingredients": [
-            "Wheat flour",
-            "Fresh lemon zest",
-            "Butter",
-            "Eggs",
-            "Sugar glaze"
-          ],
-          "allergens": [
-            "Gluten",
-            "Eggs",
-            "Dairy"
-          ],
-          "servingInfo": "Serves 8–10",
-          "prepInfo": "Baked fresh same-day, ready in 2–3 hours",
-          "occasionTags": [
-            "Afternoon Tea",
-            "Everyday Treat"
-          ],
-          "rating": 4.6,
-          "reviewCount": 37,
-          "category": "Cakes",
-          "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 4-6)",
-              "price": 1400
-            },
-            {
-              "label": "1kg (Serves 8-10)",
-              "price": 2200
-            },
-            {
-              "label": "1.5kg (Serves 12-15)",
-              "price": 3000
-            },
-            {
-              "label": "2kg (Serves 18-20)",
-              "price": 3800
-            },
-            {
-              "label": "2.5kg (Serves 22-25)",
-              "price": 4600
-            },
-            {
-              "label": "3kg (Serves 28-30)",
-              "price": 5400
-            },
-            {
-              "label": "3.5kg (Serves 32-35)",
-              "price": 6200
-            },
-            {
-              "label": "4kg (Serves 38-40)",
-              "price": 7000
-            },
-            {
-              "label": "4.5kg (Serves 42-45)",
-              "price": 7800
-            },
-            {
-              "label": "5kg (Serves 48-50)",
-              "price": 8600
-            },
-            {
-              "label": "6kg (Serves 55-60)",
-              "price": 10200
-            },
-            {
-              "label": "8kg (Serves 70-80)",
-              "price": 13400
-            }
-          ],
-          "eggOptions": [
-            {
-              "label": "With Egg",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless",
-              "priceAdd": 200
-            },
-            {
-              "label": "Vegan",
-              "priceAdd": 350
-            }
-          ]
-        },
-        {
-          "id": 109,
-          "name": "Custom Birthday Cake",
-          "price": 3500,
-          "image": "/images/birthday-cake.jpg",
-          "description": "Your vision, our craft — this fully personalized cake is designed around your theme, colors, and message, made from scratch just for your celebration. From superheroes to elegant florals, our team works with you via WhatsApp to bring the exact cake you're picturing to life. Because the best birthdays deserve a cake as unique as the person celebrating.",
-          "available": true,
-          "jabysFavorite": false,
-          "bestSelling": false,
-          "ingredients": [
-            "Wheat flour",
-            "Fresh butter",
-            "Eggs",
-            "Sugar",
-            "Custom toppings on request"
-          ],
-          "allergens": [
-            "Gluten",
-            "Eggs",
-            "Dairy"
-          ],
-          "servingInfo": "Custom size, serves as requested",
-          "prepInfo": "Made to order — 24hr notice required, design consultation via WhatsApp",
-          "occasionTags": [
-            "Birthday",
-            "Wedding",
-            "Custom Order"
-          ],
-          "rating": 4.9,
-          "reviewCount": 41,
-          "category": "Cakes",
-          "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 4-6)",
-              "price": 2250
-            },
-            {
-              "label": "1kg (Serves 8-10)",
-              "price": 3500
-            },
-            {
-              "label": "1.5kg (Serves 12-15)",
-              "price": 4800
-            },
-            {
-              "label": "2kg (Serves 18-20)",
-              "price": 6000
-            },
-            {
-              "label": "2.5kg (Serves 22-25)",
-              "price": 7250
-            },
-            {
-              "label": "3kg (Serves 28-30)",
-              "price": 8500
-            },
-            {
-              "label": "3.5kg (Serves 32-35)",
-              "price": 9750
-            },
-            {
-              "label": "4kg (Serves 38-40)",
-              "price": 11000
-            },
-            {
-              "label": "4.5kg (Serves 42-45)",
-              "price": 12250
-            },
-            {
-              "label": "5kg (Serves 48-50)",
-              "price": 13500
-            },
-            {
-              "label": "6kg (Serves 55-60)",
-              "price": 16000
-            },
-            {
-              "label": "8kg (Serves 70-80)",
-              "price": 21000
-            }
-          ],
-          "eggOptions": [
-            {
-              "label": "With Egg",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless",
-              "priceAdd": 200
-            },
-            {
-              "label": "Vegan",
-              "priceAdd": 350
-            }
-          ]
-        },
-        {
-          "id": 110,
-          "name": "Mini Cupcake Assortment (12pcs)",
-          "price": 1800,
-          "image": "/images/mini-cupcakes.jpg",
-          "description": "A little bit of everything — 12 bite-sized cupcakes in a rotating mix of flavors, each one frosted and finished with its own personality. Perfect for parties where everyone wants something different, or for indecisive cupcake lovers who can't pick just one. Small in size, big on variety.",
-          "available": true,
-          "jabysFavorite": false,
-          "bestSelling": false,
-          "ingredients": [
-            "Wheat flour",
-            "Butter",
-            "Eggs",
-            "Assorted flavored frostings"
-          ],
-          "allergens": [
-            "Gluten",
-            "Eggs",
-            "Dairy"
-          ],
-          "servingInfo": "12 pieces, assorted flavors",
-          "prepInfo": "Baked fresh daily",
-          "occasionTags": [
-            "Party",
-            "Snack"
-          ],
-          "rating": 4.6,
-          "reviewCount": 44,
-          "category": "Cakes",
-          "allowCustomMessage": true
         }
       ],
       "icon": "cake",
       "hot": true
     },
     {
-      "id": "drinks",
-      "name": "Drinks",
+      "id": "snacks",
+      "name": "Snacks",
       "items": [
         {
-          "id": 201,
-          "name": "Fresh Orange Juice",
-          "price": 400,
-          "image": "/images/orange-juice.jpg",
-          "description": "Squeezed fresh the moment you order — no concentrate, no shortcuts, just real oranges turned into pure, sun-bright juice. Naturally sweet, packed with vitamin C, and the kind of refresh that actually wakes you up. Simple, honest, and always in season.",
-          "available": true,
-          "jabysFavorite": true,
-          "bestSelling": false,
-          "ingredients": [
-            "Fresh oranges"
-          ],
-          "allergens": [],
-          "servingInfo": "500ml",
-          "prepInfo": "Freshly squeezed to order",
-          "occasionTags": [
-            "Refreshment",
-            "Everyday"
-          ],
-          "rating": 4.5,
-          "reviewCount": 33,
-          "category": "Drinks",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 202,
-          "name": "Mango Smoothie",
-          "price": 450,
-          "image": "/images/mango-smoothie.jpg",
-          "description": "Ripe, golden mango blended thick and creamy with milk and yogurt for a smoothie that tastes like tropical sunshine in a cup. Cold, smooth, and naturally sweet — no added sugar needed when the mango's this good. A rotating favorite for a reason.",
-          "available": true,
-          "jabysFavorite": true,
-          "bestSelling": false,
-          "discountPercent": 10,
-          "onFlashSale": true,
-          "oldPrice": 500,
-          "ingredients": [
-            "Fresh mango",
-            "Milk",
-            "Yogurt"
-          ],
-          "allergens": [
-            "Dairy"
-          ],
-          "servingInfo": "450ml",
-          "prepInfo": "Blended fresh to order",
-          "occasionTags": [
-            "Refreshment",
-            "Treat"
-          ],
-          "rating": 4.7,
-          "reviewCount": 58,
-          "category": "Drinks",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 203,
-          "name": "Passion Fruit Juice",
-          "price": 450,
-          "image": "/images/passion-juice.jpg",
-          "description": "Bold, tangy, and unmistakably tropical — real passion fruit blended fresh for that sharp-sweet punch you can't get from a carton. It's the juice that wakes up your taste buds and keeps you coming back for the next sip.",
-          "available": true,
-          "jabysFavorite": true,
-          "bestSelling": false,
-          "ingredients": [
-            "Fresh passion fruit",
-            "Water",
-            "Sugar"
-          ],
-          "allergens": [],
-          "servingInfo": "500ml",
-          "prepInfo": "Freshly prepared to order",
-          "occasionTags": [
-            "Refreshment"
-          ],
-          "rating": 4.5,
-          "reviewCount": 27,
-          "category": "Drinks",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 204,
-          "name": "Pineapple Mint Juice",
-          "price": 450,
-          "image": "/images/pineapple-juice.jpg",
-          "description": "Sweet pineapple meets cool, fresh mint for a juice that tastes like a beach breeze in a glass. Light, refreshing, and just the right amount of zing — perfect for hot afternoons or whenever you need a reset.",
-          "available": true,
-          "jabysFavorite": true,
-          "bestSelling": false,
-          "ingredients": [
-            "Fresh pineapple",
-            "Mint leaves",
-            "Water"
-          ],
-          "allergens": [],
-          "servingInfo": "500ml",
-          "prepInfo": "Freshly prepared to order",
-          "occasionTags": [
-            "Refreshment"
-          ],
-          "rating": 4.6,
-          "reviewCount": 31,
-          "category": "Drinks",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 207,
-          "name": "Vanilla Milkshake",
-          "price": 600,
-          "image": "/images/vanilla-milkshake.jpg",
-          "description": "Thick, cold, and unapologetically classic — real vanilla ice cream blended smooth with milk and vanilla syrup for that nostalgic milkshake experience. Simple done exceptionally well, straw included.",
-          "available": false,
-          "jabysFavorite": true,
-          "bestSelling": false,
-          "ingredients": [
-            "Milk",
-            "Vanilla ice cream",
-            "Vanilla syrup"
-          ],
-          "allergens": [
-            "Dairy"
-          ],
-          "servingInfo": "400ml",
-          "prepInfo": "Blended fresh to order",
-          "occasionTags": [
-            "Treat"
-          ],
-          "rating": 4.4,
-          "reviewCount": 18,
-          "category": "Drinks",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 205,
-          "name": "Strawberry Smoothie",
-          "price": 550,
-          "image": "/images/strawberry-smoothie.jpg",
-          "description": "Fresh strawberries blended creamy with milk and yogurt for a smoothie that's naturally sweet, satisfyingly thick, and bursting with fruity flavor in every sip. A best-seller that never goes out of style.",
-          "available": true,
-          "jabysFavorite": false,
-          "bestSelling": true,
-          "ingredients": [
-            "Fresh strawberries",
-            "Milk",
-            "Yogurt"
-          ],
-          "allergens": [
-            "Dairy"
-          ],
-          "servingInfo": "450ml",
-          "prepInfo": "Blended fresh to order",
-          "occasionTags": [
-            "Refreshment",
-            "Treat"
-          ],
-          "rating": 4.6,
-          "reviewCount": 39,
-          "category": "Drinks",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 206,
-          "name": "Chocolate Milkshake",
-          "price": 600,
-          "image": "/images/chocolate-milkshake.jpg",
-          "description": "Rich chocolate syrup and chocolate ice cream blended into a thick, cold shake topped with a swirl of cream — this is chocolate done right. Decadent, smooth, and the perfect companion to anything on the menu.",
-          "available": true,
-          "jabysFavorite": false,
-          "bestSelling": true,
-          "ingredients": [
-            "Milk",
-            "Chocolate syrup",
-            "Chocolate ice cream"
-          ],
-          "allergens": [
-            "Dairy"
-          ],
-          "servingInfo": "400ml",
-          "prepInfo": "Blended fresh to order",
-          "occasionTags": [
-            "Treat"
-          ],
-          "rating": 4.7,
-          "reviewCount": 42,
-          "category": "Drinks",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 208,
-          "name": "Iced Coffee",
-          "price": 400,
-          "image": "/images/iced-coffee.jpg",
-          "description": "Bold espresso, cold milk, and plenty of ice — this is the coffee fix for anyone who needs their caffeine cold, smooth, and no-nonsense. Brewed fresh to order, never sitting around getting stale.",
-          "available": true,
-          "jabysFavorite": false,
-          "bestSelling": false,
-          "discountPercent": 15,
-          "onFlashSale": true,
-          "oldPrice": 500,
-          "ingredients": [
-            "Espresso",
-            "Milk",
-            "Ice"
-          ],
-          "allergens": [
-            "Dairy"
-          ],
-          "servingInfo": "400ml",
-          "prepInfo": "Brewed and prepared fresh to order",
-          "occasionTags": [
-            "Morning Pick-Me-Up"
-          ],
-          "rating": 4.6,
-          "reviewCount": 51,
-          "category": "Drinks",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 209,
-          "name": "Hot Cappuccino",
-          "price": 450,
-          "image": "/images/cappuccino.jpg",
-          "description": "Rich espresso topped with a thick layer of steamed milk foam, brewed fresh for that perfect balance of bold and creamy. The kind of cappuccino that makes slowing down for five minutes worth it.",
-          "available": true,
-          "jabysFavorite": false,
-          "bestSelling": false,
-          "ingredients": [
-            "Espresso",
-            "Steamed milk",
-            "Milk foam"
-          ],
-          "allergens": [
-            "Dairy"
-          ],
-          "servingInfo": "250ml",
-          "prepInfo": "Brewed fresh to order",
-          "occasionTags": [
-            "Morning Pick-Me-Up"
-          ],
-          "rating": 4.7,
-          "reviewCount": 46,
-          "category": "Drinks",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 210,
-          "name": "Bottled Water (500ml)",
+          "id": 104,
+          "name": "Precooked Ready-to-Eat Cassava Pack (Mahogo)",
           "price": 100,
-          "image": "/images/water.jpg",
-          "description": "Clean, cold, and simple — pure drinking water for whenever you just need to stay refreshed. No frills, just the essentials.",
+          "image": "/images/A04.jpg",
+          "description": "Freshly boiled, tender cassava roots hygienically packaged in a cling-wrapped tray. Sold pre-cooked and ready to eat immediately or lightly pan-fried for a delicious snack.",
           "available": true,
+          "category": "Snacks",
           "jabysFavorite": false,
-          "bestSelling": false,
+          "bestSelling": true,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "oldPrice": 100,
           "ingredients": [
-            "Purified water"
+            "Fresh Cassava Root",
+            "Water",
+            "Salt"
           ],
           "allergens": [],
-          "servingInfo": "500ml",
-          "prepInfo": "Sealed bottle",
+          "servingInfo": "Serves 1–2 people per pack",
+          "prepInfo": "Precooked fresh same-day",
           "occasionTags": [
-            "Everyday"
+            "Quick Snack",
+            "Traditional",
+            "Ready to Eat",
+            "Accompaniment"
           ],
-          "rating": 4.5,
+          "rating": 4.6,
           "reviewCount": 15,
-          "category": "Drinks",
-          "allowCustomMessage": false
+          "allowCustomMessage": false,
+          "sizes": [
+            {
+              "label": "Standard Pack (Approx. 500g)",
+              "price": 100
+            },
+            {
+              "label": "Family Pack (Approx. 1kg)",
+              "price": 180
+            }
+          ]
+        },
+        {
+          "id": 107,
+          "name": "Golden Sweet Dough Donuts",
+          "price": 150,
+          "image": "/images/A07.jpg",
+          "description": "Deliciously golden brown, round puffed sweet dough donuts, fried to a crisp exterior and soft, fluffy interior. Packaged fresh and ready to enjoy as a sweet breakfast treat, tea-time snack, or party bite.",
+          "available": true,
+          "category": "Snacks",
+          "jabysFavorite": true,
+          "bestSelling": true,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "oldPrice": 150,
+          "ingredients": [
+            "Wheat Flour",
+            "Sugar",
+            "Yeast",
+            "Milk",
+            "Butter",
+            "A Pinch of Salt",
+            "Vegetable Oil for frying"
+          ],
+          "allergens": [
+            "Wheat",
+            "Dairy"
+          ],
+          "servingInfo": "Pack of 10–12 pieces",
+          "prepInfo": "Fried fresh same-day",
+          "occasionTags": [
+            "Breakfast",
+            "Tea Time",
+            "Quick Snack",
+            "Sweet Treats"
+          ],
+          "rating": 4.9,
+          "reviewCount": 42,
+          "allowCustomMessage": false,
+          "sizes": [
+            {
+              "label": "Small Pack (6 pieces)",
+              "price": 100
+            },
+            {
+              "label": "Standard Pack (12 pieces)",
+              "price": 150
+            },
+            {
+              "label": "Sharing Tray Pack (25 pieces)",
+              "price": 300
+            }
+          ],
+          "eggOptions": []
+        },
+        {
+          "id": 110,
+          "name": "Crispy Golden Fried Samosas",
+          "price": 300,
+          "image": "/images/A10C.jpg",
+          "description": "Crispy, golden-brown triangular samosas fried to perfection, packed with savory fillings, and drained on paper-lined trays. Available pre-cooked and ready to eat or fresh-frozen for your convenience. Perfect as a party appetizer, snack, or meal accompaniment.",
+          "available": true,
+          "category": "Snacks",
+          "jabysFavorite": true,
+          "bestSelling": true,
+          "discountPercent": 14,
+          "onFlashSale": true,
+          "oldPrice": 350,
+          "ingredients": [
+            "All-Purpose Flour",
+            "Minced Beef or Lentils",
+            "Onions",
+            "Fresh Herbs & Spices",
+            "Vegetable Oil for frying"
+          ],
+          "allergens": [
+            "Wheat"
+          ],
+          "servingInfo": "Pack of 5 pieces per tray",
+          "prepInfo": "Fried fresh same-day (Pre-cooked)",
+          "occasionTags": [
+            "Party Appetizer",
+            "Snack",
+            "Quick Meal",
+            "Gatherings"
+          ],
+          "rating": 4.9,
+          "reviewCount": 56,
+          "allowCustomMessage": false,
+          "sizes": [
+            {
+              "label": "Half Tray (5 pieces - Precooked)",
+              "price": 300
+            },
+            {
+              "label": "Full Tray (10 pieces - Precooked)",
+              "price": 550
+            },
+            {
+              "label": "Party Pack (20 pieces - Precooked)",
+              "price": 1050
+            }
+          ],
+          "eggOptions": [],
+          "extraImages": [
+            "/images/A10.jpg",
+            "/images/A10B.jpg"
+          ]
+        },
+        {
+          "id": 113,
+          "name": "Classic Swahili Mandazi (Ready-to-Eat)",
+          "price": 150,
+          "image": "/images/A13.jpg",
+          "description": "Authentic, golden-brown triangular Swahili mandazi fried to fluffy, aromatic perfection with a hint of cardamom. Hygienically cling-wrapped in a fresh tray, these delicious treats are fully pre-cooked and ready to eat for breakfast, tea time, or a quick snack.",
+          "available": true,
+          "category": "Snacks",
+          "jabysFavorite": true,
+          "bestSelling": true,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "oldPrice": 150,
+          "ingredients": [
+            "Wheat Flour",
+            "Sugar",
+            "Coconut Milk",
+            "Cardamom",
+            "Yeast",
+            "A Pinch of Salt",
+            "Vegetable Oil for frying"
+          ],
+          "allergens": [
+            "Wheat"
+          ],
+          "servingInfo": "Pack of 6–8 pieces (Ready to Eat)",
+          "prepInfo": "Fried fresh same-day (Pre-cooked)",
+          "occasionTags": [
+            "Breakfast",
+            "Tea Time",
+            "Swahili Delicacy",
+            "Ready to Eat"
+          ],
+          "rating": 4.9,
+          "reviewCount": 48,
+          "allowCustomMessage": false,
+          "sizes": [
+            {
+              "label": "Small Pack (4 pieces - Ready to Eat)",
+              "price": 100
+            },
+            {
+              "label": "Standard Pack (8 pieces - Ready to Eat)",
+              "price": 150
+            },
+            {
+              "label": "Family Sharing Pack (16 pieces - Ready to Eat)",
+              "price": 300
+            }
+          ],
+          "eggOptions": []
+        },
+        {
+          "id": 114,
+          "name": "Uncooked Raw Samosas (Ready-to-Fry)",
+          "price": 550,
+          "image": "/images/A14.jpg",
+          "description": "Freshly folded, raw unfilled or filled triangular samosas dusted with flour, ready for your home kitchen. Perfectly shaped and prepared fresh same-day, these uncooked samosas can be frozen or fried straight from the pack for a hot, crispy treat anytime.",
+          "available": true,
+          "category": "Snacks",
+          "jabysFavorite": true,
+          "bestSelling": true,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "oldPrice": 550,
+          "ingredients": [
+            "All-Purpose Flour",
+            "Minced Beef or Lentils",
+            "Onions",
+            "Fresh Herbs & Spices"
+          ],
+          "allergens": [
+            "Wheat"
+          ],
+          "servingInfo": "Bulk Pack (10-15 pieces) - Uncooked",
+          "prepInfo": "Freshly folded, raw & uncooked",
+          "occasionTags": [
+            "Home Cooking",
+            "Freezer Friendly",
+            "Quick Prep",
+            "Snack"
+          ],
+          "rating": 4.9,
+          "reviewCount": 27,
+          "allowCustomMessage": false,
+          "sizes": [
+            {
+              "label": "Half Batch (10 pieces - Uncooked)",
+              "price": 300
+            },
+            {
+              "label": "Full Batch (20 pieces - Uncooked)",
+              "price": 550
+            },
+            {
+              "label": "Party Bulk Pack (40 pieces - Uncooked)",
+              "price": 1050
+            }
+          ],
+          "eggOptions": []
+        },
+        {
+          "id": 115,
+          "name": "Soft Folded Golden Crepes (Pancakes)",
+          "price": 250,
+          "image": "/images/A15.jpg",
+          "description": "Delicately thin, soft, and lightly browned golden crepes folded into neat triangles. Made fresh same-day with rich batter and cooked to a tender finish, these delicious pancakes are fully pre-cooked and ready to enjoy for breakfast, tea time, or as a sweet snack.",
+          "available": true,
+          "category": "Snacks",
+          "jabysFavorite": true,
+          "bestSelling": true,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "oldPrice": 250,
+          "ingredients": [
+            "All-Purpose Wheat Flour",
+            "Fresh Eggs",
+            "Milk",
+            "Sugar",
+            "A Touch of Butter or Oil",
+            "A Pinch of Salt"
+          ],
+          "allergens": [
+            "Wheat",
+            "Dairy",
+            "Eggs"
+          ],
+          "servingInfo": "Stack of 5-6 folded pieces (Ready to Eat)",
+          "prepInfo": "Cooked fresh same-day (Pre-cooked)",
+          "occasionTags": [
+            "Breakfast",
+            "Tea Time",
+            "Brunch",
+            "Ready to Eat"
+          ],
+          "rating": 4.9,
+          "reviewCount": 38,
+          "allowCustomMessage": false,
+          "sizes": [
+            {
+              "label": "Small Stack (3 pieces - Ready to Eat)",
+              "price": 150
+            },
+            {
+              "label": "Standard Stack (6 pieces - Ready to Eat)",
+              "price": 250
+            },
+            {
+              "label": "Family Sharing Pack (12 pieces - Ready to Eat)",
+              "price": 480
+            }
+          ],
+          "eggOptions": [
+            {
+              "label": "Standard (Contains Eggs)",
+              "priceAdd": 0
+            }
+          ]
         }
       ],
-      "icon": "cup",
+      "icon": "snack",
+      "hot": true
+    },
+    {
+      "id": "cookies",
+      "name": "Cookies",
+      "items": [
+        {
+          "id": 105,
+          "name": "Artisanal Heart-Shaped Butter Cookies",
+          "price": 450,
+          "image": "/images/A05.jpg",
+          "description": "Delicately handcrafted heart-shaped cookies freshly cut and arranged on a baking tray, showcasing our custom artisanal pastry capabilities. Made from scratch with rich butter, premium flour, and a hint of vanilla, these melt-in-your-mouth treats are baked to golden perfection for any special occasion, gift box, or sweet craving.",
+          "available": true,
+          "category": "Cookies",
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "oldPrice": 450,
+          "ingredients": [
+            "Premium Wheat Flour",
+            "Unsalted Butter",
+            "Granulated Sugar",
+            "Fresh Eggs",
+            "Vanilla Extract",
+            "A Pinch of Salt"
+          ],
+          "allergens": [
+            "Wheat",
+            "Eggs",
+            "Dairy"
+          ],
+          "servingInfo": "Pack of 20–25 pieces",
+          "prepInfo": "Freshly baked to order",
+          "occasionTags": [
+            "Valentine's",
+            "Gift Box",
+            "Party Favors",
+            "Tea Time Snack"
+          ],
+          "rating": 4.9,
+          "reviewCount": 18,
+          "allowCustomMessage": false,
+          "sizes": [
+            {
+              "label": "Small Gift Pack (12 pieces)",
+              "price": 300
+            },
+            {
+              "label": "Standard Pack (24 pieces)",
+              "price": 550
+            },
+            {
+              "label": "Family Sharing Box (50 pieces)",
+              "price": 1000
+            }
+          ],
+          "eggOptions": [
+            {
+              "label": "Standard (Contains Eggs)",
+              "priceAdd": 0
+            },
+            {
+              "label": "Eggless Option",
+              "priceAdd": 100
+            }
+          ]
+        },
+        {
+          "id": 106,
+          "name": "Assorted Baked Shape Cookies Pack",
+          "price": 350,
+          "image": "/images/A06.jpg",
+          "description": "A delightful assortment of freshly baked cookies in fun shapes like stars, circles, and hearts. Packaged neatly in trays and baked to golden-brown perfection, these crunchy and flavorful treats are ideal for snacking, kids' lunchboxes, or sharing with friends and family.",
+          "available": true,
+          "category": "Cookies",
+          "jabysFavorite": false,
+          "bestSelling": true,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "oldPrice": 350,
+          "ingredients": [
+            "Premium Wheat Flour",
+            "Unsalted Butter",
+            "Granulated Sugar",
+            "Fresh Eggs",
+            "Vanilla Extract",
+            "Baking Powder",
+            "A Pinch of Salt"
+          ],
+          "allergens": [
+            "Wheat",
+            "Eggs",
+            "Dairy"
+          ],
+          "servingInfo": "Pack of 15–20 pieces",
+          "prepInfo": "Baked fresh same-day",
+          "occasionTags": [
+            "Kids Snacks",
+            "Tea Time",
+            "Party Pack",
+            "Everyday Treats"
+          ],
+          "rating": 4.7,
+          "reviewCount": 24,
+          "allowCustomMessage": false,
+          "sizes": [
+            {
+              "label": "Small Snack Pack (Approx. 200g)",
+              "price": 200
+            },
+            {
+              "label": "Standard Tray Pack (Approx. 400g)",
+              "price": 350
+            },
+            {
+              "label": "Family Value Pack (Approx. 800g)",
+              "price": 650
+            }
+          ],
+          "eggOptions": [
+            {
+              "label": "Standard (Contains Eggs)",
+              "priceAdd": 0
+            },
+            {
+              "label": "Eggless Option",
+              "priceAdd": 80
+            }
+          ]
+        },
+        {
+          "id": 109,
+          "name": "Buttery Flower-Shaped Shortbread Cookies",
+          "price": 300,
+          "image": "/images/A09.jpg",
+          "description": "Delightful golden-brown flower-shaped shortbread cookies baked to a rich, crumbly perfection. Packaged neatly in a protective tray, these buttery treats offer a wonderful melt-in-your-mouth experience that pairs perfectly with tea or coffee.",
+          "available": true,
+          "category": "Cookies",
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "oldPrice": 300,
+          "ingredients": [
+            "Premium Wheat Flour",
+            "Unsalted Butter",
+            "Granulated Sugar",
+            "Vanilla Extract",
+            "A Pinch of Salt"
+          ],
+          "allergens": [
+            "Wheat",
+            "Dairy"
+          ],
+          "servingInfo": "Pack of 6–8 large cookies",
+          "prepInfo": "Baked fresh same-day",
+          "occasionTags": [
+            "Tea Time",
+            "Snack",
+            "Gift Box",
+            "Everyday Treat"
+          ],
+          "rating": 4.8,
+          "reviewCount": 16,
+          "allowCustomMessage": false,
+          "sizes": [
+            {
+              "label": "Small Pack (4 pieces)",
+              "price": 180
+            },
+            {
+              "label": "Standard Pack (8 pieces)",
+              "price": 300
+            },
+            {
+              "label": "Family Sharing Pack (16 pieces)",
+              "price": 550
+            }
+          ],
+          "eggOptions": [
+            {
+              "label": "Standard (Eggless Style)",
+              "priceAdd": 0
+            }
+          ]
+        }
+      ],
+      "icon": "cookie",
       "hot": false
     },
     {
@@ -1150,317 +955,130 @@
       "name": "Pastries",
       "items": [
         {
-          "id": 301,
-          "name": "Cheese Danish",
-          "price": 300,
-          "image": "/images/cheese-danish.jpg",
-          "description": "Flaky, golden layers of buttery pastry wrapped around a rich, tangy cream cheese filling. Baked fresh daily until the edges turn perfectly crisp and the inside stays soft and creamy — a breakfast classic done right.",
+          "id": 111,
+          "name": "Artisanal Fresh Cinnamon Rolls",
+          "price": 600,
+          "image": "/images/A11.jpg",
+          "description": "Soft, fluffy, freshly baked cinnamon rolls glazed to absolute perfection. Packed with rich cinnamon-sugar filling and baked golden, these sweet rolls are sold fully pre-cooked and ready to eat for your morning treat or tea-time indulgence.",
           "available": true,
-          "jabysFavorite": true,
-          "bestSelling": false,
-          "ingredients": [
-            "Wheat flour",
-            "Butter",
-            "Cream cheese"
-          ],
-          "allergens": [
-            "Gluten",
-            "Dairy",
-            "Eggs"
-          ],
-          "servingInfo": "1 piece",
-          "prepInfo": "Baked fresh daily",
-          "occasionTags": [
-            "Afternoon Tea",
-            "Breakfast"
-          ],
-          "rating": 4.5,
-          "reviewCount": 26,
           "category": "Pastries",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 302,
-          "name": "Chocolate Croissant",
-          "price": 300,
-          "image": "/images/chocolate-croissant.jpg",
-          "description": "Buttery, flaky croissant pastry wrapped around a generous core of dark chocolate that turns molten-soft the moment it's warmed. Crisp on the outside, rich and gooey within — the pastry that makes mornings worth getting up for.",
-          "available": true,
           "jabysFavorite": true,
-          "bestSelling": false,
-          "discountPercent": 10,
+          "bestSelling": true,
+          "discountPercent": 12,
           "onFlashSale": true,
-          "oldPrice": 350,
+          "oldPrice": 680,
           "ingredients": [
-            "Wheat flour",
-            "Butter",
-            "Dark chocolate"
+            "Premium Wheat Flour",
+            "Yeast",
+            "Unsalted Butter",
+            "Milk",
+            "Brown Sugar",
+            "Ground Cinnamon",
+            "Eggs"
           ],
           "allergens": [
-            "Gluten",
+            "Wheat",
             "Dairy",
             "Eggs"
           ],
-          "servingInfo": "1 piece",
-          "prepInfo": "Baked fresh daily",
+          "servingInfo": "Tray of 20 pieces",
+          "prepInfo": "Baked fresh same-day (Pre-cooked)",
           "occasionTags": [
             "Breakfast",
-            "Snack"
+            "Tea Time",
+            "Brunch",
+            "Sweet Treats"
           ],
-          "rating": 4.7,
-          "reviewCount": 48,
-          "category": "Pastries",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 303,
-          "name": "Apple Turnover",
-          "price": 300,
-          "image": "/images/apple-turnover.jpg",
-          "description": "Sweet, cinnamon-spiced apples wrapped in golden, flaky puff pastry that shatters with every bite. Baked fresh daily for that perfect contrast of crisp pastry and warm, soft fruit filling.",
-          "available": true,
-          "jabysFavorite": true,
-          "bestSelling": false,
-          "ingredients": [
-            "Wheat flour",
-            "Butter",
-            "Fresh apples",
-            "Cinnamon"
-          ],
-          "allergens": [
-            "Gluten",
-            "Dairy"
-          ],
-          "servingInfo": "1 piece",
-          "prepInfo": "Baked fresh daily",
-          "occasionTags": [
-            "Afternoon Tea",
-            "Snack"
-          ],
-          "rating": 4.6,
+          "rating": 4.9,
           "reviewCount": 31,
-          "category": "Pastries",
-          "allowCustomMessage": false
+          "allowCustomMessage": false,
+          "sizes": [
+            {
+              "label": "Half Tray (10 pieces - Precooked)",
+              "price": 350
+            },
+            {
+              "label": "Full Tray (20 pieces - Precooked)",
+              "price": 600
+            },
+            {
+              "label": "Party Box (40 pieces - Precooked)",
+              "price": 1150
+            }
+          ],
+          "eggOptions": [
+            {
+              "label": "Standard (Contains Eggs)",
+              "priceAdd": 0
+            }
+          ],
+          "extraImages": [
+            "/images/A11B.jpg"
+          ]
         },
         {
-          "id": 305,
-          "name": "Almond Croissant",
-          "price": 400,
-          "image": "/images/almond-croissant.jpg",
-          "description": "A classic croissant taken further — filled with rich almond paste, topped with sliced almonds, and baked until deeply golden. Nutty, buttery, and just sweet enough, it's a bakery-counter favorite for a reason.",
+          "id": 112,
+          "name": "Freshly Baked Golden Cinnamon Rolls (Ready-to-Eat)",
+          "price": 600,
+          "image": "/images/A12C.jpg",
+          "description": "Warm, golden-brown cinnamon rolls baked to perfection and straight out of the oven. Soft, fluffy, and swirling with rich cinnamon-sugar goodness, these delicious pastries are fully pre-cooked and ready to eat immediately for breakfast, tea time, or as a sweet treat.",
           "available": true,
+          "category": "Pastries",
           "jabysFavorite": true,
-          "bestSelling": false,
-          "ingredients": [
-            "Wheat flour",
-            "Butter",
-            "Almond paste",
-            "Sliced almonds"
-          ],
-          "allergens": [
-            "Gluten",
-            "Dairy",
-            "Nuts",
-            "Eggs"
-          ],
-          "servingInfo": "1 piece",
-          "prepInfo": "Baked fresh daily",
-          "occasionTags": [
-            "Breakfast",
-            "Afternoon Tea"
-          ],
-          "rating": 4.7,
-          "reviewCount": 34,
-          "category": "Pastries",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 307,
-          "name": "Chocolate Eclair",
-          "price": 350,
-          "image": "/images/chocolate-eclair.jpg",
-          "description": "Light choux pastry filled with smooth cream and finished with a glossy chocolate glaze — this eclair is soft, rich, and elegantly simple. Baked and filled fresh daily so every bite stays perfectly light.",
-          "available": true,
-          "jabysFavorite": true,
-          "bestSelling": false,
-          "ingredients": [
-            "Wheat flour",
-            "Choux pastry",
-            "Chocolate glaze",
-            "Cream filling"
-          ],
-          "allergens": [
-            "Gluten",
-            "Dairy",
-            "Eggs"
-          ],
-          "servingInfo": "1 piece",
-          "prepInfo": "Baked and filled fresh daily",
-          "occasionTags": [
-            "Afternoon Tea",
-            "Treat"
-          ],
-          "rating": 4.7,
-          "reviewCount": 29,
-          "category": "Pastries",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 304,
-          "name": "Cinnamon Roll",
-          "price": 250,
-          "image": "/images/cinnamon-roll.jpg",
-          "description": "Soft, pillowy dough swirled with buttery cinnamon sugar and finished with a generous drizzle of icing. Warm, comforting, and best-selling for good reason — this is the roll that makes any morning better.",
-          "available": true,
-          "jabysFavorite": false,
           "bestSelling": true,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "oldPrice": 600,
           "ingredients": [
-            "Wheat flour",
-            "Butter",
-            "Cinnamon sugar",
-            "Icing"
+            "Premium Wheat Flour",
+            "Yeast",
+            "Unsalted Butter",
+            "Milk",
+            "Brown Sugar",
+            "Ground Cinnamon",
+            "Eggs"
           ],
           "allergens": [
-            "Gluten",
+            "Wheat",
             "Dairy",
             "Eggs"
           ],
-          "servingInfo": "1 piece",
-          "prepInfo": "Baked fresh daily",
+          "servingInfo": "Tray of 20 pieces",
+          "prepInfo": "Fully cooked & baked fresh same-day",
           "occasionTags": [
             "Breakfast",
-            "Snack"
+            "Tea Time",
+            "Brunch",
+            "Ready to Eat"
           ],
-          "rating": 4.8,
-          "reviewCount": 57,
-          "category": "Pastries",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 306,
-          "name": "Fruit Tart",
-          "price": 400,
-          "image": "/images/fruit-tart.jpg",
-          "description": "A crisp pastry shell filled with silky custard and topped with a vibrant arrangement of fresh seasonal fruit. Light, elegant, and as beautiful to look at as it is to eat.",
-          "available": true,
-          "jabysFavorite": false,
-          "bestSelling": true,
-          "discountPercent": 20,
-          "onFlashSale": true,
-          "oldPrice": 500,
-          "ingredients": [
-            "Wheat flour",
-            "Pastry cream",
-            "Fresh seasonal fruit"
-          ],
-          "allergens": [
-            "Gluten",
-            "Dairy",
-            "Eggs"
-          ],
-          "servingInfo": "1 piece",
-          "prepInfo": "Baked fresh daily, assembled with seasonal fruit",
-          "occasionTags": [
-            "Afternoon Tea",
-            "Celebration"
-          ],
-          "rating": 4.8,
-          "reviewCount": 39,
-          "category": "Pastries",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 308,
-          "name": "Pecan Pie Slice",
-          "price": 400,
-          "image": "/images/pecan-pie.jpg",
-          "description": "Buttery pastry crust filled with rich caramel and toasted pecans, baked until perfectly set and satisfyingly gooey. A rich, nutty treat for anyone who loves a proper Southern-style dessert.",
-          "available": true,
-          "jabysFavorite": false,
-          "bestSelling": false,
-          "ingredients": [
-            "Wheat flour",
-            "Pecans",
-            "Butter",
-            "Brown sugar syrup"
-          ],
-          "allergens": [
-            "Gluten",
-            "Dairy",
-            "Nuts",
-            "Eggs"
-          ],
-          "servingInfo": "1 slice",
-          "prepInfo": "Baked fresh daily",
-          "occasionTags": [
-            "Afternoon Tea",
-            "Treat"
-          ],
-          "rating": 4.6,
-          "reviewCount": 22,
-          "category": "Pastries",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 309,
-          "name": "Blueberry Muffin",
-          "price": 250,
-          "image": "/images/blueberry-muffin.jpg",
-          "description": "Soft, moist muffin packed with plump blueberries that burst with every bite. Baked fresh daily with a lightly golden top — simple, comforting, and always reliable.",
-          "available": true,
-          "jabysFavorite": false,
-          "bestSelling": false,
-          "ingredients": [
-            "Wheat flour",
-            "Fresh blueberries",
-            "Butter",
-            "Sugar"
-          ],
-          "allergens": [
-            "Gluten",
-            "Dairy",
-            "Eggs"
-          ],
-          "servingInfo": "1 piece",
-          "prepInfo": "Baked fresh daily",
-          "occasionTags": [
-            "Breakfast",
-            "Snack"
-          ],
-          "rating": 4.6,
+          "rating": 4.9,
           "reviewCount": 35,
-          "category": "Pastries",
-          "allowCustomMessage": false
-        },
-        {
-          "id": 310,
-          "name": "Lemon Tart",
-          "price": 450,
-          "image": "/images/lemon-tart.jpg",
-          "description": "A crisp, buttery pastry shell filled with silky, tangy lemon curd that's bright, zesty, and perfectly balanced. Small in size but big on flavor — the tart that cuts through the sweetness of everything else on the table.",
-          "available": true,
-          "jabysFavorite": false,
-          "bestSelling": false,
-          "ingredients": [
-            "Wheat flour",
-            "Fresh lemon curd",
-            "Butter",
-            "Eggs"
+          "allowCustomMessage": false,
+          "sizes": [
+            {
+              "label": "Half Tray (10 pieces - Ready to Eat)",
+              "price": 350
+            },
+            {
+              "label": "Full Tray (20 pieces - Ready to Eat)",
+              "price": 600
+            },
+            {
+              "label": "Party Box (40 pieces - Ready to Eat)",
+              "price": 1150
+            }
           ],
-          "allergens": [
-            "Gluten",
-            "Dairy",
-            "Eggs"
+          "eggOptions": [
+            {
+              "label": "Standard (Contains Eggs)",
+              "priceAdd": 0
+            }
           ],
-          "servingInfo": "1 piece",
-          "prepInfo": "Baked fresh daily",
-          "occasionTags": [
-            "Afternoon Tea"
-          ],
-          "rating": 4.6,
-          "reviewCount": 24,
-          "category": "Pastries",
-          "allowCustomMessage": false
+          "extraImages": [
+            "/images/A12.jpg",
+            "/images/A12B.jpg",
+            "/images/A12D.jpg"
+          ]
         }
       ],
       "icon": "bread",
@@ -1470,236 +1088,95 @@
   "bundles": [
     {
       "id": 501,
-      "name": "Birthday Combo",
-      "price": 4500,
-      "image": "/images/birthday-bundle.jpg",
-      "description": "Everything you need for a celebration in one order — a full 1kg cake of your choice, 6 soft cupcakes, and a fresh juice to round it off. Baked and prepared fresh the same day, this combo turns any birthday into a full spread without the hassle of ordering separately.",
-      "available": true,
-      "jabysFavorite": true,
-      "bestSelling": false,
-      "ingredients": [
-        "1kg cake of choice",
-        "6 cupcakes",
-        "1 fresh juice"
-      ],
-      "allergens": [
-        "Gluten",
-        "Eggs",
-        "Dairy"
-      ],
-      "servingInfo": "Serves 8–10 + extras",
-      "prepInfo": "Baked and prepared fresh same-day",
-      "occasionTags": [
-        "Birthday",
-        "Celebration"
-      ],
-      "rating": 4.8,
-      "reviewCount": 37,
-      "category": "Bundle",
-      "allowCustomMessage": true
-    },
-    {
-      "id": 502,
-      "name": "Family Treat Pack",
-      "price": 3500,
-      "image": "/images/family-bundle.jpg",
-      "description": "A full chocolate cake, 4 assorted drinks, and a side of fries — built for movie nights, family catch-ups, or just because everyone deserves a treat sometimes. Prepared fresh and ready to share.",
+      "name": "The Ultimate Tea-Time Party Pack",
+      "price": 950,
+      "image": "/images/bundle-01.jpg",
+      "description": "Combine crunchy, savory, and sweet items into one ultimate hosting package for family gatherings or guests. Includes crispy samosas, donuts, and fresh mandazi.",
       "available": true,
       "jabysFavorite": false,
       "bestSelling": true,
+      "discountPercent": 10,
       "ingredients": [
-        "Chocolate cake",
-        "4 assorted drinks",
-        "Fries"
+        "Golden Sweet Dough Donuts",
+        "Crispy Golden Fried Samosas",
+        "Classic Swahili Mandazi"
       ],
       "allergens": [
-        "Gluten",
-        "Eggs",
+        "Wheat",
         "Dairy"
       ],
-      "servingInfo": "Serves a family of 4",
+      "servingInfo": "Serves 4–6 people",
       "prepInfo": "Prepared fresh same-day",
       "occasionTags": [
-        "Family Gathering"
+        "Party",
+        "Gathering",
+        "Tea Time"
       ],
       "rating": 4.7,
-      "reviewCount": 45,
+      "reviewCount": 12,
       "category": "Bundle",
-      "allowCustomMessage": true
+      "allowCustomMessage": false
+    },
+    {
+      "id": 502,
+      "name": "Morning Breakfast & Pastry Combo",
+      "price": 800,
+      "image": "/images/bundle-02.jpg",
+      "description": "The perfect cross-sell for morning deliveries, weekend treats, or brunch. Features fully baked cinnamon rolls paired with soft folded crepes.",
+      "available": true,
+      "jabysFavorite": false,
+      "bestSelling": false,
+      "discountPercent": 10,
+      "ingredients": [
+        "Freshly Baked Golden Cinnamon Rolls",
+        "Soft Folded Golden Crepes"
+      ],
+      "allergens": [
+        "Wheat",
+        "Dairy",
+        "Eggs"
+      ],
+      "servingInfo": "Serves 2–3 people",
+      "prepInfo": "Prepared fresh same-day",
+      "occasionTags": [
+        "Breakfast",
+        "Brunch"
+      ],
+      "rating": 4.6,
+      "reviewCount": 9,
+      "category": "Bundle",
+      "allowCustomMessage": false
     },
     {
       "id": 503,
-      "name": "Weekend Chill Bundle",
-      "price": 4200,
-      "image": "/images/weekend-chill.jpg",
-      "description": "Your choice of cake, 2 drinks, and a mix of fresh pastries — the ultimate lineup for a slow, easy weekend at home. Everything prepared fresh the same day so you can just relax and enjoy.",
+      "name": "House of Jaby Sweet Tooth Box",
+      "price": 750,
+      "image": "/images/bundle-03.jpg",
+      "description": "A delightful box for snack lovers, featuring buttery shortbread cookies, vanilla cupcakes, and classic Swahili mandazi.",
       "available": true,
       "jabysFavorite": false,
       "bestSelling": false,
+      "discountPercent": 12,
       "ingredients": [
-        "Cake of choice",
-        "2 drinks",
-        "Assorted pastries"
+        "Buttery Flower-Shaped Shortbread Cookies",
+        "Freshly Baked Vanilla Cupcakes",
+        "Classic Swahili Mandazi"
       ],
       "allergens": [
-        "Gluten",
-        "Eggs",
-        "Dairy"
+        "Wheat",
+        "Dairy",
+        "Eggs"
       ],
-      "servingInfo": "Serves 4–6",
+      "servingInfo": "Serves 2–3 people",
       "prepInfo": "Prepared fresh same-day",
       "occasionTags": [
-        "Weekend Treat"
-      ],
-      "rating": 4.6,
-      "reviewCount": 21,
-      "category": "Bundle",
-      "allowCustomMessage": true
-    },
-    {
-      "id": 504,
-      "name": "Morning Boost Pack",
-      "price": 2800,
-      "image": "/images/morning-boost.jpg",
-      "description": "Fresh juice paired with a pastry of your choice — the simple, satisfying combo to kickstart your morning without overdoing it. Prepared fresh to order, every time.",
-      "available": true,
-      "jabysFavorite": false,
-      "bestSelling": false,
-      "ingredients": [
-        "Fresh juice",
-        "Pastry of choice"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
-      "servingInfo": "Serves 1–2",
-      "prepInfo": "Prepared fresh to order",
-      "occasionTags": [
-        "Breakfast",
-        "Morning Pick-Me-Up"
-      ],
-      "rating": 4.5,
-      "reviewCount": 19,
-      "category": "Bundle",
-      "allowCustomMessage": false
-    },
-    {
-      "id": 505,
-      "name": "Couple's Delight Bundle",
-      "price": 5000,
-      "image": "/images/couples-delight.jpg",
-      "description": "Chocolate cake, cupcakes, and two drinks — designed for date nights, anniversaries, or any excuse to treat yourselves together. A little indulgence made for sharing.",
-      "available": true,
-      "jabysFavorite": false,
-      "bestSelling": false,
-      "ingredients": [
-        "Chocolate cake",
-        "Cupcakes",
-        "2 drinks"
-      ],
-      "allergens": [
-        "Gluten",
-        "Eggs",
-        "Dairy"
-      ],
-      "servingInfo": "Serves 2",
-      "prepInfo": "Prepared fresh same-day",
-      "occasionTags": [
-        "Date Night",
-        "Anniversary"
+        "Gift Box",
+        "Snack"
       ],
       "rating": 4.8,
-      "reviewCount": 33,
-      "category": "Bundle",
-      "allowCustomMessage": true
-    },
-    {
-      "id": 506,
-      "name": "Family Movie Night",
-      "price": 4600,
-      "image": "/images/family-movie.jpg",
-      "description": "A cake of your choice, popcorn, and 4 drinks — everything you need to turn screen time into an event. Prepared fresh same-day so movie night actually feels special.",
-      "available": true,
-      "jabysFavorite": false,
-      "bestSelling": false,
-      "ingredients": [
-        "Cake of choice",
-        "Popcorn",
-        "4 drinks"
-      ],
-      "allergens": [
-        "Gluten",
-        "Eggs",
-        "Dairy"
-      ],
-      "servingInfo": "Serves a family of 4",
-      "prepInfo": "Prepared fresh same-day",
-      "occasionTags": [
-        "Family Night",
-        "Movie Night"
-      ],
-      "rating": 4.7,
-      "reviewCount": 28,
-      "category": "Bundle",
-      "allowCustomMessage": true
-    },
-    {
-      "id": 507,
-      "name": "Tea Time Special",
-      "price": 3000,
-      "image": "/images/tea-time.jpg",
-      "description": "A pastry of your choice paired with tea or coffee — the perfect quiet-afternoon combo for slowing down and enjoying a proper break. Simple, satisfying, and always fresh.",
-      "available": true,
-      "jabysFavorite": false,
-      "bestSelling": false,
-      "ingredients": [
-        "Pastry of choice",
-        "Tea or coffee"
-      ],
-      "allergens": [
-        "Gluten",
-        "Dairy"
-      ],
-      "servingInfo": "Serves 1",
-      "prepInfo": "Prepared fresh to order",
-      "occasionTags": [
-        "Afternoon Tea"
-      ],
-      "rating": 4.5,
-      "reviewCount": 16,
+      "reviewCount": 11,
       "category": "Bundle",
       "allowCustomMessage": false
-    },
-    {
-      "id": 508,
-      "name": "Kids Birthday Pack",
-      "price": 3800,
-      "image": "/images/kids-birthday.jpg",
-      "description": "A mini cake, cupcakes, and juice sized just right for a kids' celebration — colorful, fun, and built to make the birthday child feel like the star. Baked and prepared fresh the same day.",
-      "available": true,
-      "jabysFavorite": false,
-      "bestSelling": false,
-      "ingredients": [
-        "Mini cake",
-        "Cupcakes",
-        "Juice"
-      ],
-      "allergens": [
-        "Gluten",
-        "Eggs",
-        "Dairy"
-      ],
-      "servingInfo": "Serves 4–6 kids",
-      "prepInfo": "Baked and prepared fresh same-day",
-      "occasionTags": [
-        "Kids Birthday",
-        "Party"
-      ],
-      "rating": 4.7,
-      "reviewCount": 24,
-      "category": "Bundle",
-      "allowCustomMessage": true
     }
   ],
   "upsell": [],
@@ -1784,22 +1261,10 @@
         "rating": 4
       }
     ],
-    "Drinks": [
-      {
-        "name": "Peter O.",
-        "text": "Freshest juice I've had delivered — you can tell it's squeezed to order, not sitting around.",
-        "rating": 5
-      },
-      {
-        "name": "Faith N.",
-        "text": "The mango smoothie is now a weekly order for me. Consistent quality every time.",
-        "rating": 5
-      }
-    ],
     "Pastries": [
       {
         "name": "James M.",
-        "text": "Croissants were flaky and clearly baked that morning. Great with my coffee order.",
+        "text": "Cinnamon rolls were soft and clearly baked that morning. Great with my coffee order.",
         "rating": 5
       },
       {
@@ -1808,15 +1273,34 @@
         "rating": 4
       }
     ],
-    "Bundle": [
+    "Snacks": [
       {
         "name": "Samuel K.",
-        "text": "The family combo was great value and saved me from ordering separately. Everything arrived together, still fresh.",
+        "text": "The samosas were crispy and fresh, perfect for our gathering.",
         "rating": 5
       },
       {
         "name": "Lucy A.",
-        "text": "Got the movie night bundle for the kids' weekend — portions were generous.",
+        "text": "Mandazi tasted just like homemade. Will order again.",
+        "rating": 5
+      }
+    ],
+    "Cookies": [
+      {
+        "name": "Njeri T.",
+        "text": "The heart-shaped cookies were a hit at the party, beautifully packaged too.",
+        "rating": 5
+      }
+    ],
+    "Bundle": [
+      {
+        "name": "Kevin M.",
+        "text": "The tea-time pack was great value and saved me from ordering separately. Everything arrived together, still fresh.",
+        "rating": 5
+      },
+      {
+        "name": "Mary W.",
+        "text": "Got the breakfast combo for a weekend brunch — portions were generous.",
         "rating": 5
       }
     ]
