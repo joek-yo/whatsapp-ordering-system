@@ -256,7 +256,8 @@
               "label": "Eggless Special",
               "priceAdd": 300
             }
-          ]
+          ],
+          "extraImages": []
         },
         {
           "id": 103,
@@ -440,7 +441,8 @@
               "label": "Eggless Option",
               "priceAdd": 30
             }
-          ]
+          ],
+          "extraImages": []
         }
       ],
       "icon": "cake",
@@ -489,7 +491,9 @@
               "label": "Family Pack (Approx. 1kg)",
               "price": 180
             }
-          ]
+          ],
+          "eggOptions": [],
+          "extraImages": []
         },
         {
           "id": 107,
@@ -542,7 +546,8 @@
               "price": 300
             }
           ],
-          "eggOptions": []
+          "eggOptions": [],
+          "extraImages": []
         },
         {
           "id": 110,
@@ -648,7 +653,8 @@
               "price": 300
             }
           ],
-          "eggOptions": []
+          "eggOptions": [],
+          "extraImages": []
         },
         {
           "id": 114,
@@ -697,7 +703,8 @@
               "price": 1050
             }
           ],
-          "eggOptions": []
+          "eggOptions": [],
+          "extraImages": []
         },
         {
           "id": 115,
@@ -755,7 +762,8 @@
               "label": "Standard (Contains Eggs)",
               "priceAdd": 0
             }
-          ]
+          ],
+          "extraImages": []
         }
       ],
       "icon": "snack",
@@ -825,7 +833,8 @@
               "label": "Eggless Option",
               "priceAdd": 100
             }
-          ]
+          ],
+          "extraImages": []
         },
         {
           "id": 106,
@@ -888,7 +897,8 @@
               "label": "Eggless Option",
               "priceAdd": 80
             }
-          ]
+          ],
+          "extraImages": []
         },
         {
           "id": 109,
@@ -944,7 +954,8 @@
               "label": "Standard (Eggless Style)",
               "priceAdd": 0
             }
-          ]
+          ],
+          "extraImages": []
         }
       ],
       "icon": "cookie",
