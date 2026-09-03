@@ -30,232 +30,54 @@
         {
           "id": 101,
           "name": "Golden Calendar Milestone Celebration Cake",
-          "price": 2000,
+          "price": 5500,
           "image": "/images/A01.jpg",
           "description": "Every milestone tells a story, and every story deserves to be celebrated beautifully. The Golden Calendar Milestone Celebration Cake is thoughtfully designed to honor life's most memorable dates, turning birthdays, anniversaries, promotions, and personal achievements into unforgettable moments. Featuring a personalized edible calendar print, elegant gold detailing, modern decorative spheres, and delicate edible gold leaf accents, this handcrafted centerpiece is as meaningful as it is beautiful. Freshly baked to order and customized with your preferred message, it's created to celebrate your journey—crafted the Jaby way.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": true,
           "bestSelling": true,
-          "discountPercent": 10,
-          "onFlashSale": true,
-          "oldPrice": 2220,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Caster Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Edible Gold Leaf",
-            "Fondant Spheres",
-            "Custom Printed Edible Sheet"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Edible Gold Leaf", "Fondant Spheres", "Custom Printed Edible Sheet"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 4 to 120 people across size variants",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Birthday",
-            "Milestone",
-            "Custom Calendar",
-            "Anniversary"
-          ],
+          "occasionTags": ["Birthday", "Milestone", "Custom Calendar", "Anniversary"],
           "rating": 4.9,
           "reviewCount": 38,
           "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 2–4 people)",
-              "price": 1200
-            },
-            {
-              "label": "0.75kg (Serves 5–7 people)",
-              "price": 1600
-            },
-            {
-              "label": "1kg (Serves 8–10 people)",
-              "price": 2000
-            },
-            {
-              "label": "1.25kg (Serves 11–14 people)",
-              "price": 2500
-            },
-            {
-              "label": "1.5kg (Serves 15–18 people)",
-              "price": 3000
-            },
-            {
-              "label": "1.75kg (Serves 19–22 people)",
-              "price": 3500
-            },
-            {
-              "label": "2kg (Serves 23–26 people)",
-              "price": 4000
-            },
-            {
-              "label": "2.25kg (Serves 27–30 people)",
-              "price": 4500
-            },
-            {
-              "label": "2.5kg (Serves 31–35 people)",
-              "price": 5000
-            },
-            {
-              "label": "3kg (Serves 36–42 people)",
-              "price": 6000
-            },
-            {
-              "label": "3.5kg (Serves 43–50 people)",
-              "price": 7000
-            },
-            {
-              "label": "4kg (Serves 51–60 people)",
-              "price": 8000
-            },
-            {
-              "label": "4.5kg (Serves 61–70 people)",
-              "price": 9000
-            },
-            {
-              "label": "5kg (Serves 71–85 people)",
-              "price": 10000
-            },
-            {
-              "label": "6kg+ (Serves 90–120 people)",
-              "price": 12000
-            }
-          ],
+          "sizes": [{ "label": "2kg (Serves 23–26 people)", "price": 5500 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 300
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 500 }
           ],
-          "extraImages": [
-            "/images/A01B.jpg"
-          ]
+          "extraImages": ["/images/A01B.jpg"]
         },
         {
           "id": 102,
           "name": "Velvet Lilac Dream Celebration Cake",
-          "price": 1900,
+          "price": 7500,
           "image": "/images/A02.jpg",
           "description": "Graceful, timeless, and effortlessly elegant, the Velvet Lilac Dream Celebration Cake is crafted for celebrations that deserve a touch of sophistication. Finished with smooth white and lavender watercolor-inspired buttercream, shimmering gold leaf accents, delicate decorative sprinkles, and personalized lettering, this cake creates a beautiful balance of luxury and charm. Whether you're celebrating a birthday, bridal shower, anniversary, baby shower, or intimate gathering, every detail is customized to reflect your unique occasion and style.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
           "bestSelling": true,
-          "discountPercent": 5,
-          "onFlashSale": true,
-          "oldPrice": 2000,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Granulated Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Food Grade Gel Color (Purple)",
-            "Edible Silver & Gold Sprinkles",
-            "Edible Gold Leaf"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Granulated Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Food Grade Gel Color (Purple)", "Edible Silver & Gold Sprinkles", "Edible Gold Leaf"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 4 to 120 people across size variants",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Birthday",
-            "Personalized",
-            "Celebration",
-            "Custom Name"
-          ],
+          "occasionTags": ["Birthday", "Personalized", "Celebration", "Custom Name"],
           "rating": 4.8,
           "reviewCount": 29,
           "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 2–4 people)",
-              "price": 1150
-            },
-            {
-              "label": "0.75kg (Serves 5–7 people)",
-              "price": 1500
-            },
-            {
-              "label": "1kg (Serves 8–10 people)",
-              "price": 1900
-            },
-            {
-              "label": "1.25kg (Serves 11–14 people)",
-              "price": 2400
-            },
-            {
-              "label": "1.5kg (Serves 15–18 people)",
-              "price": 2900
-            },
-            {
-              "label": "1.75kg (Serves 19–22 people)",
-              "price": 3400
-            },
-            {
-              "label": "2kg (Serves 23–26 people)",
-              "price": 3900
-            },
-            {
-              "label": "2.25kg (Serves 27–30 people)",
-              "price": 4400
-            },
-            {
-              "label": "2.5kg (Serves 31–35 people)",
-              "price": 4900
-            },
-            {
-              "label": "3kg (Serves 36–42 people)",
-              "price": 5800
-            },
-            {
-              "label": "3.5kg (Serves 43–50 people)",
-              "price": 6800
-            },
-            {
-              "label": "4kg (Serves 51–60 people)",
-              "price": 7800
-            },
-            {
-              "label": "4.5kg (Serves 61–70 people)",
-              "price": 8800
-            },
-            {
-              "label": "5kg (Serves 71–85 people)",
-              "price": 9800
-            },
-            {
-              "label": "6kg+ (Serves 90–120 people)",
-              "price": 11800
-            }
-          ],
+          "sizes": [{ "label": "3kg (Serves 36–42 people)", "price": 7500 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 300
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 1500 }
           ],
           "extraImages": []
         },
@@ -271,110 +93,20 @@
           "bestSelling": false,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 1850,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Granulated Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Food Grade Gel Color (Sky Blue)",
-            "Edible Gold Leaf Flakes",
-            "Gold and White Sugar Pearls"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Granulated Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Food Grade Gel Color (Sky Blue)", "Edible Gold Leaf Flakes", "Gold and White Sugar Pearls"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 4 to 120 people across size variants",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Birthday",
-            "Men's Birthday",
-            "Personalized",
-            "Celebration"
-          ],
+          "occasionTags": ["Birthday", "Men's Birthday", "Personalized", "Celebration"],
           "rating": 4.7,
           "reviewCount": 21,
           "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 2–4 people)",
-              "price": 1100
-            },
-            {
-              "label": "0.75kg (Serves 5–7 people)",
-              "price": 1450
-            },
-            {
-              "label": "1kg (Serves 8–10 people)",
-              "price": 1850
-            },
-            {
-              "label": "1.25kg (Serves 11–14 people)",
-              "price": 2300
-            },
-            {
-              "label": "1.5kg (Serves 15–18 people)",
-              "price": 2800
-            },
-            {
-              "label": "1.75kg (Serves 19–22 people)",
-              "price": 3300
-            },
-            {
-              "label": "2kg (Serves 23–26 people)",
-              "price": 3800
-            },
-            {
-              "label": "2.25kg (Serves 27–30 people)",
-              "price": 4300
-            },
-            {
-              "label": "2.5kg (Serves 31–35 people)",
-              "price": 4800
-            },
-            {
-              "label": "3kg (Serves 36–42 people)",
-              "price": 5700
-            },
-            {
-              "label": "3.5kg (Serves 43–50 people)",
-              "price": 6700
-            },
-            {
-              "label": "4kg (Serves 51–60 people)",
-              "price": 7700
-            },
-            {
-              "label": "4.5kg (Serves 61–70 people)",
-              "price": 8700
-            },
-            {
-              "label": "5kg (Serves 71–85 people)",
-              "price": 9700
-            },
-            {
-              "label": "6kg+ (Serves 90–120 people)",
-              "price": 11500
-            }
-          ],
+          "sizes": [{ "label": "0.5kg (Serves 2–4 people)", "price": 1850 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 300
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 500 }
           ],
-          "extraImages": [
-            "/images/A03B.jpg"
-          ]
+          "extraImages": ["/images/A03B.jpg"]
         },
         {
           "id": 108,
@@ -386,183 +118,55 @@
           "category": "Cakes",
           "jabysFavorite": false,
           "bestSelling": true,
-          "discountPercent": 17,
-          "onFlashSale": true,
-          "oldPrice": 180,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Sugar",
-            "Unsalted Butter",
-            "Milk",
-            "Vanilla Extract",
-            "Baking Powder"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Sugar", "Unsalted Butter", "Milk", "Vanilla Extract", "Baking Powder"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Pack of 3 pieces",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Tea Time",
-            "Snack",
-            "Kids Treat",
-            "Dessert"
-          ],
+          "occasionTags": ["Tea Time", "Snack", "Kids Treat", "Dessert"],
           "rating": 4.8,
           "reviewCount": 14,
           "allowCustomMessage": false,
           "sizes": [
-            {
-              "label": "Single Piece",
-              "price": 50
-            },
-            {
-              "label": "Pack of 3",
-              "price": 150
-            },
-            {
-              "label": "Box of 6",
-              "price": 300
-            },
-            {
-              "label": "Box of 12",
-              "price": 580
-            }
+            { "label": "Single Piece", "price": 50 },
+            { "label": "Pack of 3", "price": 150 },
+            { "label": "Box of 6", "price": 300 },
+            { "label": "Box of 12", "price": 580 }
           ],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Option",
-              "priceAdd": 30
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Option", "priceAdd": 30 }
           ],
           "extraImages": []
         },
         {
           "id": 116,
           "name": "Lavender Appreciation Celebration Cake",
-          "price": 1950,
+          "price": 2500,
           "image": "/images/A16.jpg",
           "description": "Some words deserve more than a card—they deserve a beautiful celebration. The Lavender Appreciation Celebration Cake is thoughtfully crafted to express gratitude, celebrate achievements, and honor the people who make a difference in our lives. Finished in soft lavender Italian meringue buttercream with a rich chocolate ganache drip, elegant piped rosettes, delicate gold leaf accents, and a personalized message, this handcrafted creation transforms appreciation into an unforgettable experience. Perfect for thank-you gifts, employee recognition, farewells, celebrations, and meaningful milestones.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
           "bestSelling": false,
-          "discountPercent": 0,
-          "onFlashSale": false,
-          "oldPrice": 1950,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Caster Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Lavender Extract",
-            "Dark Chocolate",
-            "Heavy Cream",
-            "Edible Gold Leaf",
-            "Sprinkles",
-            "Food Coloring"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "discountPercent": 11,
+          "onFlashSale": true,
+          "oldPrice": 2800,
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Lavender Extract", "Dark Chocolate", "Heavy Cream", "Edible Gold Leaf", "Sprinkles", "Food Coloring"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 8–10 people (1kg standard size)",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Appreciation",
-            "Thank You",
-            "Gift",
-            "Celebration"
-          ],
+          "occasionTags": ["Appreciation", "Thank You", "Gift", "Celebration"],
           "rating": 4.8,
           "reviewCount": 29,
           "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 2–4 people)",
-              "price": 1150
-            },
-            {
-              "label": "0.75kg (Serves 5–7 people)",
-              "price": 1550
-            },
-            {
-              "label": "1kg (Serves 8–10 people)",
-              "price": 1950
-            },
-            {
-              "label": "1.25kg (Serves 11–14 people)",
-              "price": 2450
-            },
-            {
-              "label": "1.5kg (Serves 15–18 people)",
-              "price": 2950
-            },
-            {
-              "label": "1.75kg (Serves 19–22 people)",
-              "price": 3400
-            },
-            {
-              "label": "2kg (Serves 23–26 people)",
-              "price": 3900
-            },
-            {
-              "label": "2.25kg (Serves 27–30 people)",
-              "price": 4400
-            },
-            {
-              "label": "2.5kg (Serves 31–35 people)",
-              "price": 4900
-            },
-            {
-              "label": "3kg (Serves 36–42 people)",
-              "price": 5850
-            },
-            {
-              "label": "3.5kg (Serves 43–50 people)",
-              "price": 6850
-            },
-            {
-              "label": "4kg (Serves 51–60 people)",
-              "price": 7800
-            },
-            {
-              "label": "4.5kg (Serves 61–70 people)",
-              "price": 8800
-            },
-            {
-              "label": "5kg (Serves 71–85 people)",
-              "price": 9750
-            },
-            {
-              "label": "6kg+ (Serves 90–120 people)",
-              "price": 11700
-            }
-          ],
+          "sizes": [{ "label": "1kg (Serves 8–10 people)", "price": 2500 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 250
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 500 }
           ],
-          "extraImages": [
-            "/images/A16B.jpg"
-          ]
+          "extraImages": ["/images/A16B.jpg"]
         },
         {
           "id": 117,
@@ -576,72 +180,29 @@
           "bestSelling": false,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 3800,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Caster Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Dark Chocolate",
-            "Heavy Cream",
-            "Edible Gold Dragees",
-            "Red Food Coloring",
-            "Blue Food Coloring",
-            "Fondant Spheres",
-            "Custom Paper Toppers",
-            "Acrylic Topper"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Dark Chocolate", "Heavy Cream", "Edible Gold Dragees", "Red Food Coloring", "Blue Food Coloring", "Fondant Spheres", "Custom Paper Toppers", "Acrylic Topper"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 20–25 people",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Birthday",
-            "Football Fan",
-            "Milestone",
-            "Football Club"
-          ],
+          "occasionTags": ["Birthday", "Football Fan", "Milestone", "Football Club"],
           "rating": 5,
           "reviewCount": 14,
           "allowCustomMessage": true,
           "sizes": [
-            {
-              "label": "Two-Tier Standard (20–25 Servings)",
-              "price": 3800
-            },
-            {
-              "label": "Two-Tier Large (30–35 Servings)",
-              "price": 5000
-            },
-            {
-              "label": "Two-Tier XL (40–50 Servings)",
-              "price": 6300
-            }
+            { "label": "Two-Tier Standard (20–25 Servings)", "price": 3800 },
+            { "label": "Two-Tier Large (30–35 Servings)", "price": 5000 },
+            { "label": "Two-Tier XL (40–50 Servings)", "price": 6300 }
           ],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 500
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 500 }
           ],
-          "extraImages": [
-            "/images/A17B.jpg"
-          ]
+          "extraImages": ["/images/A17B.jpg"]
         },
         {
           "id": 118,
           "name": "Golden Sunshine Drip Celebration Cake",
-          "price": 1950,
+          "price": 5000,
           "image": "/images/A18.jpg",
           "description": "Bright, cheerful, and impossible to ignore, the Golden Sunshine Drip Celebration Cake brings warmth and joy to every special occasion. Smooth yellow buttercream, elegant comb-textured finishes, a rich chocolate ganache drip, delicate gold accents, and handcrafted buttercream swirls come together in a design that's both playful and sophisticated. Personalized with your own message, it's the perfect centerpiece for birthdays, graduations, congratulations, and celebrations filled with happiness.",
           "available": true,
@@ -650,231 +211,53 @@
           "bestSelling": false,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 1950,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Caster Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Dark Chocolate",
-            "Heavy Cream",
-            "Edible Gold Dragees",
-            "Blue Sugar Pearls",
-            "Yellow Food Coloring"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Dark Chocolate", "Heavy Cream", "Edible Gold Dragees", "Blue Sugar Pearls", "Yellow Food Coloring"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 8–10 people (1kg standard size)",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Birthday",
-            "Custom Name",
-            "Celebration"
-          ],
+          "occasionTags": ["Birthday", "Custom Name", "Celebration"],
           "rating": 4.8,
           "reviewCount": 19,
           "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 2–4 people)",
-              "price": 1150
-            },
-            {
-              "label": "0.75kg (Serves 5–7 people)",
-              "price": 1550
-            },
-            {
-              "label": "1kg (Serves 8–10 people)",
-              "price": 1950
-            },
-            {
-              "label": "1.25kg (Serves 11–14 people)",
-              "price": 2450
-            },
-            {
-              "label": "1.5kg (Serves 15–18 people)",
-              "price": 2950
-            },
-            {
-              "label": "1.75kg (Serves 19–22 people)",
-              "price": 3400
-            },
-            {
-              "label": "2kg (Serves 23–26 people)",
-              "price": 3900
-            },
-            {
-              "label": "2.25kg (Serves 27–30 people)",
-              "price": 4400
-            },
-            {
-              "label": "2.5kg (Serves 31–35 people)",
-              "price": 4900
-            },
-            {
-              "label": "3kg (Serves 36–42 people)",
-              "price": 5850
-            },
-            {
-              "label": "3.5kg (Serves 43–50 people)",
-              "price": 6850
-            },
-            {
-              "label": "4kg (Serves 51–60 people)",
-              "price": 7800
-            },
-            {
-              "label": "4.5kg (Serves 61–70 people)",
-              "price": 8800
-            },
-            {
-              "label": "5kg (Serves 71–85 people)",
-              "price": 9750
-            },
-            {
-              "label": "6kg+ (Serves 90–120 people)",
-              "price": 11700
-            }
-          ],
+          "sizes": [{ "label": "2kg (Serves 23–26 people)", "price": 5000 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 250
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 1000 }
           ],
           "extraImages": []
         },
         {
           "id": 119,
           "name": "Fairytale Princess Celebration Cake",
-          "price": 2100,
+          "price": 3000,
           "image": "/images/A19.jpg",
           "description": "Bring magical dreams to life with a celebration cake inspired by beloved fairytale adventures. Beautifully finished in soft lavender buttercream and decorated with shimmering gold accents, delicate sugar pearls, snowflake details, and enchanting character-themed toppers, this handcrafted creation captures the wonder of childhood celebrations. Perfect for princess birthdays and themed parties, every cake is customized to feature your child's favorite characters, colors, and personal message for a truly unforgettable day.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": true,
           "bestSelling": true,
-          "discountPercent": 0,
-          "onFlashSale": false,
-          "oldPrice": 2100,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Caster Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Dark Chocolate",
-            "Edible Gold Leaf",
-            "Sugar Pearls",
-            "Purple Food Coloring",
-            "Custom Paper Toppers"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "discountPercent": 12,
+          "onFlashSale": true,
+          "oldPrice": 3400,
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Dark Chocolate", "Edible Gold Leaf", "Sugar Pearls", "Purple Food Coloring", "Custom Paper Toppers"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 8–10 people (1kg standard size)",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Birthday",
-            "Fairytale Theme",
-            "Kids Party",
-            "Custom Name"
-          ],
+          "occasionTags": ["Birthday", "Fairytale Theme", "Kids Party", "Custom Name"],
           "rating": 4.9,
           "reviewCount": 24,
           "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 2–4 people)",
-              "price": 1250
-            },
-            {
-              "label": "0.75kg (Serves 5–7 people)",
-              "price": 1700
-            },
-            {
-              "label": "1kg (Serves 8–10 people)",
-              "price": 2100
-            },
-            {
-              "label": "1.25kg (Serves 11–14 people)",
-              "price": 2650
-            },
-            {
-              "label": "1.5kg (Serves 15–18 people)",
-              "price": 3150
-            },
-            {
-              "label": "1.75kg (Serves 19–22 people)",
-              "price": 3700
-            },
-            {
-              "label": "2kg (Serves 23–26 people)",
-              "price": 4200
-            },
-            {
-              "label": "2.25kg (Serves 27–30 people)",
-              "price": 4750
-            },
-            {
-              "label": "2.5kg (Serves 31–35 people)",
-              "price": 5250
-            },
-            {
-              "label": "3kg (Serves 36–42 people)",
-              "price": 6300
-            },
-            {
-              "label": "3.5kg (Serves 43–50 people)",
-              "price": 7350
-            },
-            {
-              "label": "4kg (Serves 51–60 people)",
-              "price": 8400
-            },
-            {
-              "label": "4.5kg (Serves 61–70 people)",
-              "price": 9450
-            },
-            {
-              "label": "5kg (Serves 71–85 people)",
-              "price": 10500
-            },
-            {
-              "label": "6kg+ (Serves 90–120 people)",
-              "price": 12600
-            }
-          ],
+          "sizes": [{ "label": "1kg (Serves 8–10 people)", "price": 3000 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 250
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 500 }
           ],
           "extraImages": []
         },
         {
           "id": 120,
           "name": "Butterfly Elegance Celebration Cake",
-          "price": 2000,
+          "price": 5000,
           "image": "/images/A20.jpg",
           "description": "Inspired by beauty, growth, and joyful new beginnings, the Butterfly Elegance Celebration Cake is designed to make every celebration feel extraordinary. Finished in smooth pastel pink buttercream with cascading handcrafted rosettes, graceful butterfly accents, shimmering gold leaf, and elegant decorative details, this sophisticated centerpiece is perfect for birthdays, bridal showers, anniversaries, baby showers, and milestone celebrations. Personalized to suit your occasion, it's crafted to leave a lasting impression.",
           "available": true,
@@ -883,116 +266,25 @@
           "bestSelling": false,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 2000,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Caster Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Dark Chocolate",
-            "Edible Gold Leaf",
-            "Gold Dragees",
-            "Pink Food Coloring",
-            "Butterfly Toppers",
-            "Acrylic Topper"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Dark Chocolate", "Edible Gold Leaf", "Gold Dragees", "Pink Food Coloring", "Butterfly Toppers", "Acrylic Topper"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 8–10 people (Tall 1kg format)",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Birthday",
-            "Custom Name",
-            "Milestone",
-            "Gift"
-          ],
+          "occasionTags": ["Birthday", "Custom Name", "Milestone", "Gift"],
           "rating": 4.9,
           "reviewCount": 21,
           "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 2–4 people)",
-              "price": 1200
-            },
-            {
-              "label": "0.75kg (Serves 5–7 people)",
-              "price": 1600
-            },
-            {
-              "label": "1kg (Serves 8–10 people)",
-              "price": 2000
-            },
-            {
-              "label": "1.25kg (Serves 11–14 people)",
-              "price": 2500
-            },
-            {
-              "label": "1.5kg (Serves 15–18 people)",
-              "price": 3000
-            },
-            {
-              "label": "1.75kg (Serves 19–22 people)",
-              "price": 3500
-            },
-            {
-              "label": "2kg (Serves 23–26 people)",
-              "price": 4000
-            },
-            {
-              "label": "2.25kg (Serves 27–30 people)",
-              "price": 4500
-            },
-            {
-              "label": "2.5kg (Serves 31–35 people)",
-              "price": 5000
-            },
-            {
-              "label": "3kg (Serves 36–42 people)",
-              "price": 6000
-            },
-            {
-              "label": "3.5kg (Serves 43–50 people)",
-              "price": 7000
-            },
-            {
-              "label": "4kg (Serves 51–60 people)",
-              "price": 8000
-            },
-            {
-              "label": "4.5kg (Serves 61–70 people)",
-              "price": 9000
-            },
-            {
-              "label": "5kg (Serves 71–85 people)",
-              "price": 10000
-            },
-            {
-              "label": "6kg+ (Serves 90–120 people)",
-              "price": 12000
-            }
-          ],
+          "sizes": [{ "label": "2kg (Serves 23–26 people)", "price": 5000 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 250
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 1000 }
           ],
           "extraImages": []
         },
         {
           "id": 121,
           "name": "Modern Luxe Celebration Cake",
-          "price": 2000,
+          "price": 2800,
           "image": "/images/A21.jpg",
           "description": "Bold, contemporary, and beautifully refined, the Modern Luxe Celebration Cake is designed for those who appreciate sophisticated style. Finished in smooth blush buttercream with an elegant chocolate drip, handcrafted rosette borders, luxurious gold detailing, and striking decorative spheres, this premium creation commands attention from every angle. Personalized with your own message, it's ideal for birthdays, engagements, milestone celebrations, and stylish gatherings where every detail matters.",
           "available": true,
@@ -1001,114 +293,25 @@
           "bestSelling": false,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 2000,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Caster Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Dark Chocolate",
-            "Edible Gold Leaf",
-            "Gold Dragees",
-            "Pink Food Coloring",
-            "Decorative Spheres"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Dark Chocolate", "Edible Gold Leaf", "Gold Dragees", "Pink Food Coloring", "Decorative Spheres"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 8–10 people (1kg standard size)",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Birthday",
-            "Custom Name",
-            "Celebration"
-          ],
+          "occasionTags": ["Birthday", "Custom Name", "Celebration"],
           "rating": 4.8,
           "reviewCount": 16,
           "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 2–4 people)",
-              "price": 1200
-            },
-            {
-              "label": "0.75kg (Serves 5–7 people)",
-              "price": 1600
-            },
-            {
-              "label": "1kg (Serves 8–10 people)",
-              "price": 2000
-            },
-            {
-              "label": "1.25kg (Serves 11–14 people)",
-              "price": 2500
-            },
-            {
-              "label": "1.5kg (Serves 15–18 people)",
-              "price": 3000
-            },
-            {
-              "label": "1.75kg (Serves 19–22 people)",
-              "price": 3500
-            },
-            {
-              "label": "2kg (Serves 23–26 people)",
-              "price": 4000
-            },
-            {
-              "label": "2.25kg (Serves 27–30 people)",
-              "price": 4500
-            },
-            {
-              "label": "2.5kg (Serves 31–35 people)",
-              "price": 5000
-            },
-            {
-              "label": "3kg (Serves 36–42 people)",
-              "price": 6000
-            },
-            {
-              "label": "3.5kg (Serves 43–50 people)",
-              "price": 7000
-            },
-            {
-              "label": "4kg (Serves 51–60 people)",
-              "price": 8000
-            },
-            {
-              "label": "4.5kg (Serves 61–70 people)",
-              "price": 9000
-            },
-            {
-              "label": "5kg (Serves 71–85 people)",
-              "price": 10000
-            },
-            {
-              "label": "6kg+ (Serves 90–120 people)",
-              "price": 12000
-            }
-          ],
+          "sizes": [{ "label": "1kg (Serves 8–10 people)", "price": 2800 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 250
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 250 }
           ],
           "extraImages": []
         },
         {
           "id": 122,
           "name": "Signature Football Fan Celebration Cake",
-          "price": 2000,
+          "price": 3000,
           "image": "/images/A22.jpg",
           "description": "Celebrate your love for football with a cake that's as passionate as the fans themselves. Designed with bold club-inspired colors, themed toppers, iconic football graphics, and premium handcrafted finishes, this celebration cake is made to bring excitement to birthdays, match-day parties, championship celebrations, and fan gatherings. Choose your favorite club, personalize the design, and let House of Jaby create a centerpiece worthy of every football celebration.",
           "available": true,
@@ -1117,112 +320,25 @@
           "bestSelling": false,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 2000,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Caster Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Red Food Coloring",
-            "Custom Printed Toppers and Logo"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Red Food Coloring", "Custom Printed Toppers and Logo"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 8–10 people (1kg standard size)",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Birthday",
-            "Football Fan",
-            "Football Club",
-            "Sports"
-          ],
+          "occasionTags": ["Birthday", "Football Fan", "Football Club", "Sports"],
           "rating": 4.9,
           "reviewCount": 18,
           "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 2–4 people)",
-              "price": 1200
-            },
-            {
-              "label": "0.75kg (Serves 5–7 people)",
-              "price": 1600
-            },
-            {
-              "label": "1kg (Serves 8–10 people)",
-              "price": 2000
-            },
-            {
-              "label": "1.25kg (Serves 11–14 people)",
-              "price": 2500
-            },
-            {
-              "label": "1.5kg (Serves 15–18 people)",
-              "price": 3000
-            },
-            {
-              "label": "1.75kg (Serves 19–22 people)",
-              "price": 3500
-            },
-            {
-              "label": "2kg (Serves 23–26 people)",
-              "price": 4000
-            },
-            {
-              "label": "2.25kg (Serves 27–30 people)",
-              "price": 4500
-            },
-            {
-              "label": "2.5kg (Serves 31–35 people)",
-              "price": 5000
-            },
-            {
-              "label": "3kg (Serves 36–42 people)",
-              "price": 6000
-            },
-            {
-              "label": "3.5kg (Serves 43–50 people)",
-              "price": 7000
-            },
-            {
-              "label": "4kg (Serves 51–60 people)",
-              "price": 8000
-            },
-            {
-              "label": "4.5kg (Serves 61–70 people)",
-              "price": 9000
-            },
-            {
-              "label": "5kg (Serves 71–85 people)",
-              "price": 10000
-            },
-            {
-              "label": "6kg+ (Serves 90–120 people)",
-              "price": 12000
-            }
-          ],
+          "sizes": [{ "label": "1kg (Serves 8–10 people)", "price": 3000 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 250
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 500 }
           ],
           "extraImages": []
         },
         {
           "id": 123,
           "name": "Personalized Photo Celebration Cake",
-          "price": 2100,
+          "price": 3000,
           "image": "/images/A23.jpg",
           "description": "The most meaningful celebrations are the ones that tell your story. Our Personalized Photo Celebration Cake transforms your favorite photograph into a beautifully crafted edible centerpiece, creating a celebration that's truly one of a kind. Finished in elegant light blue buttercream with subtle watercolor shading, handcrafted rosette borders, delicate pearl accents, and luxurious gold detailing, this cake is perfect for birthdays, anniversaries, graduations, family celebrations, and heartfelt surprises. Add your favorite photo and personalized message to create memories that last long after the final slice.",
           "available": true,
@@ -1231,115 +347,25 @@
           "bestSelling": false,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 2100,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Caster Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Blue Food Coloring",
-            "Edible Gold Leaf",
-            "Gold Dragees",
-            "Blue Sugar Pearls",
-            "Custom Edible Photo Print"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Blue Food Coloring", "Edible Gold Leaf", "Gold Dragees", "Blue Sugar Pearls", "Custom Edible Photo Print"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 8–10 people (1kg standard size)",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Birthday",
-            "Personalized Photo",
-            "Gift",
-            "Family"
-          ],
+          "occasionTags": ["Birthday", "Personalized Photo", "Gift", "Family"],
           "rating": 4.9,
           "reviewCount": 22,
           "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 2–4 people)",
-              "price": 1250
-            },
-            {
-              "label": "0.75kg (Serves 5–7 people)",
-              "price": 1700
-            },
-            {
-              "label": "1kg (Serves 8–10 people)",
-              "price": 2100
-            },
-            {
-              "label": "1.25kg (Serves 11–14 people)",
-              "price": 2650
-            },
-            {
-              "label": "1.5kg (Serves 15–18 people)",
-              "price": 3150
-            },
-            {
-              "label": "1.75kg (Serves 19–22 people)",
-              "price": 3700
-            },
-            {
-              "label": "2kg (Serves 23–26 people)",
-              "price": 4200
-            },
-            {
-              "label": "2.25kg (Serves 27–30 people)",
-              "price": 4750
-            },
-            {
-              "label": "2.5kg (Serves 31–35 people)",
-              "price": 5250
-            },
-            {
-              "label": "3kg (Serves 36–42 people)",
-              "price": 6300
-            },
-            {
-              "label": "3.5kg (Serves 43–50 people)",
-              "price": 7350
-            },
-            {
-              "label": "4kg (Serves 51–60 people)",
-              "price": 8400
-            },
-            {
-              "label": "4.5kg (Serves 61–70 people)",
-              "price": 9450
-            },
-            {
-              "label": "5kg (Serves 71–85 people)",
-              "price": 10500
-            },
-            {
-              "label": "6kg+ (Serves 90–120 people)",
-              "price": 12600
-            }
-          ],
+          "sizes": [{ "label": "2kg (Serves 23–26 people)", "price": 3000 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 250
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 1000 }
           ],
           "extraImages": []
         },
         {
           "id": 124,
           "name": "Heartfelt Message Celebration Cake",
-          "price": 1950,
+          "price": 1850,
           "image": "/images/A24.jpg",
           "description": "Some moments are too special for words alone. The Heartfelt Message Celebration Cake is designed to help you express love, appreciation, and meaningful emotions in the sweetest way possible. Beautifully finished in smooth white buttercream with luxurious edible gold leaf detailing, shimmering gold accents, and personalized message styling, this elegant creation transforms heartfelt words into unforgettable memories. Perfect for anniversaries, proposals, romantic surprises, appreciation gifts, or any occasion where your message deserves to be remembered.",
           "available": true,
@@ -1348,228 +374,53 @@
           "bestSelling": false,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 1950,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Caster Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Edible Gold Leaf",
-            "Gold Dragees",
-            "Yellow Coloring"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Edible Gold Leaf", "Gold Dragees", "Yellow Coloring"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 8–10 people (1kg standard size)",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Romance",
-            "Anniversary",
-            "Love",
-            "Special Message"
-          ],
+          "occasionTags": ["Romance", "Anniversary", "Love", "Special Message"],
           "rating": 5,
           "reviewCount": 27,
           "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 2–4 people)",
-              "price": 1150
-            },
-            {
-              "label": "0.75kg (Serves 5–7 people)",
-              "price": 1550
-            },
-            {
-              "label": "1kg (Serves 8–10 people)",
-              "price": 1950
-            },
-            {
-              "label": "1.25kg (Serves 11–14 people)",
-              "price": 2450
-            },
-            {
-              "label": "1.5kg (Serves 15–18 people)",
-              "price": 2950
-            },
-            {
-              "label": "1.75kg (Serves 19–22 people)",
-              "price": 3400
-            },
-            {
-              "label": "2kg (Serves 23–26 people)",
-              "price": 3900
-            },
-            {
-              "label": "2.25kg (Serves 27–30 people)",
-              "price": 4400
-            },
-            {
-              "label": "2.5kg (Serves 31–35 people)",
-              "price": 4900
-            },
-            {
-              "label": "3kg (Serves 36–42 people)",
-              "price": 5850
-            },
-            {
-              "label": "3.5kg (Serves 43–50 people)",
-              "price": 6850
-            },
-            {
-              "label": "4kg (Serves 51–60 people)",
-              "price": 7800
-            },
-            {
-              "label": "4.5kg (Serves 61–70 people)",
-              "price": 8800
-            },
-            {
-              "label": "5kg (Serves 71–85 people)",
-              "price": 9750
-            },
-            {
-              "label": "6kg+ (Serves 90–120 people)",
-              "price": 11700
-            }
-          ],
+          "sizes": [{ "label": "0.5kg (Serves 2–4 people)", "price": 1850 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 250
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 250 }
           ],
           "extraImages": []
         },
         {
           "id": 125,
           "name": "Elegant Congratulations Celebration Cake",
-          "price": 1950,
+          "price": 2500,
           "image": "/images/A25.jpg",
           "description": "Celebrate achievements with a cake that reflects the pride and joy of the moment. Beautifully handcrafted in smooth mocha buttercream and finished with delicate piped rosettes, subtle gold leaf accents, and elegant decorative details, this sophisticated creation is designed to honor milestones with style. Whether you're celebrating a graduation, promotion, ordination, retirement, business success, or personal achievement, every cake is personalized with your own congratulatory message to make the occasion truly memorable.",
           "available": true,
           "category": "Cakes",
           "jabysFavorite": false,
           "bestSelling": false,
-          "discountPercent": 0,
-          "onFlashSale": false,
-          "oldPrice": 1950,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Caster Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Dark Chocolate",
-            "Edible Gold Leaf",
-            "Gold Dragees"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "discountPercent": 14,
+          "onFlashSale": true,
+          "oldPrice": 2900,
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Dark Chocolate", "Edible Gold Leaf", "Gold Dragees"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 8–10 people (1kg standard size)",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Congratulations",
-            "Milestone",
-            "Achievement",
-            "Graduation"
-          ],
+          "occasionTags": ["Congratulations", "Milestone", "Achievement", "Graduation"],
           "rating": 4.9,
           "reviewCount": 15,
           "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 2–4 people)",
-              "price": 1150
-            },
-            {
-              "label": "0.75kg (Serves 5–7 people)",
-              "price": 1550
-            },
-            {
-              "label": "1kg (Serves 8–10 people)",
-              "price": 1950
-            },
-            {
-              "label": "1.25kg (Serves 11–14 people)",
-              "price": 2450
-            },
-            {
-              "label": "1.5kg (Serves 15–18 people)",
-              "price": 2950
-            },
-            {
-              "label": "1.75kg (Serves 19–22 people)",
-              "price": 3400
-            },
-            {
-              "label": "2kg (Serves 23–26 people)",
-              "price": 3900
-            },
-            {
-              "label": "2.25kg (Serves 27–30 people)",
-              "price": 4400
-            },
-            {
-              "label": "2.5kg (Serves 31–35 people)",
-              "price": 4900
-            },
-            {
-              "label": "3kg (Serves 36–42 people)",
-              "price": 5850
-            },
-            {
-              "label": "3.5kg (Serves 43–50 people)",
-              "price": 6850
-            },
-            {
-              "label": "4kg (Serves 51–60 people)",
-              "price": 7800
-            },
-            {
-              "label": "4.5kg (Serves 61–70 people)",
-              "price": 8800
-            },
-            {
-              "label": "5kg (Serves 71–85 people)",
-              "price": 9750
-            },
-            {
-              "label": "6kg+ (Serves 90–120 people)",
-              "price": 11700
-            }
-          ],
+          "sizes": [{ "label": "1kg (Serves 8–10 people)", "price": 2500 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 250
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 500 }
           ],
           "extraImages": []
         },
         {
           "id": 126,
           "name": "Love & Celebration Signature Cake",
-          "price": 2000,
+          "price": 3000,
           "image": "/images/A26.jpg",
           "description": "Celebrate love, laughter, and life's most treasured moments with a cake that radiates elegance from every angle. Finished in smooth white and blush buttercream, highlighted by a luxurious band of edible gold leaf, metallic decorative spheres, and graceful buttercream swirls, this handcrafted centerpiece is designed to capture attention and admiration. Whether it's a birthday, anniversary, engagement, bridal shower, or romantic celebration, every detail is personalized to tell your unique story—crafted beautifully, the Jaby way.",
           "available": true,
@@ -1578,115 +429,25 @@
           "bestSelling": false,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 2000,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Caster Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Edible Gold Leaf",
-            "Gold and Silver Sugar Pearls",
-            "Pink Food Coloring",
-            "Metallic Gold Spheres",
-            "Acrylic Topper"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Edible Gold Leaf", "Gold and Silver Sugar Pearls", "Pink Food Coloring", "Metallic Gold Spheres", "Acrylic Topper"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 8–10 people (1kg standard size)",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Birthday",
-            "Romance",
-            "Love",
-            "Anniversary"
-          ],
+          "occasionTags": ["Birthday", "Romance", "Love", "Anniversary"],
           "rating": 4.9,
           "reviewCount": 23,
           "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 2–4 people)",
-              "price": 1200
-            },
-            {
-              "label": "0.75kg (Serves 5–7 people)",
-              "price": 1600
-            },
-            {
-              "label": "1kg (Serves 8–10 people)",
-              "price": 2000
-            },
-            {
-              "label": "1.25kg (Serves 11–14 people)",
-              "price": 2500
-            },
-            {
-              "label": "1.5kg (Serves 15–18 people)",
-              "price": 3000
-            },
-            {
-              "label": "1.75kg (Serves 19–22 people)",
-              "price": 3500
-            },
-            {
-              "label": "2kg (Serves 23–26 people)",
-              "price": 4000
-            },
-            {
-              "label": "2.25kg (Serves 27–30 people)",
-              "price": 4500
-            },
-            {
-              "label": "2.5kg (Serves 31–35 people)",
-              "price": 5000
-            },
-            {
-              "label": "3kg (Serves 36–42 people)",
-              "price": 6000
-            },
-            {
-              "label": "3.5kg (Serves 43–50 people)",
-              "price": 7000
-            },
-            {
-              "label": "4kg (Serves 51–60 people)",
-              "price": 8000
-            },
-            {
-              "label": "4.5kg (Serves 61–70 people)",
-              "price": 9000
-            },
-            {
-              "label": "5kg (Serves 71–85 people)",
-              "price": 10000
-            },
-            {
-              "label": "6kg+ (Serves 90–120 people)",
-              "price": 12000
-            }
-          ],
+          "sizes": [{ "label": "2kg (Serves 23–26 people)", "price": 3000 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 250
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 1000 }
           ],
           "extraImages": []
         },
         {
           "id": 127,
           "name": "Lavender Milestone Celebration Cake",
-          "price": 1950,
+          "price": 2500,
           "image": "/images/A27.jpg",
           "description": "Every success deserves a celebration that feels just as special. This elegant lavender-inspired celebration cake combines soft buttercream finishes, handcrafted rosette details, shimmering silver pearls, and delicate gold accents to create a timeless expression of achievement. Ideal for graduations, promotions, appreciation ceremonies, church milestones, retirements, and personal accomplishments, each cake is customized with your own message, making every celebration uniquely meaningful.",
           "available": true,
@@ -1695,114 +456,25 @@
           "bestSelling": false,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 1950,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Caster Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Dark Chocolate",
-            "Edible Gold Leaf",
-            "Silver Sugar Pearls",
-            "Lavender Food Coloring"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Dark Chocolate", "Edible Gold Leaf", "Silver Sugar Pearls", "Lavender Food Coloring"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 8–10 people (1kg standard size)",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Congratulations",
-            "Milestone",
-            "Achievement",
-            "Graduation"
-          ],
+          "occasionTags": ["Congratulations", "Milestone", "Achievement", "Graduation"],
           "rating": 4.9,
           "reviewCount": 17,
           "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 2–4 people)",
-              "price": 1150
-            },
-            {
-              "label": "0.75kg (Serves 5–7 people)",
-              "price": 1550
-            },
-            {
-              "label": "1kg (Serves 8–10 people)",
-              "price": 1950
-            },
-            {
-              "label": "1.25kg (Serves 11–14 people)",
-              "price": 2450
-            },
-            {
-              "label": "1.5kg (Serves 15–18 people)",
-              "price": 2950
-            },
-            {
-              "label": "1.75kg (Serves 19–22 people)",
-              "price": 3400
-            },
-            {
-              "label": "2kg (Serves 23–26 people)",
-              "price": 3900
-            },
-            {
-              "label": "2.25kg (Serves 27–30 people)",
-              "price": 4400
-            },
-            {
-              "label": "2.5kg (Serves 31–35 people)",
-              "price": 4900
-            },
-            {
-              "label": "3kg (Serves 36–42 people)",
-              "price": 5850
-            },
-            {
-              "label": "3.5kg (Serves 43–50 people)",
-              "price": 6850
-            },
-            {
-              "label": "4kg (Serves 51–60 people)",
-              "price": 7800
-            },
-            {
-              "label": "4.5kg (Serves 61–70 people)",
-              "price": 8800
-            },
-            {
-              "label": "5kg (Serves 71–85 people)",
-              "price": 9750
-            },
-            {
-              "label": "6kg+ (Serves 90–120 people)",
-              "price": 11700
-            }
-          ],
+          "sizes": [{ "label": "1kg (Serves 8–10 people)", "price": 2500 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 250
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 500 }
           ],
           "extraImages": []
         },
         {
           "id": 128,
           "name": "Championship Football Celebration Cake",
-          "price": 2000,
+          "price": 3000,
           "image": "/images/A28.jpg",
           "description": "Bring the excitement of the stadium to your celebration with a cake inspired by the passion of football. Featuring club-themed decorations, premium handcrafted finishes, chocolate crumb detailing, football-inspired toppers, and personalized design elements, this celebration cake is created for fans who live and breathe the beautiful game. Whether you're celebrating a birthday, championship victory, tournament, or match-day gathering, every design is customized around your favorite club, colors, and message to create a winning centerpiece.",
           "available": true,
@@ -1811,113 +483,25 @@
           "bestSelling": false,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 2000,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Caster Sugar",
-            "Unsalted Butter",
-            "Whole Milk",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Chocolate Crumbs",
-            "Gold Dragees",
-            "Custom Printed Toppers and Stickers"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Chocolate Crumbs", "Gold Dragees", "Custom Printed Toppers and Stickers"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Serves 8–10 people (1kg standard size)",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Birthday",
-            "Football Fan",
-            "Football Club",
-            "Sports"
-          ],
+          "occasionTags": ["Birthday", "Football Fan", "Football Club", "Sports"],
           "rating": 4.9,
           "reviewCount": 19,
           "allowCustomMessage": true,
-          "sizes": [
-            {
-              "label": "0.5kg (Serves 2–4 people)",
-              "price": 1200
-            },
-            {
-              "label": "0.75kg (Serves 5–7 people)",
-              "price": 1600
-            },
-            {
-              "label": "1kg (Serves 8–10 people)",
-              "price": 2000
-            },
-            {
-              "label": "1.25kg (Serves 11–14 people)",
-              "price": 2500
-            },
-            {
-              "label": "1.5kg (Serves 15–18 people)",
-              "price": 3000
-            },
-            {
-              "label": "1.75kg (Serves 19–22 people)",
-              "price": 3500
-            },
-            {
-              "label": "2kg (Serves 23–26 people)",
-              "price": 4000
-            },
-            {
-              "label": "2.25kg (Serves 27–30 people)",
-              "price": 4500
-            },
-            {
-              "label": "2.5kg (Serves 31–35 people)",
-              "price": 5000
-            },
-            {
-              "label": "3kg (Serves 36–42 people)",
-              "price": 6000
-            },
-            {
-              "label": "3.5kg (Serves 43–50 people)",
-              "price": 7000
-            },
-            {
-              "label": "4kg (Serves 51–60 people)",
-              "price": 8000
-            },
-            {
-              "label": "4.5kg (Serves 61–70 people)",
-              "price": 9000
-            },
-            {
-              "label": "5kg (Serves 71–85 people)",
-              "price": 10000
-            },
-            {
-              "label": "6kg+ (Serves 90–120 people)",
-              "price": 12000
-            }
-          ],
+          "sizes": [{ "label": "1kg (Serves 8–10 people)", "price": 3000 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Special",
-              "priceAdd": 250
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 500 }
           ],
           "extraImages": []
         },
         {
           "id": 129,
           "name": "House of Jaby Signature Red Velvet Loaf Slices",
-          "price": 350,
+          "price": 100,
           "image": "/images/A29.jpg",
           "description": "Treat yourself to a moment of pure indulgence with our Signature Red Velvet Loaf Slices. Expertly handcrafted with the classic richness of authentic red velvet, a delicate hint of cocoa, and an irresistibly soft, velvety crumb, every slice delivers the perfect balance of flavor and comfort. Beautifully presented with an artistic cocoa dusting, this premium loaf is perfect for tea time, dessert, coffee breaks, or simply enjoying life's sweeter moments. Freshly baked and crafted with care, it's an everyday luxury you'll want to savor again and again.",
           "available": true,
@@ -1926,55 +510,22 @@
           "bestSelling": false,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 350,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Buttermilk",
-            "Cocoa Powder",
-            "Red Food Coloring",
-            "Vanilla Extract",
-            "Baking Powder",
-            "Sugar",
-            "Cocoa Dusting"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Buttermilk", "Cocoa Powder", "Red Food Coloring", "Vanilla Extract", "Baking Powder", "Sugar", "Cocoa Dusting"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Full loaf serves 6–8 slices",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Tea Time",
-            "Dessert",
-            "Gift",
-            "Everyday Treat"
-          ],
+          "occasionTags": ["Tea Time", "Dessert", "Gift", "Everyday Treat"],
           "rating": 4.8,
           "reviewCount": 0,
           "allowCustomMessage": false,
-          "sizes": [
-            {
-              "label": "Single Slice",
-              "price": 80
-            },
-            {
-              "label": "Half Loaf (4 slices)",
-              "price": 200
-            },
-            {
-              "label": "Full Loaf (8 slices)",
-              "price": 350
-            }
-          ],
+          "sizes": [{ "label": "Single Piece", "price": 100 }],
           "eggOptions": [],
           "extraImages": []
         },
         {
           "id": 130,
           "name": "House of Jaby Decadent Black Forest Loaf Slices",
-          "price": 350,
+          "price": 100,
           "image": "/images/A30.jpg",
           "description": "Rich, chocolatey, and irresistibly satisfying, our Decadent Black Forest Loaf Slices are crafted for true chocolate lovers. Made with a soft, moist Black Forest-inspired sponge and beautifully finished with an elegant cocoa dusting, every slice delivers deep cocoa flavor and comforting indulgence in every bite. Perfect for dessert, afternoon tea, coffee dates, office treats, or sharing with loved ones, this handcrafted loaf transforms ordinary moments into delicious memories.",
           "available": true,
@@ -1983,47 +534,15 @@
           "bestSelling": false,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 350,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Fresh Eggs",
-            "Cocoa Powder",
-            "Dark Chocolate",
-            "Whipped Cream",
-            "Sugar",
-            "Baking Powder",
-            "Cocoa Dusting"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Cocoa Powder", "Dark Chocolate", "Whipped Cream", "Sugar", "Baking Powder", "Cocoa Dusting"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Full loaf serves 6–8 slices",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Tea Time",
-            "Dessert",
-            "Gift",
-            "Everyday Treat"
-          ],
+          "occasionTags": ["Tea Time", "Dessert", "Gift", "Everyday Treat"],
           "rating": 4.8,
           "reviewCount": 0,
           "allowCustomMessage": false,
-          "sizes": [
-            {
-              "label": "Single Slice",
-              "price": 80
-            },
-            {
-              "label": "Half Loaf (4 slices)",
-              "price": 200
-            },
-            {
-              "label": "Full Loaf (8 slices)",
-              "price": 350
-            }
-          ],
+          "sizes": [{ "label": "Single Piece", "price": 100 }],
           "eggOptions": [],
           "extraImages": []
         }
@@ -2049,33 +568,17 @@
           "bestSelling": true,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 100,
-          "ingredients": [
-            "Fresh Cassava Root",
-            "Water",
-            "Salt"
-          ],
+          "ingredients": ["Fresh Cassava Root", "Water", "Salt"],
           "allergens": [],
           "servingInfo": "Serves 1–2 people per pack",
           "prepInfo": "Precooked fresh same-day",
-          "occasionTags": [
-            "Quick Snack",
-            "Traditional",
-            "Ready to Eat",
-            "Accompaniment"
-          ],
+          "occasionTags": ["Quick Snack", "Traditional", "Ready to Eat", "Accompaniment"],
           "rating": 4.6,
           "reviewCount": 15,
           "allowCustomMessage": false,
           "sizes": [
-            {
-              "label": "Standard Pack (Approx. 500g)",
-              "price": 100
-            },
-            {
-              "label": "Family Pack (Approx. 1kg)",
-              "price": 180
-            }
+            { "label": "Standard Pack (Approx. 500g)", "price": 100 },
+            { "label": "Family Pack (Approx. 1kg)", "price": 180 }
           ],
           "eggOptions": [],
           "extraImages": []
@@ -2092,44 +595,18 @@
           "bestSelling": true,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 150,
-          "ingredients": [
-            "Wheat Flour",
-            "Sugar",
-            "Yeast",
-            "Milk",
-            "Butter",
-            "A Pinch of Salt",
-            "Vegetable Oil for frying"
-          ],
-          "allergens": [
-            "Wheat",
-            "Dairy"
-          ],
+          "ingredients": ["Wheat Flour", "Sugar", "Yeast", "Milk", "Butter", "A Pinch of Salt", "Vegetable Oil for frying"],
+          "allergens": ["Wheat", "Dairy"],
           "servingInfo": "Pack of 10–12 pieces",
           "prepInfo": "Fried fresh same-day",
-          "occasionTags": [
-            "Breakfast",
-            "Tea Time",
-            "Quick Snack",
-            "Sweet Treats"
-          ],
+          "occasionTags": ["Breakfast", "Tea Time", "Quick Snack", "Sweet Treats"],
           "rating": 4.9,
           "reviewCount": 42,
           "allowCustomMessage": false,
           "sizes": [
-            {
-              "label": "Small Pack (6 pieces)",
-              "price": 100
-            },
-            {
-              "label": "Standard Pack (12 pieces)",
-              "price": 150
-            },
-            {
-              "label": "Sharing Tray Pack (25 pieces)",
-              "price": 300
-            }
+            { "label": "Small Pack (6 pieces)", "price": 100 },
+            { "label": "Standard Pack (12 pieces)", "price": 150 },
+            { "label": "Sharing Tray Pack (25 pieces)", "price": 300 }
           ],
           "eggOptions": [],
           "extraImages": []
@@ -2144,49 +621,23 @@
           "category": "Snacks",
           "jabysFavorite": true,
           "bestSelling": true,
-          "discountPercent": 14,
-          "onFlashSale": true,
-          "oldPrice": 350,
-          "ingredients": [
-            "All-Purpose Flour",
-            "Minced Beef or Lentils",
-            "Onions",
-            "Fresh Herbs & Spices",
-            "Vegetable Oil for frying"
-          ],
-          "allergens": [
-            "Wheat"
-          ],
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "ingredients": ["All-Purpose Flour", "Minced Beef or Lentils", "Onions", "Fresh Herbs & Spices", "Vegetable Oil for frying"],
+          "allergens": ["Wheat"],
           "servingInfo": "Pack of 5 pieces per tray",
           "prepInfo": "Fried fresh same-day (Pre-cooked)",
-          "occasionTags": [
-            "Party Appetizer",
-            "Snack",
-            "Quick Meal",
-            "Gatherings"
-          ],
+          "occasionTags": ["Party Appetizer", "Snack", "Quick Meal", "Gatherings"],
           "rating": 4.9,
           "reviewCount": 56,
           "allowCustomMessage": false,
           "sizes": [
-            {
-              "label": "Half Tray (5 pieces - Precooked)",
-              "price": 300
-            },
-            {
-              "label": "Full Tray (10 pieces - Precooked)",
-              "price": 550
-            },
-            {
-              "label": "Party Pack (20 pieces - Precooked)",
-              "price": 1050
-            }
+            { "label": "Half Tray (5 pieces - Precooked)", "price": 300 },
+            { "label": "Full Tray (10 pieces - Precooked)", "price": 550 },
+            { "label": "Party Pack (20 pieces - Precooked)", "price": 1050 }
           ],
           "eggOptions": [],
-          "extraImages": [
-            "/images/A10.jpg",
-            "/images/A10B.jpg"
-          ]
+          "extraImages": ["/images/A10.jpg", "/images/A10B.jpg"]
         },
         {
           "id": 113,
@@ -2200,51 +651,22 @@
           "bestSelling": true,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 150,
-          "ingredients": [
-            "Wheat Flour",
-            "Sugar",
-            "Coconut Milk",
-            "Cardamom",
-            "Yeast",
-            "A Pinch of Salt",
-            "Vegetable Oil for frying"
-          ],
-          "allergens": [
-            "Wheat"
-          ],
+          "ingredients": ["Wheat Flour", "Sugar", "Coconut Milk", "Cardamom", "Yeast", "A Pinch of Salt", "Vegetable Oil for frying"],
+          "allergens": ["Wheat"],
           "servingInfo": "Pack of 6–8 pieces (Ready to Eat)",
           "prepInfo": "Fried fresh same-day (Pre-cooked)",
-          "occasionTags": [
-            "Breakfast",
-            "Tea Time",
-            "Swahili Delicacy",
-            "Ready to Eat"
-          ],
+          "occasionTags": ["Breakfast", "Tea Time", "Swahili Delicacy", "Ready to Eat"],
           "rating": 4.9,
           "reviewCount": 48,
           "allowCustomMessage": false,
-          "sizes": [
-            {
-              "label": "Small Pack (4 pieces - Ready to Eat)",
-              "price": 100
-            },
-            {
-              "label": "Standard Pack (8 pieces - Ready to Eat)",
-              "price": 150
-            },
-            {
-              "label": "Family Sharing Pack (16 pieces - Ready to Eat)",
-              "price": 300
-            }
-          ],
+          "sizes": [{ "label": "10 Pieces", "price": 150 }],
           "eggOptions": [],
           "extraImages": []
         },
         {
           "id": 114,
           "name": "Ready-to-Fry Fresh Samosas",
-          "price": 550,
+          "price": 3000,
           "image": "/images/A14.jpg",
           "description": "Bring the irresistible aroma of freshly fried samosas into your own kitchen whenever you choose. Expertly handcrafted and carefully prepared, our Ready-to-Fry Fresh Samosas offer the perfect balance of convenience and quality. Simply fry to a crisp golden finish for family meals, parties, catering events, or unexpected guests. Freshly prepared today, ready whenever you are.",
           "available": true,
@@ -2253,41 +675,15 @@
           "bestSelling": true,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 550,
-          "ingredients": [
-            "All-Purpose Flour",
-            "Minced Beef or Lentils",
-            "Onions",
-            "Fresh Herbs & Spices"
-          ],
-          "allergens": [
-            "Wheat"
-          ],
+          "ingredients": ["All-Purpose Flour", "Minced Beef or Lentils", "Onions", "Fresh Herbs & Spices"],
+          "allergens": ["Wheat"],
           "servingInfo": "Bulk Pack (10-15 pieces) - Uncooked",
           "prepInfo": "Freshly folded, raw & uncooked",
-          "occasionTags": [
-            "Home Cooking",
-            "Freezer Friendly",
-            "Quick Prep",
-            "Snack"
-          ],
+          "occasionTags": ["Home Cooking", "Freezer Friendly", "Quick Prep", "Snack"],
           "rating": 4.9,
           "reviewCount": 27,
           "allowCustomMessage": false,
-          "sizes": [
-            {
-              "label": "Half Batch (10 pieces - Uncooked)",
-              "price": 300
-            },
-            {
-              "label": "Full Batch (20 pieces - Uncooked)",
-              "price": 550
-            },
-            {
-              "label": "Party Bulk Pack (40 pieces - Uncooked)",
-              "price": 1050
-            }
-          ],
+          "sizes": [{ "label": "60 Pieces", "price": 3000 }],
           "eggOptions": [],
           "extraImages": []
         },
@@ -2303,50 +699,21 @@
           "bestSelling": true,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 250,
-          "ingredients": [
-            "All-Purpose Wheat Flour",
-            "Fresh Eggs",
-            "Milk",
-            "Sugar",
-            "A Touch of Butter or Oil",
-            "A Pinch of Salt"
-          ],
-          "allergens": [
-            "Wheat",
-            "Dairy",
-            "Eggs"
-          ],
+          "ingredients": ["All-Purpose Wheat Flour", "Fresh Eggs", "Milk", "Sugar", "A Touch of Butter or Oil", "A Pinch of Salt"],
+          "allergens": ["Wheat", "Dairy", "Eggs"],
           "servingInfo": "Stack of 5-6 folded pieces (Ready to Eat)",
           "prepInfo": "Cooked fresh same-day (Pre-cooked)",
-          "occasionTags": [
-            "Breakfast",
-            "Tea Time",
-            "Brunch",
-            "Ready to Eat"
-          ],
+          "occasionTags": ["Breakfast", "Tea Time", "Brunch", "Ready to Eat"],
           "rating": 4.9,
           "reviewCount": 38,
           "allowCustomMessage": false,
           "sizes": [
-            {
-              "label": "Small Stack (3 pieces - Ready to Eat)",
-              "price": 150
-            },
-            {
-              "label": "Standard Stack (6 pieces - Ready to Eat)",
-              "price": 250
-            },
-            {
-              "label": "Family Sharing Pack (12 pieces - Ready to Eat)",
-              "price": 480
-            }
+            { "label": "Small Stack (3 pieces - Ready to Eat)", "price": 150 },
+            { "label": "Standard Stack (6 pieces - Ready to Eat)", "price": 250 },
+            { "label": "Family Sharing Pack (12 pieces - Ready to Eat)", "price": 480 }
           ],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 }
           ],
           "extraImages": []
         }
@@ -2372,118 +739,50 @@
           "bestSelling": false,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 450,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Unsalted Butter",
-            "Granulated Sugar",
-            "Fresh Eggs",
-            "Vanilla Extract",
-            "A Pinch of Salt"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Unsalted Butter", "Granulated Sugar", "Fresh Eggs", "Vanilla Extract", "A Pinch of Salt"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Pack of 20–25 pieces",
           "prepInfo": "Freshly baked to order",
-          "occasionTags": [
-            "Valentine's",
-            "Gift Box",
-            "Party Favors",
-            "Tea Time Snack"
-          ],
+          "occasionTags": ["Valentine's", "Gift Box", "Party Favors", "Tea Time Snack"],
           "rating": 4.9,
           "reviewCount": 18,
           "allowCustomMessage": false,
           "sizes": [
-            {
-              "label": "Small Gift Pack (12 pieces)",
-              "price": 300
-            },
-            {
-              "label": "Standard Pack (24 pieces)",
-              "price": 550
-            },
-            {
-              "label": "Family Sharing Box (50 pieces)",
-              "price": 1000
-            }
+            { "label": "Small Gift Pack (12 pieces)", "price": 300 },
+            { "label": "Standard Pack (24 pieces)", "price": 550 },
+            { "label": "Family Sharing Box (50 pieces)", "price": 1000 }
           ],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Option",
-              "priceAdd": 100
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Option", "priceAdd": 100 }
           ],
           "extraImages": []
         },
         {
           "id": 106,
           "name": "Assorted Celebration Cookies",
-          "price": 350,
+          "price": 300,
           "image": "/images/A06.jpg",
           "description": "Every box brings a little surprise. Our Assorted Celebration Cookies feature a delightful collection of beautifully baked shapes, including hearts, stars, circles, and other playful designs that make every bite a little more special. Freshly baked to a crisp golden finish and carefully packed for freshness, they're perfect for family gatherings, children's parties, office treats, gift hampers, lunchboxes, or simply sharing around the table. A colorful assortment made to spread smiles with every bite.",
           "available": true,
           "category": "Cookies",
           "jabysFavorite": false,
           "bestSelling": true,
-          "discountPercent": 0,
-          "onFlashSale": false,
+          "discountPercent": 14,
+          "onFlashSale": true,
           "oldPrice": 350,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Unsalted Butter",
-            "Granulated Sugar",
-            "Fresh Eggs",
-            "Vanilla Extract",
-            "Baking Powder",
-            "A Pinch of Salt"
-          ],
-          "allergens": [
-            "Wheat",
-            "Eggs",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Unsalted Butter", "Granulated Sugar", "Fresh Eggs", "Vanilla Extract", "Baking Powder", "A Pinch of Salt"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
           "servingInfo": "Pack of 15–20 pieces",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Kids Snacks",
-            "Tea Time",
-            "Party Pack",
-            "Everyday Treats"
-          ],
+          "occasionTags": ["Kids Snacks", "Tea Time", "Party Pack", "Everyday Treats"],
           "rating": 4.7,
           "reviewCount": 24,
           "allowCustomMessage": false,
-          "sizes": [
-            {
-              "label": "Small Snack Pack (Approx. 200g)",
-              "price": 200
-            },
-            {
-              "label": "Standard Tray Pack (Approx. 400g)",
-              "price": 350
-            },
-            {
-              "label": "Family Value Pack (Approx. 800g)",
-              "price": 650
-            }
-          ],
+          "sizes": [{ "label": "250g Pack", "price": 300 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            },
-            {
-              "label": "Eggless Option",
-              "priceAdd": 80
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Option", "priceAdd": 80 }
           ],
           "extraImages": []
         },
@@ -2499,48 +798,21 @@
           "bestSelling": false,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 300,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Unsalted Butter",
-            "Granulated Sugar",
-            "Vanilla Extract",
-            "A Pinch of Salt"
-          ],
-          "allergens": [
-            "Wheat",
-            "Dairy"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Unsalted Butter", "Granulated Sugar", "Vanilla Extract", "A Pinch of Salt"],
+          "allergens": ["Wheat", "Dairy"],
           "servingInfo": "Pack of 6–8 large cookies",
           "prepInfo": "Baked fresh same-day",
-          "occasionTags": [
-            "Tea Time",
-            "Snack",
-            "Gift Box",
-            "Everyday Treat"
-          ],
+          "occasionTags": ["Tea Time", "Snack", "Gift Box", "Everyday Treat"],
           "rating": 4.8,
           "reviewCount": 16,
           "allowCustomMessage": false,
           "sizes": [
-            {
-              "label": "Small Pack (4 pieces)",
-              "price": 180
-            },
-            {
-              "label": "Standard Pack (8 pieces)",
-              "price": 300
-            },
-            {
-              "label": "Family Sharing Pack (16 pieces)",
-              "price": 550
-            }
+            { "label": "Small Pack (4 pieces)", "price": 180 },
+            { "label": "Standard Pack (8 pieces)", "price": 300 },
+            { "label": "Family Sharing Pack (16 pieces)", "price": 550 }
           ],
           "eggOptions": [
-            {
-              "label": "Standard (Eggless Style)",
-              "priceAdd": 0
-            }
+            { "label": "Standard (Eggless Style)", "priceAdd": 0 }
           ],
           "extraImages": []
         }
@@ -2557,64 +829,28 @@
         {
           "id": 111,
           "name": "Signature Cinnamon Rolls",
-          "price": 600,
+          "price": 70,
           "image": "/images/A11.jpg",
           "description": "Soft, fluffy, and wonderfully indulgent, our Signature Cinnamon Rolls are handcrafted for those who appreciate the perfect balance of sweetness and comfort. Every roll is generously layered with rich cinnamon-sugar filling, baked until beautifully golden, and finished with a smooth, irresistible glaze that melts into every swirl. Perfect for breakfast, brunch, tea time, dessert, or sharing with loved ones, these freshly baked pastries are a comforting treat you'll want to enjoy again and again.",
           "available": true,
           "category": "Pastries",
           "jabysFavorite": true,
           "bestSelling": true,
-          "discountPercent": 12,
-          "onFlashSale": true,
-          "oldPrice": 680,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Yeast",
-            "Unsalted Butter",
-            "Milk",
-            "Brown Sugar",
-            "Ground Cinnamon",
-            "Eggs"
-          ],
-          "allergens": [
-            "Wheat",
-            "Dairy",
-            "Eggs"
-          ],
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "ingredients": ["Premium Wheat Flour", "Yeast", "Unsalted Butter", "Milk", "Brown Sugar", "Ground Cinnamon", "Eggs"],
+          "allergens": ["Wheat", "Dairy", "Eggs"],
           "servingInfo": "Tray of 20 pieces",
           "prepInfo": "Baked fresh same-day (Pre-cooked)",
-          "occasionTags": [
-            "Breakfast",
-            "Tea Time",
-            "Brunch",
-            "Sweet Treats"
-          ],
+          "occasionTags": ["Breakfast", "Tea Time", "Brunch", "Sweet Treats"],
           "rating": 4.9,
           "reviewCount": 31,
           "allowCustomMessage": false,
-          "sizes": [
-            {
-              "label": "Half Tray (10 pieces - Precooked)",
-              "price": 350
-            },
-            {
-              "label": "Full Tray (20 pieces - Precooked)",
-              "price": 600
-            },
-            {
-              "label": "Party Box (40 pieces - Precooked)",
-              "price": 1150
-            }
-          ],
+          "sizes": [{ "label": "Single Piece", "price": 70 }],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 }
           ],
-          "extraImages": [
-            "/images/A11B.jpg"
-          ]
+          "extraImages": ["/images/A11B.jpg"]
         },
         {
           "id": 112,
@@ -2628,57 +864,23 @@
           "bestSelling": true,
           "discountPercent": 0,
           "onFlashSale": false,
-          "oldPrice": 600,
-          "ingredients": [
-            "Premium Wheat Flour",
-            "Yeast",
-            "Unsalted Butter",
-            "Milk",
-            "Brown Sugar",
-            "Ground Cinnamon",
-            "Eggs"
-          ],
-          "allergens": [
-            "Wheat",
-            "Dairy",
-            "Eggs"
-          ],
+          "ingredients": ["Premium Wheat Flour", "Yeast", "Unsalted Butter", "Milk", "Brown Sugar", "Ground Cinnamon", "Eggs"],
+          "allergens": ["Wheat", "Dairy", "Eggs"],
           "servingInfo": "Tray of 20 pieces",
           "prepInfo": "Fully cooked & baked fresh same-day",
-          "occasionTags": [
-            "Breakfast",
-            "Tea Time",
-            "Brunch",
-            "Ready to Eat"
-          ],
+          "occasionTags": ["Breakfast", "Tea Time", "Brunch", "Ready to Eat"],
           "rating": 4.9,
           "reviewCount": 35,
           "allowCustomMessage": false,
           "sizes": [
-            {
-              "label": "Half Tray (10 pieces - Ready to Eat)",
-              "price": 350
-            },
-            {
-              "label": "Full Tray (20 pieces - Ready to Eat)",
-              "price": 600
-            },
-            {
-              "label": "Party Box (40 pieces - Ready to Eat)",
-              "price": 1150
-            }
+            { "label": "Half Tray (10 pieces - Ready to Eat)", "price": 350 },
+            { "label": "Full Tray (20 pieces - Ready to Eat)", "price": 600 },
+            { "label": "Party Box (40 pieces - Ready to Eat)", "price": 1150 }
           ],
           "eggOptions": [
-            {
-              "label": "Standard (Contains Eggs)",
-              "priceAdd": 0
-            }
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 }
           ],
-          "extraImages": [
-            "/images/A12.jpg",
-            "/images/A12B.jpg",
-            "/images/A12D.jpg"
-          ]
+          "extraImages": ["/images/A12.jpg", "/images/A12B.jpg", "/images/A12D.jpg"]
         }
       ],
       "icon": "bread",
@@ -2697,23 +899,13 @@
       "available": true,
       "jabysFavorite": false,
       "bestSelling": true,
-      "discountPercent": 10,
-      "ingredients": [
-        "Golden Sweet Dough Donuts",
-        "Crispy Golden Fried Samosas",
-        "Classic Swahili Mandazi"
-      ],
-      "allergens": [
-        "Wheat",
-        "Dairy"
-      ],
+      "discountPercent": 0,
+      "onFlashSale": false,
+      "ingredients": ["Golden Sweet Dough Donuts", "Crispy Golden Fried Samosas", "Classic Swahili Mandazi"],
+      "allergens": ["Wheat", "Dairy"],
       "servingInfo": "Serves 4–6 people",
       "prepInfo": "Prepared fresh same-day",
-      "occasionTags": [
-        "Party",
-        "Gathering",
-        "Tea Time"
-      ],
+      "occasionTags": ["Party", "Gathering", "Tea Time"],
       "rating": 4.7,
       "reviewCount": 12,
       "category": "Bundle",
@@ -2728,22 +920,13 @@
       "available": true,
       "jabysFavorite": false,
       "bestSelling": false,
-      "discountPercent": 10,
-      "ingredients": [
-        "Freshly Baked Golden Cinnamon Rolls",
-        "Soft Folded Golden Crepes"
-      ],
-      "allergens": [
-        "Wheat",
-        "Dairy",
-        "Eggs"
-      ],
+      "discountPercent": 0,
+      "onFlashSale": false,
+      "ingredients": ["Freshly Baked Golden Cinnamon Rolls", "Soft Folded Golden Crepes"],
+      "allergens": ["Wheat", "Dairy", "Eggs"],
       "servingInfo": "Serves 2–3 people",
       "prepInfo": "Prepared fresh same-day",
-      "occasionTags": [
-        "Breakfast",
-        "Brunch"
-      ],
+      "occasionTags": ["Breakfast", "Brunch"],
       "rating": 4.6,
       "reviewCount": 9,
       "category": "Bundle",
@@ -2758,23 +941,13 @@
       "available": true,
       "jabysFavorite": false,
       "bestSelling": false,
-      "discountPercent": 12,
-      "ingredients": [
-        "Buttery Flower-Shaped Shortbread Cookies",
-        "Freshly Baked Vanilla Cupcakes",
-        "Classic Swahili Mandazi"
-      ],
-      "allergens": [
-        "Wheat",
-        "Dairy",
-        "Eggs"
-      ],
+      "discountPercent": 0,
+      "onFlashSale": false,
+      "ingredients": ["Buttery Flower-Shaped Shortbread Cookies", "Freshly Baked Vanilla Cupcakes", "Classic Swahili Mandazi"],
+      "allergens": ["Wheat", "Dairy", "Eggs"],
       "servingInfo": "Serves 2–3 people",
       "prepInfo": "Prepared fresh same-day",
-      "occasionTags": [
-        "Gift Box",
-        "Snack"
-      ],
+      "occasionTags": ["Gift Box", "Snack"],
       "rating": 4.8,
       "reviewCount": 11,
       "category": "Bundle",
@@ -2783,26 +956,10 @@
   ],
   "upsell": [],
   "trustBar": [
-    {
-      "icon": "truck",
-      "title": "Fast Delivery",
-      "desc": "Nairobi Wide"
-    },
-    {
-      "icon": "shield",
-      "title": "Trusted Orders",
-      "desc": "Verified Daily"
-    },
-    {
-      "icon": "clock",
-      "title": "Made Fresh",
-      "desc": "Same Day"
-    },
-    {
-      "icon": "headset",
-      "title": "Always On",
-      "desc": "WhatsApp Ready"
-    }
+    { "icon": "truck", "title": "Fast Delivery", "desc": "Nairobi Wide" },
+    { "icon": "shield", "title": "Trusted Orders", "desc": "Verified Daily" },
+    { "icon": "clock", "title": "Made Fresh", "desc": "Same Day" },
+    { "icon": "headset", "title": "Always On", "desc": "WhatsApp Ready" }
   ],
   "announcement": {
     "active": true,
@@ -2824,87 +981,32 @@
     }
   },
   "faqs": [
-    {
-      "q": "How much notice do you need for custom cakes?",
-      "a": "Custom cakes need at least 24 hours notice. Standard cakes and bundles are baked fresh same-day."
-    },
-    {
-      "q": "Can I customize the flavor or size?",
-      "a": "Yes — message us on WhatsApp with your preferred flavor, size, and design and we'll confirm availability and pricing."
-    },
-    {
-      "q": "Do you deliver, or is it pickup only?",
-      "a": "We offer both. Delivery details and timing are confirmed directly over WhatsApp once your order is placed."
-    },
-    {
-      "q": "How should I store my order?",
-      "a": "Cakes and pastries are best enjoyed within 1–2 days. Keep cakes refrigerated if not eating the same day, and bring to room temperature before serving."
-    },
-    {
-      "q": "Do you cater for allergies or dietary needs?",
-      "a": "Check the allergen list on each product. For specific dietary needs (eggless, nut-free, etc.), message us on WhatsApp before ordering."
-    }
+    { "q": "How much notice do you need for custom cakes?", "a": "Custom cakes need at least 24 hours notice. Standard cakes and bundles are baked fresh same-day." },
+    { "q": "Can I customize the flavor or size?", "a": "Yes — message us on WhatsApp with your preferred flavor, size, and design and we'll confirm availability and pricing." },
+    { "q": "Do you deliver, or is it pickup only?", "a": "We offer both. Delivery details and timing are confirmed directly over WhatsApp once your order is placed." },
+    { "q": "How should I store my order?", "a": "Cakes and pastries are best enjoyed within 1–2 days. Keep cakes refrigerated if not eating the same day, and bring to room temperature before serving." },
+    { "q": "Do you cater for allergies or dietary needs?", "a": "Check the allergen list on each product. For specific dietary needs (eggless, nut-free, etc.), message us on WhatsApp before ordering." }
   ],
   "testimonials": {
     "Cakes": [
-      {
-        "name": "Wanjiru M.",
-        "text": "Ordered a birthday cake with one day's notice and it looked even better than the photo. Will definitely order again.",
-        "rating": 5
-      },
-      {
-        "name": "Brian K.",
-        "text": "Rich chocolate flavor, not overly sweet. Perfect size for our family gathering.",
-        "rating": 5
-      },
-      {
-        "name": "Amina S.",
-        "text": "The custom message on the cake came out exactly as I asked. Great communication on WhatsApp throughout.",
-        "rating": 4
-      }
+      { "name": "Wanjiru M.", "text": "Ordered a birthday cake with one day's notice and it looked even better than the photo. Will definitely order again.", "rating": 5 },
+      { "name": "Brian K.", "text": "Rich chocolate flavor, not overly sweet. Perfect size for our family gathering.", "rating": 5 },
+      { "name": "Amina S.", "text": "The custom message on the cake came out exactly as I asked. Great communication on WhatsApp throughout.", "rating": 4 }
     ],
     "Pastries": [
-      {
-        "name": "James M.",
-        "text": "Cinnamon rolls were soft and clearly baked that morning. Great with my coffee order.",
-        "rating": 5
-      },
-      {
-        "name": "Grace W.",
-        "text": "Ordered a mixed box for a work meeting, everyone asked where it was from.",
-        "rating": 4
-      }
+      { "name": "James M.", "text": "Cinnamon rolls were soft and clearly baked that morning. Great with my coffee order.", "rating": 5 },
+      { "name": "Grace W.", "text": "Ordered a mixed box for a work meeting, everyone asked where it was from.", "rating": 4 }
     ],
     "Snacks": [
-      {
-        "name": "Samuel K.",
-        "text": "The samosas were crispy and fresh, perfect for our gathering.",
-        "rating": 5
-      },
-      {
-        "name": "Lucy A.",
-        "text": "Mandazi tasted just like homemade. Will order again.",
-        "rating": 5
-      }
+      { "name": "Samuel K.", "text": "The samosas were crispy and fresh, perfect for our gathering.", "rating": 5 },
+      { "name": "Lucy A.", "text": "Mandazi tasted just like homemade. Will order again.", "rating": 5 }
     ],
     "Cookies": [
-      {
-        "name": "Njeri T.",
-        "text": "The heart-shaped cookies were a hit at the party, beautifully packaged too.",
-        "rating": 5
-      }
+      { "name": "Njeri T.", "text": "The heart-shaped cookies were a hit at the party, beautifully packaged too.", "rating": 5 }
     ],
     "Bundle": [
-      {
-        "name": "Kevin M.",
-        "text": "The tea-time pack was great value and saved me from ordering separately. Everything arrived together, still fresh.",
-        "rating": 5
-      },
-      {
-        "name": "Mary W.",
-        "text": "Got the breakfast combo for a weekend brunch — portions were generous.",
-        "rating": 5
-      }
+      { "name": "Kevin M.", "text": "The tea-time pack was great value and saved me from ordering separately. Everything arrived together, still fresh.", "rating": 5 },
+      { "name": "Mary W.", "text": "Got the breakfast combo for a weekend brunch — portions were generous.", "rating": 5 }
     ]
   },
   "bundlesCopy": {
