@@ -111,7 +111,7 @@
         {
           "id": 108,
           "name": "Signature Vanilla Cupcakes",
-          "price": 150,
+          "price": 250,
           "image": "/images/A08.jpg",
           "description": "Sometimes the simplest treats create the sweetest memories. Our Signature Vanilla Cupcakes are freshly baked to a light, fluffy texture with a beautifully golden finish, making them the perfect addition to birthdays, office celebrations, dessert tables, tea parties, or everyday indulgence. Prepared fresh and carefully packaged for quality and freshness, these delightful cupcakes are ideal for sharing with loved ones—or simply treating yourself to a well-deserved moment of sweetness.",
           "available": true,
@@ -128,12 +128,7 @@
           "rating": 4.8,
           "reviewCount": 14,
           "allowCustomMessage": false,
-          "sizes": [
-            { "label": "Single Piece", "price": 50 },
-            { "label": "Pack of 3", "price": 150 },
-            { "label": "Box of 6", "price": 300 },
-            { "label": "Box of 12", "price": 580 }
-          ],
+          "sizes": [{ "label": "Standard Pack", "price": 250 }],
           "eggOptions": [
             { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
             { "label": "Eggless Option", "priceAdd": 30 }
@@ -171,7 +166,7 @@
         {
           "id": 117,
           "name": "Signature Football Club Celebration Cake",
-          "price": 3800,
+          "price": 8000,
           "image": "/images/A17.jpg",
           "description": "Every football fan deserves a celebration worthy of their passion. This striking two-tier celebration cake is inspired by the excitement of the beautiful game, combining bold team colors, elegant chocolate drip detailing, premium decorative spheres, and custom football-themed toppers to create a showstopping centerpiece. Whether you're celebrating a birthday, match-day party, tournament victory, or your favorite club, every design is personalized with your preferred team, colors, and message—making every celebration uniquely yours.",
           "available": true,
@@ -188,11 +183,7 @@
           "rating": 5,
           "reviewCount": 14,
           "allowCustomMessage": true,
-          "sizes": [
-            { "label": "Two-Tier Standard (20–25 Servings)", "price": 3800 },
-            { "label": "Two-Tier Large (30–35 Servings)", "price": 5000 },
-            { "label": "Two-Tier XL (40–50 Servings)", "price": 6300 }
-          ],
+          "sizes": [{ "label": "Standard", "price": 8000 }],
           "eggOptions": [
             { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
             { "label": "Eggless Special", "priceAdd": 500 }
@@ -501,7 +492,7 @@
         {
           "id": 129,
           "name": "House of Jaby Signature Red Velvet Loaf Slices",
-          "price": 100,
+          "price": 300,
           "image": "/images/A29.jpg",
           "description": "Treat yourself to a moment of pure indulgence with our Signature Red Velvet Loaf Slices. Expertly handcrafted with the classic richness of authentic red velvet, a delicate hint of cocoa, and an irresistibly soft, velvety crumb, every slice delivers the perfect balance of flavor and comfort. Beautifully presented with an artistic cocoa dusting, this premium loaf is perfect for tea time, dessert, coffee breaks, or simply enjoying life's sweeter moments. Freshly baked and crafted with care, it's an everyday luxury you'll want to savor again and again.",
           "available": true,
@@ -518,14 +509,14 @@
           "rating": 4.8,
           "reviewCount": 0,
           "allowCustomMessage": false,
-          "sizes": [{ "label": "Single Piece", "price": 100 }],
+          "sizes": [{ "label": "Single Piece", "price": 300 }],
           "eggOptions": [],
           "extraImages": []
         },
         {
           "id": 130,
           "name": "House of Jaby Decadent Black Forest Loaf Slices",
-          "price": 100,
+          "price": 300,
           "image": "/images/A30.jpg",
           "description": "Rich, chocolatey, and irresistibly satisfying, our Decadent Black Forest Loaf Slices are crafted for true chocolate lovers. Made with a soft, moist Black Forest-inspired sponge and beautifully finished with an elegant cocoa dusting, every slice delivers deep cocoa flavor and comforting indulgence in every bite. Perfect for dessert, afternoon tea, coffee dates, office treats, or sharing with loved ones, this handcrafted loaf transforms ordinary moments into delicious memories.",
           "available": true,
@@ -542,7 +533,7 @@
           "rating": 4.8,
           "reviewCount": 0,
           "allowCustomMessage": false,
-          "sizes": [{ "label": "Single Piece", "price": 100 }],
+          "sizes": [{ "label": "Single Piece", "price": 300 }],
           "eggOptions": [],
           "extraImages": []
         }
@@ -855,7 +846,7 @@
         {
           "id": 112,
           "name": "Golden Oven-Fresh Cinnamon Rolls",
-          "price": 600,
+          "price": 750,
           "image": "/images/A12C.jpg",
           "description": "There's something magical about the aroma of freshly baked cinnamon rolls. Our Golden Oven-Fresh Cinnamon Rolls are baked to a beautiful golden finish with soft, pillowy layers wrapped around a rich cinnamon-sugar filling, creating a warm and satisfying treat in every bite. Ready to enjoy and crafted for convenience, they're perfect for breakfast, afternoon tea, office meetings, family gatherings, or simply rewarding yourself with a little everyday indulgence. Freshly baked, beautifully prepared, and always made to brighten your day.",
           "available": true,
@@ -872,11 +863,7 @@
           "rating": 4.9,
           "reviewCount": 35,
           "allowCustomMessage": false,
-          "sizes": [
-            { "label": "Half Tray (10 pieces - Ready to Eat)", "price": 350 },
-            { "label": "Full Tray (20 pieces - Ready to Eat)", "price": 600 },
-            { "label": "Party Box (40 pieces - Ready to Eat)", "price": 1150 }
-          ],
+          "sizes": [{ "label": "10 Pieces", "price": 750 }],
           "eggOptions": [
             { "label": "Standard (Contains Eggs)", "priceAdd": 0 }
           ],
@@ -935,7 +922,7 @@
     {
       "id": 503,
       "name": "Sweet Moments Treat Box",
-      "price": 750,
+      "price": 1000,
       "image": "/images/bundle-sweet-moments-treat-box.jpg",
       "description": "Created for those who believe every celebration deserves something sweet, the Sweet Moments Treat Box combines buttery artisan cookies, freshly baked vanilla cupcakes, and soft, comforting Swahili mandazi in one delightful collection. Perfect for birthdays, thoughtful gifts, family visits, office celebrations, dessert tables, or simply sharing with loved ones, it's a carefully curated box designed to spread joy with every bite.",
       "available": true,
