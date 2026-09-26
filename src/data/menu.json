@@ -536,6 +536,84 @@
           "sizes": [{ "label": "Single Piece", "price": 300 }],
           "eggOptions": [],
           "extraImages": []
+        },
+        {
+          "id": 132,
+          "name": "Pistachio Dream Celebration Cake",
+          "price": 0,
+          "image": "/images/A32.jpg",
+          "description": "Soft, elegant, and beautifully modern, the Pistachio Dream Celebration Cake pairs a smooth pistachio-green buttercream finish with a rich chocolate ganache drip for a striking contrast of color and texture. Finished with decorative gold and black ring accents, shimmering gold leaf flakes, and delicate gold pearl detailing, this handcrafted centerpiece is personalized with your own message on an edible plaque. Perfect for birthdays, family celebrations, cousin reunions, or any gathering that calls for something a little different, it's crafted to reflect your unique story—the Jaby way.",
+          "available": true,
+          "category": "Cakes",
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Dark Chocolate", "Heavy Cream", "Green Food Coloring", "Edible Gold Leaf", "Fondant Ring Toppers", "Custom Printed Edible Plaque"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
+          "servingInfo": "Serves 8–10 people (1kg standard size)",
+          "prepInfo": "Baked fresh same-day",
+          "occasionTags": ["Birthday", "Family Celebration", "Custom Message", "Milestone"],
+          "rating": 4.8,
+          "reviewCount": 0,
+          "allowCustomMessage": true,
+          "sizes": [{ "label": "1kg (Serves 8–10 people)", "price": 0 }],
+          "eggOptions": [
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 0 }
+          ],
+          "extraImages": []
+        },
+        {
+          "id": 133,
+          "name": "House of Jaby Classic Vanilla Butter Loaf Slices",
+          "price": 0,
+          "image": "/images/A33.jpg",
+          "description": "Simple, comforting, and beautifully baked, our Classic Vanilla Butter Loaf Slices celebrate the timeless taste of a good old-fashioned pound cake. Rich with butter and a warm golden crust, every slice delivers a soft, moist crumb and a gentle hint of vanilla in every bite. Perfect for tea time, dessert, coffee breaks, or an everyday treat, this handcrafted loaf brings comforting, homemade goodness to any moment.",
+          "available": true,
+          "category": "Cakes",
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Unsalted Butter", "Sugar", "Vanilla Extract", "Baking Powder", "Milk"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
+          "servingInfo": "Full loaf serves 6–8 slices",
+          "prepInfo": "Baked fresh same-day",
+          "occasionTags": ["Tea Time", "Dessert", "Gift", "Everyday Treat"],
+          "rating": 4.8,
+          "reviewCount": 0,
+          "allowCustomMessage": false,
+          "sizes": [{ "label": "Single Piece", "price": 0 }],
+          "eggOptions": [],
+          "extraImages": []
+        },
+        {
+          "id": 134,
+          "name": "Golden Butterfly Two-Tier Celebration Cake",
+          "price": 0,
+          "image": "/images/A34.jpg",
+          "description": "Bold, glamorous, and truly show-stopping, the Golden Butterfly Two-Tier Celebration Cake is designed for celebrations that deserve a grand centerpiece. A textured white buttercream top tier flows into a striking matte black bottom tier, joined by a dramatic cascade of edible gold leaf. Finished with shimmering gold glitter spheres, elegant gold butterfly toppers, and gold splatter detailing, this handcrafted creation is personalized with your own message for a truly unforgettable birthday or milestone celebration.",
+          "available": true,
+          "category": "Cakes",
+          "jabysFavorite": true,
+          "bestSelling": false,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Black Food Coloring", "Edible Gold Leaf", "Gold Glitter Spheres", "Metallic Gold Dragees", "Gold Butterfly Toppers", "Custom Printed Edible Plaque"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
+          "servingInfo": "Two-tier, serves 30–40 people",
+          "prepInfo": "Baked fresh same-day",
+          "occasionTags": ["Birthday", "Milestone", "Two-Tier", "Custom Name"],
+          "rating": 5,
+          "reviewCount": 0,
+          "allowCustomMessage": true,
+          "sizes": [{ "label": "Two-Tier (Serves 30–40 people)", "price": 0 }],
+          "eggOptions": [
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 0 }
+          ],
+          "extraImages": []
         }
       ],
       "icon": "cake",
@@ -707,6 +785,58 @@
             { "label": "Standard (Contains Eggs)", "priceAdd": 0 }
           ],
           "extraImages": []
+        },
+        {
+          "id": 135,
+          "name": "Signature Beef Empanadas",
+          "price": 0,
+          "image": "/images/A35.jpg",
+          "description": "Golden, flaky, and generously filled, our Signature Beef Empanadas bring a delicious twist to your snack table. Handcrafted with a beautifully baked, crimped pastry shell and packed with a savory blend of seasoned minced beef and vegetables, every bite delivers comforting, hearty flavor. Perfect for parties, family gatherings, packed lunches, or a satisfying snack on the go, these baked pastries are freshly prepared to be enjoyed warm or at room temperature.",
+          "available": true,
+          "category": "Snacks",
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "ingredients": ["All-Purpose Flour", "Minced Beef", "Carrots", "Onions", "Fresh Herbs & Spices", "Butter", "Fresh Eggs"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
+          "servingInfo": "Pack of 5 pieces per tray",
+          "prepInfo": "Baked fresh same-day (Pre-cooked)",
+          "occasionTags": ["Party Appetizer", "Snack", "Quick Meal", "Gatherings"],
+          "rating": 4.8,
+          "reviewCount": 0,
+          "allowCustomMessage": false,
+          "sizes": [
+            { "label": "Half Tray (5 pieces - Precooked)", "price": 0 },
+            { "label": "Full Tray (10 pieces - Precooked)", "price": 0 },
+            { "label": "Party Pack (20 pieces - Precooked)", "price": 0 }
+          ],
+          "eggOptions": [],
+          "extraImages": []
+        },
+        {
+          "id": 137,
+          "name": "Soft Homemade Chapati",
+          "price": 0,
+          "image": "/images/A37.jpg",
+          "description": "Soft, layered, and beautifully golden, our Homemade Chapati is prepared fresh using traditional methods for that authentic, comforting taste. Each one is carefully hand-rolled and cooked to a warm, flaky finish, perfect for pairing with stews, curries, tea, or enjoying on its own. A firm favorite for family meals, gatherings, and everyday dining, our chapati brings the wholesome taste of home to your table.",
+          "available": true,
+          "category": "Snacks",
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "ingredients": ["Wheat Flour", "Water", "Vegetable Oil", "A Pinch of Salt"],
+          "allergens": ["Wheat"],
+          "servingInfo": "Pack of 5–6 pieces",
+          "prepInfo": "Freshly cooked same-day",
+          "occasionTags": ["Family Meal", "Everyday Meal", "Traditional", "Ready to Eat"],
+          "rating": 4.8,
+          "reviewCount": 0,
+          "allowCustomMessage": false,
+          "sizes": [{ "label": "Pack of 6 Pieces", "price": 0 }],
+          "eggOptions": [],
+          "extraImages": []
         }
       ],
       "icon": "snack",
@@ -806,6 +936,33 @@
             { "label": "Standard (Eggless Style)", "priceAdd": 0 }
           ],
           "extraImages": []
+        },
+        {
+          "id": 131,
+          "name": "Signature Black Sesame Butter Cookies",
+          "price": 0,
+          "image": "/images/A31.jpg",
+          "description": "Rich, buttery, and beautifully rustic, our Signature Black Sesame Butter Cookies are handcrafted with a golden-baked finish and generously flecked with aromatic black sesame seeds. Each cookie is brushed to a warm, glossy shine and baked until perfectly firm on the outside with a soft, crumbly bite within. A wonderful pairing for tea or coffee, and a delicious addition to any snack table, gift box, or everyday treat.",
+          "available": true,
+          "category": "Cookies",
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "ingredients": ["Premium Wheat Flour", "Unsalted Butter", "Granulated Sugar", "Fresh Eggs", "Black Sesame Seeds", "A Pinch of Salt"],
+          "allergens": ["Wheat", "Eggs", "Dairy", "Sesame"],
+          "servingInfo": "Pack of 15–20 pieces",
+          "prepInfo": "Freshly baked to order",
+          "occasionTags": ["Tea Time", "Gift Box", "Everyday Treat", "Snack"],
+          "rating": 4.8,
+          "reviewCount": 0,
+          "allowCustomMessage": false,
+          "sizes": [{ "label": "Standard Pack", "price": 0 }],
+          "eggOptions": [
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Option", "priceAdd": 0 }
+          ],
+          "extraImages": []
         }
       ],
       "icon": "cookie",
@@ -821,7 +978,7 @@
           "id": 111,
           "name": "Signature Cinnamon Rolls",
           "price": 70,
-          "image": "/images/A11.jpg",
+          "image": "/images/A38.jpg",
           "description": "Soft, fluffy, and wonderfully indulgent, our Signature Cinnamon Rolls are handcrafted for those who appreciate the perfect balance of sweetness and comfort. Every roll is generously layered with rich cinnamon-sugar filling, baked until beautifully golden, and finished with a smooth, irresistible glaze that melts into every swirl. Perfect for breakfast, brunch, tea time, dessert, or sharing with loved ones, these freshly baked pastries are a comforting treat you'll want to enjoy again and again.",
           "available": true,
           "category": "Pastries",
@@ -841,7 +998,7 @@
           "eggOptions": [
             { "label": "Standard (Contains Eggs)", "priceAdd": 0 }
           ],
-          "extraImages": ["/images/A11B.jpg"]
+          "extraImages": ["/images/A11.jpg", "/images/A11B.jpg"]
         },
         {
           "id": 112,
@@ -868,6 +1025,35 @@
             { "label": "Standard (Contains Eggs)", "priceAdd": 0 }
           ],
           "extraImages": ["/images/A12.jpg", "/images/A12B.jpg", "/images/A12D.jpg"]
+        },
+        {
+          "id": 136,
+          "name": "House of Jaby Butter Croissants",
+          "price": 0,
+          "image": "/images/A36.jpg",
+          "description": "Golden, flaky, and beautifully glossy, our House of Jaby Butter Croissants are handcrafted to deliver the perfect balance of a crisp exterior and a soft, buttery interior. Baked fresh to a rich golden finish with an irresistible egg-wash sheen, these classic crescent rolls are ideal for breakfast, brunch, tea time, or a satisfying snack alongside your favorite coffee or tea. Freshly baked and ready to enjoy, they bring simple, comforting indulgence to any part of the day.",
+          "available": true,
+          "category": "Pastries",
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "ingredients": ["Premium Wheat Flour", "Unsalted Butter", "Yeast", "Milk", "Sugar", "Fresh Eggs", "A Pinch of Salt"],
+          "allergens": ["Wheat", "Dairy", "Eggs"],
+          "servingInfo": "Tray of 12–15 pieces",
+          "prepInfo": "Baked fresh same-day",
+          "occasionTags": ["Breakfast", "Tea Time", "Brunch", "Ready to Eat"],
+          "rating": 4.9,
+          "reviewCount": 0,
+          "allowCustomMessage": false,
+          "sizes": [
+            { "label": "Single Piece", "price": 0 },
+            { "label": "Pack of 6", "price": 0 }
+          ],
+          "eggOptions": [
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 }
+          ],
+          "extraImages": []
         }
       ],
       "icon": "bread",
