@@ -979,7 +979,7 @@
           "name": "Signature Cinnamon Rolls",
           "price": 70,
           "image": "/images/A38.jpg",
-          "description": "Soft, fluffy, and wonderfully indulgent, our Signature Cinnamon Rolls are handcrafted for those who appreciate the perfect balance of sweetness and comfort. Every roll is generously layered with rich cinnamon-sugar filling, baked until beautifully golden, and finished with a smooth, irresistible glaze that melts into every swirl. Perfect for breakfast, brunch, tea time, dessert, or sharing with loved ones, these freshly baked pastries are a comforting treat you'll want to enjoy again and again.",
+          "description": "Soft, fluffy, and wonderfully indulgent, our Signature Cinnamon Rolls are handcrafted for those who appreciate the perfect balance of sweetness and comfort. Every roll is generously layered with rich cinnamon-sugar filling, baked until beautifully golden, and finished with a smooth, irresistible glaze that melts into every swirl. Perfect for breakfast, brunch, tea time, dessert, or sharing with loved ones, these freshly baked pastries are a comforting treat you'll want to enjoy again and again. Available as a single piece or in convenient trays for sharing.",
           "available": true,
           "category": "Pastries",
           "jabysFavorite": true,
@@ -989,42 +989,19 @@
           "ingredients": ["Premium Wheat Flour", "Yeast", "Unsalted Butter", "Milk", "Brown Sugar", "Ground Cinnamon", "Eggs"],
           "allergens": ["Wheat", "Dairy", "Eggs"],
           "servingInfo": "Tray of 20 pieces",
-          "prepInfo": "Baked fresh same-day (Pre-cooked)",
+          "prepInfo": "Baked fresh same-day",
           "occasionTags": ["Breakfast", "Tea Time", "Brunch", "Sweet Treats"],
           "rating": 4.9,
-          "reviewCount": 31,
+          "reviewCount": 66,
           "allowCustomMessage": false,
-          "sizes": [{ "label": "Single Piece", "price": 70 }],
+          "sizes": [
+            { "label": "Single Piece", "price": 70 },
+            { "label": "10 Pieces", "price": 750 }
+          ],
           "eggOptions": [
             { "label": "Standard (Contains Eggs)", "priceAdd": 0 }
           ],
-          "extraImages": ["/images/A11.jpg", "/images/A11B.jpg"]
-        },
-        {
-          "id": 112,
-          "name": "Golden Oven-Fresh Cinnamon Rolls",
-          "price": 750,
-          "image": "/images/A12C.jpg",
-          "description": "There's something magical about the aroma of freshly baked cinnamon rolls. Our Golden Oven-Fresh Cinnamon Rolls are baked to a beautiful golden finish with soft, pillowy layers wrapped around a rich cinnamon-sugar filling, creating a warm and satisfying treat in every bite. Ready to enjoy and crafted for convenience, they're perfect for breakfast, afternoon tea, office meetings, family gatherings, or simply rewarding yourself with a little everyday indulgence. Freshly baked, beautifully prepared, and always made to brighten your day.",
-          "available": true,
-          "category": "Pastries",
-          "jabysFavorite": true,
-          "bestSelling": true,
-          "discountPercent": 0,
-          "onFlashSale": false,
-          "ingredients": ["Premium Wheat Flour", "Yeast", "Unsalted Butter", "Milk", "Brown Sugar", "Ground Cinnamon", "Eggs"],
-          "allergens": ["Wheat", "Dairy", "Eggs"],
-          "servingInfo": "Tray of 20 pieces",
-          "prepInfo": "Fully cooked & baked fresh same-day",
-          "occasionTags": ["Breakfast", "Tea Time", "Brunch", "Ready to Eat"],
-          "rating": 4.9,
-          "reviewCount": 35,
-          "allowCustomMessage": false,
-          "sizes": [{ "label": "10 Pieces", "price": 750 }],
-          "eggOptions": [
-            { "label": "Standard (Contains Eggs)", "priceAdd": 0 }
-          ],
-          "extraImages": ["/images/A12.jpg", "/images/A12B.jpg", "/images/A12D.jpg"]
+          "extraImages": ["/images/A11.jpg", "/images/A11B.jpg", "/images/A12.jpg", "/images/A12B.jpg", "/images/A12C.jpg", "/images/A12D.jpg"]
         },
         {
           "id": 136,
