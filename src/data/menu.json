@@ -1184,10 +1184,10 @@
   ],
   "upsell": [],
   "trustBar": [
-    { "icon": "truck", "title": "Fast Delivery", "desc": "Nairobi Wide" },
-    { "icon": "shield", "title": "Trusted Orders", "desc": "Verified Daily" },
-    { "icon": "clock", "title": "Made Fresh", "desc": "Same Day" },
-    { "icon": "headset", "title": "Always On", "desc": "WhatsApp Ready" }
+    { "icon": "truck", "title": "Delivery", "desc": "Arranged on WhatsApp" },
+    { "icon": "shield", "title": "Nationwide Orders", "desc": "Across Kenya" },
+    { "icon": "clock", "title": "Made Fresh", "desc": "To Order" },
+    { "icon": "headset", "title": "Easy Ordering", "desc": "Order on WhatsApp" }
   ],
   "announcement": {
     "active": true,
@@ -1196,7 +1196,7 @@
   "ui": {
     "viewAllText": "View All",
     "bestSellersTitle": "Best Sellers",
-    "bestSellersBadge": "Top Rated",
+    "bestSellersBadge": "Best Selling",
     "favoritesTitle": "Jaby's Favorites",
     "favoritesBadge": "Staff Picks",
     "bundlesTitle": "Special Bundles",
