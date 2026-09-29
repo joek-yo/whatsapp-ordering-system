@@ -2,7 +2,7 @@
 
 import React from "react";
 import { getBusinessData } from "@/lib/getBusinessData";
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   const business = getBusinessData();
@@ -39,8 +39,8 @@ const Footer: React.FC = () => {
         <div className="flex flex-col items-center md:items-end">
           <span className="text-[10px] font-black uppercase tracking-[0.2em] mb-3 text-foreground">Connect With Us</span>
           <div className="flex space-x-3 mb-1">
-            <a href="#" className="bg-surface border border-border p-2.5 rounded-lg text-subtext hover:text-green hover:border-green transition"><FaFacebookF size={16} /></a>
-            <a href="#" className="bg-surface border border-border p-2.5 rounded-lg text-subtext hover:text-green hover:border-green transition"><FaInstagram size={16} /></a>
+            <a href="https://www.instagram.com/HouseofJaby" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="bg-surface border border-border p-2.5 rounded-lg text-subtext hover:text-green hover:border-green transition"><FaInstagram size={16} /></a>
+            <a href="https://www.tiktok.com/@HouseofJaby" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="bg-surface border border-border p-2.5 rounded-lg text-subtext hover:text-green hover:border-green transition"><FaTiktok size={16} /></a>
             <a href={`https://wa.me/${business.phone}`} className="bg-surface border border-border p-2.5 rounded-lg text-subtext hover:text-green hover:border-green transition"><FaWhatsapp size={16} /></a>
           </div>
         </div>
