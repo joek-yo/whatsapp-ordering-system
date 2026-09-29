@@ -35,6 +35,15 @@ const MiniCartDrawer: React.FC = () => {
     }
   }, [isDrawerOpen, hovering, isMobile, toggleDrawer]);
 
+  useEffect(() => {
+    if (!isDrawerOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") toggleDrawer(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [isDrawerOpen, toggleDrawer]);
+
   const handleViewCart = () => {
     setViewClicked(true);
     toggleDrawer(false);
@@ -109,7 +118,12 @@ const MiniCartDrawer: React.FC = () => {
 
               <div className="flex-1 overflow-y-auto p-6 space-y-5">
                 {cart.length === 0 ? (
-                  <p className="text-subtext text-center text-sm py-12">Your cart is empty.</p>
+                  <div className="py-12 text-center space-y-5">
+                    <p className="text-subtext text-sm">Your cart is empty.</p>
+                    <Button onClick={() => toggleDrawer(false)} variant="primary" size="md">
+                      Continue Shopping
+                    </Button>
+                  </div>
                 ) : (
                   cart.map((item) => {
                     const itemKey = String(item.id) + "-" + (item.variantKey || "base");
