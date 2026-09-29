@@ -95,8 +95,14 @@ const Pages: React.FC = () => {
                     Catering <span className="text-green">&amp; Events</span>
                   </h2>
 
+                  <p className="text-foreground font-bold mb-4 leading-relaxed max-w-md mx-auto lg:mx-0">
+                    From intimate family gatherings to weddings, celebrations and larger events, House of Jaby prepares delicious food made to suit your occasion.
+                  </p>
+                  <p className="text-subtext mb-4 leading-relaxed max-w-md mx-auto lg:mx-0">
+                    We can prepare and present your meals for sharing, with catering options designed around your guest count, menu and event needs. Whether you need a few dishes for a small gathering or a full spread for a bigger celebration, we’re happy to plan it with you.
+                  </p>
                   <p className="text-subtext mb-8 leading-relaxed max-w-md mx-auto lg:mx-0">
-                    From small gatherings to large events, House of Jaby cooks for any number of guests. Every menu is planned around your event, so tell us your date, guest count and the food you have in mind, and we&apos;ll send you a quote.
+                    Tell us your event date, number of guests and what you have in mind, and we’ll prepare a quote for you.
                   </p>
 
                   <a href={`https://wa.me/${cateringPhone}?text=${cateringMessage}`} target="_blank" rel="noopener noreferrer">
