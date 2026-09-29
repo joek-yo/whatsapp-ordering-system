@@ -147,7 +147,7 @@ export function getFeaturedTestimonials(limit = 6) {
 
   categories.forEach((cat) => {
     const sorted = [...(all[cat] || [])].sort((a, b) => b.rating - a.rating);
-    if (sorted[1]) picked.push({ ...sorted[1], category: cat });
+    sorted.slice(1).forEach((r) => picked.push({ ...r, category: cat }));
   });
 
   return picked.slice(0, limit);

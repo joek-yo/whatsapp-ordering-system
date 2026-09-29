@@ -1217,25 +1217,34 @@
   ],
   "testimonials": {
     "Cakes": [
-      { "name": "Wanjiru M.", "text": "Ordered a birthday cake with one day's notice and it looked even better than the photo. Will definitely order again.", "rating": 5 },
-      { "name": "Brian K.", "text": "Rich chocolate flavor, not overly sweet. Perfect size for our family gathering.", "rating": 5 },
-      { "name": "Amina S.", "text": "The custom message on the cake came out exactly as I asked. Great communication on WhatsApp throughout.", "rating": 4 }
+      {
+        "name": "Tabby",
+        "text": "Thanks so much, House of Jaby, for your service."
+      },
+      {
+        "name": "Ann",
+        "text": "It's so yummy.. oooh my goodness. I'll recommend people to you. Keep up."
+      },
+      {
+        "name": "Mrs Pastor Mary",
+        "text": "I am fully satisfied with the cake for my girl's birthday. It was beautifully designed. Thank you for your excellent work. I truly appreciate it."
+      }
     ],
     "Pastries": [
-      { "name": "James M.", "text": "Cinnamon rolls were soft and clearly baked that morning. Great with my coffee order.", "rating": 5 },
-      { "name": "Grace W.", "text": "Ordered a mixed box for a work meeting, everyone asked where it was from.", "rating": 4 }
+      {
+        "name": "Nasieku",
+        "text": "I've ordered cinnamon rolls before, but yesterday's order was 💯. It was so delicious. You wouldn't regret a bit."
+      }
     ],
     "Snacks": [
-      { "name": "Samuel K.", "text": "The samosas were crispy and fresh, perfect for our gathering.", "rating": 5 },
-      { "name": "Lucy A.", "text": "Mandazi tasted just like homemade. Will order again.", "rating": 5 }
+      {
+        "name": "Kihiu",
+        "text": "Thanks for the samosa. They were very sweet. Keep up the good work.",
+        "rating": 5
+      }
     ],
-    "Cookies": [
-      { "name": "Njeri T.", "text": "The heart-shaped cookies were a hit at the party, beautifully packaged too.", "rating": 5 }
-    ],
-    "Bundle": [
-      { "name": "Kevin M.", "text": "The tea-time pack was great value and saved me from ordering separately. Everything arrived together, still fresh.", "rating": 5 },
-      { "name": "Mary W.", "text": "Got the breakfast combo for a weekend brunch — portions were generous.", "rating": 5 }
-    ]
+    "Cookies": [],
+    "Bundle": []
   },
   "bundlesCopy": {
     "intro": "Signature Boxes & Bundles — Thoughtfully Curated for Every Occasion\n\nSome moments are even better when everything comes together perfectly. Our Signature Boxes & Bundles are carefully curated to bring together House of Jaby favorites in one convenient package, making hosting, gifting, sharing, and celebrating effortless. Whether you're planning breakfast, welcoming guests, organizing an office meeting, or surprising someone special, every bundle is crafted to make your moments easier, more memorable, and deliciously satisfying.",
