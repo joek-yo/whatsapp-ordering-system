@@ -215,26 +215,6 @@ const MenuContent: React.FC = () => {
           </>
         )}
 
-        {!isSearching && categoryCopy.intro && (
-          <div className="max-w-3xl mx-auto mb-12 text-center border border-gold/30 bg-surface2/60 rounded-2xl px-6 py-8 sm:px-10 sm:py-10">
-            {categoryCopy.intro.split("\n").map((line: string, i: number) =>
-              line.trim() === "" ? null : i === 0 ? (
-                <h2 key={i} className="text-xl sm:text-2xl font-black uppercase tracking-tight text-foreground mb-1">
-                  {line}
-                </h2>
-              ) : i === 1 ? (
-                <p key={i} className="text-[11px] font-black uppercase tracking-[0.25em] text-gold mb-4">
-                  {line}
-                </p>
-              ) : (
-                <p key={i} className="text-subtext text-sm sm:text-base leading-relaxed">
-                  {line}
-                </p>
-              )
-            )}
-          </div>
-        )}
-
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8">
           {sortedProducts.map((product: any) => (
             <ProductCard
@@ -260,22 +240,6 @@ const MenuContent: React.FC = () => {
             />
           ))}
         </div>
-
-        {!isSearching && categoryCopy.outro && (
-          <div className="max-w-3xl mx-auto mt-12 text-center border border-gold/30 bg-surface2/60 rounded-2xl px-6 py-8 sm:px-10 sm:py-10">
-            {categoryCopy.outro.split("\n").map((line: string, i: number) =>
-              line.trim() === "" ? null : i === 0 ? (
-                <h3 key={i} className="text-lg sm:text-xl font-black uppercase tracking-tight text-foreground mb-3">
-                  {line}
-                </h3>
-              ) : (
-                <p key={i} className="text-subtext text-sm sm:text-base leading-relaxed">
-                  {line}
-                </p>
-              )
-            )}
-          </div>
-        )}
 
         {/* ---------------- Custom Order — Closing Section ---------------- */}
         <section className="relative overflow-hidden mt-16 sm:mt-24 mb-8">

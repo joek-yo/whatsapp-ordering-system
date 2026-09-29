@@ -89,7 +89,7 @@ const SearchBar: React.FC = () => {
             onChange={(e) => setQuery(e.target.value)}
             onFocus={() => setIsFocused(true)}
             onKeyDown={handleKeyDown}
-            placeholder="Search cakes, drinks, pastries..."
+            placeholder="Search cakes, snacks, pastries..."
             className="flex-1 bg-transparent outline-none focus:outline-none text-sm font-medium text-foreground placeholder:text-subtext"
           />
           {query && (

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaHeart, FaLeaf, FaWhatsapp, FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { useRouter } from "next/navigation";
-import { getBusinessData } from "@/lib/getBusinessData";
+import { getBusinessData, getCategories, getBundlesCopy } from "@/lib/getBusinessData";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 
@@ -33,11 +33,22 @@ const AboutSection: React.FC = () => {
     },
   ];
 
+  const cakeCount = ((getCategories() as any[]).find((c) => /cake/i.test(c.name))?.items?.length) ?? 0;
   const stats = [
-    { value: "500+", label: "Orders Delivered" },
-    { value: "4.8★", label: "Average Rating" },
-    { value: "100%", label: "Made Fresh Daily" },
+    { value: String(cakeCount), label: "Cake Designs" },
+    { value: "100%", label: "Made Fresh to Order" },
+    { value: "Custom", label: "Orders Welcome" },
   ];
+
+  const copyBlocks = [
+    ...(getCategories() as any[])
+      .filter((c) => !/bundle/i.test(c.name))
+      .map((c) => ({ name: c.name, intro: c.intro || "", outro: c.outro || "" })),
+    { name: "Bundles", ...(getBundlesCopy() as any) },
+  ].filter((b: any) => b.intro || b.outro);
+
+  const lines = (t: string) =>
+    (t || "").split("\n").map((l) => l.trim()).filter(Boolean);
 
   return (
     <>
@@ -96,15 +107,8 @@ const AboutSection: React.FC = () => {
             conversation on WhatsApp.
           </p>
           <p>
-            {/* PLACEHOLDER — replace with the actual founding story, e.g. how it started,
-                who's behind it, what makes House of Jaby's approach different. */}
-            What began as small batches for friends and family has grown into
-            a trusted name for cakes, pastries, drinks, and custom orders across
-            the community — built one order, one satisfied customer, at a time.
-          </p>
-          <p>
-            Every item on our menu is prepared fresh, the same care whether
-            it&apos;s a birthday cake for fifty guests or a single cup of coffee.
+            Every item on our menu is made fresh to order, with the same care
+            whether it&apos;s a birthday cake or a small box of snacks.
             That&apos;s the promise behind every order we send out.
           </p>
         </motion.div>
@@ -131,6 +135,34 @@ const AboutSection: React.FC = () => {
             </motion.div>
           ))}
         </div>
+      </section>
+
+      {/* HOW WE MAKE IT — category copy from menu.json */}
+      <section className="max-w-4xl mx-auto px-6 py-16 space-y-6">
+        <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-foreground text-center mb-8">
+          How We Make It
+        </h2>
+        {copyBlocks.map((b: any) => {
+          const [title, ...rest] = lines(b.intro);
+          const hasTag = rest.length > 0 && rest[0].length <= 60;
+          const tag = hasTag ? rest[0] : "";
+          const body = hasTag ? rest.slice(1) : rest;
+          const [oTitle, ...oBody] = lines(b.outro);
+          return (
+            <Card key={b.name} padding="none" className="p-6 sm:p-8 space-y-3">
+              <p className="text-[10px] font-black uppercase tracking-[0.25em] text-green">{b.name}</p>
+              {title && <h3 className="text-lg sm:text-xl font-black uppercase tracking-tight text-foreground">{title}</h3>}
+              {tag && <p className="text-[11px] font-black uppercase tracking-[0.25em] text-gold">{tag}</p>}
+              {body.map((l, i) => (
+                <p key={i} className="text-sm text-subtext leading-relaxed">{l}</p>
+              ))}
+              {oTitle && <h4 className="text-sm font-black uppercase tracking-tight text-foreground pt-3">{oTitle}</h4>}
+              {oBody.map((l, i) => (
+                <p key={i} className="text-sm text-subtext leading-relaxed">{l}</p>
+              ))}
+            </Card>
+          );
+        })}
       </section>
 
       {/* STATS STRIP — placeholder numbers, owner to replace with real figures */}
