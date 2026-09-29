@@ -108,11 +108,10 @@ const MiniCartDrawer: React.FC = () => {
                     variant="ghost"
                     size="sm"
                     iconOnly
+                    leftIcon={<FaTimes size={16} />}
                     aria-label="Close cart"
                     className="!p-2 !rounded-lg"
-                  >
-                    <FaTimes size={16} />
-                  </Button>
+                  />
                 </div>
               </div>
 
