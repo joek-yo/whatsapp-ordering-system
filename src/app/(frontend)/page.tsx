@@ -25,7 +25,7 @@ const Pages: React.FC = () => {
   const featuredBundles = bundles;
 
   // Catering & Events
-  const cateringImage: string = ""; // e.g. "/images/catering.jpg" once the photo is added
+  const cateringImage: string = "/images/catering.jpg"; // e.g. "/images/catering.jpg" once the photo is added
   const cateringPhone = ((menuData as any).business?.phone || "").replace(/[^0-9]/g, "");
   const cateringMessage = encodeURIComponent(
     "Hi House of Jaby! I would like a catering quote.\n\nEvent date:\nNumber of guests:\nVenue:\nFood I have in mind:"
