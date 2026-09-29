@@ -101,10 +101,9 @@ const AboutSection: React.FC = () => {
           className="text-subtext leading-relaxed space-y-4"
         >
           <p>
-            {business.name} started with a simple idea: bring genuinely fresh,
-            carefully made food and treats straight to the people who&apos;d enjoy
-            them most — no middlemen, no shortcuts, just good food and a real
-            conversation on WhatsApp.
+            {business.name} is the brand of Esther Kuria, based in Nairobi.
+            Every order is made fresh, and orders reach us from all over the
+            country.
           </p>
           <p>
             Every item on our menu is made fresh to order, with the same care
