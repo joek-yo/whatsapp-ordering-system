@@ -1249,5 +1249,39 @@
   "bundlesCopy": {
     "intro": "Signature Boxes & Bundles — Thoughtfully Curated for Every Occasion\n\nSome moments are even better when everything comes together perfectly. Our Signature Boxes & Bundles are carefully curated to bring together House of Jaby favorites in one convenient package, making hosting, gifting, sharing, and celebrating effortless. Whether you're planning breakfast, welcoming guests, organizing an office meeting, or surprising someone special, every bundle is crafted to make your moments easier, more memorable, and deliciously satisfying.",
     "outro": "Curated with Care. Shared with Love.\n\nEvery House of Jaby box is thoughtfully assembled to make hosting easier, gifting more meaningful, and everyday moments more enjoyable. Whether you're celebrating a milestone, welcoming guests, or simply sharing great food with the people who matter most, our curated bundles are crafted to bring people together—one delicious bite at a time."
-  }
+  },
+  "gallery": [
+    {
+      "image": "/images/A01.jpg",
+      "caption": ""
+    },
+    {
+      "image": "/images/A08.jpg",
+      "caption": ""
+    },
+    {
+      "image": "/images/A18.jpg",
+      "caption": ""
+    },
+    {
+      "image": "/images/A21.jpg",
+      "caption": ""
+    },
+    {
+      "image": "/images/A24.jpg",
+      "caption": ""
+    },
+    {
+      "image": "/images/A27.jpg",
+      "caption": ""
+    },
+    {
+      "image": "/images/A30.jpg",
+      "caption": ""
+    },
+    {
+      "image": "/images/A34.jpg",
+      "caption": ""
+    }
+  ]
 }

@@ -20,7 +20,7 @@ export default function Card({ children, className = "", hover = false, padding 
   return (
     <div
       className={`
-        bg-surface border border-border rounded-2xl
+        bg-surface border border-border rounded-lg
         ${hover ? "transition-all hover:border-green/40 hover:shadow-glow" : ""}
         ${paddings[padding]}
         ${className}
