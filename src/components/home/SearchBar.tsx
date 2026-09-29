@@ -130,7 +130,7 @@ const SearchBar: React.FC = () => {
                         className="w-full flex items-center gap-3 p-3 hover:bg-surface2 transition-colors text-left cursor-pointer border-b border-border last:border-0"
                       >
                         <div className="relative w-11 h-11 rounded-lg overflow-hidden bg-surface2 border border-border flex-shrink-0">
-                          {p.image && <Image src={p.image} alt={p.name} fill className="object-cover" />}
+                          {p.image && <Image src={p.image} alt={p.name} fill sizes="44px" className="object-cover" />}
                         </div>
                         <div className="flex-1 min-w-0">
                           <p className="text-xs font-black uppercase text-foreground truncate">{p.name}</p>
