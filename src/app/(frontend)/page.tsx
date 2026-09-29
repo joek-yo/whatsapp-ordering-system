@@ -12,7 +12,7 @@ import BestSellers from "@/components/home/BestSellers";
 import FlashSales from "@/components/home/FlashSales";
 import SocialProof from "@/components/home/SocialProof";
 import { getUIConfig } from "@/lib/getBusinessData";
-import { FaGem, FaArrowRight, FaWhatsapp } from "react-icons/fa";
+import { FaGem, FaArrowRight, FaWhatsapp, FaUtensils } from "react-icons/fa";
 import { motion } from "framer-motion";
 import menuData from "@/data/menu.json";
 
@@ -23,6 +23,13 @@ const Pages: React.FC = () => {
   const jabyFavorites = allItems.filter((i) => i.jabysFavorite);
   const bestSellers = allItems.filter((i) => i.bestSelling).slice(0, 8);
   const featuredBundles = bundles;
+
+  // Catering & Events
+  const cateringImage: string = ""; // e.g. "/images/catering.jpg" once the photo is added
+  const cateringPhone = ((menuData as any).business?.phone || "").replace(/[^0-9]/g, "");
+  const cateringMessage = encodeURIComponent(
+    "Hi House of Jaby! I would like a catering quote.\n\nEvent date:\nNumber of guests:\nVenue:\nFood I have in mind:"
+  );
 
   return (
     <main>
@@ -65,6 +72,73 @@ const Pages: React.FC = () => {
       </div>
 
       <div className="space-y-16 sm:space-y-24">
+        {/* ---------------- Events & Catering ---------------- */}
+        <section className="relative overflow-hidden">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative rounded-3xl border border-border bg-surface overflow-hidden">
+              <div className="absolute -top-24 -left-24 w-72 h-72 bg-green/10 rounded-full blur-3xl pointer-events-none" />
+
+              <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-6 py-14 sm:px-12 sm:py-16 lg:px-14">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="text-center lg:text-left"
+                >
+                  <div className="inline-flex items-center gap-2 bg-green-soft text-green px-4 py-1.5 rounded-full mb-6">
+                    <FaUtensils size={12} />
+                    <span className="text-[10px] font-black uppercase tracking-[0.2em]">For Your Next Event</span>
+                  </div>
+
+                  <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tighter text-foreground mb-4">
+                    Catering <span className="text-green">&amp; Events</span>
+                  </h2>
+
+                  <p className="text-subtext mb-8 leading-relaxed max-w-md mx-auto lg:mx-0">
+                    From small gatherings to large events, House of Jaby cooks for any number of guests. Every menu is planned around your event, so tell us your date, guest count and the food you have in mind, and we&apos;ll send you a quote.
+                  </p>
+
+                  <a href={`https://wa.me/${cateringPhone}?text=${cateringMessage}`} target="_blank" rel="noopener noreferrer">
+                    <Button variant="primary" size="lg" className="group" rightIcon={<FaWhatsapp size={14} />}>
+                      Request a Catering Quote
+                    </Button>
+                  </a>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  className="relative"
+                >
+                  {cateringImage ? (
+                    <img
+                      src={cateringImage}
+                      alt="House of Jaby catering setup"
+                      className="w-full h-72 sm:h-96 object-cover rounded-2xl border border-border-strong"
+                    />
+                  ) : (
+                    <div className="rounded-2xl border border-border-strong bg-surface2 p-6 sm:p-8 space-y-5 max-w-sm mx-auto w-full">
+                      {[
+                        ["1", "Tell us your date and guest count"],
+                        ["2", "Share the food you have in mind"],
+                        ["3", "We plan the menu and send your quote"],
+                      ].map(([n, text]) => (
+                        <div key={n} className="flex items-center gap-4">
+                          <span className="w-8 h-8 shrink-0 rounded-full bg-green-soft text-green flex items-center justify-center text-xs font-black">{n}</span>
+                          <p className="text-sm font-bold text-foreground">{text}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ---------------- Custom Order — Closing Section ---------------- */}
         <section className="relative overflow-hidden mt-16 sm:mt-24 mb-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

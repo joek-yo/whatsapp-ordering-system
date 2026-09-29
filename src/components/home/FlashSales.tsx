@@ -6,6 +6,16 @@ import { FaBolt, FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons
 import ProductCard from "@/components/home/ProductCard";
 import { getFlashSaleProducts, getUIConfig } from "@/lib/getBusinessData";
 
+const getNextWeeklyEnd = () => {
+  const EAT = 3 * 60 * 60 * 1000; // Nairobi is UTC+3
+  const now = Date.now();
+  const eat = new Date(now + EAT);
+  const daysToSunday = (7 - eat.getUTCDay()) % 7;
+  let end = Date.UTC(eat.getUTCFullYear(), eat.getUTCMonth(), eat.getUTCDate() + daysToSunday, 23, 59, 59) - EAT;
+  if (end <= now) end += 7 * 24 * 60 * 60 * 1000;
+  return end;
+};
+
 const FlashSales: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const rawProducts = useMemo(() => getFlashSaleProducts(), []);
@@ -13,25 +23,32 @@ const FlashSales: React.FC = () => {
 
   const [displayProducts, setDisplayProducts] = useState<any[]>([]);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [timeLeft, setTimeLeft] = useState({ hours: "00", minutes: "00", seconds: "00" });
+  const [timeLeft, setTimeLeft] = useState({ days: "00", hours: "00", minutes: "00", seconds: "00" });
 
   useEffect(() => {
     setDisplayProducts(rawProducts);
 
-    if (!flashSale?.endTime) return;
-    const timer = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = new Date(flashSale.endTime).getTime() - now;
-      if (distance < 0) {
-        clearInterval(timer);
-        return;
+    const getTarget = () => {
+      const override = flashSale?.endTime ? new Date(flashSale.endTime).getTime() : 0;
+      return override > Date.now() ? override : getNextWeeklyEnd();
+    };
+    let target = getTarget();
+    const tick = () => {
+      let distance = target - Date.now();
+      if (distance <= 0) {
+        target = getTarget();
+        distance = target - Date.now();
       }
+      const pad = (n: number) => Math.floor(n).toString().padStart(2, "0");
       setTimeLeft({
-        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, "0"),
-        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, "0"),
-        seconds: Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, "0"),
+        days: pad(distance / 86400000),
+        hours: pad((distance % 86400000) / 3600000),
+        minutes: pad((distance % 3600000) / 60000),
+        seconds: pad((distance % 60000) / 1000),
       });
-    }, 1000);
+    };
+    tick();
+    const timer = setInterval(tick, 1000);
     return () => clearInterval(timer);
   }, [flashSale?.endTime, rawProducts]);
 
@@ -85,6 +102,8 @@ const FlashSales: React.FC = () => {
 
         <div className="flex items-center justify-between md:justify-end gap-4 sm:gap-6 w-full md:w-auto">
           <div className="flex items-center gap-1.5 sm:gap-2">
+            <div className={timerBlockClass}>{timeLeft.days}</div>
+            <span className="font-black text-foreground text-[10px]">:</span>
             <div className={timerBlockClass}>{timeLeft.hours}</div>
             <span className="font-black text-foreground text-[10px]">:</span>
             <div className={timerBlockClass}>{timeLeft.minutes}</div>

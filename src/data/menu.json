@@ -618,7 +618,7 @@
         {
           "id": 138,
           "name": "Confetti Blossom Butterfly Celebration Cake",
-          "price": 0,
+          "price": 2500,
           "image": "/images/A39.jpg",
           "description": "Playful, joyful, and full of birthday magic, the Confetti Blossom Butterfly Celebration Cake is made for little celebrations that deserve a big moment. Finished in vibrant pink buttercream with hand-piped rosettes, a scatter of rainbow sprinkles, silver pearls, and delicate gold leaf accents, it is crowned with a shimmering gold butterfly and two blossom-shaped plaques personalized with your own message and age. Perfect for birthdays, milestone ages, and surprise celebrations, it is crafted to make her day unforgettable, the Jaby way.",
           "available": true,
@@ -635,7 +635,7 @@
           "rating": 4.8,
           "reviewCount": 0,
           "allowCustomMessage": true,
-          "sizes": [{ "label": "1kg (Serves 8–10 people)", "price": 0 }],
+          "sizes": [{ "label": "1kg (Serves 8–10 people)", "price": 2500 }],
           "eggOptions": [
             { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
             { "label": "Eggless Special", "priceAdd": 0 }
@@ -645,7 +645,7 @@
         {
           "id": 139,
           "name": "Midnight Gold Splatter Two-Tier Celebration Cake",
-          "price": 0,
+          "price": 5500,
           "image": "/images/A40.jpg",
           "description": "Dramatic, modern, and beautifully bold, the Midnight Gold Splatter Two-Tier Celebration Cake is made for milestones that deserve a statement centerpiece. A tall, smooth white top tier rests on a deep matte black base, both brushed with hand-splattered gold and finished with ribbons of edible gold leaf. A large gold butterfly, glittering gold and black spheres, and a scalloped personalized plaque complete the look, so every detail carries your message. Perfect for birthdays, ordinations, church celebrations, and milestone occasions, crafted the Jaby way.",
           "available": true,
@@ -656,13 +656,13 @@
           "onFlashSale": false,
           "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Black Food Coloring", "Edible Gold Leaf", "Edible Gold Splatter", "Gold and Black Glitter Spheres", "Gold Butterfly Topper", "Custom Printed Edible Plaque"],
           "allergens": ["Wheat", "Eggs", "Dairy"],
-          "servingInfo": "Two-tier, serves 20–30 people",
+          "servingInfo": "Two-tier, serves 23–26 people",
           "prepInfo": "Baked fresh same-day",
           "occasionTags": ["Birthday", "Milestone", "Two-Tier", "Church Celebration"],
           "rating": 4.8,
           "reviewCount": 0,
           "allowCustomMessage": true,
-          "sizes": [{ "label": "Two-Tier (Serves 20–30 people)", "price": 0 }],
+          "sizes": [{ "label": "2kg Two-Tier (Serves 23–26 people)", "price": 5500 }],
           "eggOptions": [
             { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
             { "label": "Eggless Special", "priceAdd": 0 }
@@ -672,7 +672,7 @@
         {
           "id": 140,
           "name": "Lilac Bloom Welcome Home Celebration Cake",
-          "price": 0,
+          "price": 1500,
           "image": "/images/A41.jpg",
           "description": "Some moments call for a warm welcome and a big \"we're proud of you.\" The Lilac Bloom Welcome Home Celebration Cake is made for homecomings, graduations, achievements, and joyful reunions. Finished in smooth lilac buttercream with soft hand-piped rosettes, a scatter of rainbow sprinkles, and an elegant white rose topper, it comes with a scalloped plaque personalized with your own heartfelt message. Simple, sweet, and full of love, crafted the Jaby way.",
           "available": true,
@@ -683,13 +683,13 @@
           "onFlashSale": false,
           "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Purple Food Coloring", "Rainbow Sprinkles", "Decorative White Rose Topper (Not Edible)", "Custom Printed Edible Plaque"],
           "allergens": ["Wheat", "Eggs", "Dairy"],
-          "servingInfo": "Serves 8–10 people (1kg standard size)",
+          "servingInfo": "Serves 2–4 people (0.5kg size)",
           "prepInfo": "Baked fresh same-day",
           "occasionTags": ["Welcome Home", "Congratulations", "Graduation", "Custom Message"],
           "rating": 4.8,
           "reviewCount": 0,
           "allowCustomMessage": true,
-          "sizes": [{ "label": "1kg (Serves 8–10 people)", "price": 0 }],
+          "sizes": [{ "label": "0.5kg (Serves 2–4 people)", "price": 1500 }],
           "eggOptions": [
             { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
             { "label": "Eggless Special", "priceAdd": 0 }
