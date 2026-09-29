@@ -245,7 +245,8 @@ const ProductDetail = ({ product }: { product: any }) => {
               {product.name}
             </h1>
 
-            {product.rating && (
+            {/* Product ratings hidden until real customer ratings exist */}
+            {false && product.rating && (
               <div className="flex items-center gap-2 text-xs text-subtext">
                 <span className="flex items-center gap-0.5 text-green">
                   {[...Array(5)].map((_, i) => (
@@ -459,16 +460,18 @@ const ProductDetail = ({ product }: { product: any }) => {
             <h2 className="text-xl font-black text-foreground uppercase tracking-tighter mb-4">What Customers Say</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {testimonials.map((t: any, i: number) => (
-                <div key={i} className="bg-surface border border-border rounded-xl p-4 space-y-2">
+                <div key={i} className="bg-surface border border-border rounded-lg p-4 space-y-2">
                   <FaQuoteLeft className="text-green/40" size={16} />
                   <p className="text-xs text-subtext font-medium leading-relaxed">{t.text}</p>
                   <div className="flex items-center justify-between pt-1">
                     <span className="text-[10px] font-black text-foreground uppercase tracking-wide">{t.name}</span>
-                    <span className="flex items-center gap-0.5 text-green">
-                      {[...Array(5)].map((_, i2) => (
-                        <FaStar key={i2} size={9} className={`text-gold ${i2 < t.rating ? "" : "opacity-25"}`} />
-                      ))}
-                    </span>
+                    {t.rating > 0 && (
+                      <span className="flex items-center gap-0.5 text-green">
+                        {[...Array(5)].map((_, i2) => (
+                          <FaStar key={i2} size={9} className={`text-gold ${i2 < t.rating ? "" : "opacity-25"}`} />
+                        ))}
+                      </span>
+                    )}
                   </div>
                 </div>
               ))}
