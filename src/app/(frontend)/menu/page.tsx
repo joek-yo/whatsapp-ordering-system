@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 import ProductCard from "@/components/home/ProductCard";
 import { useCart } from "@/context/CartContext";
-import { getCategories, getBundles, getUIConfig, getBundlesCopy } from "@/lib/getBusinessData";
+import { getCategories, getBundles, getUIConfig } from "@/lib/getBusinessData";
 
 const MenuContent: React.FC = () => {
   const categories = getCategories();
@@ -55,20 +55,6 @@ const MenuContent: React.FC = () => {
 
   const activeCategory =
     menuCategories.find((cat) => cat.id === selectedCategoryId) ?? menuCategories[0];
-
-  // Intro/outro brand-storytelling copy for the active category.
-  // Bundles is a synthetic category (built from getBundles()) and doesn't
-  // carry intro/outro fields itself, so it's pulled from getBundlesCopy().
-  const categoryCopy = useMemo(() => {
-    if (!activeCategory) return { intro: "", outro: "" };
-    if (activeCategory.id === "bundles-category") {
-      return getBundlesCopy();
-    }
-    return {
-      intro: (activeCategory as any).intro || "",
-      outro: (activeCategory as any).outro || "",
-    };
-  }, [activeCategory]);
 
   const placeholderImage = "/images/placeholder.jpg";
 
