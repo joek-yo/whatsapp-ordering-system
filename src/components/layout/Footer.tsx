@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
           <div className="flex space-x-3 mb-1">
             <a href="https://www.facebook.com/share/19r7KzZXEB/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="bg-surface border border-border p-2.5 rounded-lg text-subtext hover:text-green hover:border-green transition"><FaFacebookF size={16} /></a>
             <a href="https://www.instagram.com/HouseofJaby" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="bg-surface border border-border p-2.5 rounded-lg text-subtext hover:text-green hover:border-green transition"><FaInstagram size={16} /></a>
-            <a href="https://www.tiktok.com/@HouseofJaby" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="bg-surface border border-border p-2.5 rounded-lg text-subtext hover:text-green hover:border-green transition"><FaTiktok size={16} /></a>
+            <a href="https://www.tiktok.com/@houseofjaby" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="bg-surface border border-border p-2.5 rounded-lg text-subtext hover:text-green hover:border-green transition"><FaTiktok size={16} /></a>
             <a href={`https://wa.me/${business.phone}`} className="bg-surface border border-border p-2.5 rounded-lg text-subtext hover:text-green hover:border-green transition"><FaWhatsapp size={16} /></a>
           </div>
         </div>
