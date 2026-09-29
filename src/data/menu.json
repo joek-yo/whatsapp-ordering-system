@@ -540,7 +540,7 @@
         {
           "id": 132,
           "name": "Pistachio Dream Celebration Cake",
-          "price": 0,
+          "price": 3000,
           "image": "/images/A32.jpg",
           "description": "Soft, elegant, and beautifully modern, the Pistachio Dream Celebration Cake pairs a smooth pistachio-green buttercream finish with a rich chocolate ganache drip for a striking contrast of color and texture. Finished with decorative gold and black ring accents, shimmering gold leaf flakes, and delicate gold pearl detailing, this handcrafted centerpiece is personalized with your own message on an edible plaque. Perfect for birthdays, family celebrations, cousin reunions, or any gathering that calls for something a little different, it's crafted to reflect your unique story—the Jaby way.",
           "available": true,
@@ -557,7 +557,7 @@
           "rating": 4.8,
           "reviewCount": 0,
           "allowCustomMessage": true,
-          "sizes": [{ "label": "1kg (Serves 8–10 people)", "price": 0 }],
+          "sizes": [{ "label": "1kg (Serves 8–10 people)", "price": 3000 }],
           "eggOptions": [
             { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
             { "label": "Eggless Special", "priceAdd": 0 }
@@ -567,7 +567,7 @@
         {
           "id": 133,
           "name": "House of Jaby Classic Vanilla Butter Loaf Slices",
-          "price": 0,
+          "price": 150,
           "image": "/images/A33.jpg",
           "description": "Simple, comforting, and beautifully baked, our Classic Vanilla Butter Loaf Slices celebrate the timeless taste of a good old-fashioned pound cake. Rich with butter and a warm golden crust, every slice delivers a soft, moist crumb and a gentle hint of vanilla in every bite. Perfect for tea time, dessert, coffee breaks, or an everyday treat, this handcrafted loaf brings comforting, homemade goodness to any moment.",
           "available": true,
@@ -584,14 +584,14 @@
           "rating": 4.8,
           "reviewCount": 0,
           "allowCustomMessage": false,
-          "sizes": [{ "label": "Single Piece", "price": 0 }],
+          "sizes": [{ "label": "Single Piece", "price": 150 }],
           "eggOptions": [],
           "extraImages": []
         },
         {
           "id": 134,
           "name": "Golden Butterfly Two-Tier Celebration Cake",
-          "price": 0,
+          "price": 5500,
           "image": "/images/A34.jpg",
           "description": "Bold, glamorous, and truly show-stopping, the Golden Butterfly Two-Tier Celebration Cake is designed for celebrations that deserve a grand centerpiece. A textured white buttercream top tier flows into a striking matte black bottom tier, joined by a dramatic cascade of edible gold leaf. Finished with shimmering gold glitter spheres, elegant gold butterfly toppers, and gold splatter detailing, this handcrafted creation is personalized with your own message for a truly unforgettable birthday or milestone celebration.",
           "available": true,
@@ -608,7 +608,88 @@
           "rating": 5,
           "reviewCount": 0,
           "allowCustomMessage": true,
-          "sizes": [{ "label": "Two-Tier (Serves 30–40 people)", "price": 0 }],
+          "sizes": [{ "label": "Two-Tier (Serves 30–40 people)", "price": 5500 }],
+          "eggOptions": [
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 0 }
+          ],
+          "extraImages": []
+        },
+        {
+          "id": 138,
+          "name": "Confetti Blossom Butterfly Celebration Cake",
+          "price": 0,
+          "image": "/images/A39.jpg",
+          "description": "Playful, joyful, and full of birthday magic, the Confetti Blossom Butterfly Celebration Cake is made for little celebrations that deserve a big moment. Finished in vibrant pink buttercream with hand-piped rosettes, a scatter of rainbow sprinkles, silver pearls, and delicate gold leaf accents, it is crowned with a shimmering gold butterfly and two blossom-shaped plaques personalized with your own message and age. Perfect for birthdays, milestone ages, and surprise celebrations, it is crafted to make her day unforgettable, the Jaby way.",
+          "available": true,
+          "category": "Cakes",
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Pink Food Coloring", "Rainbow Sprinkles", "Silver Sugar Pearls", "Edible Gold Leaf", "Gold Butterfly Topper", "Custom Edible Fondant Plaques"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
+          "servingInfo": "Serves 8–10 people (1kg standard size)",
+          "prepInfo": "Baked fresh same-day",
+          "occasionTags": ["Birthday", "Kids Party", "Custom Name", "Age Milestone"],
+          "rating": 4.8,
+          "reviewCount": 0,
+          "allowCustomMessage": true,
+          "sizes": [{ "label": "1kg (Serves 8–10 people)", "price": 0 }],
+          "eggOptions": [
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 0 }
+          ],
+          "extraImages": []
+        },
+        {
+          "id": 139,
+          "name": "Midnight Gold Splatter Two-Tier Celebration Cake",
+          "price": 0,
+          "image": "/images/A40.jpg",
+          "description": "Dramatic, modern, and beautifully bold, the Midnight Gold Splatter Two-Tier Celebration Cake is made for milestones that deserve a statement centerpiece. A tall, smooth white top tier rests on a deep matte black base, both brushed with hand-splattered gold and finished with ribbons of edible gold leaf. A large gold butterfly, glittering gold and black spheres, and a scalloped personalized plaque complete the look, so every detail carries your message. Perfect for birthdays, ordinations, church celebrations, and milestone occasions, crafted the Jaby way.",
+          "available": true,
+          "category": "Cakes",
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Black Food Coloring", "Edible Gold Leaf", "Edible Gold Splatter", "Gold and Black Glitter Spheres", "Gold Butterfly Topper", "Custom Printed Edible Plaque"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
+          "servingInfo": "Two-tier, serves 20–30 people",
+          "prepInfo": "Baked fresh same-day",
+          "occasionTags": ["Birthday", "Milestone", "Two-Tier", "Church Celebration"],
+          "rating": 4.8,
+          "reviewCount": 0,
+          "allowCustomMessage": true,
+          "sizes": [{ "label": "Two-Tier (Serves 20–30 people)", "price": 0 }],
+          "eggOptions": [
+            { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
+            { "label": "Eggless Special", "priceAdd": 0 }
+          ],
+          "extraImages": []
+        },
+        {
+          "id": 140,
+          "name": "Lilac Bloom Welcome Home Celebration Cake",
+          "price": 0,
+          "image": "/images/A41.jpg",
+          "description": "Some moments call for a warm welcome and a big \"we're proud of you.\" The Lilac Bloom Welcome Home Celebration Cake is made for homecomings, graduations, achievements, and joyful reunions. Finished in smooth lilac buttercream with soft hand-piped rosettes, a scatter of rainbow sprinkles, and an elegant white rose topper, it comes with a scalloped plaque personalized with your own heartfelt message. Simple, sweet, and full of love, crafted the Jaby way.",
+          "available": true,
+          "category": "Cakes",
+          "jabysFavorite": false,
+          "bestSelling": false,
+          "discountPercent": 0,
+          "onFlashSale": false,
+          "ingredients": ["Premium Wheat Flour", "Fresh Eggs", "Caster Sugar", "Unsalted Butter", "Whole Milk", "Vanilla Extract", "Baking Powder", "Purple Food Coloring", "Rainbow Sprinkles", "Decorative White Rose Topper (Not Edible)", "Custom Printed Edible Plaque"],
+          "allergens": ["Wheat", "Eggs", "Dairy"],
+          "servingInfo": "Serves 8–10 people (1kg standard size)",
+          "prepInfo": "Baked fresh same-day",
+          "occasionTags": ["Welcome Home", "Congratulations", "Graduation", "Custom Message"],
+          "rating": 4.8,
+          "reviewCount": 0,
+          "allowCustomMessage": true,
+          "sizes": [{ "label": "1kg (Serves 8–10 people)", "price": 0 }],
           "eggOptions": [
             { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
             { "label": "Eggless Special", "priceAdd": 0 }
@@ -789,7 +870,7 @@
         {
           "id": 135,
           "name": "Signature Beef Empanadas",
-          "price": 0,
+          "price": 600,
           "image": "/images/A35.jpg",
           "description": "Golden, flaky, and generously filled, our Signature Beef Empanadas bring a delicious twist to your snack table. Handcrafted with a beautifully baked, crimped pastry shell and packed with a savory blend of seasoned minced beef and vegetables, every bite delivers comforting, hearty flavor. Perfect for parties, family gatherings, packed lunches, or a satisfying snack on the go, these baked pastries are freshly prepared to be enjoyed warm or at room temperature.",
           "available": true,
@@ -807,9 +888,7 @@
           "reviewCount": 0,
           "allowCustomMessage": false,
           "sizes": [
-            { "label": "Half Tray (5 pieces - Precooked)", "price": 0 },
-            { "label": "Full Tray (10 pieces - Precooked)", "price": 0 },
-            { "label": "Party Pack (20 pieces - Precooked)", "price": 0 }
+            { "label": "5 Pieces (Precooked)", "price": 600 }
           ],
           "eggOptions": [],
           "extraImages": []
@@ -817,7 +896,7 @@
         {
           "id": 137,
           "name": "Soft Homemade Chapati",
-          "price": 0,
+          "price": 60,
           "image": "/images/A37.jpg",
           "description": "Soft, layered, and beautifully golden, our Homemade Chapati is prepared fresh using traditional methods for that authentic, comforting taste. Each one is carefully hand-rolled and cooked to a warm, flaky finish, perfect for pairing with stews, curries, tea, or enjoying on its own. A firm favorite for family meals, gatherings, and everyday dining, our chapati brings the wholesome taste of home to your table.",
           "available": true,
@@ -828,13 +907,13 @@
           "onFlashSale": false,
           "ingredients": ["Wheat Flour", "Water", "Vegetable Oil", "A Pinch of Salt"],
           "allergens": ["Wheat"],
-          "servingInfo": "Pack of 5–6 pieces",
+          "servingInfo": "Sold per piece",
           "prepInfo": "Freshly cooked same-day",
           "occasionTags": ["Family Meal", "Everyday Meal", "Traditional", "Ready to Eat"],
           "rating": 4.8,
           "reviewCount": 0,
           "allowCustomMessage": false,
-          "sizes": [{ "label": "Pack of 6 Pieces", "price": 0 }],
+          "sizes": [{ "label": "Single Piece", "price": 60 }],
           "eggOptions": [],
           "extraImages": []
         }
@@ -940,7 +1019,7 @@
         {
           "id": 131,
           "name": "Signature Black Sesame Butter Cookies",
-          "price": 0,
+          "price": 300,
           "image": "/images/A31.jpg",
           "description": "Rich, buttery, and beautifully rustic, our Signature Black Sesame Butter Cookies are handcrafted with a golden-baked finish and generously flecked with aromatic black sesame seeds. Each cookie is brushed to a warm, glossy shine and baked until perfectly firm on the outside with a soft, crumbly bite within. A wonderful pairing for tea or coffee, and a delicious addition to any snack table, gift box, or everyday treat.",
           "available": true,
@@ -957,7 +1036,7 @@
           "rating": 4.8,
           "reviewCount": 0,
           "allowCustomMessage": false,
-          "sizes": [{ "label": "Standard Pack", "price": 0 }],
+          "sizes": [{ "label": "250g Pack", "price": 300 }],
           "eggOptions": [
             { "label": "Standard (Contains Eggs)", "priceAdd": 0 },
             { "label": "Eggless Option", "priceAdd": 0 }
@@ -1006,7 +1085,7 @@
         {
           "id": 136,
           "name": "House of Jaby Butter Croissants",
-          "price": 0,
+          "price": 100,
           "image": "/images/A36.jpg",
           "description": "Golden, flaky, and beautifully glossy, our House of Jaby Butter Croissants are handcrafted to deliver the perfect balance of a crisp exterior and a soft, buttery interior. Baked fresh to a rich golden finish with an irresistible egg-wash sheen, these classic crescent rolls are ideal for breakfast, brunch, tea time, or a satisfying snack alongside your favorite coffee or tea. Freshly baked and ready to enjoy, they bring simple, comforting indulgence to any part of the day.",
           "available": true,
@@ -1024,8 +1103,7 @@
           "reviewCount": 0,
           "allowCustomMessage": false,
           "sizes": [
-            { "label": "Single Piece", "price": 0 },
-            { "label": "Pack of 6", "price": 0 }
+            { "label": "Single Piece", "price": 100 }
           ],
           "eggOptions": [
             { "label": "Standard (Contains Eggs)", "priceAdd": 0 }
