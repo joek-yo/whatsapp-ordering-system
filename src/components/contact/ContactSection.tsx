@@ -20,7 +20,8 @@ const ContactSection: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const text = `*New Website Inquiry*\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Message:* ${formData.message}`;
+    const emailLine = formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : "";
+    const text = `*New Website Inquiry*\n\n*Name:* ${formData.name}\n${emailLine}*Message:* ${formData.message}`;
     const cleanPhone = business.phone.replace(/[^0-9]/g, '');
     const whatsappUrl = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(text)}`;
 
@@ -40,6 +41,7 @@ const ContactSection: React.FC = () => {
       title: "Call Us",
       info: business.phone,
       link: `tel:${business.phone}`,
+      newTab: false,
       bg: "bg-green text-background hover:bg-green-strong",
     },
     {
@@ -47,6 +49,7 @@ const ContactSection: React.FC = () => {
       title: "Email Us",
       info: business.email,
       link: `mailto:${business.email}`,
+      newTab: false,
       bg: "bg-surface2 text-foreground border border-border hover:border-green hover:text-green",
     },
     {
@@ -54,6 +57,7 @@ const ContactSection: React.FC = () => {
       title: "WhatsApp Chat",
       info: business.phone,
       link: `https://wa.me/${business.phone.replace(/[^0-9]/g, '')}`,
+      newTab: true,
       bg: "bg-whatsapp text-white hover:opacity-90",
     },
   ];
@@ -86,8 +90,8 @@ const ContactSection: React.FC = () => {
           <motion.a
             key={idx}
             href={card.link}
-            target="_blank"
-            rel="noopener noreferrer"
+            target={card.newTab ? "_blank" : undefined}
+            rel={card.newTab ? "noopener noreferrer" : undefined}
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { delay: idx * 0.1 } },
@@ -131,8 +135,7 @@ const ContactSection: React.FC = () => {
           <input
             type="email"
             name="email"
-            placeholder="Your Email"
-            required
+            placeholder="Your Email (optional)"
             value={formData.email}
             onChange={handleChange}
             className="p-4 rounded-xl bg-surface2 border border-border text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-green transition"
