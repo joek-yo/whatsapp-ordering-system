@@ -120,7 +120,14 @@ const MiniCartDrawer: React.FC = () => {
                 {cart.length === 0 ? (
                   <div className="py-12 text-center space-y-5">
                     <p className="text-subtext text-sm">Your cart is empty.</p>
-                    <Button onClick={() => toggleDrawer(false)} variant="primary" size="md">
+                    <Button
+                      onClick={() => {
+                        toggleDrawer(false);
+                        router.push("/menu");
+                      }}
+                      variant="primary"
+                      size="md"
+                    >
                       Continue Shopping
                     </Button>
                   </div>
