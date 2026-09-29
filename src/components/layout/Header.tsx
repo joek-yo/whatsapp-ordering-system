@@ -20,6 +20,7 @@ import {
   FaMoon,
   FaGem,
   FaHeart,
+  FaImages,
 } from "react-icons/fa";
 import Button from "@/components/ui/Button";
 import ThemeToggle from "@/components/ui/ThemeToggle";
@@ -52,6 +53,7 @@ const Header: React.FC = () => {
     { href: "/", label: "Home", icon: FaHome },
     { href: "/menu", label: "Menu", icon: FaUtensils },
     { href: "/about", label: "Our Story", icon: FaHeart },
+    { href: "/gallery", label: "Gallery", icon: FaImages },
     { href: "/custom-order", label: "Custom Order", icon: FaGem },
     { href: "/contact", label: "Contact", icon: FaEnvelope },
   ];
@@ -181,6 +183,7 @@ const Header: React.FC = () => {
                       <DrawerLink href="/" icon={<FaHome />} label="Home" onClick={() => setMobileMenuOpen(false)} />
                       <DrawerLink href="/menu" icon={<FaUtensils />} label="Explore Menu" onClick={() => setMobileMenuOpen(false)} />
                       <DrawerLink href="/about" icon={<FaHeart />} label="Our Story" onClick={() => setMobileMenuOpen(false)} />
+                      <DrawerLink href="/gallery" icon={<FaImages />} label="Gallery" onClick={() => setMobileMenuOpen(false)} />
                       <DrawerLink href="/custom-order" icon={<FaGem />} label="Custom Order" onClick={() => setMobileMenuOpen(false)} />
                       <DrawerLink href="/contact" icon={<FaEnvelope />} label="Contact Us" onClick={() => setMobileMenuOpen(false)} />
                     </div>
