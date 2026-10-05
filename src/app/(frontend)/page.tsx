@@ -37,7 +37,7 @@ const Pages: React.FC = () => {
     <main>
       {/* ---------------- Hero Section ---------------- */}
       <Hero />
-      <div className="mt-[-40px] sm:mt-[-64px] relative z-10">
+      <div className="hidden sm:block sm:mt-[-64px] relative z-10">
         <TrustBar />
       </div>
 
