@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import AnnouncementBar from "@/components/home/AnnouncementBar";
 import SearchBar from "@/components/home/SearchBar";
 import Footer from "@/components/layout/Footer";
+import BackToTop from "@/components/videos/BackToTop";
 import MiniCartDrawer from "@/components/features/cart/MiniCartDrawer";
 import CartToast from "@/components/features/cart/CartToast";
 import { CartProvider } from "@/context/CartContext";
@@ -66,6 +67,7 @@ export default function RootLayout({
             <CartToast />
             <main className="flex-grow">{children}</main>
             <Footer />
+          <BackToTop />
           </CartProvider>
         </ThemeProvider>
       </body>

@@ -120,7 +120,7 @@ const Header: React.FC = () => {
 
             <nav className="flex items-center gap-7">
               {navLinks.map(({ href, label, icon: Icon }) => (
-                <Link key={href} href={href} className="flex items-center gap-1.5 whitespace-nowrap text-[11px] xl:text-xs font-bold uppercase tracking-wider text-subtext hover:text-green transition-colors group [&_svg]:hidden">
+                <Link key={href} href={href} className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-subtext hover:text-green transition-colors group">
                   <Icon size={15} className="group-hover:scale-110 transition-transform" />
                   {label}
                 </Link>

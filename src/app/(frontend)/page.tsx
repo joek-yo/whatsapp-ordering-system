@@ -12,6 +12,7 @@ import BestSellers from "@/components/home/BestSellers";
 import FlashSales from "@/components/home/FlashSales";
 import SocialProof from "@/components/home/SocialProof";
 import GalleryPreview from "@/components/home/GalleryPreview";
+import VideosStrip from "@/components/home/VideosStrip";
 import { getUIConfig } from "@/lib/getBusinessData";
 import { FaGem, FaArrowRight, FaWhatsapp, FaUtensils } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -73,7 +74,8 @@ const Pages: React.FC = () => {
       </div>
 
       <div className="space-y-16 sm:space-y-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><GalleryPreview /></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><GalleryPreview />
+        <div className="mt-16 sm:mt-24"><VideosStrip /></div></div>
 
         {/* ---------------- Events & Catering ---------------- */}
         <section className="relative overflow-hidden">

@@ -1,0 +1,28 @@
+import type { Metadata } from "next";
+import menuData from "@/data/menu.json";
+import videosData from "@/data/videos.json";
+import { loadVideos, type VideoInput } from "@/lib/videos";
+import VideoGrid from "@/components/videos/VideoGrid";
+
+export const revalidate = 3600;
+export const metadata: Metadata = { title: "Videos" };
+
+export default async function VideosPage() {
+  const videos = await loadVideos(videosData as VideoInput[]);
+  const phone = (((menuData as any).business?.phone as string) || "").replace(/[^0-9]/g, "");
+
+  return (
+    <main className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <h1 className="mb-2 text-3xl font-bold" style={{ fontFamily: "var(--font-display)" }}>
+        Watch Us Bake
+      </h1>
+      <p className="mb-8 text-neutral-600">Fresh from our kitchen. Tap a video to play it, then order on WhatsApp.</p>
+
+      {videos.length === 0 ? (
+        <p className="text-neutral-500">No videos yet. Check back soon!</p>
+      ) : (
+        <VideoGrid videos={videos} phone={phone || undefined} />
+      )}
+    </main>
+  );
+}

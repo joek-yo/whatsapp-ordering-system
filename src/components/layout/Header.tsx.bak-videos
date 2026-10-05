@@ -27,7 +27,6 @@ import ThemeToggle from "@/components/ui/ThemeToggle";
 import { useCart } from "@/context/CartContext";
 import { useTheme } from "@/context/ThemeContext";
 import { getBusinessData } from "@/lib/getBusinessData";
-import { FaVideo } from "react-icons/fa";
 import menuData from "@/data/menu.json";
 
 const Header: React.FC = () => {
@@ -55,7 +54,6 @@ const Header: React.FC = () => {
     { href: "/menu", label: "Menu", icon: FaUtensils },
     { href: "/about", label: "Our Story", icon: FaHeart },
     { href: "/gallery", label: "Gallery", icon: FaImages },
-    { href: "/videos", label: "Videos", icon: FaVideo },
     { href: "/custom-order", label: "Custom Order", icon: FaGem },
     { href: "/contact", label: "Contact", icon: FaEnvelope },
   ];
@@ -120,7 +118,7 @@ const Header: React.FC = () => {
 
             <nav className="flex items-center gap-7">
               {navLinks.map(({ href, label, icon: Icon }) => (
-                <Link key={href} href={href} className="flex items-center gap-1.5 whitespace-nowrap text-[11px] xl:text-xs font-bold uppercase tracking-wider text-subtext hover:text-green transition-colors group [&_svg]:hidden">
+                <Link key={href} href={href} className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-subtext hover:text-green transition-colors group">
                   <Icon size={15} className="group-hover:scale-110 transition-transform" />
                   {label}
                 </Link>
@@ -186,7 +184,6 @@ const Header: React.FC = () => {
                       <DrawerLink href="/menu" icon={<FaUtensils />} label="Explore Menu" onClick={() => setMobileMenuOpen(false)} />
                       <DrawerLink href="/about" icon={<FaHeart />} label="Our Story" onClick={() => setMobileMenuOpen(false)} />
                       <DrawerLink href="/gallery" icon={<FaImages />} label="Gallery" onClick={() => setMobileMenuOpen(false)} />
-                      <DrawerLink href="/videos" icon={<FaVideo />} label="Videos" onClick={() => setMobileMenuOpen(false)} />
                       <DrawerLink href="/custom-order" icon={<FaGem />} label="Custom Order" onClick={() => setMobileMenuOpen(false)} />
                       <DrawerLink href="/contact" icon={<FaEnvelope />} label="Contact Us" onClick={() => setMobileMenuOpen(false)} />
                     </div>
