@@ -22,7 +22,7 @@ export default function VideoFeed({ videos, phone, start = 0, onClose }: { video
   }, []);
   useEffect(() => {
     if (!armed) return;
-    const t = setTimeout(() => setLive(active), 350);
+    const t = setTimeout(() => setLive(active), 150);
     return () => clearTimeout(t);
   }, [active, armed]);
   useEffect(() => {

@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { preconnect } from "react-dom";
 import { FaPlay, FaImages } from "react-icons/fa";
 import VideoFeed from "./VideoFeed";
 import type { Video } from "@/lib/videos";
@@ -8,6 +9,15 @@ export default function VideoGallery({ videos, phone }: { videos: Video[]; phone
   const [open, setOpen] = useState<number | null>(null);
   const [shown, setShown] = useState(24);
   const left = videos.length - shown;
+  const pushed = useRef(false);
+  preconnect("https://www.tiktok.com");
+  useEffect(() => {
+    const pop = () => { pushed.current = false; setOpen(null); };
+    window.addEventListener("popstate", pop);
+    return () => window.removeEventListener("popstate", pop);
+  }, []);
+  const openAt = (i: number) => { window.history.pushState({ video: true }, ""); pushed.current = true; setOpen(i); };
+  const closeFeed = () => { if (pushed.current) { pushed.current = false; window.history.back(); } setOpen(null); };
   return (
     <main className="mx-auto max-w-7xl px-1 py-8 sm:px-4">
       <div className="mb-5 px-3 sm:px-0">
@@ -19,7 +29,7 @@ export default function VideoGallery({ videos, phone }: { videos: Video[]; phone
           <button
             key={v.key}
             type="button"
-            onClick={() => setOpen(i)}
+            onClick={() => openAt(i)}
             aria-label={"Play video " + (i + 1)}
             className="relative aspect-[4/5] overflow-hidden bg-neutral-800"
           >
@@ -37,7 +47,7 @@ export default function VideoGallery({ videos, phone }: { videos: Video[]; phone
           </button>
         </div>
       )}
-      {open !== null && <VideoFeed videos={videos} phone={phone} start={open} onClose={() => setOpen(null)} />}
+      {open !== null && <VideoFeed videos={videos} phone={phone} start={open} onClose={closeFeed} />}
     </main>
   );
 }
