@@ -803,7 +803,7 @@
           "onFlashSale": false,
           "ingredients": ["Wheat Flour", "Sugar", "Coconut Milk", "Cardamom", "Yeast", "A Pinch of Salt", "Vegetable Oil for frying"],
           "allergens": ["Wheat"],
-          "servingInfo": "Pack of 6–8 pieces (Ready to Eat)",
+          "servingInfo": "Pack of 10 pieces (Ready to Eat)",
           "prepInfo": "Fried fresh same-day (Pre-cooked)",
           "occasionTags": ["Breakfast", "Tea Time", "Swahili Delicacy", "Ready to Eat"],
           "rating": 4.9,
@@ -827,7 +827,7 @@
           "onFlashSale": false,
           "ingredients": ["All-Purpose Flour", "Minced Beef or Lentils", "Onions", "Fresh Herbs & Spices"],
           "allergens": ["Wheat"],
-          "servingInfo": "Bulk Pack (10-15 pieces) - Uncooked",
+          "servingInfo": "Bulk Pack (60 pieces) - Uncooked",
           "prepInfo": "Freshly folded, raw & uncooked",
           "occasionTags": ["Home Cooking", "Freezer Friendly", "Quick Prep", "Snack"],
           "rating": 4.9,
@@ -930,7 +930,7 @@
         {
           "id": 105,
           "name": "Signature Heart Butter Cookies",
-          "price": 450,
+          "price": 300,
           "image": "/images/A05.jpg",
           "description": "Thoughtfully handcrafted to celebrate life's sweetest moments, our Signature Heart Butter Cookies are as beautiful as they are delicious. Made with rich butter, premium flour, and a delicate hint of vanilla, these charming heart-shaped treats are baked to a perfectly golden finish with a light, melt-in-your-mouth texture. Whether you're creating a gift box, celebrating a special occasion, or simply treating someone you love, these artisan cookies add warmth and sweetness to every moment.",
           "available": true,
@@ -941,7 +941,7 @@
           "onFlashSale": false,
           "ingredients": ["Premium Wheat Flour", "Unsalted Butter", "Granulated Sugar", "Fresh Eggs", "Vanilla Extract", "A Pinch of Salt"],
           "allergens": ["Wheat", "Eggs", "Dairy"],
-          "servingInfo": "Pack of 20–25 pieces",
+          "servingInfo": "12, 24 or 50 pieces per pack",
           "prepInfo": "Freshly baked to order",
           "occasionTags": ["Valentine's", "Gift Box", "Party Favors", "Tea Time Snack"],
           "rating": 4.9,
@@ -973,7 +973,7 @@
           "oldPrice": 350,
           "ingredients": ["Premium Wheat Flour", "Unsalted Butter", "Granulated Sugar", "Fresh Eggs", "Vanilla Extract", "Baking Powder", "A Pinch of Salt"],
           "allergens": ["Wheat", "Eggs", "Dairy"],
-          "servingInfo": "Pack of 15–20 pieces",
+          "servingInfo": "Pack of 20–25 pieces (250g)",
           "prepInfo": "Baked fresh same-day",
           "occasionTags": ["Kids Snacks", "Tea Time", "Party Pack", "Everyday Treats"],
           "rating": 4.7,
@@ -1030,7 +1030,7 @@
           "onFlashSale": false,
           "ingredients": ["Premium Wheat Flour", "Unsalted Butter", "Granulated Sugar", "Fresh Eggs", "Black Sesame Seeds", "A Pinch of Salt"],
           "allergens": ["Wheat", "Eggs", "Dairy", "Sesame"],
-          "servingInfo": "Pack of 15–20 pieces",
+          "servingInfo": "Pack of 20–25 pieces (250g)",
           "prepInfo": "Freshly baked to order",
           "occasionTags": ["Tea Time", "Gift Box", "Everyday Treat", "Snack"],
           "rating": 4.8,
@@ -1206,7 +1206,7 @@
       "active": true,
       "title": "Flash Sale",
       "badge": "Limited Time",
-      "endTime": "2026-08-01T23:59:59"
+      "endTime": "2026-10-13T23:59:59"
     }
   },
   "faqs": [
