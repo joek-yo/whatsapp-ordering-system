@@ -1075,7 +1075,8 @@
           "allowCustomMessage": false,
           "sizes": [
             { "label": "Single Piece", "price": 70 },
-            { "label": "10 Pieces", "price": 750 }
+            { "label": "10 Pieces", "price": 750 },
+            { "label": "Tray (20 pieces)", "price": 1400 }
           ],
           "eggOptions": [
             { "label": "Standard (Contains Eggs)", "priceAdd": 0 }
