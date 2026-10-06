@@ -42,11 +42,11 @@ const ProductDetail = ({ product }: { product: any }) => {
 
   const hasVariants = Boolean(product.sizes && product.sizes.length > 0);
 
-  const variantKey = hasVariants && selectedSize
-    ? [selectedSize.label, selectedEggOption?.label].filter(Boolean).join("-").toLowerCase().replace(/[^a-z0-9]+/g, "-")
+  const variantKey = hasVariants && selectedSize && selectedEggOption
+    ? `${selectedSize.label}-${selectedEggOption.label}`.toLowerCase().replace(/[^a-z0-9]+/g, "-")
     : undefined;
-  const variantLabel = hasVariants && selectedSize
-    ? [selectedSize.label, selectedEggOption?.label].filter(Boolean).join(", ")
+  const variantLabel = hasVariants && selectedSize && selectedEggOption
+    ? `${selectedSize.label}, ${selectedEggOption.label}`
     : undefined;
 
   const effectivePrice = hasVariants && selectedSize
