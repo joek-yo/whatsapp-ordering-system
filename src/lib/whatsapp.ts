@@ -28,6 +28,9 @@ export function generateWhatsAppCheckout(order: OrderDetails) {
     const itemTotal = item.price * item.quantity;
     total += itemTotal;
     message += `• ${item.quantity}x ${item.name} (KES ${itemTotal.toLocaleString()})\n`;
+    if (item.variantLabel && item.variantLabel.trim()) {
+      message += `   ↳ Option: ${item.variantLabel.trim()}\n`;
+    }
     if (item.note && item.note.trim()) {
       message += `   ↳ Note: ${item.note.trim()}\n`;
     }
