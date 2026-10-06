@@ -6,7 +6,6 @@ import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaPlus, FaMinus, FaShoppingBag } from "react-icons/fa";
-import { getProductById } from "@/lib/getBusinessData";
 
 interface ProductProps {
   id: any;
@@ -49,14 +48,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
   const cartItem = cart.find((item) => item.id === id);
   const quantity = cartItem ? cartItem.quantity : 0;
-
-  // Products with several sizes / egg options must be configured on the product page
-  const full: any = getProductById(id);
-  const sizeList: { label: string; price: number }[] = full?.sizes ?? [];
-  const eggList: any[] = full?.eggOptions ?? [];
-  const needsChoice = sizeList.length > 1 || eggList.length > 1;
-  const fromPrice: number | null =
-    sizeList.length > 1 ? Math.min(...sizeList.map((s) => s.price)) : null;
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -113,8 +104,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
           <h3 className="text-xs sm:text-xs font-black uppercase text-foreground line-clamp-1 leading-tight">{name}</h3>
           <p className="text-[10px] text-subtext font-bold mt-0.5 line-clamp-1">{description}</p>
           <div className="mt-1.5 flex items-center gap-1.5 flex-wrap">
-            <span className="text-sm font-black text-foreground">{fromPrice !== null ? "From " : ""}KES {(fromPrice ?? price).toLocaleString()}</span>
-            {fromPrice === null && oldPrice && oldPrice > price && (
+            <span className="text-sm font-black text-foreground">KES {price.toLocaleString()}</span>
+            {oldPrice && oldPrice > price && (
               <span className="text-[10px] text-muted line-through font-bold">KES {oldPrice.toLocaleString()}</span>
             )}
           </div>
@@ -124,17 +115,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       <div className="p-2.5 sm:p-2 pt-0">
         <div className="mt-auto pt-2">
           <AnimatePresence mode="wait">
-            {needsChoice ? (
-              <motion.div key="choose" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                <Link
-                  href={"/product/" + id}
-                  className="w-full h-9 sm:h-7 rounded-md flex items-center justify-center gap-1.5 text-[10px] sm:text-[9px] font-black uppercase tracking-wider border border-border-strong text-foreground transition-all duration-200 active:scale-95 md:hover:bg-green md:hover:border-green md:hover:text-background"
-                >
-                  <FaShoppingBag size={9} />
-                  {available ? "Choose Options" : "Out"}
-                </Link>
-              </motion.div>
-            ) : cartItem ? (
+            {cartItem ? (
               <motion.div
                 key="qty"
                 initial={{ opacity: 0 }}
