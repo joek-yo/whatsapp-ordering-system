@@ -1,0 +1,51 @@
+{
+  "tagline": "Our Story",
+  "title": "Meet Esther, the Heart Behind House of Jaby",
+  "role": "Founder & Executive Chef",
+  "image": "/images/esther.jpg",
+  "intro": [
+    "House of Jaby began on 2 February 2026 with something simple: a love for creating food and the desire to build something of my own.",
+    "My first clients invited me into their homes, where I prepared meals and snacks for them in their own kitchens. It was a humble beginning, but it gave me the opportunity to serve people personally, develop my craft, and begin building the House of Jaby name one order at a time.",
+    "I still prepare food in clients’ homes today.",
+    "I believe in quality over quantity. For me, that means carefully measured recipes, balanced flavours, thoughtful preparation, and attention to detail at every stage. I want everything I create to reflect the care that goes into making it.",
+    "Because food is more than what is placed on a plate. It is the care, intention, and craft behind it."
+  ],
+  "moment": {
+    "title": "A Moment That Made It Real",
+    "body": [
+      "One of the moments I treasure most was being invited to cater an event.",
+      "I was given the opportunity to prepare food for the guests. After enjoying the food, one of the guests wanted to meet the person behind House of Jaby.",
+      "The event owner introduced me to them, and that moment meant more than I can easily put into words.",
+      "Knowing that the food I had created had made such an impression that a guest wanted to meet the person behind it was deeply encouraging.",
+      "It gave House of Jaby its first real opportunity to be seen beyond the kitchen.",
+      "Since then, the kind feedback and encouragement I have received from the people I serve have continued to inspire me and strengthen my belief in what House of Jaby can become."
+    ]
+  },
+  "jabyWay": {
+    "title": "Crafted Moments, The Jaby Way",
+    "body": [
+      "At House of Jaby, we believe that the details matter.",
+      "From carefully measured recipes and balanced flavours to thoughtful preparation and beautiful presentation, every part of what we create is approached with care.",
+      "Whether it is a cake marking a special birthday, pastries and snacks shared with loved ones, catering for an event, or a meal prepared in your own home, our goal is to create something that feels worthy of the moment.",
+      "That is the Jaby way.",
+      "When you choose House of Jaby, I want you to feel confident in what you have ordered and cared for throughout the experience.",
+      "Because the moments we help create become part of your memories."
+    ],
+    "pullQuote": "I want the memories we help you create to feel truly special to you."
+  },
+  "highlightsTitle": "The Jaby Way",
+  "highlights": [
+    { "title": "Carefully Measured Recipes", "desc": "Every recipe is approached with precision and consistency." },
+    { "title": "Balanced Flavours", "desc": "Thoughtfully prepared flavours that make every bite worth remembering." },
+    { "title": "Personal Attention", "desc": "A personal touch in every order, whether it is prepared for your celebration or right in your own home." }
+  ],
+  "closing": {
+    "title": "Let’s Create Something Special",
+    "body": [
+      "From intimate moments at home to celebrations shared with many, House of Jaby is here to make your moments memorable.",
+      "Whether you're looking for a beautifully crafted cake, delicious pastries and snacks, catering for your event, a meal prepared in your home, or something special created just for your occasion, we'd love to bring it to life, the Jaby way.",
+      "Based in Nairobi and serving beyond, we'll work with you to understand what you need and arrange the details with you directly."
+    ],
+    "ctaText": "Order on WhatsApp"
+  }
+}

@@ -4,34 +4,23 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FaHeart, FaLeaf, FaWhatsapp, FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { FaWhatsapp, FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import { getBusinessData, getCategories, getBundlesCopy } from "@/lib/getBusinessData";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
+import story from "@/data/story.json";
+
+const reveal = {
+  initial: { opacity: 0, y: 20 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+  transition: { duration: 0.5 },
+};
 
 const AboutSection: React.FC = () => {
   const business = getBusinessData() as any;
   const router = useRouter();
-
-  // ⚠️ PLACEHOLDER COPY — replace with the real House of Jaby story before launch.
-  const values = [
-    {
-      icon: <FaHeart size={18} />,
-      title: "Made With Care",
-      text: "Every order is prepared fresh, by hand, the same day it's promised to you.",
-    },
-    {
-      icon: <FaLeaf size={18} />,
-      title: "Quality Ingredients",
-      text: "We source ingredients we'd be proud to serve our own families — nothing cuts corners.",
-    },
-    {
-      icon: <FaWhatsapp size={18} />,
-      title: "Personal Service",
-      text: "No call centers, no bots — just a real conversation on WhatsApp, from order to delivery.",
-    },
-  ];
 
   const cakeCount = ((getCategories() as any[]).find((c) => /cake/i.test(c.name))?.items?.length) ?? 0;
   const stats = [
@@ -42,7 +31,7 @@ const AboutSection: React.FC = () => {
 
   const copyBlocks = [
     ...(getCategories() as any[])
-      .filter((c) => !/bundle/i.test(c.name))
+      .filter((c) => /bundle/i.test(c.name) === false)
       .map((c) => ({ name: c.name, intro: c.intro || "", outro: c.outro || "" })),
     { name: "Bundles", ...(getBundlesCopy() as any) },
   ].filter((b: any) => b.intro || b.outro);
@@ -78,7 +67,7 @@ const AboutSection: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-foreground mb-4"
           >
-            Our Story
+            {story.tagline}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -91,45 +80,79 @@ const AboutSection: React.FC = () => {
         </div>
       </section>
 
-      {/* STORY BODY — placeholder, owner to replace */}
-      <section className="max-w-3xl mx-auto px-6 py-16">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-subtext leading-relaxed space-y-4"
-        >
-          <p>
-            {business.name} is the brand of Esther Kuria, based in Nairobi.
-            Every order is made fresh, and orders reach us from all over the
-            country.
-          </p>
-          <p>
-            Every item on our menu is made fresh to order, with the same care
-            whether it&apos;s a birthday cake or a small box of snacks.
-            That&apos;s the promise behind every order we send out.
-          </p>
+      {/* MEET ESTHER */}
+      <section className="max-w-5xl mx-auto px-6 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10 items-start">
+          <motion.div {...reveal} className="md:col-span-2">
+            <div className="relative aspect-[4/5] w-full max-w-sm mx-auto rounded-3xl overflow-hidden border border-border shadow-glow">
+              <Image
+                src={story.image}
+                alt="Esther, Founder and Executive Chef of House of Jaby"
+                fill
+                sizes="(max-width: 768px) 80vw, 360px"
+                className="object-cover object-top"
+              />
+            </div>
+          </motion.div>
+
+          <motion.div {...reveal} className="md:col-span-3 space-y-4">
+            <p className="text-[11px] font-black uppercase tracking-[0.25em] text-gold">{story.role}</p>
+            <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tight text-foreground">
+              {story.title}
+            </h2>
+            {story.intro.map((t: string, i: number) => (
+              <p key={i} className="text-subtext leading-relaxed">{t}</p>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* A MOMENT THAT MADE IT REAL */}
+      <section className="max-w-3xl mx-auto px-6 py-8">
+        <motion.div {...reveal}>
+          <Card padding="none" className="p-6 sm:p-8 space-y-4">
+            <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tight text-foreground">
+              {story.moment.title}
+            </h3>
+            {story.moment.body.map((t: string, i: number) => (
+              <p key={i} className="text-sm sm:text-base text-subtext leading-relaxed">{t}</p>
+            ))}
+          </Card>
         </motion.div>
       </section>
 
-      {/* VALUES */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
+      {/* CRAFTED MOMENTS, THE JABY WAY */}
+      <section className="max-w-3xl mx-auto px-6 py-16">
+        <motion.div {...reveal} className="space-y-4">
+          <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-foreground">
+            {story.jabyWay.title}
+          </h2>
+          {story.jabyWay.body.map((t: string, i: number) => (
+            <p key={i} className="text-subtext leading-relaxed">{t}</p>
+          ))}
+          <blockquote className="mt-8 border-l-4 border-gold pl-5 py-2 text-lg md:text-xl font-bold italic text-foreground">
+            “{story.jabyWay.pullQuote}”
+          </blockquote>
+        </motion.div>
+      </section>
+
+      {/* HIGHLIGHTS */}
+      <section className="max-w-6xl mx-auto px-6 py-8">
+        <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-foreground text-center mb-8">
+          {story.highlightsTitle}
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          {values.map((v, i) => (
+          {story.highlights.map((h: { title: string; desc: string }, i: number) => (
             <motion.div
-              key={v.title}
+              key={h.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              <Card padding="none" className="p-6 text-center space-y-3">
-                <div className="w-12 h-12 mx-auto rounded-full bg-green-soft flex items-center justify-center text-green">
-                  {v.icon}
-                </div>
-                <h3 className="font-black uppercase tracking-tight text-foreground text-sm">{v.title}</h3>
-                <p className="text-xs text-subtext leading-relaxed">{v.text}</p>
+              <Card padding="none" className="p-6 text-center space-y-3 h-full">
+                <h3 className="font-black uppercase tracking-tight text-foreground text-sm">{h.title}</h3>
+                <p className="text-xs text-subtext leading-relaxed">{h.desc}</p>
               </Card>
             </motion.div>
           ))}
@@ -164,7 +187,7 @@ const AboutSection: React.FC = () => {
         })}
       </section>
 
-      {/* STATS STRIP — placeholder numbers, owner to replace with real figures */}
+      {/* STATS STRIP */}
       <section className="bg-surface2 border-y border-border">
         <div className="max-w-4xl mx-auto px-6 py-12 grid grid-cols-3 gap-6 text-center">
           {stats.map((s) => (
@@ -179,11 +202,13 @@ const AboutSection: React.FC = () => {
       {/* CLOSING CTA */}
       <section className="max-w-3xl mx-auto px-6 py-16 text-center">
         <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-foreground mb-4">
-          Ready to Order?
+          {story.closing.title}
         </h2>
-        <p className="text-subtext mb-8">
-          Browse the menu or send us a message — we&apos;re one WhatsApp chat away.
-        </p>
+        <div className="space-y-4 mb-8">
+          {story.closing.body.map((t: string, i: number) => (
+            <p key={i} className="text-subtext leading-relaxed">{t}</p>
+          ))}
+        </div>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link href="/menu">
             <Button variant="primary" rightIcon={<FaArrowRight size={12} />}>
@@ -197,7 +222,7 @@ const AboutSection: React.FC = () => {
             variant="whatsapp"
             leftIcon={<FaWhatsapp size={16} />}
           >
-            Chat With Us
+            {story.closing.ctaText}
           </Button>
         </div>
       </section>
