@@ -75,7 +75,9 @@ const Header: React.FC = () => {
             <div className="flex justify-between items-center py-3">
               <div className="flex items-center space-x-2">
                 {business.logo && (
-                  <Image src={business.logo} alt={business.name} width={40} height={40} className="object-contain rounded-lg" />
+                  <div className="p-1 bg-[#FAF6EC] rounded-xl border-2 border-green shadow-md">
+                    <Image src={business.logo} alt={business.name} width={44} height={44} className="object-contain rounded-lg" />
+                  </div>
                 )}
                 <span className="text-lg font-black uppercase tracking-tight text-foreground">{business.name}</span>
               </div>
@@ -111,8 +113,8 @@ const Header: React.FC = () => {
           <div className="hidden md:flex items-center justify-between py-4">
             <Link href="/" className="flex items-center space-x-3 shrink-0">
               {business.logo && (
-                <div className="p-1 bg-surface2 rounded-xl border border-border">
-                  <Image src={business.logo} alt={business.name} width={44} height={44} className="object-contain rounded-lg" />
+                <div className="p-1.5 bg-[#FAF6EC] rounded-2xl border-2 border-green shadow-md">
+                  <Image src={business.logo} alt={business.name} width={52} height={52} className="object-contain rounded-xl" />
                 </div>
               )}
               <span className="text-2xl font-black uppercase tracking-tighter text-foreground">{business.name}</span>
