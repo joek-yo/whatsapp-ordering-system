@@ -53,7 +53,9 @@ const Footer: React.FC = () => {
       <div className="mt-4 flex flex-col md:flex-row justify-between items-center text-muted text-sm px-6 max-w-7xl mx-auto gap-2">
         <span>&copy; {new Date().getFullYear()} {business.name}. All rights reserved.</span>
         <span className="text-xs text-muted text-center">
-          Powered by <span className="font-semibold text-subtext">Builnex</span> — Digital Systems for Local Businesses •
+          Powered by{" "}
+          <a href="https://busivra.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-subtext hover:text-green transition">Busivra</a>
+          {" "}— Get your business online •
           <a href="tel:0729724433" className="hover:text-green ml-1 transition">0729724433</a>
         </span>
       </div>
